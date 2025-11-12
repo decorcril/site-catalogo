@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decorcril</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        <a href="#home" class="logo">
+            <img src="images/logo.png" alt="Logo Decorcril" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn"></i>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#services">Produtos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
+        </ul>
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <div class="search-box">
+            <i class="uil uil-search search-icon"></i>
+            <input type="text" placeholder="Buscar produtos..." id="searchInput" />
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </nav>
+
+    <script src="js/search.js"></script>
+</body>
+
+</html>
