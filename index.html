@@ -14,27 +14,97 @@
 </head>
 
 <body>
-    <!-- Navbar Section -->
-    <nav class="nav">
-        <i class="uil uil-bars navOpenBtn"></i>
-        <a href="#home" class="logo">
-            <img src="assets/images/background/logo.png" alt="Logo Decorcril" class="logo-img">
-        </a>
-        <ul class="nav-links">
-            <i class="uil uil-times navCloseBtn"></i>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#services">Catálogo</a></li>
-            <li><a href="#services">Produtos</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
-        </ul>
-        <i class="uil uil-search search-icon" id="searchIcon"></i>
-        <div class="search-box">
-            <i class="uil uil-search search-icon"></i>
-            <input type="text" placeholder="Buscar produtos..." id="searchInput" />
-            <div class="search-results" id="searchResults"></div>
-        </div>
-    </nav>
+   <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    <a href="#home" class="logo">
+        <img src="assets/images/background/logo.png" alt="Logo Decorcril" class="logo-img">
+    </a>
+    <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="#home">Início</a></li>
+        
+        <!-- Catálogo com Mega Menu -->
+        <li class="mega-menu-item">
+            <a href="#services" class="mega-menu-toggle">Catálogo</a>
+            <div class="mega-menu">
+                <div class="mega-menu-content">
+                    <div class="mega-menu-section">
+                        <h4>Tipos de Produtos</h4>
+                        <ul>
+                            <li><a href="#mesas">Mesas em Acrílico</a></li>
+                            <li><a href="#decoracoes">Decorações</a></li>
+                            <li><a href="#suportes">Suportes</a></li>
+                            <li><a href="#personalizados">Personalizados</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                        <h4>Por Ambiente</h4>
+                        <ul>
+                            <li><a href="#sala">Sala de Estar</a></li>
+                            <li><a href="#quarto">Quarto</a></li>
+                            <li><a href="#escritorio">Escritório</a></li>
+                            <li><a href="#cozinha">Cozinha</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                        <h4>Coleções</h4>
+                        <ul>
+                            <li><a href="#classica">Clássica</a></li>
+                            <li><a href="#moderna">Moderna</a></li>
+                            <li><a href="#minimalista">Minimalista</a></li>
+                            <li><a href="#todas">Ver Todas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <!-- Produtos com Mega Menu -->
+        <li class="mega-menu-item">
+            <a href="#services" class="mega-menu-toggle">Produtos</a>
+            <div class="mega-menu">
+                <div class="mega-menu-content">
+                    <div class="mega-menu-section">
+                        <h4>Destaques</h4>
+                        <ul>
+                            <li><a href="#novidades">Novidades</a></li>
+                            <li><a href="#mais-vendidos">Mais Vendidos</a></li>
+                            <li><a href="#promocoes">Promoções</a></li>
+                            <li><a href="#lancamentos">Lançamentos</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                        <h4>Por Preço</h4>
+                        <ul>
+                            <li><a href="#ate-100">Até R$ 100</a></li>
+                            <li><a href="#100-200">R$ 100 - R$ 200</a></li>
+                            <li><a href="#200-500">R$ 200 - R$ 500</a></li>
+                            <li><a href="#acima-500">Acima de R$ 500</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-section">
+                        <h4>Ofertas Especiais</h4>
+                        <ul>
+                            <li><a href="#kits">Kits Promocionais</a></li>
+                            <li><a href="#personalizaveis">Personalizáveis</a></li>
+                            <li><a href="#presentes">Presentes</a></li>
+                            <li><a href="#ofertas">Todas as Ofertas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
+    </ul>
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+    <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Buscar produtos..." id="searchInput" />
+        <div class="search-results" id="searchResults"></div>
+    </div>
+</nav>
     <!-- Hero Section -->
     <div class="hero" id="home">
         <div class="hero__container">

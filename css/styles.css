@@ -163,7 +163,101 @@ a {
 .nav .navCloseBtn {
     display: none;
 }
+/* ===== MEGA MENU ===== */
+.nav-links .mega-menu-item {
+    position: static;
+}
 
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    border-top: 1px solid #eee;
+}
+
+.mega-menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 200px; /* mesma identação da navbar */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.mega-menu-section h4 {
+    color: #2422b1;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 0; /* identação zerada */
+}
+
+.mega-menu-section ul {
+    list-style: none;
+    padding-left: 0; /* identação zerada */
+}
+
+.mega-menu-section li {
+    margin-bottom: 8px;
+}
+
+.mega-menu-section a {
+    color: #333 !important;
+    padding: 5px 0;
+    display: block;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    padding-left: 0; /* identação zerada */
+}
+
+.mega-menu-section a:hover {
+    color: #2422b1 !important;
+    padding-left: 5px; /* pequena animação no hover */
+}
+
+/* Mostrar mega menu no hover */
+.mega-menu-item:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== REMOVER SETAS DOS LINKS ===== */
+.mega-menu-toggle i {
+    display: none !important; /* Remove completamente as setas */
+}
+
+/* ===== RESPONSIVIDADE - MOBILE ===== */
+@media screen and (max-width: 768px) {
+    .mega-menu {
+        display: none;
+    }
+    
+    .mega-menu-item:hover .mega-menu {
+        display: none;
+    }
+    
+    /* Ajuste da identação no mobile se necessário */
+    @media screen and (max-width: 1160px) {
+        .mega-menu-content {
+            padding: 30px 100px; /* mesma identação responsiva da navbar */
+        }
+    }
+    
+    @media screen and (max-width: 950px) {
+        .mega-menu-content {
+            padding: 30px 50px; /* mesma identação responsiva da navbar */
+        }
+    }
+}
 /* ===== RESPONSIVIDADE ===== */
 
 /* Tablet Grande (1160px) */
