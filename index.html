@@ -18,11 +18,12 @@
     <nav class="nav">
         <i class="uil uil-bars navOpenBtn"></i>
         <a href="#home" class="logo">
-            <img src="images/logo.png" alt="Logo Decorcril" class="logo-img">
+            <img src="assets/images/background/logo.png" alt="Logo Decorcril" class="logo-img">
         </a>
         <ul class="nav-links">
             <i class="uil uil-times navCloseBtn"></i>
             <li><a href="#home">Início</a></li>
+            <li><a href="#services">Catálogo</a></li>
             <li><a href="#services">Produtos</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
@@ -56,7 +57,7 @@
             </div>
 
             <div class="hero__image">
-                <img src="images/deco.png" alt="Mascote Deco da Decorcril" class="hero__mascote">
+                <img src="assets/images/background/deco.png" alt="Mascote Deco da Decorcril" class="hero__mascote">
             </div>
         </div>
     </div>
@@ -198,52 +199,231 @@
             </div>
         </div>
     </section>
-  <section class="featured-product">
-    <div class="featured-container">
-        <!-- Coluna da Esquerda - Vídeo -->
-        <div class="video-column">
-            <div class="video-container">
-                <video class="main-video" autoplay muted loop playsinline>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
-                    Seu navegador não suporta o vídeo.
-                </video>
-            </div>
-        </div>
-
-        <!-- Coluna da Direita - Tudo "encaixado" -->
-        <div class="content-column">
-            <!-- Informações do Produto -->
-            <div class="product-info">
-                <div class="product-badges">
-                    <span class="badge price-badge">Produto em destaque</span>
-                    <span class="badge novelty-badge">Novidade</span>
-                </div>
-
-                <h1 class="product-title">Cilindro de acrílico</h1>
-
-                <p class="product-description">
-                    O trio de cilindros é o queridinho das decorações. É um item indispensável para o seu acervo.
-                    Ele possui corpo confeccionado em policarbonato super resistente com tampo confeccionado em
-                    acrílico de 3mm.
-                </p>
-
-                <div class="pricing-section">
-                    <span class="original-price">R$ 199,90</span>
-                    <span class="current-price">R$ 149,90</span>
-                    <span class="discount-badge">-25%</span>
+    <!-- Featured Product Section -->
+    <section class="featured-product">
+        <div class="featured-container">
+            <!-- Coluna da Esquerda - Vídeo -->
+            <div class="video-column">
+                <div class="video-container">
+                    <video class="main-video" autoplay muted loop playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                            type="video/mp4">
+                        Seu navegador não suporta o vídeo.
+                    </video>
                 </div>
             </div>
 
-            <!-- Foto Grande - agora encaixada abaixo do texto -->
-            <div class="featured-image">
-                <img src="images/cilindros.png" alt="Cilindro de acrílico - detalhe do produto">
+            <!-- Coluna da Direita - Tudo "encaixado" -->
+            <div class="content-column">
+                <!-- Informações do Produto -->
+                <div class="product-info">
+                    <div class="product-badges">
+                        <span class="badge price-badge">Produto em destaque</span>
+                        <span class="badge novelty-badge">Novidade</span>
+                    </div>
+                    <h1 class="product-title">Cilindro de acrílico</h1>
+                    <p class="product-description">
+                        O trio de cilindros é o queridinho das decorações. É um item indispensável para o seu acervo.
+                        Ele possui corpo confeccionado em policarbonato super resistente com tampo confeccionado em
+                        acrílico de 3mm.
+                    </p>
+                    <div class="pricing-section">
+                        <span class="original-price">R$ 199,90</span>
+                        <span class="current-price">R$ 149,90</span>
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="assets/images/products/cilindros.png" alt="Cilindro de acrílico - detalhe do produto">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="related-products" id="related-products">
+        <div class="related-products__container">
+            <h2 class="related-products__title">Você também pode gostar</h2>
+            <p class="related-products__subtitle">Produtos selecionados especialmente para você</p>
+
+            <div class="related-products__carousel">
+                <button class="carousel__btn carousel__btn--prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="related-products__track">
+                    <!-- Produto 1 -->
+                    <div class="product__card" data-product="kit-mesa-oceano">
+                        <div class="product__image">
+                            <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Kit mesa oceano</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 149,90</span>
+                                <span class="price__original">R$ 199,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 2 -->
+                    <div class="product__card" data-product="cilindro-acrilico">
+                        <div class="product__image">
+                            <img src="assets/images/products/trio-cubos.png" alt="Kit mesa Oceano">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Kit mesa oceano</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 149,90</span>
+                                <span class="price__original">R$ 199,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <!-- Produto 3 -->
+                    <div class="product__card" data-product="carrinho">
+                        <div class="product__image">
+                            <img src="assets/images/products/teste-luli.jpeg" alt="Carrinho Decorativo">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Cubo sextavado Luli Reis</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="carrinho-acrilico-com-cuba">
+                        <div class="product__image">
+                            <img src="assets/images/products/carrinho-acrilico-com-cuba.webp" alt="Carrinho com cuba de gelo">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Carrinho com Cuba de Gelo</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="mesa-borboleta-desmontavel-m2">
+                        <div class="product__image">
+                            <img src="assets/images/products/mesa-borboleta-desmontavel-m2.png" alt="Mesa Borboleta Desmontavel">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Mesa Borboleta Desmontável M2<br>By: Andréia Sato<br>Pegue e Monte</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__image">
+                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+                    <div class="product__card" data-product="trio-mesa-pegue-monte-cris-reis">
+                        <div class="product__image">
+                            <img src="assets/images/products/trio-mesa-pegue-monte-cris-reis.png" alt="Trio de Mesa pegue e monte">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Trio de Mesa Pegue e Monte - By: Cris Reis</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="trio-cubos-espelhados">
+                        <div class="product__image">
+                            <img src="assets/images/products/trio-cubos-espelhados.png" alt="Trio cubos espelhado">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name"> Trio de Cubos espelhados Moldura Preta com Espelho Prata</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 1100,00</span>
+                                <span class="price__original">R$1200,00</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="trio-sextavados-transparente">
+                        <div class="product__image">
+                            <img src="assets/images/products/trio-sextavados-transparente.png" alt="Trio Sextavado Transparente">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Trio de Sextavados Transparente de 3mm.</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 340,00</span>
+                                <span class="price__original">R$ 345,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+                    <div class="product__card" data-product="cubos">
+                        <div class="product__image">
+                            <img src="assets/images/products/cubos.png" alt="Cubos decorativos">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Cubos</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+
+                    <div class="product__card" data-product="bandeja-gira-bolo">
+                        <div class="product__image">
+                            <img src="assets/images/products/bandeja-gira-bolo.png" alt="Bandeja Gira Bolo">
+                        </div>
+                        <div class="product__info">
+                            <h3 class="product__name">Bandeja Gira Bolo</h3>
+                            <div class="product__price">
+                                <span class="price__current">R$ 129,90</span>
+                                <span class="price__original">R$ 159,90</span>
+                            </div>
+                            <button class="product__btn">Ver Produto</button>
+                        </div>
+                    </div>
+                    <!-- Adicionar mais produtos conforme necessário -->
+                </div>
+
+                <button class="carousel__btn carousel__btn--next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="related-products__cta">
+                <a href="#all-products" class="related-products__btn">
+                    <i class="fas fa-store"></i>
+                    Ver Todos os Produtos
+                </a>
+            </div>
+        </div>
+    </section>
 
     <script src="js/search.js"></script>
     <script src="js/carouselProducts.js"></script>
+    <script src="js/carouselMoreProducts.js"></script>
 </body>
 
 </html>
