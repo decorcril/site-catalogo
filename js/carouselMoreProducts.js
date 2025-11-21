@@ -1,74 +1,65 @@
-// Carousel para "Você também pode gostar" - Adaptado do seu código
+// Carousel para "Você também pode gostar" - SCROLL NATIVO
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.related-products__track');
     const prevBtn = document.querySelector('.related-products .carousel__btn--prev');
     const nextBtn = document.querySelector('.related-products .carousel__btn--next');
-    const cards = document.querySelectorAll('.product__card');
+    const markers = document.querySelectorAll('.scroll-marker');
     
-    let currentPosition = 0;
+    if (!track || !prevBtn || !nextBtn) return;
+
     let cardWidth = 0;
     let gap = 0;
-    let visibleCards = 0;
-    let maxPosition = 0;
-    let isMobile = window.innerWidth <= 768;
+    let scrollAmount = 0;
 
-    function calculateDimensions() {
-        if (cards.length === 0) return;
-        
-        // Pega dimensões reais do primeiro card
-        const firstCard = cards[0];
-        const cardStyle = window.getComputedStyle(firstCard);
-        cardWidth = firstCard.offsetWidth;
-        
-        // Pega o gap real
-        const trackStyle = window.getComputedStyle(track);
-        gap = parseInt(trackStyle.gap) || 25;
-        
-        // Calcula quantos cards são visíveis
-        const containerWidth = track.parentElement.offsetWidth;
-        const totalCardWidth = cardWidth + gap;
-        visibleCards = Math.floor(containerWidth / totalCardWidth);
-        
-        // NOVO: No mobile, garante pelo menos 1 card de "sobra" para navegação
-        if (isMobile && visibleCards >= cards.length) {
-            visibleCards = Math.max(1, cards.length - 1);
-        }
-        
-        // Calcula posição máxima
-        maxPosition = Math.max(0, cards.length - visibleCards);
-        
-        console.log('Dimensões calculadas - Produtos:', { 
-            cardWidth, 
-            gap, 
-            containerWidth, 
-            totalCardWidth, 
-            visibleCards, 
-            maxPosition,
-            isMobile,
-            totalCards: cards.length 
-        });
-    }
+  function calculateDimensions() {
+    if (!track.children.length) return;
+    
+    const firstCard = track.children[0];
+    cardWidth = firstCard.offsetWidth;
+    
+    const trackStyle = window.getComputedStyle(track);
+    gap = parseInt(trackStyle.gap) || 30;
+    
+    // Scroll de 4 cards por vez
+    scrollAmount = (cardWidth + gap) * 4;
+    
+    console.log('Scroll de 4 cards:', scrollAmount);
+}
+// Botão próximo - scroll exato
+nextBtn.addEventListener('click', function() {
+    if (this.disabled) return;
+    
+    track.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+});
 
-    function updateCarousel() {
-        if (cards.length === 0) return;
+// Botão anterior - scroll exato
+prevBtn.addEventListener('click', function() {
+    if (this.disabled) return;
+    
+    track.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+    });
+});
+    function updateButtons() {
+        const scrollLeft = track.scrollLeft;
+        const maxScroll = track.scrollWidth - track.clientWidth;
         
-        const moveDistance = currentPosition * (cardWidth + gap);
-        track.style.transform = `translateX(-${moveDistance}px)`;
+        // Atualiza botão anterior
+        prevBtn.style.opacity = scrollLeft === 0 ? '0.4' : '1';
+        prevBtn.style.cursor = scrollLeft === 0 ? 'not-allowed' : 'pointer';
+        prevBtn.disabled = scrollLeft === 0;
         
-        // Desabilita botões quando chega nos extremos
-        const isAtStart = currentPosition === 0;
-        const isAtEnd = currentPosition >= maxPosition;
-        
-        prevBtn.style.opacity = isAtStart ? '0.4' : '1';
-        prevBtn.style.cursor = isAtStart ? 'not-allowed' : 'pointer';
-        prevBtn.disabled = isAtStart;
-        
-        nextBtn.style.opacity = isAtEnd ? '0.4' : '1';
-        nextBtn.style.cursor = isAtEnd ? 'not-allowed' : 'pointer';
-        nextBtn.disabled = isAtEnd;
+        // Atualiza botão próximo
+        nextBtn.style.opacity = scrollLeft >= maxScroll - 5 ? '0.4' : '1'; // -5 para tolerância
+        nextBtn.style.cursor = scrollLeft >= maxScroll - 5 ? 'not-allowed' : 'pointer';
+        nextBtn.disabled = scrollLeft >= maxScroll - 5;
 
-        // Esconde botões completamente se não forem necessários
-        if (maxPosition === 0) {
+        // Esconde botões se não for necessário
+        if (maxScroll <= 0) {
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
         } else {
@@ -77,104 +68,129 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    function handleResize() {
-        isMobile = window.innerWidth <= 768;
+    
+
+    function updateMarkers() {
+        if (!markers.length) return;
         
-        // Pequeno delay para garantir que o CSS foi aplicado
-        setTimeout(() => {
-            calculateDimensions();
-            
-            // Reset mais inteligente da posição
-            if (currentPosition > maxPosition) {
-                currentPosition = Math.max(0, maxPosition);
-            }
-            
-            // Se todos os cards cabem na tela, reseta para início
-            if (maxPosition === 0) {
-                currentPosition = 0;
-            }
-            
-            updateCarousel();
-        }, 150);
+        const scrollLeft = track.scrollLeft;
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        const progress = maxScroll > 0 ? scrollLeft / maxScroll : 0;
+        
+        // Atualiza marcadores baseado no progresso
+        markers.forEach((marker, index) => {
+            const markerProgress = index / (markers.length - 1);
+            const isActive = Math.abs(progress - markerProgress) < 0.2;
+            marker.classList.toggle('active', isActive);
+        });
     }
 
-    // Event Listeners
+    // Event Listeners para botões
     nextBtn.addEventListener('click', function() {
-        if (currentPosition < maxPosition) {
-            currentPosition++;
-            updateCarousel();
-        }
+        if (this.disabled) return;
+        
+        track.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
     });
 
     prevBtn.addEventListener('click', function() {
-        if (currentPosition > 0) {
-            currentPosition--;
-            updateCarousel();
+        if (this.disabled) return;
+        
+        track.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    // Event Listeners para scroll
+    track.addEventListener('scroll', function() {
+        updateButtons();
+        updateMarkers();
+    });
+
+    // Event Listeners para marcadores (opcional - navegação por clique)
+    markers.forEach((marker, index) => {
+        marker.addEventListener('click', function() {
+            const card = track.children[index];
+            if (card) {
+                card.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'nearest',
+                    inline: 'start'
+                });
+            }
+        });
+    });
+
+    // Keyboard navigation
+    track.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            prevBtn.click();
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            nextBtn.click();
         }
     });
 
-    // Swipe para mobile - MESMO CÓDIGO QUE JÁ FUNCIONA
+    // Swipe para mobile
     let startX = 0;
     let isDragging = false;
     
     track.addEventListener('touchstart', function(e) {
-        if (maxPosition === 0) return;
         startX = e.touches[0].clientX;
         isDragging = true;
-        track.style.cursor = 'grabbing';
     });
 
     track.addEventListener('touchmove', function(e) {
-        if (!isDragging || maxPosition === 0) return;
+        if (!isDragging) return;
         e.preventDefault();
     });
 
     track.addEventListener('touchend', function(e) {
-        if (!isDragging || maxPosition === 0) return;
+        if (!isDragging) return;
         
         const endX = e.changedTouches[0].clientX;
         const diff = startX - endX;
         const swipeThreshold = 50;
 
         if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++;
-            } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--;
+            if (diff > 0) {
+                nextBtn.click(); // Swipe esquerda = próximo
+            } else {
+                prevBtn.click(); // Swipe direita = anterior
             }
-            updateCarousel();
         }
         isDragging = false;
-        track.style.cursor = 'grab';
     });
 
     // Mouse drag para desktop
     track.addEventListener('mousedown', function(e) {
-        if (maxPosition === 0) return;
         startX = e.clientX;
         isDragging = true;
         track.style.cursor = 'grabbing';
     });
 
     document.addEventListener('mousemove', function(e) {
-        if (!isDragging || maxPosition === 0) return;
+        if (!isDragging) return;
         e.preventDefault();
     });
 
     document.addEventListener('mouseup', function(e) {
-        if (!isDragging || maxPosition === 0) return;
+        if (!isDragging) return;
         
         const endX = e.clientX;
         const diff = startX - endX;
         const swipeThreshold = 50;
 
         if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++;
-            } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--;
+            if (diff > 0) {
+                nextBtn.click();
+            } else {
+                prevBtn.click();
             }
-            updateCarousel();
         }
         
         isDragging = false;
@@ -182,16 +198,49 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Inicialização
-    calculateDimensions();
-    updateCarousel();
-    
+    function init() {
+        calculateDimensions();
+        updateButtons();
+        updateMarkers();
+        
+        // Foca no primeiro elemento para navegação por teclado
+        track.setAttribute('tabindex', '0');
+    }
+
     // Recalcula em redimensionamento
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(handleResize, 250);
+        resizeTimeout = setTimeout(() => {
+            calculateDimensions();
+            updateButtons();
+            updateMarkers();
+        }, 250);
     });
 
     // Recalcula quando as imagens carregarem
-    window.addEventListener('load', handleResize);
+    window.addEventListener('load', init);
+
+    // Inicializa
+    setTimeout(init, 100);
 });
+
+
+
+// Adiciona este CSS via JavaScript para melhor experiência
+const style = document.createElement('style');
+style.textContent = `
+    .related-products__track {
+        cursor: grab;
+    }
+    
+    .related-products__track:active {
+        cursor: grabbing;
+    }
+    
+    .related-products__track:focus-visible {
+        outline: 2px solid #0058a3;
+        outline-offset: 2px;
+    }
+`;
+document.head.appendChild(style);

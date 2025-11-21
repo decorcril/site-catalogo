@@ -1256,21 +1256,21 @@ a {
 
 /* Related Products Section */
 .related-products {
-    padding: 20px 0 20px 0px;
+    padding: 20px 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #e4e7ec 100%);
 }
 
 .related-products__container {
-    max-width: 1060px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
+    position: relative;
 }
 
 .related-products__title {
     font-size: 2rem;
     color: #1a1a1a;
-    /* ← Mudei para branco para contrastar com o fundo */
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -1286,7 +1286,6 @@ a {
     align-items: center;
     gap: 10px;
     background: #ff0084;
-    /* ← Azul das categorias */
     color: white;
     padding: 15px 30px;
     border-radius: 8px;
@@ -1307,9 +1306,9 @@ a {
     box-shadow: 0 6px 20px rgba(0, 88, 163, 0.4);
 }
 
-/* Product Cards com Overlay */
+/* Product Cards com Overlay - LARGURA DINÂMICA */
 .product__card {
-    flex: 0 0 280px;
+    flex: 0 0 calc(25% - 23px); /* 4 cards - gap compensado */
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -1317,7 +1316,8 @@ a {
     transition: all 0.3s ease;
     cursor: pointer;
     position: relative;
-    /* ← ADICIONAR */
+    scroll-snap-align: start;
+    min-width: 0; /* Importante para flex shrink */
 }
 
 .product__card:hover {
@@ -1327,14 +1327,14 @@ a {
 
 .product__image {
     width: 100%;
-    height: 345px;
+    height: 350px; /* ↑ AUMENTEI de 280px para 350px */
     overflow: hidden;
     background: #f8f9fa;
 }
 
 .product__image img {
     width: 100%;
-    height: 100%;
+    height: 100%; /* ↑ CORRIGI: estava 280px fixo, agora 100% */
     object-fit: fill;
     transition: transform 0.3s ease;
 }
@@ -1342,18 +1342,11 @@ a {
 /* OVERLAY EFFECT */
 .product__info {
     position: absolute;
-    /* ← MUDAR PARA ABSOLUTE */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-   /* background: #2193b0; */
-/* fallback for old browsers - adjust this if needed for compatibility */
-background: -webkit-linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 176, 0.9));
-/* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 176, 0.9));
-/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 176, 0.9));
     color: white;
     display: flex;
     flex-direction: column;
@@ -1377,80 +1370,79 @@ background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 17
 
 /* AJUSTES PARA O OVERLAY */
 .product__name {
-    font-size: 1.3rem;
-    /* ← AUMENTAR */
+    font-size: 1.2rem; /* Reduzido para caber melhor */
     color: white;
-    /* ← MUDAR COR */
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     font-weight: 700;
+    line-height: 1.3;
 }
 
 .product__price {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .price__current {
-    font-size: 1.4rem;
-    /* ← AUMENTAR */
+    font-size: 1.3rem;
     font-weight: 700;
-    color: white;
-    /* ← MUDAR COR */
+    color: #ff0084;
 }
 
 .price__original {
-    font-size: 1rem;
-    /* ← AUMENTAR */
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.8);
-    /* ← BRANCO TRANSLÚCIDO */
     text-decoration: line-through;
 }
 
 .product__btn {
     width: 80%;
-    /* ← LARGURA MENOR */
     background: white;
     color: #ff0084;
-    /* ← TEXTO ROSA */
-    /*border: 2px solid white;*/
     border: none;
-    padding: 12px;
+    padding: 10px;
     border-radius: 6px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.2s ease;
+    font-size: 0.9rem;
 }
 
 .product__btn:hover {
     background: #ff0084;
     color: white;
-    /* ← TEXTO BRANCO */
     transform: translateY(-1px);
 }
 
-/* CARROSSEL MAIS LARGO - IGUAL CATEGORIAS */
+/* ===== CARROSSEL 4 CARDS ===== */
 .related-products__carousel {
     position: relative;
     margin: 0 auto 10px;
     max-width: 100%;
     overflow: hidden;
-    padding: 15px 0;
+    padding: 15px 80px;
 }
 
 .related-products__track {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    transition: transform 0.4s ease;
-    padding: 0 10px 0 90px;
-    will-change: transform;
-    width: fit-content;
-    margin: 0 auto;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    padding: 10px 0;
+    margin: 0;
 }
 
-/* Botões nas mesmas posições */
+/* Esconder scrollbar */
+.related-products__track::-webkit-scrollbar {
+    display: none;
+}
+
+/* Botões de navegação */
 .related-products .carousel__btn {
     position: absolute;
     top: 50%;
@@ -1458,18 +1450,18 @@ background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 17
     background: white;
     color: #0058a3;
     border: 1px solid #e0e0e0;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1.1rem;
-    transition: all 0.2s ease;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0.9;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .related-products .carousel__btn:hover {
@@ -1477,6 +1469,7 @@ background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 17
     color: white;
     border-color: #0058a3;
     transform: translateY(-50%) scale(1.1);
+    opacity: 1;
 }
 
 .related-products .carousel__btn--prev {
@@ -1487,76 +1480,494 @@ background: linear-gradient(to right, rgba(109, 213, 237, 0.9), rgba(33, 147, 17
     right: 20px;
 }
 
-/* RESPONSIVIDADE - IGUAL CATEGORIAS */
-@media screen and (max-width: 1200px) {
+@media (max-width: 768px) {
+    .related-products {
+        padding: 15px 0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .related-products__container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+    
+    .related-products__title {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 6px;
+        color: #1a1a1a;
+        font-weight: 700;
+        padding: 0 15px;
+    }
+    
+    .related-products__subtitle {
+        text-align: center;
+        color: #666;
+        margin-bottom: 15px;
+        font-size: 0.85rem;
+        padding: 0 15px;
+        line-height: 1.4;
+    }
+    
+    .related-products__carousel {
+        padding: 0;
+    }
+    
     .related-products__track {
-        padding: 0 10px 0 70px;
-        gap: 20px;
-    }
-
-    .product__card {
-        flex: 0 0 260px;
-    }
-}
-
-@media screen and (max-width: 968px) {
-    .related-products__track {
-        padding: 0 10px 0 60px;
-    }
-
-    .product__card {
-        flex: 0 0 240px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .related-products__track {
-        padding: 0 10px 0 50px;
-        gap: 15px;
-    }
-
-    .product__card {
-        flex: 0 0 220px;
-    }
-
-    .related-products .carousel__btn {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .related-products__track {
-        padding: 0 10px 0 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 12px;
+        padding: 10px 15px;
+        overflow: visible;
+        max-width: 100%;
+        margin: 0 auto;
     }
-
+    
     .product__card {
-        flex: 0 0 200px;
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        transition: all 0.2s ease;
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: inherit;
     }
-
-    .related-products .carousel__btn {
-        width: 35px;
-        height: 35px;
+    
+    .product__card:active {
+        transform: scale(0.98);
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+    }
+        
+    .product__image {
+        position: relative;
+        overflow: hidden;
+        background: #f8f9fa;
+        height: 200px;
+    }
+    
+    .product__image::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.02));
+    }
+    
+    .product__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    
+    .product__info {
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .product__name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        min-height: 2.4em;
+    }
+    
+    .product__price {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 0;
+    }
+    
+    .price__current {
+        color: #ff0084;
         font-size: 1rem;
+        font-weight: 700;
     }
-
-    .related-products .carousel__btn--prev {
-        left: 15px;
+    
+    .price__original {
+        color: #fff;
+        font-size: 0.8rem;
+        text-decoration: line-through;
     }
-
-    .related-products .carousel__btn--next {
-        right: 15px;
+    
+    .product__btn {
+        display: block !important;
+        background: linear-gradient(135deg, #ff0084 0%, #e00074 100%);
+        color: white;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(255, 0, 132, 0.3);
+        width: 100%;
+        text-align: center;
+        margin-top: 6px;
+        position: relative;
+        z-index: 10;
+        min-height: 40px;
+    }
+    
+    .product__btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 1px 3px rgba(255, 0, 132, 0.4);
+        background: linear-gradient(135deg, #e00074 0%, #c50064 100%);
+    }
+    
+    
+    /* Remove o indicador visual anterior */
+    .product__card::after {
+        display: none;
+    }
+    
+    /* Remove navegação do carrossel */
+    .carousel__btn {
+        display: none;
+    }
+    
+    /* Ajusta CTA */
+    .related-products__cta {
+        margin-top: 15px;
+        padding: 0 15px;
+        text-align: center;
+    }
+    
+    .related-products__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #ff0084;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        font-size: 0.9rem;
+    }
+    
+    .related-products__btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     }
 }
 
-@media screen and (max-width: 360px) {
+/* CELULAR EM PÉ (PORTRAIT) - Ajustes com botão menor */
+@media (max-width: 768px) and (orientation: portrait) {
+    .product__image {
+        height: 190px;
+    }
+    
     .related-products__track {
-        padding: 0 8px 0 35px;
+        gap: 14px;
+        padding: 12px 15px;
+    }
+    
+    .product__info {
+        padding: 14px;
         gap: 10px;
     }
-
-    .product__card {
-        flex: 0 0 180px;
+    
+    .product__btn {
+        padding: 11px 14px;
+        font-size: 0.9rem;
+        min-height: 42px;
+        margin-top: 8px;
     }
+}
+
+/* CELULAR DEITADO (LANDSCAPE) - Ajustes com botão menor */
+@media (max-width: 768px) and (orientation: landscape) {
+    .product__image {
+        height: 160px;
+    }
+    
+    .related-products__track {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 8px 12px;
+    }
+    
+    .product__info {
+        padding: 10px;
+        gap: 6px;
+    }
+    
+    .product__name {
+        font-size: 0.85rem;
+        min-height: 2.2em;
+    }
+    
+    .price__current {
+        font-size: 0.9rem;
+    }
+    
+    .price__original {
+        font-size: 0.75rem;
+    }
+    
+    .product__btn {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+        min-height: 38px;
+        margin-top: 4px;
+    }
+}
+
+/* Para telas muito pequenas em portrait */
+@media (max-width: 360px) and (orientation: portrait) {
+    .related-products__track {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 10px;
+    }
+    
+    .product__image {
+        height: 180px;
+    }
+    
+    .product__info {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .product__name {
+        font-size: 0.85rem;
+        min-height: 2.2em;
+    }
+    
+    .price__current {
+        font-size: 0.95rem;
+    }
+    
+    .product__btn {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        min-height: 40px;
+        margin-top: 6px;
+    }
+}
+
+/* Para telas muito pequenas em landscape */
+@media (max-width: 640px) and (orientation: landscape) {
+    .related-products__track {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 8px 10px;
+    }
+    
+    .product__image {
+        height: 140px;
+    }
+    
+    .product__info {
+        padding: 8px;
+        gap: 4px;
+    }
+    
+    .product__name {
+        font-size: 0.8rem;
+        min-height: 2em;
+    }
+    
+    .price__current {
+        font-size: 0.85rem;
+    }
+    
+    .price__original {
+        font-size: 0.7rem;
+    }
+    
+    .product__btn {
+        padding: 7px 9px;
+        font-size: 0.75rem;
+        min-height: 36px;
+        margin-top: 4px;
+    }
+}
+
+/* Tablets pequenos em portrait */
+@media (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    .product__image {
+        height: 220px;
+    }
+    
+    .related-products__track {
+        gap: 16px;
+        padding: 15px;
+    }
+    
+    .product__info {
+        padding: 15px;
+        gap: 12px;
+    }
+    
+    .product__btn {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+        min-height: 44px;
+        margin-top: 10px;
+    }
+}
+
+/* Tablets pequenos em landscape */
+@media (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    .related-products__track {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        padding: 10px 15px;
+    }
+    
+    .product__image {
+        height: 160px;
+    }
+    
+    .product__info {
+        padding: 12px;
+        gap: 8px;
+    }
+    
+    .product__btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+        min-height: 42px;
+        margin-top: 6px;
+    }
+}
+
+/* Dark mode support para todas as orientações */
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+    .related-products {
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    }
+    
+    .product__card {
+        background: #2d2d2d;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    }
+    
+    .product__info {
+        background: #2d2d2d;
+    }
+    
+    .product__name {
+        color: #ffffff;
+    }
+    
+    .price__original {
+        color: #cccccc;
+    }
+    
+    .related-products__title {
+        color: #ffffff;
+    }
+    
+    .related-products__subtitle {
+        color: #cccccc;
+    }
+    
+    .product__image::after {
+        background: linear-gradient(transparent, rgba(0,0,0,0.1));
+    }
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background: #23cf5c;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 4px 20px rgba(35, 207, 92, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background: #1ea84c;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(35, 207, 92, 0.5);
+  animation: none; /* Para a animação no hover */
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(35, 207, 92, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(35, 207, 92, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px rgba(35, 207, 92, 0.3);
+  }
+}
+
+/* Tooltip (opcional) */
+.whatsapp-float::after {
+  content: "Fale conosco!";
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp-float:hover::after {
+  opacity: 1;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 25px;
+  }
+  
+  .whatsapp-float::after {
+    font-size: 12px;
+    padding: 6px 10px;
+    right: 60px;
+  }
 }
