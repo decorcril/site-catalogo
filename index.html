@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decorcril</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/images/background/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
@@ -303,200 +304,362 @@
                         <span class="discount-badge">-25%</span>
                     </div>
                 </div>
-                <div class="featured-image">
-                    <img src="assets/images/products/cilindros.png" alt="Cilindro de acrílico - detalhe do produto">
-                </div>
+
             </div>
         </div>
     </section>
+    <!--Related products section-->
     <section class="related-products" id="related-products">
         <div class="related-products__container">
             <h2 class="related-products__title">Você também pode gostar</h2>
             <p class="related-products__subtitle">Produtos selecionados especialmente para você</p>
 
             <div class="related-products__carousel">
-                <!-- Botões DENTRO do carrossel -->
                 <button class="carousel__btn carousel__btn--prev">
                     <i class="fas fa-chevron-left"></i>
                 </button>
 
-                <!-- TRACK como container principal do scroll -->
                 <div class="related-products__track">
                     <!-- Produto 1 -->
                     <div class="product__card" data-product="kit-mesa-oceano">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-25%</span>
+                        </div>
                         <div class="product__image">
                             <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
                         </div>
                         <div class="product__info">
                             <h3 class="product__name">Kit mesa oceano</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating__count">(42)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 149,90</span>
                                 <span class="price__original">R$ 199,90</span>
+                                <span class="price__installments">ou 6x de R$ 24,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Kit%20Mesa%20Oceano', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/kit-mesa-oceano'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Produto 2 -->
                     <div class="product__card" data-product="cilindro-acrilico">
+                        <div class="product__badges">
+                            <span class="badge badge--bestseller">Mais Vendido</span>
+                            <span class="badge badge--discount">-25%</span>
+                        </div>
                         <div class="product__image">
                             <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
                         </div>
                         <div class="product__info">
                             <h3 class="product__name">Trio de Cubos</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating__count">(127)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 149,90</span>
                                 <span class="price__original">R$ 199,90</span>
+                                <span class="price__installments">ou 6x de R$ 24,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/trio-cubos'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Produto 3 -->
                     <div class="product__card" data-product="carrinho">
+                        <div class="product__badges">
+                            <span class="badge badge--novelty">Novidade</span>
+                        </div>
                         <div class="product__image">
-                            <img src="assets/images/products/teste-luli.jpeg" alt="Cubo Sextavado">
+                            <img src="assets/images/products/cubo-sextavado-luli.jpeg" alt="Cubo Sextavado">
                         </div>
                         <div class="product__info">
                             <h3 class="product__name">Cubo sextavado Luli Reis</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating__count">(18)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Cubo%20Sextavado%20Luli%20Reis', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/cubo-sextavado-luli-reis'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Produto 4 -->
                     <div class="product__card" data-product="carrinho-acrilico-com-cuba">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
                             <img src="assets/images/products/carrinho-acrilico-com-cuba.webp"
                                 alt="Carrinho com cuba de gelo">
                         </div>
                         <div class="product__info">
                             <h3 class="product__name">Carrinho com Cuba de Gelo</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(56)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Carrinho%20com%20Cuba%20de%20Gelo', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/carrinho-cuba-gelo'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Produto 5 -->
                     <div class="product__card" data-product="mesa-borboleta-desmontavel-m2">
+                        <div class="product__badges">
+                            <span class="badge badge--novelty">Lançamento</span>
+                        </div>
                         <div class="product__image">
                             <img src="assets/images/products/mesa-borboleta-desmontavel-m2.png"
                                 alt="Mesa Borboleta Desmontavel">
                         </div>
                         <div class="product__info">
-                            <h3 class="product__name">Mesa Borboleta Desmontável M2<br>By: Andréia Sato<br>Pegue e Monte
-                            </h3>
+                            <h3 class="product__name">Mesa Borboleta Desmontável</h3>
+                            <p class="product__author">By: Andréia Sato</p>
+                            <div class="product__rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating__count">(31)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Borboleta%20Desmontável%20M2', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-borboleta-desmontavel'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Produto 6 -->
                     <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
                             <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
                         </div>
                         <div class="product__info">
                             <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(24)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product__card" data-product="trio-mesa-pegue-monte-cris-reis">
+                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
-                            <img src="assets/images/products/trio-mesa-pegue-monte-cris-reis.png"
-                                alt="Trio de Mesa pegue e monte">
+                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
                         </div>
                         <div class="product__info">
-                            <h3 class="product__name">Trio de Mesa Pegue e Monte - By: Cris Reis</h3>
+                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(24)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product__card" data-product="trio-cubos-espelhados">
+                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
-                            <img src="assets/images/products/trio-cubos-espelhados.png" alt="Trio cubos espelhado">
+                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
                         </div>
                         <div class="product__info">
-                            <h3 class="product__name">Trio de Cubos espelhados Moldura Preta com Espelho Prata</h3>
-                            <div class="product__price">
-                                <span class="price__current">R$ 1100,00</span>
-                                <span class="price__original">R$1200,00</span>
+                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(24)</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="trio-sextavados-transparente">
-                        <div class="product__image">
-                            <img src="assets/images/products/trio-sextavados-transparente.png"
-                                alt="Trio Sextavado Transparente">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Trio de Sextavados Transparente de 3mm</h3>
-                            <div class="product__price">
-                                <span class="price__current">R$ 340,00</span>
-                                <span class="price__original">R$ 345,90</span>
-                            </div>
-                            <button class="product__btn">Ver Produto</button>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="cubos">
-                        <div class="product__image">
-                            <img src="assets/images/products/cubos.png" alt="Cubos decorativos">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Cubos Decorativos</h3>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product__card" data-product="bandeja-gira-bolo">
+                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
-                            <img src="assets/images/products/bandeja-gira-bolo.png" alt="Bandeja Gira Bolo">
+                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
                         </div>
                         <div class="product__info">
-                            <h3 class="product__name">Bandeja Gira Bolo</h3>
+                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(24)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product__card" data-product="bandeja-gira-bolo">
+                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
+                        <div class="product__badges">
+                            <span class="badge badge--discount">-19%</span>
+                        </div>
                         <div class="product__image">
-                            <img src="assets/images/products/bandeja-gira-bolo.png" alt="Bandeja Gira Bolo">
+                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
                         </div>
                         <div class="product__info">
-                            <h3 class="product__name">Bandeja Gira Bolo</h3>
+                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
+                            <div class="product__rating">
+                                <div class="stars">★★★★☆</div>
+                                <span class="rating__count">(24)</span>
+                            </div>
                             <div class="product__price">
                                 <span class="price__current">R$ 129,90</span>
                                 <span class="price__original">R$ 159,90</span>
+                                <span class="price__installments">ou 5x de R$ 25,98</span>
                             </div>
-                            <button class="product__btn">Ver Produto</button>
+
+                            <div class="product__actions">
+                                <button class="product__btn product__btn--primary"
+                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Comprar agora
+                                </button>
+                                <button class="product__btn product__btn--secondary"
+                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
+                                    Ver detalhes
+                                </button>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
                 <button class="carousel__btn carousel__btn--next">
@@ -508,6 +671,11 @@
                 <a href="#all-products" class="related-products__btn">
                     <i class="fas fa-store"></i>
                     Ver Todos os Produtos
+                </a>
+                <a href="https://wa.me/5511978999091?text=Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20produtos"
+                    target="_blank" class="related-products__btn related-products__btn--whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Falar com vendedor
                 </a>
             </div>
         </div>
