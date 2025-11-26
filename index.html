@@ -305,386 +305,326 @@
             </div>
         </div>
     </section>
-    <!--Related products section-->
-    <section class="related-products" id="related-products">
-        <div class="related-products__container">
+       <!-- Related products section - VERSÃO MODERNA COM BOTÕES LATERAIS -->
+<!-- Related products section - NOVA VERSÃO -->
+<section class="related-products" id="related-products">
+    <div class="related-products__container">
+        <div class="related-products__header">
             <h2 class="related-products__title">Você também pode gostar</h2>
             <p class="related-products__subtitle">Produtos selecionados especialmente para você</p>
-
-            <div class="related-products__carousel">
-                <button class="carousel__btn carousel__btn--prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-
-                <div class="related-products__track">
-                    <!-- Produto 1 -->
-                    <div class="product__card" data-product="kit-mesa-oceano">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-25%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Kit mesa oceano</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★★</div>
-                                <span class="rating__count">(42)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 149,90</span>
-                                <span class="price__original">R$ 199,90</span>
-                                <span class="price__installments">ou 6x de R$ 24,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Kit%20Mesa%20Oceano', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/kit-mesa-oceano'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Produto 2 -->
-                    <div class="product__card" data-product="cilindro-acrilico">
-                        <div class="product__badges">
-                            <span class="badge badge--bestseller">Mais Vendido</span>
-                            <span class="badge badge--discount">-25%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Trio de Cubos</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★★</div>
-                                <span class="rating__count">(127)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 149,90</span>
-                                <span class="price__original">R$ 199,90</span>
-                                <span class="price__installments">ou 6x de R$ 24,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/trio-cubos'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Produto 3 -->
-                    <div class="product__card" data-product="carrinho">
-                        <div class="product__badges">
-                            <span class="badge badge--novelty">Novidade</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/cubo-sextavado-luli.jpeg" alt="Cubo Sextavado">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Cubo sextavado Luli Reis</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★★</div>
-                                <span class="rating__count">(18)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Cubo%20Sextavado%20Luli%20Reis', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/cubo-sextavado-luli-reis'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Produto 4 -->
-                    <div class="product__card" data-product="carrinho-acrilico-com-cuba">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/carrinho-acrilico-com-cuba.webp"
-                                alt="Carrinho com cuba de gelo">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Carrinho com Cuba de Gelo</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(56)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Carrinho%20com%20Cuba%20de%20Gelo', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/carrinho-cuba-gelo'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Produto 5 -->
-                    <div class="product__card" data-product="mesa-borboleta-desmontavel-m2">
-                        <div class="product__badges">
-                            <span class="badge badge--novelty">Lançamento</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-borboleta-desmontavel-m2.png"
-                                alt="Mesa Borboleta Desmontavel">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Borboleta Desmontável</h3>
-                            <p class="product__author">By: Andréia Sato</p>
-                            <div class="product__rating">
-                                <div class="stars">★★★★★</div>
-                                <span class="rating__count">(31)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Borboleta%20Desmontável%20M2', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-borboleta-desmontavel'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Produto 6 -->
-                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(24)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(24)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(24)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(24)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__card" data-product="mesa-sinuosa-compacta-6mm">
-                        <div class="product__badges">
-                            <span class="badge badge--discount">-19%</span>
-                        </div>
-                        <div class="product__image">
-                            <img src="assets/images/products/mesa-sinuosa-compacta-6mm.png" alt="Mesa Sinuosa">
-                        </div>
-                        <div class="product__info">
-                            <h3 class="product__name">Mesa Sinuosa Compacta 6MM</h3>
-                            <div class="product__rating">
-                                <div class="stars">★★★★☆</div>
-                                <span class="rating__count">(24)</span>
-                            </div>
-                            <div class="product__price">
-                                <span class="price__current">R$ 129,90</span>
-                                <span class="price__original">R$ 159,90</span>
-                                <span class="price__installments">ou 5x de R$ 25,98</span>
-                            </div>
-
-                            <div class="product__actions">
-                                <button class="product__btn product__btn--primary"
-                                    onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20a%20Mesa%20Sinuosa%20Compacta%206MM', '_blank')">
-                                    <i class="fab fa-whatsapp"></i>
-                                    Comprar agora
-                                </button>
-                                <button class="product__btn product__btn--secondary"
-                                    onclick="window.location.href='/produto/mesa-sinuosa-compacta'">
-                                    Ver detalhes
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="carousel__btn carousel__btn--next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-
-            <div class="related-products__cta">
-                <a href="#all-products" class="related-products__btn">
-                    <i class="fas fa-store"></i>
-                    Ver Todos os Produtos
-                </a>
-                <a href="https://wa.me/5511978999091?text=Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20produtos"
-                    target="_blank" class="related-products__btn related-products__btn--whatsapp">
-                    <i class="fab fa-whatsapp"></i>
-                    Falar com vendedor
-                </a>
-            </div>
         </div>
-    </section>
-    <a href="https://wa.me/5511978999091" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
 
-    <script src="js/search.js"></script>
-    <script src="js/carouselProducts.js"></script>
-    <script src="js/carouselMoreProducts.js"></script>
+        <div class="related-products__grid">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Kit mesa oceano</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(42)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Kit%20Mesa%20Oceano', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/kit-mesa-oceano'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+             <div class="product-card">
+                <div class="product-card__badges">
+                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                    <span class="product-badge product-badge--discount">-25%</span>
+                </div>
+                <div class="product-card__image">
+                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                </div>
+                <div class="product-card__content">
+                    <h3 class="product-card__name">Trio de Cubos</h3>
+                    <p class="product-card__author">By: Decorcril</p>
+                    <div class="product-card__rating">
+                        <div class="product-card__stars">★★★★★</div>
+                        <span class="product-card__rating-count">(127)</span>
+                    </div>
+                    <div class="product-card__price">
+                        <span class="product-card__original-price">R$ 199,90</span>
+                        <span class="product-card__current-price">R$ 149,90</span>
+                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <button class="product-card__btn product-card__btn--primary"
+                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                            Comprar agora
+                        </button>
+                        <button class="product-card__btn product-card__btn--secondary"
+                            onclick="window.location.href='/produto/trio-cubos'">
+                            Ver detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicione os outros produtos seguindo o mesmo padrão -->
+            
+        </div>
+
+        <!-- Navegação Desktop -->
+        <div class="related-products__nav">
+            <button class="related-products__nav-btn related-products__nav-btn--prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="related-products__nav-btn related-products__nav-btn--next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="related-products__cta">
+            <a href="#all-products" class="related-products__cta-btn">
+                <i class="fas fa-store"></i>
+                Ver Todos os Produtos
+            </a>
+            <a href="https://wa.me/5511978999091?text=Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20produtos"
+                target="_blank" class="related-products__cta-btn related-products__cta-btn--whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                Falar com vendedor
+            </a>
+        </div>
+    </div>
+</section>
+        <a href="https://wa.me/5511978999091" target="_blank" class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <script src="js/search.js"></script>
+        <script src="js/carouselProducts.js"></script>
+        <script src="js/carouselMoreProducts.js"></script>
 
 </body>
 
 </html>
+
+                    <!-- Adicione os outros produtos s

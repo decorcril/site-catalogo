@@ -1,246 +1,186 @@
-// Carousel para "Você também pode gostar" - SCROLL NATIVO
+// Carrossel para Produtos Relacionados - VERSÃO COMPATÍVEL
 document.addEventListener('DOMContentLoaded', function() {
-    const track = document.querySelector('.related-products__track');
-    const prevBtn = document.querySelector('.related-products .carousel__btn--prev');
-    const nextBtn = document.querySelector('.related-products .carousel__btn--next');
-    const markers = document.querySelectorAll('.scroll-marker');
+    const track = document.querySelector('.related-products__grid'); // SEU ELEMENTO
+    const prevBtn = document.querySelector('.related-products__nav-btn--prev'); // SEU BOTÃO
+    const nextBtn = document.querySelector('.related-products__nav-btn--next'); // SEU BOTÃO
     
-    if (!track || !prevBtn || !nextBtn) return;
+    // VERIFICAÇÃO CRÍTICA - se não encontrar, para aqui
+    if (!track) {
+        console.log('Elemento .related-products__grid não encontrado');
+        return;
+    }
+
+    console.log('Grid encontrado, cards:', track.children.length);
 
     let cardWidth = 0;
     let gap = 0;
     let scrollAmount = 0;
 
-  function calculateDimensions() {
-    if (!track.children.length) return;
-    
-    const firstCard = track.children[0];
-    cardWidth = firstCard.offsetWidth;
-    
-    const trackStyle = window.getComputedStyle(track);
-    gap = parseInt(trackStyle.gap) || 30;
-    
-    // Scroll de 4 cards por vez
-    scrollAmount = (cardWidth + gap) * 4;
-    
-    console.log('Scroll de 4 cards:', scrollAmount);
-}
-// Botão próximo - scroll exato
-nextBtn.addEventListener('click', function() {
-    if (this.disabled) return;
-    
-    track.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
-});
+    function calculateDimensions() {
+        if (!track.children.length) {
+            console.log('Nenhum card encontrado no grid');
+            return;
+        }
+        
+        const firstCard = track.children[0];
+        cardWidth = firstCard.offsetWidth;
+        
+        const trackStyle = window.getComputedStyle(track);
+        gap = parseInt(trackStyle.gap) || 30;
+        
+        // Scroll de 1 card por vez (mais seguro)
+        scrollAmount = (cardWidth + gap);
+        
+        console.log('Dimensões calculadas:', {
+            cardWidth: cardWidth,
+            gap: gap,
+            scrollAmount: scrollAmount,
+            totalCards: track.children.length
+        });
+    }
 
-// Botão anterior - scroll exato
-prevBtn.addEventListener('click', function() {
-    if (this.disabled) return;
-    
-    track.scrollBy({
-        left: -scrollAmount,
-        behavior: 'smooth'
-    });
-});
     function updateButtons() {
+        if (!prevBtn || !nextBtn) return;
+        
         const scrollLeft = track.scrollLeft;
         const maxScroll = track.scrollWidth - track.clientWidth;
         
         // Atualiza botão anterior
-        prevBtn.style.opacity = scrollLeft === 0 ? '0.4' : '1';
-        prevBtn.style.cursor = scrollLeft === 0 ? 'not-allowed' : 'pointer';
-        prevBtn.disabled = scrollLeft === 0;
+        prevBtn.style.opacity = scrollLeft <= 10 ? '0.4' : '1';
+        prevBtn.style.cursor = scrollLeft <= 10 ? 'not-allowed' : 'pointer';
+        prevBtn.disabled = scrollLeft <= 10;
         
         // Atualiza botão próximo
-        nextBtn.style.opacity = scrollLeft >= maxScroll - 5 ? '0.4' : '1'; // -5 para tolerância
-        nextBtn.style.cursor = scrollLeft >= maxScroll - 5 ? 'not-allowed' : 'pointer';
-        nextBtn.disabled = scrollLeft >= maxScroll - 5;
+        nextBtn.style.opacity = scrollLeft >= maxScroll - 10 ? '0.4' : '1';
+        nextBtn.style.cursor = scrollLeft >= maxScroll - 10 ? 'not-allowed' : 'pointer';
+        nextBtn.disabled = scrollLeft >= maxScroll - 10;
 
-        // Esconde botões se não for necessário
-        if (maxScroll <= 0) {
-            prevBtn.style.display = 'none';
-            nextBtn.style.display = 'none';
-        } else {
-            prevBtn.style.display = 'flex';
-            nextBtn.style.display = 'flex';
-        }
-    }
-
-    
-
-    function updateMarkers() {
-        if (!markers.length) return;
-        
-        const scrollLeft = track.scrollLeft;
-        const maxScroll = track.scrollWidth - track.clientWidth;
-        const progress = maxScroll > 0 ? scrollLeft / maxScroll : 0;
-        
-        // Atualiza marcadores baseado no progresso
-        markers.forEach((marker, index) => {
-            const markerProgress = index / (markers.length - 1);
-            const isActive = Math.abs(progress - markerProgress) < 0.2;
-            marker.classList.toggle('active', isActive);
+        console.log('Scroll position:', {
+            scrollLeft: scrollLeft,
+            maxScroll: maxScroll,
+            prevDisabled: prevBtn.disabled,
+            nextDisabled: nextBtn.disabled
         });
     }
 
-    // Event Listeners para botões
-    nextBtn.addEventListener('click', function() {
-        if (this.disabled) return;
-        
-        track.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
+    // Botão próximo
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+            if (this.disabled) return;
+            
+            const newPosition = Math.min(
+                track.scrollLeft + scrollAmount,
+                track.scrollWidth - track.clientWidth
+            );
+            
+            track.scrollTo({
+                left: newPosition,
+                behavior: 'smooth'
+            });
+            
+            console.log('Next clicked - scrolling to:', newPosition);
         });
-    });
+    } else {
+        console.log('Botão next não encontrado');
+    }
 
-    prevBtn.addEventListener('click', function() {
-        if (this.disabled) return;
-        
-        track.scrollBy({
-            left: -scrollAmount,
-            behavior: 'smooth'
+    // Botão anterior
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+            if (this.disabled) return;
+            
+            const newPosition = Math.max(track.scrollLeft - scrollAmount, 0);
+            
+            track.scrollTo({
+                left: newPosition,
+                behavior: 'smooth'
+            });
+            
+            console.log('Prev clicked - scrolling to:', newPosition);
         });
-    });
+    } else {
+        console.log('Botão prev não encontrado');
+    }
 
-    // Event Listeners para scroll
+    // Event listener para scroll
     track.addEventListener('scroll', function() {
         updateButtons();
-        updateMarkers();
     });
 
-    // Event Listeners para marcadores (opcional - navegação por clique)
-    markers.forEach((marker, index) => {
-        marker.addEventListener('click', function() {
-            const card = track.children[index];
-            if (card) {
-                card.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'nearest',
-                    inline: 'start'
-                });
-            }
-        });
-    });
-
-    // Keyboard navigation
-    track.addEventListener('keydown', function(e) {
-        if (e.key === 'ArrowLeft') {
-            e.preventDefault();
-            prevBtn.click();
-        } else if (e.key === 'ArrowRight') {
-            e.preventDefault();
-            nextBtn.click();
-        }
-    });
-
-    // Swipe para mobile
+    // Swipe para mobile (funciona mesmo em desktop)
     let startX = 0;
     let isDragging = false;
     
-    track.addEventListener('touchstart', function(e) {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
-
-    track.addEventListener('touchmove', function(e) {
-        if (!isDragging) return;
-        e.preventDefault();
-    });
-
-    track.addEventListener('touchend', function(e) {
-        if (!isDragging) return;
-        
-        const endX = e.changedTouches[0].clientX;
-        const diff = startX - endX;
-        const swipeThreshold = 50;
-
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                nextBtn.click(); // Swipe esquerda = próximo
-            } else {
-                prevBtn.click(); // Swipe direita = anterior
-            }
-        }
-        isDragging = false;
-    });
-
-    // Mouse drag para desktop
     track.addEventListener('mousedown', function(e) {
-        startX = e.clientX;
+        startX = e.pageX;
         isDragging = true;
         track.style.cursor = 'grabbing';
+        track.style.scrollBehavior = 'auto'; // Desativa smooth durante drag
+    });
+
+    track.addEventListener('touchstart', function(e) {
+        startX = e.touches[0].pageX;
+        isDragging = true;
+        track.style.scrollBehavior = 'auto';
     });
 
     document.addEventListener('mousemove', function(e) {
         if (!isDragging) return;
-        e.preventDefault();
+        
+        const x = e.pageX;
+        const walk = (x - startX) * 2;
+        track.scrollLeft = track.scrollLeft - walk;
+        startX = x;
     });
 
-    document.addEventListener('mouseup', function(e) {
+    track.addEventListener('touchmove', function(e) {
         if (!isDragging) return;
         
-        const endX = e.clientX;
-        const diff = startX - endX;
-        const swipeThreshold = 50;
+        const x = e.touches[0].pageX;
+        const walk = (x - startX) * 2;
+        track.scrollLeft = track.scrollLeft - walk;
+        startX = x;
+    });
 
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0) {
-                nextBtn.click();
-            } else {
-                prevBtn.click();
-            }
-        }
-        
+    document.addEventListener('mouseup', function() {
+        if (!isDragging) return;
         isDragging = false;
         track.style.cursor = 'grab';
+        track.style.scrollBehavior = 'smooth';
+        updateButtons();
+    });
+
+    track.addEventListener('touchend', function() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.scrollBehavior = 'smooth';
+        updateButtons();
     });
 
     // Inicialização
     function init() {
         calculateDimensions();
         updateButtons();
-        updateMarkers();
+        track.style.cursor = 'grab';
         
-        // Foca no primeiro elemento para navegação por teclado
-        track.setAttribute('tabindex', '0');
+        console.log('Carrossel inicializado com sucesso');
+        console.log('Todos os cards devem estar visíveis agora');
     }
 
     // Recalcula em redimensionamento
-    let resizeTimeout;
     window.addEventListener('resize', function() {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(() => {
+        setTimeout(() => {
             calculateDimensions();
             updateButtons();
-            updateMarkers();
         }, 250);
     });
 
-    // Recalcula quando as imagens carregarem
-    window.addEventListener('load', init);
-
-    // Inicializa
-    setTimeout(init, 100);
+    // Inicializa quando tudo estiver carregado
+    if (document.readyState === 'complete') {
+        setTimeout(init, 100);
+    } else {
+        window.addEventListener('load', function() {
+            setTimeout(init, 100);
+        });
+    }
 });
-
-
-
-// Adiciona este CSS via JavaScript para melhor experiência
-const style = document.createElement('style');
-style.textContent = `
-    .related-products__track {
-        cursor: grab;
-    }
-    
-    .related-products__track:active {
-        cursor: grabbing;
-    }
-    
-    .related-products__track:focus-visible {
-        outline: 2px solid #0058a3;
-        outline-offset: 2px;
-    }
-`;
-document.head.appendChild(style);
