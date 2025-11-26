@@ -1,0 +1,178 @@
+/* =====HERO SECTION===== */
+.hero {
+    background: #112170;
+    background: linear-gradient(to right, #556de6, #101f6b);
+    padding: 80px 0 0px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    gap: 60px;
+}
+
+.hero__content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero__title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.hero__description {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero__cta-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero__btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* =====BOTÕES HERO===== */
+.hero__btn--primary {
+    background: #ff0084;
+    color: white;
+    border: 2px solid #ff0084;
+}
+
+.hero__btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.15),
+        1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero__btn--secondary {
+    background: #25D366;
+    color: white;
+}
+
+.hero__btn--secondary:hover {
+    background: #25d366;
+    color: #fff;
+    border: #25d366;
+    transform: translateY(-2px);
+    transform: translateY(-2px);
+    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.15),
+        1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =====HERO IMAGE===== */
+.hero__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__mascote {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade */
+@media screen and (max-width: 968px) {
+    .hero {
+        padding: 80px 0 60px;
+    }
+
+    .hero__container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0 30px;
+        gap: 40px;
+    }
+
+    .hero__content {
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 80px 0 0px;
+    }
+
+    .hero__container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+    }
+
+    .hero__cta-buttons {
+        justify-content: center;
+    }
+
+    .hero__btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__title {
+        font-size: 1.8rem;
+    }
+
+    .hero__cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
