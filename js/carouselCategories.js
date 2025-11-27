@@ -1,4 +1,4 @@
-// Carousel Finito - VERSÃO OTIMIZADA PARA MOBILE
+// Carousel Finito - VERSÃO CORRIGIDA (ÚLTIMO CARD NÃO SOZINHO)
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.categories__track');
     const prevBtn = document.querySelector('.carousel__btn--prev');
@@ -29,23 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const totalCardWidth = cardWidth + gap;
         visibleCards = Math.floor(containerWidth / totalCardWidth);
         
-        // NOVO: No mobile, garante pelo menos 1 card de "sobra" para navegação
-        if (isMobile && visibleCards >= cards.length) {
-            visibleCards = Math.max(1, cards.length - 1);
-        }
-        
-        // Calcula posição máxima
+        // CORREÇÃO: Garante que o último card nunca fique sozinho
+        // Se temos espaço para X cards, paramos na posição (total - X)
+        // Isso faz com que na última posição ainda tenhamos X cards visíveis
         maxPosition = Math.max(0, cards.length - visibleCards);
         
-        // DEBUG TEMPORÁRIO - Remove depois de testar
+        // DEBUG
         console.log('Dimensões calculadas:', { 
             cardWidth, 
             gap, 
             containerWidth, 
-            totalCardWidth, 
             visibleCards, 
             maxPosition,
-            isMobile,
             totalCards: cards.length 
         });
     }
@@ -68,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nextBtn.style.cursor = isAtEnd ? 'not-allowed' : 'pointer';
         nextBtn.disabled = isAtEnd;
 
-        // NOVO: Esconde botões completamente se não forem necessários
+        // Esconde botões completamente se não forem necessários
         if (maxPosition === 0) {
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
@@ -76,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function() {
             prevBtn.style.display = 'flex';
             nextBtn.style.display = 'flex';
         }
+        
+        console.log('Posição atual:', currentPosition, 'de', maxPosition);
     }
 
     function handleResize() {
@@ -85,12 +82,12 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(() => {
             calculateDimensions();
             
-            // NOVO: Reset mais inteligente da posição
+            // Reset mais inteligente da posição
             if (currentPosition > maxPosition) {
                 currentPosition = Math.max(0, maxPosition);
             }
             
-            // NOVO: Se todos os cards cabem na tela, reseta para início
+            // Se todos os cards cabem na tela, reseta para início
             if (maxPosition === 0) {
                 currentPosition = 0;
             }
@@ -193,6 +190,6 @@ document.addEventListener('DOMContentLoaded', function() {
         resizeTimeout = setTimeout(handleResize, 250);
     });
 
-    // NOVO: Recalcula quando as imagens carregarem (evita problemas com loading)
+    // Recalcula quando as imagens carregarem (evita problemas com loading)
     window.addEventListener('load', handleResize);
 });

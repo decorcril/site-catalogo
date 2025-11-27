@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
 }
 
-
 .categories__container {
     max-width: 100%;
     margin: 0 auto;
@@ -18,24 +17,17 @@
 
 .categories__title {
     font-size: 1.5rem;
-    /* ← Menor e mais discreto */
     color: #333;
-    /* ← Cor mais neutra */
     margin-bottom: 6px;
     font-weight: 600;
-    /* ← Peso normal, não tão bold */
     text-transform: none;
-    /* ← Sem uppercase */
     letter-spacing: 0;
 }
 
 .categories__subtitle {
     font-size: 0.9rem;
-    /* ← Menor */
     color: #666;
-    /* ← Cinza mais claro */
     margin-bottom: 30px;
-    /* ← Menos espaço */
     font-weight: 400;
     padding: 0 20px;
 }
@@ -46,23 +38,20 @@
     margin: 0 auto 40px;
     max-width: 100%;
     overflow: hidden;
-    /*background: white;*/
     padding: 25px 0;
 }
 
-/* TRACK Centraliza dinamicamente */
+/* TRACK - Alinhamento correto */
 .categories__track {
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: flex-start; /* ← Mudado de center */
+    gap: 40px;
     transition: transform 0.4s ease;
-    padding: 0 10px 0 90px;
+    padding: 0 20px; /* ← Simétrico */
     will-change: transform;
-    width: fit-content;
-    margin: 0 auto;
 }
 
-/* Cards ajustados para cálculo dinâmico */
+/* Cards */
 .category__card {
     flex: 0 0 180px;
     background: rgba(255, 255, 255, 0.7);
@@ -80,14 +69,9 @@
     backdrop-filter: blur(5px);
 }
 
+/* ✅ HOVER corrigido - só uma vez */
 .category__card:hover {
     background: rgba(255, 255, 255, 0.95);
-    border-color: #0058a3;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 88, 163, 0.2);
-}
-
-.category__card:hover {
     border-color: #0058a3;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 88, 163, 0.2);
@@ -144,7 +128,6 @@
     right: 20px;
 }
 
-/* Esconder botões quando não necessário */
 .carousel__btn.hidden {
     display: none;
 }
@@ -172,23 +155,18 @@
     border: 1px solid #0058a3;
 }
 
+/* ✅ HOVER corrigido - só um transform */
 .categories__btn:hover {
-    transform: translateY(-1px);
     transform: translateY(-2px);
-    transform: translateY(-2px);
-    box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.15),
-        1px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15),
+        0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== RESPONSIVIDADE ===== */
 @media screen and (max-width: 1200px) {
     .categories__track {
-        padding: 0 10px 0 70px;
-        gap: 20px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 70px;
+        padding: 0 15px;
+        gap: 25px;
     }
 
     .category__card {
@@ -199,11 +177,7 @@
 
 @media screen and (max-width: 968px) {
     .categories__track {
-        padding: 0 10px 0 60px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 60px;
+        padding: 0 15px;
     }
 
     .category__card {
@@ -226,12 +200,8 @@
     }
 
     .categories__track {
-        padding: 0 10px 0 50px;
+        padding: 0 10px;
         gap: 15px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 50px;
     }
 
     .category__card {
@@ -252,14 +222,8 @@
 
 @media screen and (max-width: 480px) {
     .categories__track {
-        padding: 0 10px 0 40px;
+        padding: 0 10px;
         gap: 12px;
-        width: max-content;
-        margin: 0 auto;
-    }
-
-    .categories__track::after {
-        flex: 0 0 40px;
     }
 
     .category__card {
@@ -284,23 +248,18 @@
     }
 
     .carousel__btn--prev {
-        left: 20px;
+        left: 10px;
     }
 
     .carousel__btn--next {
-        right: 0px;
+        right: 10px;
     }
 }
 
-/* Mobile muito pequeno */
 @media screen and (max-width: 360px) {
     .categories__track {
-        padding: 0 8px 0 35px;
+        padding: 0 8px;
         gap: 10px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 35px;
     }
 
     .category__card {
@@ -321,12 +280,8 @@
 /* Mobile Landscape */
 @media screen and (max-width: 968px) and (orientation: landscape) {
     .categories__track {
-        padding: 0 10px 0 60px;
+        padding: 0 45px;
         gap: 15px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 60px;
     }
 
     .category__card {
@@ -346,25 +301,11 @@
         width: 35px;
         height: 35px;
     }
-
-    .carousel__btn--prev {
-        left: 10px;
-    }
-
-    .carousel__btn--next {
-        right: 10px;
-    }
 }
 
-/* Mobile Landscape Pequeno */
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .categories__track {
-        padding: 0 5px 0 5px;
         gap: 12px;
-    }
-
-    .categories__track::after {
-        flex: 0 0 50px;
     }
 
     .category__card {

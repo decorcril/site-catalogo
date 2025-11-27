@@ -97,7 +97,7 @@
                 </div>
             </li>
 
-            <li><a href="#about">Sobre</a></li>
+            <li><a href="#about">Sobre nós</a></li>
             <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
         </ul>
         <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -256,6 +256,7 @@
                         </div>
                         <h3 class="category__name">Banheiro</h3>
                     </div>
+
                 </div>
 
                 <button class="carousel__btn carousel__btn--next">
@@ -305,326 +306,481 @@
             </div>
         </div>
     </section>
-       <!-- Related products section - VERSÃO MODERNA COM BOTÕES LATERAIS -->
-<!-- Related products section - NOVA VERSÃO -->
-<section class="related-products" id="related-products">
-    <div class="related-products__container">
-        <div class="related-products__header">
-            <h2 class="related-products__title">Você também pode gostar</h2>
-            <p class="related-products__subtitle">Produtos selecionados especialmente para você</p>
+    <!-- Related products section-->
+    <section class="related-products" id="related-products">
+        <div class="related-products__container">
+            <div class="related-products__header">
+                <h2 class="related-products__title">Você também pode gostar</h2>
+                <p class="related-products__subtitle">Produtos selecionados especialmente para você</p>
+            </div>
+
+            <div class="related-products__grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Kit mesa oceano</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(42)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Kit%20Mesa%20Oceano', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/kit-mesa-oceano'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-card__badges">
+                        <span class="product-badge product-badge--bestseller">Mais Vendido</span>
+                        <span class="product-badge product-badge--discount">-25%</span>
+                    </div>
+                    <div class="product-card__image">
+                        <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Trio de Cubos</h3>
+                        <p class="product-card__author">By: Decorcril</p>
+                        <div class="product-card__rating">
+                            <div class="product-card__stars">★★★★★</div>
+                            <span class="product-card__rating-count">(127)</span>
+                        </div>
+                        <div class="product-card__price">
+                            <span class="product-card__original-price">R$ 199,90</span>
+                            <span class="product-card__current-price">R$ 149,90</span>
+                            <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                        </div>
+                        <div class="product-card__actions">
+                            <button class="product-card__btn product-card__btn--primary"
+                                onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
+                                <i class="fab fa-whatsapp"></i>
+                                Comprar agora
+                            </button>
+                            <button class="product-card__btn product-card__btn--secondary"
+                                onclick="window.location.href='/produto/trio-cubos'">
+                                Ver detalhes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adicione os outros produtos seguindo o mesmo padrão -->
+
+            </div>
+
+            <!-- Navegação Desktop -->
+            <div class="related-products__nav">
+                <button class="related-products__nav-btn related-products__nav-btn--prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="related-products__nav-btn related-products__nav-btn--next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="related-products__cta">
+                <a href="#all-products" class="related-products__cta-btn">
+                    <i class="fas fa-store"></i>
+                    Ver Todos os Produtos
+                </a>
+                <a href="https://wa.me/5511978999091?text=Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20produtos"
+                    target="_blank" class="related-products__cta-btn related-products__cta-btn--whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Falar com vendedor
+                </a>
+            </div>
         </div>
-
-        <div class="related-products__grid">
-            <!-- Produto 1 -->
-            <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/kit-mesa-oceano.jpg" alt="Kit Mesa Oceano">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Kit mesa oceano</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(42)</span>
-                    </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
-                    </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Kit%20Mesa%20Oceano', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/kit-mesa-oceano'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
+    </section>
+    <!--Ideias Section -->
+    <section class="inspiration" id="inspiration">
+        <div class="inspiration__container">
+            <div class="inspiration__header">
+                <h2 class="inspiration__title">Dicas & Ideias</h2>
+                <p class="inspiration__subtitle">Inspiração para transformar seus eventos com acrílico</p>
             </div>
 
-            <!-- Produto 2 -->
-            <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
+            <div class="inspiration__grid">
+                <!-- Card 1 -->
+                <article class="inspiration__card">
+                    <div class="inspiration__image">
+                        <img src="/assets/images/decoration/festa.jpeg" alt="Decoração de festa com acrílico">
+                        <div class="inspiration__badge">Festa</div>
                     </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    <div class="inspiration__content">
+                        <h3 class="inspiration__card-title">Mesas de Doces Elegantes</h3>
+                        <p class="inspiration__card-description">Como criar mesas de doces sofisticadas usando suportes
+                            e bandejas de acrílico transparente.</p>
+                        <div class="inspiration__meta">
+                            <span class="inspiration__read-time">3 min de leitura</span>
+                            <a href="#" class="inspiration__link">Ver ideia</a>
+                        </div>
                     </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
+                <!-- Card 2 -->
+                <article class="inspiration__card">
+                    <div class="inspiration__image">
+                        <img src="assets/images/decoration/buffet.jpeg" alt="Buffet com decoração em acrílico">
+                        <div class="inspiration__badge">Buffet</div>
                     </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    <div class="inspiration__content">
+                        <h3 class="inspiration__card-title">Decoração de Buffet Moderno</h3>
+                        <p class="inspiration__card-description">Ideias inovadoras para usar peças em acrílico na
+                            decoração do seu Buffet.</p>
+                        <div class="inspiration__meta">
+                            <span class="inspiration__read-time">5 min de leitura</span>
+                            <a href="#" class="inspiration__link">Ver ideia</a>
+                        </div>
                     </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
+                <!-- Card 3 -->
+                <article class="inspiration__card">
+                    <div class="inspiration__image">
+                        <img src="/assets/images/decoration/corporativo.jpeg" alt="Evento corporativo">
+                        <div class="inspiration__badge">Corporativo</div>
                     </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
+                    <div class="inspiration__content">
+                        <h3 class="inspiration__card-title">Eventos Corporativos</h3>
+                        <p class="inspiration__card-description">Dicas para criar ambientes profissionais e elegantes
+                            com sinalização e displays em acrílico.</p>
+                        <div class="inspiration__meta">
+                            <span class="inspiration__read-time">4 min de leitura</span>
+                            <a href="#" class="inspiration__link">Ver ideia</a>
+                        </div>
                     </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
+                </article>
 
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
-                    </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
-                    </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
 
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
-                    </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
-                    </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
 
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
-                    </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
-                    </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
             </div>
-
-             <div class="product-card">
-                <div class="product-card__badges">
-                    <span class="product-badge product-badge--bestseller">Mais Vendido</span>
-                    <span class="product-badge product-badge--discount">-25%</span>
-                </div>
-                <div class="product-card__image">
-                    <img src="assets/images/products/trio-cubos.png" alt="Trio de Cubos">
-                </div>
-                <div class="product-card__content">
-                    <h3 class="product-card__name">Trio de Cubos</h3>
-                    <p class="product-card__author">By: Decorcril</p>
-                    <div class="product-card__rating">
-                        <div class="product-card__stars">★★★★★</div>
-                        <span class="product-card__rating-count">(127)</span>
-                    </div>
-                    <div class="product-card__price">
-                        <span class="product-card__original-price">R$ 199,90</span>
-                        <span class="product-card__current-price">R$ 149,90</span>
-                        <span class="product-card__installments">ou 6x de R$ 24,98</span>
-                    </div>
-                    <div class="product-card__actions">
-                        <button class="product-card__btn product-card__btn--primary"
-                            onclick="window.open('https://wa.me/5511978999091?text=Gostaria%20de%20comprar%20o%20Trio%20de%20Cubos', '_blank')">
-                            <i class="fab fa-whatsapp"></i>
-                            Comprar agora
-                        </button>
-                        <button class="product-card__btn product-card__btn--secondary"
-                            onclick="window.location.href='/produto/trio-cubos'">
-                            Ver detalhes
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Adicione os outros produtos seguindo o mesmo padrão -->
-            
         </div>
+    </section>
+    <!--Footer section-->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="/assets/images/background/logo.png" alt="Logo Decorcril" class="footer__logo-img">
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-text">Siga-nos nas redes sociais</p>
+                    <div class="footer__social-icons">
+                        <a href="https://www.instagram.com/acrilicosdecorcril/" target="_blank"
+                            class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/acrilicosdecorcril/" target="_blank"
+                            class="footer__social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/5511978999091" class="footer__social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Navegação Desktop -->
-        <div class="related-products__nav">
-            <button class="related-products__nav-btn related-products__nav-btn--prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="related-products__nav-btn related-products__nav-btn--next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+            <div class="footer__middle">
+                <div class="footer__column">
+                    <h4 class="footer__title">Produtos</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Para Festas e Eventos</a></li>
+                        <li><a href="#" class="footer__link">Para Casamentos</a></li>
+                        <li><a href="#" class="footer__link">Para Empresas</a></li>
+                        <li><a href="#" class="footer__link">Personalizados</a></li>
+                        <li><a href="#" class="footer__link">Todos os Produtos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Serviços</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Orçamento Online</a></li>
+                        <li><a href="#" class="footer__link">Personalização</a></li>
+                        <li><a href="#" class="footer__link">Entrega</a></li>
+                        <li><a href="#" class="footer__link">Consultoria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Ajuda</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Sobre nós</a></li>
+                        <li><a href="#" class="footer__link">Dúvidas Frequentes</a></li>
+                        <li><a href="#" class="footer__link">Trocas e Devoluções</a></li>
+                        <li><a href="#" class="footer__link">Formas de Pagamento</a></li>
+                        <li><a href="#" class="footer__link">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Contato</h4>
+                    <ul class="footer__list">
+                        <li class="footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 97899-9091</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@decorcril.com</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Suzano, SP</span>
+                        </li>
+                        <li class="footer__contact-item footer__contact-item--schedule">
+                            <i class="fas fa-clock"></i>
+                            <div class="footer__schedule">
+                                <span>Seg - Qui: 8h às 18h</span>
+                                <span>Sex: 8h às 17h</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">© 2025 Decorcril. Todos os direitos reservados.</p>
+                    <p class="footer__copyright-subtext">Produtos em acrílico para decoração de eventos</p>
+                </div>
+            </div>
         </div>
+    </footer>
+    <a href="https://wa.me/5511978999091" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-        <div class="related-products__cta">
-            <a href="#all-products" class="related-products__cta-btn">
-                <i class="fas fa-store"></i>
-                Ver Todos os Produtos
-            </a>
-            <a href="https://wa.me/5511978999091?text=Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20produtos"
-                target="_blank" class="related-products__cta-btn related-products__cta-btn--whatsapp">
-                <i class="fab fa-whatsapp"></i>
-                Falar com vendedor
-            </a>
-        </div>
-    </div>
-</section>
-        <a href="https://wa.me/5511978999091" target="_blank" class="whatsapp-float">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+    <script src="js/search.js"></script>
+    <script src="js/carouselCategories.js"></script>
+    <script src="js/carouselRelatedProducts.js"></script>
 
-        <script src="js/search.js"></script>
-        <script src="js/carouselProducts.js"></script>
-        <script src="js/carouselMoreProducts.js"></script>
 
 </body>
 
 </html>
-
-                    <!-- Adicione os outros produtos s

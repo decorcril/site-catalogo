@@ -6,7 +6,7 @@
 
 /* Container relativo para posicionamento absoluto dos botões */
 .related-products__container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 0 20px;
     position: relative; /* Importante para os botões absolutos */
