@@ -1,4 +1,4 @@
-// Carousel Finito - COM MOMENTUM (FLING)
+// Carousel Finito - VERSÃO CORRIGIDA (ÚLTIMO CARD NÃO SOZINHO)
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.categories__track');
     const prevBtn = document.querySelector('.carousel__btn--prev');
@@ -10,51 +10,48 @@ document.addEventListener('DOMContentLoaded', function() {
     let gap = 0;
     let visibleCards = 0;
     let maxPosition = 0;
-    
-    // Variáveis para momentum
-    let startX = 0;
-    let currentX = 0;
-    let isDragging = false;
-    let velocity = 0;
-    let lastX = 0;
-    let lastTime = 0;
-    let animationFrame = null;
-
-    track.style.transition = 'transform 0.2s ease';
+    let isMobile = window.innerWidth <= 768;
 
     function calculateDimensions() {
         if (cards.length === 0) return;
         
+        // Pega dimensões reais do primeiro card
         const firstCard = cards[0];
+        const cardStyle = window.getComputedStyle(firstCard);
         cardWidth = firstCard.offsetWidth;
         
+        // Pega o gap real
         const trackStyle = window.getComputedStyle(track);
         gap = parseInt(trackStyle.gap) || 25;
         
+        // Calcula quantos cards são visíveis
         const containerWidth = track.parentElement.offsetWidth;
         const totalCardWidth = cardWidth + gap;
         visibleCards = Math.floor(containerWidth / totalCardWidth);
         
+        // CORREÇÃO: Garante que o último card nunca fique sozinho
+        // Se temos espaço para X cards, paramos na posição (total - X)
+        // Isso faz com que na última posição ainda tenhamos X cards visíveis
         maxPosition = Math.max(0, cards.length - visibleCards);
+        
+        // DEBUG
+        console.log('Dimensões calculadas:', { 
+            cardWidth, 
+            gap, 
+            containerWidth, 
+            visibleCards, 
+            maxPosition,
+            totalCards: cards.length 
+        });
     }
 
-    function updateCarousel(instant = false) {
+    function updateCarousel() {
         if (cards.length === 0) return;
         
         const moveDistance = currentPosition * (cardWidth + gap);
+        track.style.transform = `translateX(-${moveDistance}px)`;
         
-        if (instant) {
-            track.style.transition = 'none';
-            track.style.transform = `translateX(-${moveDistance}px)`;
-            // Restaura transição após um frame
-            requestAnimationFrame(() => {
-                track.style.transition = 'transform 0.2s ease';
-            });
-        } else {
-            track.style.transform = `translateX(-${moveDistance}px)`;
-        }
-        
-        // Atualiza botões
+        // Desabilita botões quando chega nos extremos
         const isAtStart = currentPosition === 0;
         const isAtEnd = currentPosition >= maxPosition;
         
@@ -66,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nextBtn.style.cursor = isAtEnd ? 'not-allowed' : 'pointer';
         nextBtn.disabled = isAtEnd;
 
+        // Esconde botões completamente se não forem necessários
         if (maxPosition === 0) {
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
@@ -73,190 +71,33 @@ document.addEventListener('DOMContentLoaded', function() {
             prevBtn.style.display = 'flex';
             nextBtn.style.display = 'flex';
         }
+        
+        console.log('Posição atual:', currentPosition, 'de', maxPosition);
     }
 
-    function calculateVelocity(currentX, currentTime) {
-        const deltaX = currentX - lastX;
-        const deltaTime = currentTime - lastTime;
+    function handleResize() {
+        isMobile = window.innerWidth <= 768;
         
-        if (deltaTime > 0) {
-            velocity = deltaX / deltaTime;
-        }
-        
-        lastX = currentX;
-        lastTime = currentTime;
-    }
-
-    function applyMomentum() {
-        if (Math.abs(velocity) < 0.1) {
-            // Para a animação quando a velocidade é muito baixa
-            cancelAnimationFrame(animationFrame);
-            snapToNearestCard();
-            return;
-        }
-
-        // Aplica a velocidade (reduzida por fricção)
-        const friction = 0.92;
-        velocity *= friction;
-        
-        // Converte velocidade para movimento
-        const movement = velocity * 0.1;
-        const moveDistance = (currentPosition * (cardWidth + gap)) + movement;
-        
-        // Calcula nova posição
-        let newPosition = moveDistance / (cardWidth + gap);
-        newPosition = Math.max(0, Math.min(newPosition, maxPosition));
-        
-        // Atualiza visualmente (sem transição para movimento suave)
-        track.style.transition = 'none';
-        track.style.transform = `translateX(-${newPosition * (cardWidth + gap)}px)`;
-        
-        // Continua a animação
-        animationFrame = requestAnimationFrame(applyMomentum);
-        
-        // Quando a animação terminar, faz snap para o card mais próximo
-        if (Math.abs(velocity) < 0.5) {
-            cancelAnimationFrame(animationFrame);
-            currentPosition = Math.round(newPosition);
-            snapToNearestCard();
-        }
-    }
-
-    function snapToNearestCard() {
-        // Faz snap para o card mais próximo
-        const currentMove = parseFloat(track.style.transform.replace('translateX(-', '').replace('px)', '') || '0');
-        const currentPos = currentMove / (cardWidth + gap);
-        currentPosition = Math.round(currentPos);
-        
-        // Limita aos limites
-        currentPosition = Math.max(0, Math.min(currentPosition, maxPosition));
-        
-        // Atualiza com transição suave
-        track.style.transition = 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-        updateCarousel();
-    }
-
-    // Event Listeners para touch
-    track.addEventListener('touchstart', function(e) {
-        if (maxPosition === 0) return;
-        
-        cancelAnimationFrame(animationFrame);
-        startX = e.touches[0].clientX;
-        currentX = startX;
-        lastX = startX;
-        lastTime = performance.now();
-        isDragging = true;
-        velocity = 0;
-        
-        track.style.transition = 'none';
-        track.style.cursor = 'grabbing';
-    });
-
-    track.addEventListener('touchmove', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        e.preventDefault();
-        
-        currentX = e.touches[0].clientX;
-        const currentTime = performance.now();
-        
-        // Calcula velocidade
-        calculateVelocity(currentX, currentTime);
-        
-        // Move o track em tempo real
-        const diff = startX - currentX;
-        const moveDistance = (currentPosition * (cardWidth + gap)) + diff;
-        const maxMove = maxPosition * (cardWidth + gap);
-        
-        const limitedMove = Math.max(0, Math.min(moveDistance, maxMove));
-        track.style.transform = `translateX(-${limitedMove}px)`;
-    });
-
-    track.addEventListener('touchend', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        
-        isDragging = false;
-        track.style.cursor = 'grab';
-        
-        // Se a velocidade for alta o suficiente, aplica momentum
-        if (Math.abs(velocity) > 2) {
-            applyMomentum();
-        } else {
-            // Senão, faz snap normal
-            const endX = e.changedTouches[0].clientX;
-            const diff = startX - endX;
-            const swipeThreshold = 30;
-
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0 && currentPosition < maxPosition) {
-                    currentPosition++;
-                } else if (diff < 0 && currentPosition > 0) {
-                    currentPosition--;
-                }
+        // Pequeno delay para garantir que o CSS foi aplicado
+        setTimeout(() => {
+            calculateDimensions();
+            
+            // Reset mais inteligente da posição
+            if (currentPosition > maxPosition) {
+                currentPosition = Math.max(0, maxPosition);
             }
-            snapToNearestCard();
-        }
-    });
-
-    // Event Listeners para mouse
-    track.addEventListener('mousedown', function(e) {
-        if (maxPosition === 0) return;
-        
-        cancelAnimationFrame(animationFrame);
-        startX = e.clientX;
-        currentX = startX;
-        lastX = startX;
-        lastTime = performance.now();
-        isDragging = true;
-        velocity = 0;
-        
-        track.style.transition = 'none';
-        track.style.cursor = 'grabbing';
-    });
-
-    document.addEventListener('mousemove', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        e.preventDefault();
-        
-        currentX = e.clientX;
-        const currentTime = performance.now();
-        
-        calculateVelocity(currentX, currentTime);
-        
-        const diff = startX - currentX;
-        const moveDistance = (currentPosition * (cardWidth + gap)) + diff;
-        const maxMove = maxPosition * (cardWidth + gap);
-        
-        const limitedMove = Math.max(0, Math.min(moveDistance, maxMove));
-        track.style.transform = `translateX(-${limitedMove}px)`;
-    });
-
-    document.addEventListener('mouseup', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        
-        isDragging = false;
-        track.style.cursor = 'grab';
-        
-        if (Math.abs(velocity) > 2) {
-            applyMomentum();
-        } else {
-            const endX = e.clientX;
-            const diff = startX - endX;
-            const swipeThreshold = 30;
-
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0 && currentPosition < maxPosition) {
-                    currentPosition++;
-                } else if (diff < 0 && currentPosition > 0) {
-                    currentPosition--;
-                }
+            
+            // Se todos os cards cabem na tela, reseta para início
+            if (maxPosition === 0) {
+                currentPosition = 0;
             }
-            snapToNearestCard();
-        }
-    });
+            
+            updateCarousel();
+        }, 150);
+    }
 
-    // Botões normais
+    // Event Listeners
     nextBtn.addEventListener('click', function() {
-        cancelAnimationFrame(animationFrame);
         if (currentPosition < maxPosition) {
             currentPosition++;
             updateCarousel();
@@ -264,38 +105,91 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     prevBtn.addEventListener('click', function() {
-        cancelAnimationFrame(animationFrame);
         if (currentPosition > 0) {
             currentPosition--;
             updateCarousel();
         }
     });
 
-    function handleResize() {
-        setTimeout(() => {
-            calculateDimensions();
-            
-            if (currentPosition > maxPosition) {
-                currentPosition = Math.max(0, maxPosition);
+    // Swipe para mobile - MELHORADO
+    let startX = 0;
+    let isDragging = false;
+    
+    track.addEventListener('touchstart', function(e) {
+        if (maxPosition === 0) return; // Não faz swipe se não precisa
+        startX = e.touches[0].clientX;
+        isDragging = true;
+        track.style.cursor = 'grabbing';
+    });
+
+    track.addEventListener('touchmove', function(e) {
+        if (!isDragging || maxPosition === 0) return;
+        e.preventDefault();
+    });
+
+    track.addEventListener('touchend', function(e) {
+        if (!isDragging || maxPosition === 0) return;
+        
+        const endX = e.changedTouches[0].clientX;
+        const diff = startX - endX;
+        const swipeThreshold = 50;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0 && currentPosition < maxPosition) {
+                currentPosition++; // Swipe para esquerda
+            } else if (diff < 0 && currentPosition > 0) {
+                currentPosition--; // Swipe para direita
             }
-            
-            if (maxPosition === 0) {
-                currentPosition = 0;
+            updateCarousel();
+        }
+        isDragging = false;
+        track.style.cursor = 'grab';
+    });
+
+    // Mouse drag para desktop
+    track.addEventListener('mousedown', function(e) {
+        if (maxPosition === 0) return;
+        startX = e.clientX;
+        isDragging = true;
+        track.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', function(e) {
+        if (!isDragging || maxPosition === 0) return;
+        e.preventDefault();
+    });
+
+    document.addEventListener('mouseup', function(e) {
+        if (!isDragging || maxPosition === 0) return;
+        
+        const endX = e.clientX;
+        const diff = startX - endX;
+        const swipeThreshold = 50;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0 && currentPosition < maxPosition) {
+                currentPosition++; // Drag para esquerda
+            } else if (diff < 0 && currentPosition > 0) {
+                currentPosition--; // Drag para direita
             }
-            
-            updateCarousel(true);
-        }, 50);
-    }
+            updateCarousel();
+        }
+        
+        isDragging = false;
+        track.style.cursor = 'grab';
+    });
 
     // Inicialização
     calculateDimensions();
     updateCarousel();
     
+    // Recalcula em redimensionamento - OTIMIZADO
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(handleResize, 80);
+        resizeTimeout = setTimeout(handleResize, 250);
     });
 
+    // Recalcula quando as imagens carregarem (evita problemas com loading)
     window.addEventListener('load', handleResize);
 });
