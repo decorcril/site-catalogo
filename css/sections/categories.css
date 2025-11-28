@@ -222,12 +222,12 @@
 
 @media screen and (max-width: 480px) {
     .categories__track {
-        padding: 0 10px;
-        gap: 12px;
+        padding: 0 30px;
+        gap: 25px;
     }
 
     .category__card {
-        flex: 0 0 120px;
+        flex: 0 0 142px;
         min-height: 110px;
         padding: 12px 8px;
     }
@@ -277,6 +277,29 @@
     }
 }
 
+@media only screen and (width: 375px) {
+    /* Seus estilos específicos para o iPhone SE (2ª e 3ª Geração) aqui */
+    .categories__track {
+        padding: 0 10px; /* Exemplo de ajuste */
+        gap: 12px;      /* Exemplo de ajuste */
+    }
+
+    .category__card {
+        flex: 0 0 108px; /* Exemplo de ajuste */
+        min-height: 110px;
+        padding: 12px 8px;
+    }
+
+    .category__icon {
+        font-size: 1.3rem; /* Exemplo de ajuste */
+    }
+
+    .category__name {
+        font-size: 0.7rem; /* Exemplo de ajuste */
+    }
+}
+
+
 /* Mobile Landscape */
 @media screen and (max-width: 968px) and (orientation: landscape) {
     .categories__track {
@@ -285,7 +308,7 @@
     }
 
     .category__card {
-        flex: 0 0 140px;
+        flex: 0 0 123px;
         min-height: 110px;
     }
 
@@ -294,7 +317,7 @@
     }
 
     .category__name {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .carousel__btn {
@@ -309,7 +332,7 @@
     }
 
     .category__card {
-        flex: 0 0 120px;
+        flex: 0 0 110px;
         min-height: 100px;
         padding: 10px 6px;
     }

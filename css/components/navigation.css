@@ -45,7 +45,7 @@ a {
 
 .nav .nav-links a {
     transition: all 0.2s linear;
-    font-weight: 500;
+    font-weight: 1rem;
     padding: 8px 12px;
     border-radius: 4px;
 }
@@ -344,7 +344,7 @@ a {
     .nav .nav-links a {
         color: #112170;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 1rem;
         padding: 10px 20px;
     }
 
@@ -392,7 +392,7 @@ a {
 
     .nav .navOpenBtn {
         color: #fff;
-        font-size: 18px;
+        font-size: 1rem;
         cursor: pointer;
     }
 
@@ -401,7 +401,7 @@ a {
         top: 12px;
         right: 12px;
         color: #000000;
-        font-size: 18px;
+        font-size: 1rem;
         cursor: pointer;
     }
 

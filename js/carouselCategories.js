@@ -1,4 +1,4 @@
-// Carousel Finito - VERSÃO CORRIGIDA (ÚLTIMO CARD NÃO SOZINHO)
+// Carousel Finito - SEM INDICADORES (BOTÕES ESCONDIDOS EM MOBILE)
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.categories__track');
     const prevBtn = document.querySelector('.carousel__btn--prev');
@@ -15,34 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function calculateDimensions() {
         if (cards.length === 0) return;
         
-        // Pega dimensões reais do primeiro card
         const firstCard = cards[0];
         const cardStyle = window.getComputedStyle(firstCard);
         cardWidth = firstCard.offsetWidth;
         
-        // Pega o gap real
         const trackStyle = window.getComputedStyle(track);
         gap = parseInt(trackStyle.gap) || 25;
         
-        // Calcula quantos cards são visíveis
         const containerWidth = track.parentElement.offsetWidth;
         const totalCardWidth = cardWidth + gap;
         visibleCards = Math.floor(containerWidth / totalCardWidth);
         
-        // CORREÇÃO: Garante que o último card nunca fique sozinho
-        // Se temos espaço para X cards, paramos na posição (total - X)
-        // Isso faz com que na última posição ainda tenhamos X cards visíveis
         maxPosition = Math.max(0, cards.length - visibleCards);
-        
-        // DEBUG
-        console.log('Dimensões calculadas:', { 
-            cardWidth, 
-            gap, 
-            containerWidth, 
-            visibleCards, 
-            maxPosition,
-            totalCards: cards.length 
-        });
     }
 
     function updateCarousel() {
@@ -51,43 +35,43 @@ document.addEventListener('DOMContentLoaded', function() {
         const moveDistance = currentPosition * (cardWidth + gap);
         track.style.transform = `translateX(-${moveDistance}px)`;
         
-        // Desabilita botões quando chega nos extremos
         const isAtStart = currentPosition === 0;
         const isAtEnd = currentPosition >= maxPosition;
         
-        prevBtn.style.opacity = isAtStart ? '0.4' : '1';
-        prevBtn.style.cursor = isAtStart ? 'not-allowed' : 'pointer';
-        prevBtn.disabled = isAtStart;
-        
-        nextBtn.style.opacity = isAtEnd ? '0.4' : '1';
-        nextBtn.style.cursor = isAtEnd ? 'not-allowed' : 'pointer';
-        nextBtn.disabled = isAtEnd;
+        // ✅ CORREÇÃO: Só atualiza botões se NÃO for mobile
+        if (!isMobile) {
+            prevBtn.style.opacity = isAtStart ? '0.4' : '1';
+            prevBtn.style.cursor = isAtStart ? 'not-allowed' : 'pointer';
+            prevBtn.disabled = isAtStart;
+            
+            nextBtn.style.opacity = isAtEnd ? '0.4' : '1';
+            nextBtn.style.cursor = isAtEnd ? 'not-allowed' : 'pointer';
+            nextBtn.disabled = isAtEnd;
 
-        // Esconde botões completamente se não forem necessários
-        if (maxPosition === 0) {
+            if (maxPosition === 0) {
+                prevBtn.style.display = 'none';
+                nextBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'flex';
+                nextBtn.style.display = 'flex';
+            }
+        } else {
+            // ✅ MOBILE: Sempre esconde os botões
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
-        } else {
-            prevBtn.style.display = 'flex';
-            nextBtn.style.display = 'flex';
         }
-        
-        console.log('Posição atual:', currentPosition, 'de', maxPosition);
     }
 
     function handleResize() {
         isMobile = window.innerWidth <= 768;
         
-        // Pequeno delay para garantir que o CSS foi aplicado
         setTimeout(() => {
             calculateDimensions();
             
-            // Reset mais inteligente da posição
             if (currentPosition > maxPosition) {
                 currentPosition = Math.max(0, maxPosition);
             }
             
-            // Se todos os cards cabem na tela, reseta para início
             if (maxPosition === 0) {
                 currentPosition = 0;
             }
@@ -96,27 +80,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 150);
     }
 
-    // Event Listeners
-    nextBtn.addEventListener('click', function() {
-        if (currentPosition < maxPosition) {
-            currentPosition++;
-            updateCarousel();
-        }
-    });
+    // ✅ CORREÇÃO: Só adiciona event listeners se não for mobile
+    if (!isMobile) {
+        nextBtn.addEventListener('click', function() {
+            if (currentPosition < maxPosition) {
+                currentPosition++;
+                updateCarousel();
+            }
+        });
 
-    prevBtn.addEventListener('click', function() {
-        if (currentPosition > 0) {
-            currentPosition--;
-            updateCarousel();
-        }
-    });
+        prevBtn.addEventListener('click', function() {
+            if (currentPosition > 0) {
+                currentPosition--;
+                updateCarousel();
+            }
+        });
+    }
 
     // Swipe para mobile - MELHORADO
     let startX = 0;
     let isDragging = false;
     
     track.addEventListener('touchstart', function(e) {
-        if (maxPosition === 0) return; // Não faz swipe se não precisa
+        if (maxPosition === 0) return;
         startX = e.touches[0].clientX;
         isDragging = true;
         track.style.cursor = 'grabbing';
@@ -136,9 +122,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++; // Swipe para esquerda
+                currentPosition++;
             } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--; // Swipe para direita
+                currentPosition--;
             }
             updateCarousel();
         }
@@ -146,50 +132,50 @@ document.addEventListener('DOMContentLoaded', function() {
         track.style.cursor = 'grab';
     });
 
-    // Mouse drag para desktop
-    track.addEventListener('mousedown', function(e) {
-        if (maxPosition === 0) return;
-        startX = e.clientX;
-        isDragging = true;
-        track.style.cursor = 'grabbing';
-    });
+    // Mouse drag para desktop - Só se não for mobile
+    if (!isMobile) {
+        track.addEventListener('mousedown', function(e) {
+            if (maxPosition === 0) return;
+            startX = e.clientX;
+            isDragging = true;
+            track.style.cursor = 'grabbing';
+        });
 
-    document.addEventListener('mousemove', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        e.preventDefault();
-    });
+        document.addEventListener('mousemove', function(e) {
+            if (!isDragging || maxPosition === 0) return;
+            e.preventDefault();
+        });
 
-    document.addEventListener('mouseup', function(e) {
-        if (!isDragging || maxPosition === 0) return;
-        
-        const endX = e.clientX;
-        const diff = startX - endX;
-        const swipeThreshold = 50;
+        document.addEventListener('mouseup', function(e) {
+            if (!isDragging || maxPosition === 0) return;
+            
+            const endX = e.clientX;
+            const diff = startX - endX;
+            const swipeThreshold = 50;
 
-        if (Math.abs(diff) > swipeThreshold) {
-            if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++; // Drag para esquerda
-            } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--; // Drag para direita
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0 && currentPosition < maxPosition) {
+                    currentPosition++;
+                } else if (diff < 0 && currentPosition > 0) {
+                    currentPosition--;
+                }
+                updateCarousel();
             }
-            updateCarousel();
-        }
-        
-        isDragging = false;
-        track.style.cursor = 'grab';
-    });
+            
+            isDragging = false;
+            track.style.cursor = 'grab';
+        });
+    }
 
     // Inicialização
     calculateDimensions();
     updateCarousel();
     
-    // Recalcula em redimensionamento - OTIMIZADO
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(handleResize, 250);
     });
 
-    // Recalcula quando as imagens carregarem (evita problemas com loading)
     window.addEventListener('load', handleResize);
 });
