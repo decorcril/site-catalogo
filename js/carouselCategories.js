@@ -1,4 +1,4 @@
-// Carousel Finito - VERSÃO CORRIGIDA (ÚLTIMO CARD NÃO SOZINHO)
+// Carousel Finito - VERSÃO SUPER RÁPIDA
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.categories__track');
     const prevBtn = document.querySelector('.carousel__btn--prev');
@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let visibleCards = 0;
     let maxPosition = 0;
     let isMobile = window.innerWidth <= 768;
+
+    // SUPER RÁPIDO: Transição quase instantânea
+    track.style.transition = 'transform 0.2s ease'; // Era 0.3s
 
     function calculateDimensions() {
         if (cards.length === 0) return;
@@ -30,19 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         visibleCards = Math.floor(containerWidth / totalCardWidth);
         
         // CORREÇÃO: Garante que o último card nunca fique sozinho
-        // Se temos espaço para X cards, paramos na posição (total - X)
-        // Isso faz com que na última posição ainda tenhamos X cards visíveis
         maxPosition = Math.max(0, cards.length - visibleCards);
-        
-        // DEBUG
-        console.log('Dimensões calculadas:', { 
-            cardWidth, 
-            gap, 
-            containerWidth, 
-            visibleCards, 
-            maxPosition,
-            totalCards: cards.length 
-        });
     }
 
     function updateCarousel() {
@@ -71,14 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
             prevBtn.style.display = 'flex';
             nextBtn.style.display = 'flex';
         }
-        
-        console.log('Posição atual:', currentPosition, 'de', maxPosition);
     }
 
     function handleResize() {
         isMobile = window.innerWidth <= 768;
         
-        // Pequeno delay para garantir que o CSS foi aplicado
+        // QUASE INSTANTÂNEO: Delay mínimo
         setTimeout(() => {
             calculateDimensions();
             
@@ -93,10 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             updateCarousel();
-        }, 150);
+        }, 50); // Era 100ms
     }
 
-    // Event Listeners
+    // Event Listeners - resposta imediata
     nextBtn.addEventListener('click', function() {
         if (currentPosition < maxPosition) {
             currentPosition++;
@@ -111,20 +100,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Swipe para mobile - MELHORADO
+    // Swipe para mobile - MAIS SENSÍVEL
     let startX = 0;
     let isDragging = false;
     
     track.addEventListener('touchstart', function(e) {
-        if (maxPosition === 0) return; // Não faz swipe se não precisa
+        if (maxPosition === 0) return;
         startX = e.touches[0].clientX;
         isDragging = true;
         track.style.cursor = 'grabbing';
+        // Remove transição durante o drag para resposta imediata
+        track.style.transition = 'none';
     });
 
     track.addEventListener('touchmove', function(e) {
         if (!isDragging || maxPosition === 0) return;
         e.preventDefault();
+        
+        // Feedback visual em tempo real durante o drag
+        const currentX = e.touches[0].clientX;
+        const diff = startX - currentX;
+        const moveDistance = (currentPosition * (cardWidth + gap)) + (diff * 0.5);
+        const maxMove = maxPosition * (cardWidth + gap);
+        
+        // Limita o movimento
+        const limitedMove = Math.max(0, Math.min(moveDistance, maxMove));
+        track.style.transform = `translateX(-${limitedMove}px)`;
     });
 
     track.addEventListener('touchend', function(e) {
@@ -132,14 +133,20 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const endX = e.changedTouches[0].clientX;
         const diff = startX - endX;
-        const swipeThreshold = 50;
+        const swipeThreshold = 30; // Mais sensível (era 50)
+
+        // Restaura transição rápida
+        track.style.transition = 'transform 0.2s ease';
 
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++; // Swipe para esquerda
+                currentPosition++;
             } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--; // Swipe para direita
+                currentPosition--;
             }
+            updateCarousel();
+        } else {
+            // Se não passou do threshold, volta para posição atual
             updateCarousel();
         }
         isDragging = false;
@@ -152,11 +159,20 @@ document.addEventListener('DOMContentLoaded', function() {
         startX = e.clientX;
         isDragging = true;
         track.style.cursor = 'grabbing';
+        track.style.transition = 'none';
     });
 
     document.addEventListener('mousemove', function(e) {
         if (!isDragging || maxPosition === 0) return;
         e.preventDefault();
+        
+        const currentX = e.clientX;
+        const diff = startX - currentX;
+        const moveDistance = (currentPosition * (cardWidth + gap)) + (diff * 0.5);
+        const maxMove = maxPosition * (cardWidth + gap);
+        
+        const limitedMove = Math.max(0, Math.min(moveDistance, maxMove));
+        track.style.transform = `translateX(-${limitedMove}px)`;
     });
 
     document.addEventListener('mouseup', function(e) {
@@ -164,14 +180,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const endX = e.clientX;
         const diff = startX - endX;
-        const swipeThreshold = 50;
+        const swipeThreshold = 30;
+
+        track.style.transition = 'transform 0.2s ease';
 
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0 && currentPosition < maxPosition) {
-                currentPosition++; // Drag para esquerda
+                currentPosition++;
             } else if (diff < 0 && currentPosition > 0) {
-                currentPosition--; // Drag para direita
+                currentPosition--;
             }
+            updateCarousel();
+        } else {
             updateCarousel();
         }
         
@@ -183,13 +203,13 @@ document.addEventListener('DOMContentLoaded', function() {
     calculateDimensions();
     updateCarousel();
     
-    // Recalcula em redimensionamento - OTIMIZADO
+    // Recalcula em redimensionamento - INSTANTÂNEO
     let resizeTimeout;
     window.addEventListener('resize', function() {
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(handleResize, 250);
+        resizeTimeout = setTimeout(handleResize, 80); // Era 150ms
     });
 
-    // Recalcula quando as imagens carregarem (evita problemas com loading)
+    // Recalcula quando as imagens carregarem
     window.addEventListener('load', handleResize);
 });
