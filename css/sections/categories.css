@@ -1,4 +1,3 @@
-/* Categories Carousel Section */
 .categories {
     padding: 30px 0 40px;
     background-image: url('../../assets/images/background/decoracao-festa.jpeg');
@@ -41,17 +40,16 @@
     padding: 25px 0;
 }
 
-/* TRACK - Alinhamento correto */
+
 .categories__track {
     display: flex;
-    justify-content: flex-start; /* ← Mudado de center */
+    justify-content: flex-start;
     gap: 40px;
     transition: transform 0.4s ease;
-    padding: 0 20px; /* ← Simétrico */
+    padding: 0 20px;
     will-change: transform;
 }
 
-/* Cards */
 .category__card {
     flex: 0 0 180px;
     background: rgba(255, 255, 255, 0.7);
@@ -69,7 +67,6 @@
     backdrop-filter: blur(5px);
 }
 
-/* ✅ HOVER corrigido - só uma vez */
 .category__card:hover {
     background: rgba(255, 255, 255, 0.95);
     border-color: #0058a3;
@@ -91,7 +88,6 @@
     letter-spacing: 0.3px;
 }
 
-/* Botões */
 .carousel__btn {
     position: absolute;
     top: 50%;
@@ -132,7 +128,6 @@
     display: none;
 }
 
-/* CTA Button */
 .categories__cta {
     margin-top: 30px;
     padding: 0 20px;
@@ -155,14 +150,88 @@
     border: 1px solid #0058a3;
 }
 
-/* ✅ HOVER corrigido - só um transform */
 .categories__btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15),
         0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== RESPONSIVIDADE ===== */
+.carousel-indicator {
+    margin: 25px 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator-dots {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.indicator-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.indicator-dot:hover {
+    background-color: #999;
+    transform: scale(1.2);
+}
+
+.indicator-dot.active {
+    background-color: #0058a3;
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px rgba(0, 88, 163, 0.2);
+}
+
+.indicator-dot.risk {
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator-dot.risk:hover {
+    background-color: #999;
+    height: 5px;
+}
+
+.indicator-dot.risk.active {
+    background-color: #0058a3;
+    width: 40px;
+    height: 5px;
+    box-shadow: 0 2px 5px rgba(0, 88, 163, 0.3);
+}
+
+.indicator-dot.outline {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator-dot.outline:hover {
+    border-color: #999;
+    background-color: rgba(153, 153, 153, 0.2);
+}
+
+.indicator-dot.outline.active {
+    border-color: #0058a3;
+    background-color: #0058a3;
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 1200px) {
     .categories__track {
         padding: 0 15px;
@@ -218,16 +287,40 @@
         width: 40px;
         height: 40px;
     }
+    
+    .carousel-indicator {
+        margin: 20px 0 25px;
+        display: flex !important; /* Forçar display no mobile */
+    }
+    
+    .indicator-dots {
+        gap: 10px;
+    }
+    
+    .indicator-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .indicator-dot.risk {
+        width: 25px;
+        height: 3px;
+    }
+    
+    .indicator-dot.risk.active {
+        width: 30px;
+        height: 4px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .categories__track {
         padding: 0 30px;
-        gap: 25px;
+        gap: 30px;
     }
 
     .category__card {
-        flex: 0 0 142px;
+        flex: 0 0 150px;
         min-height: 110px;
         padding: 12px 8px;
     }
@@ -254,6 +347,30 @@
     .carousel__btn--next {
         right: 10px;
     }
+    
+    .carousel-indicator {
+        margin: 15px 0 20px;
+        display: flex !important;
+    }
+    
+    .indicator-dots {
+        gap: 8px;
+    }
+    
+    .indicator-dot {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .indicator-dot.risk {
+        width: 20px;
+        height: 2px;
+    }
+    
+    .indicator-dot.risk.active {
+        width: 25px;
+        height: 3px;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -278,38 +395,41 @@
 }
 
 @media only screen and (width: 375px) {
-    /* Seus estilos específicos para o iPhone SE (2ª e 3ª Geração) aqui */
     .categories__track {
-        padding: 0 10px; /* Exemplo de ajuste */
-        gap: 12px;      /* Exemplo de ajuste */
+        padding: 0 10px;
+        gap: 12px;
     }
 
     .category__card {
-        flex: 0 0 108px; /* Exemplo de ajuste */
+        flex: 0 0 108px;
         min-height: 110px;
         padding: 12px 8px;
     }
 
     .category__icon {
-        font-size: 1.3rem; /* Exemplo de ajuste */
+        font-size: 1.3rem;
     }
 
     .category__name {
-        font-size: 0.7rem; /* Exemplo de ajuste */
+        font-size: 0.7rem;
     }
 }
 
-
-/* Mobile Landscape */
 @media screen and (max-width: 968px) and (orientation: landscape) {
     .categories__track {
         padding: 0 45px;
-        gap: 15px;
+        gap: 18px;
     }
-
+    
+    .categories__track {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
     .category__card {
         flex: 0 0 123px;
         min-height: 110px;
+        flex-shrink: 0;
     }
 
     .category__icon {
@@ -321,8 +441,26 @@
     }
 
     .carousel__btn {
-        width: 35px;
-        height: 35px;
+        display: none !important;
+    }
+    
+    .carousel-indicator {
+        display: flex !important;
+        margin: 15px 0 20px;
+    }
+    
+    .indicator-dots {
+        gap: 10px;
+    }
+    
+    .indicator-dot.risk {
+        width: 20px;
+        height: 2px;
+    }
+    
+    .indicator-dot.risk.active {
+        width: 25px;
+        height: 3px;
     }
 }
 
@@ -332,9 +470,10 @@
     }
 
     .category__card {
-        flex: 0 0 110px;
+        flex: 0 0 106px;
         min-height: 100px;
         padding: 10px 6px;
+        flex-shrink: 0;
     }
 
     .category__icon {
@@ -343,5 +482,56 @@
 
     .category__name {
         font-size: 0.75rem;
+    }
+    
+    .carousel__btn {
+        display: none !important;
+    }
+    
+    .carousel-indicator {
+        display: flex !important;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 968px) {
+    .carousel__btn {
+        display: none !important;
+    }
+    
+    .carousel-indicator {
+        display: flex !important;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .categories__track {
+        display: flex !important;
+        overflow: visible !important;
+    }
+    
+    .category__card {
+        visibility: visible !important;
+        opacity: 1 !important;
+        display: flex !important;
+    }
+}
+
+
+@media (hover: none) and (pointer: coarse) and (orientation: landscape) and (max-width: 968px) {
+    .carousel__btn {
+        display: none !important;
+    }
+    
+    .categories__track {
+        display: flex !important;
+    }
+    
+    .category__card {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .carousel-indicator {
+        display: flex !important;
     }
 }

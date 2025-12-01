@@ -26,7 +26,7 @@
 
         <!-- Catalogo Completo para Festas -->
         <li class="mega-menu-item">
-            <a href="./pages/catalog/index.html" class="mega-menu-toggle">Catalogo</a>
+            <a href="./pages/catalog/index.html" class="mega-menu-toggle">Catálogo</a>
             <div class="mega-menu">
                 <div class="mega-menu-content">
                     <div class="mega-menu-section">
@@ -109,11 +109,20 @@
         <li><a href="#about">Sobre</a></li>
         <li><a href="https://wa.me/5511978999091" target="_blank">Fale conosco</a></li>
     </ul>
-    <i class="uil uil-search search-icon" id="searchIcon"></i>
-    <div class="search-box">
-        <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Buscar produtos..." id="searchInput" />
-        <div class="search-results" id="searchResults"></div>
+    
+    <!-- Container de pesquisa -->
+    <div class="search-container">
+        <!-- Ícone de pesquisa mobile -->
+        <i class="uil uil-search search-icon mobile" id="searchIcon"></i>
+        
+        <!-- Caixa de pesquisa -->
+        <div class="search-box">
+            <input type="text" placeholder="Buscar produtos..." id="searchInput" />
+            <button type="submit" class="search-btn">
+                <i class="uil uil-search"></i>
+            </button>
+            <div class="search-results" id="searchResults"></div>
+        </div>
     </div>
 </nav>
     <!-- Hero Section -->
@@ -258,12 +267,22 @@
         </div>
 
         <div class="categories__cta">
-            <a href="/categoria" class="categories__btn">
+            <a href="./pages/catalog/index.html" class="categories__btn">
                 <i class="fas fa-th-large"></i>
                 Ver Catalogo Completo
             </a>
         </div>
     </div>
+
+    <!-- INDICADOR COM RISCOS -->
+<div class="carousel-indicator">
+    <div class="indicator-dots">
+        <span class="indicator-dot risk active" data-slide="0"></span>
+        <span class="indicator-dot risk" data-slide="1"></span>
+        <span class="indicator-dot risk" data-slide="2"></span>
+        <span class="indicator-dot risk" data-slide="3"></span>
+    </div>
+</div>
 </section>
     <!-- Featured Product Section -->
     <section class="featured-product">

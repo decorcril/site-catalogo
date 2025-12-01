@@ -1,9 +1,9 @@
-// Carousel Finito - SEM INDICADORES (BOTÕES ESCONDIDOS EM MOBILE)
 document.addEventListener('DOMContentLoaded', function() {
     const track = document.querySelector('.categories__track');
     const prevBtn = document.querySelector('.carousel__btn--prev');
     const nextBtn = document.querySelector('.carousel__btn--next');
     const cards = document.querySelectorAll('.category__card');
+    const indicatorDots = document.querySelectorAll('.indicator-dot');
     
     let currentPosition = 0;
     let cardWidth = 0;
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let visibleCards = 0;
     let maxPosition = 0;
     let isMobile = window.innerWidth <= 768;
+    let totalSlides = 0;
 
     function calculateDimensions() {
         if (cards.length === 0) return;
@@ -27,6 +28,46 @@ document.addEventListener('DOMContentLoaded', function() {
         visibleCards = Math.floor(containerWidth / totalCardWidth);
         
         maxPosition = Math.max(0, cards.length - visibleCards);
+        
+        totalSlides = maxPosition + 1;
+        
+        updateIndicatorsCount();
+    }
+
+    function updateIndicatorsCount() {
+        const dotsContainer = document.querySelector('.indicator-dots');
+        if (!dotsContainer) return;
+        
+        dotsContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('span');
+            dot.className = 'indicator-dot risk';
+            dot.dataset.slide = i;
+            if (i === 0) dot.classList.add('active');
+            
+            dot.addEventListener('click', function() {
+                const slideIndex = parseInt(this.dataset.slide);
+                currentPosition = slideIndex;
+                updateCarousel();
+            });
+            
+            dotsContainer.appendChild(dot);
+        }
+    }
+
+    function updateIndicators() {
+        const dots = document.querySelectorAll('.indicator-dot');
+        if (dots.length === 0) return;
+        
+        const activeSlide = currentPosition;
+        
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === activeSlide) {
+                dot.classList.add('active');
+            }
+        });
     }
 
     function updateCarousel() {
@@ -38,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const isAtStart = currentPosition === 0;
         const isAtEnd = currentPosition >= maxPosition;
         
-        // ✅ CORREÇÃO: Só atualiza botões se NÃO for mobile
         if (!isMobile) {
             prevBtn.style.opacity = isAtStart ? '0.4' : '1';
             prevBtn.style.cursor = isAtStart ? 'not-allowed' : 'pointer';
@@ -56,10 +96,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextBtn.style.display = 'flex';
             }
         } else {
-            // ✅ MOBILE: Sempre esconde os botões
+
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
         }
+        
+
+        updateIndicators();
     }
 
     function handleResize() {
@@ -80,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 150);
     }
 
-    // ✅ CORREÇÃO: Só adiciona event listeners se não for mobile
     if (!isMobile) {
         nextBtn.addEventListener('click', function() {
             if (currentPosition < maxPosition) {
@@ -97,7 +139,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Swipe para mobile - MELHORADO
+    indicatorDots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            const slideIndex = parseInt(this.dataset.slide);
+            currentPosition = slideIndex;
+            updateCarousel();
+        });
+    });
+
     let startX = 0;
     let isDragging = false;
     
@@ -132,7 +181,6 @@ document.addEventListener('DOMContentLoaded', function() {
         track.style.cursor = 'grab';
     });
 
-    // Mouse drag para desktop - Só se não for mobile
     if (!isMobile) {
         track.addEventListener('mousedown', function(e) {
             if (maxPosition === 0) return;
