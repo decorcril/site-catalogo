@@ -1,3 +1,4 @@
+/* ===== CSS OTIMIZADO - NAVBAR ===== */
 * {
     margin: 0;
     padding: 0;
@@ -72,14 +73,14 @@ a {
     color: #ff0084;
 }
 
-/* ===== CAIXA DE PESQUISA ===== */
+/* ===== PESQUISA ===== */
 .nav .search-container {
     display: flex;
     align-items: center;
     flex-shrink: 0;
 }
 
-/* Ícone de pesquisa mobile */
+/* Ícone mobile */
 .nav .search-icon.mobile {
     color: #fff;
     font-size: 22px;
@@ -101,10 +102,9 @@ a {
     width: 350px;
     opacity: 1;
     pointer-events: auto;
-    display: block;
+    /* REMOVER display: block FIXO - será controlado por media queries */
 }
 
-/* Remover o ícone de lupa antigo dentro da caixa */
 .search-box .search-icon {
     display: none;
 }
@@ -116,7 +116,7 @@ a {
     outline: none;
     border-radius: 12px;
     background-color: #fff;
-    padding: 0 45px 0 15px; /* Menos padding à direita para botão discreto */
+    padding: 0 45px 0 15px;
     font-size: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -126,7 +126,7 @@ a {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== BOTÃO DE PESQUISA DISCRETO ===== */
+/* Botão de pesquisa */
 .search-box .search-btn {
     position: absolute;
     top: 50%;
@@ -156,7 +156,7 @@ a {
     transform: translateY(-50%) scale(0.9);
 }
 
-/* ===== RESULTADOS DA BUSCA ===== */
+/* Resultados da busca */
 .search-results {
     position: absolute;
     top: 100%;
@@ -199,7 +199,7 @@ a {
     display: none;
 }
 
-/* ===== MEGA MENU ===== */
+/* ===== MEGA MENU OTIMIZADO ===== */
 .nav-links .mega-menu-item {
     position: static;
 }
@@ -219,39 +219,43 @@ a {
     border-top: 1px solid #eee;
 }
 
+/* Mega Menu Content Compacto */
 .mega-menu-content {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 30px 200px;
+    padding: 20px 40px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
 }
 
 .mega-menu-section h4 {
     color: #2422b1;
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
     font-weight: 600;
-    padding-left: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .mega-menu-section ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .mega-menu-section li {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .mega-menu-section a {
     color: #333 !important;
-    padding: 5px 0;
+    padding: 4px 0;
     display: block;
     transition: all 0.2s ease;
     font-weight: 500;
-    padding-left: 0;
+    font-size: 13px;
+    line-height: 1.3;
 }
 
 .mega-menu-section a:hover {
@@ -259,7 +263,7 @@ a {
     padding-left: 5px;
 }
 
-/* Mostrar mega menu no hover */
+/* Mostrar mega menu */
 .mega-menu-item:hover .mega-menu {
     opacity: 1;
     visibility: visible;
@@ -272,7 +276,7 @@ a {
 
 /* ===== RESPONSIVO ===== */
 
-/* Telas grandes (desktop) - Pesquisa sempre visível */
+/* Desktop (1025px+) */
 @media screen and (min-width: 1025px) {
     .nav {
         padding: 15px 200px;
@@ -289,28 +293,55 @@ a {
         flex-shrink: 0;
     }
     
+    /* DESKTOP: Caixa de pesquisa sempre visível */
     .nav .search-box {
         display: block;
         width: 300px;
+        position: relative;
+        height: 45px;
+        opacity: 1;
+        pointer-events: auto;
     }
     
     .nav .search-icon.mobile {
         display: none;
     }
     
-    /* Remover comportamentos de openSearch em desktop */
     .nav.openSearch .nav-links a {
         opacity: 1;
         pointer-events: auto;
     }
+    
+    /* Mega menu desktop compacto */
+    .mega-menu-content {
+        padding: 15px 30px;
+        gap: 20px;
+    }
 }
 
-/* Tablets e dispositivos menores */
+/* Tablets e Mobile (até 1024px) */
 @media screen and (max-width: 1024px) {
     .nav {
         padding: 12px 20px;
     }
     
+    .mega-menu-content {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 15px 20px;
+        gap: 20px;
+        max-width: 90%;
+    }
+    
+    .mega-menu-section h4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .mega-menu-section a {
+        font-size: 12px;
+    }
+    
+    /* MOBILE: Caixa de pesquisa oculta por padrão */
     .nav .search-box {
         display: none;
         position: absolute;
@@ -322,14 +353,17 @@ a {
         opacity: 0;
         pointer-events: none;
         transition: all 0.3s ease;
+        height: 45px;
     }
     
+    /* MOBILE: Quando aberta via JavaScript */
     .nav.openSearch .search-box {
         display: block;
         opacity: 1;
         pointer-events: auto;
     }
     
+    /* MOBILE: Ícone de pesquisa visível */
     .nav .search-icon.mobile {
         display: block;
     }
@@ -339,14 +373,14 @@ a {
         top: 0;
         left: -100%;
         height: 100%;
-        max-width: 300px;
+        max-width: 280px;
         width: 100%;
-        padding-top: 70px;
-        row-gap: 15px;
+        padding-top: 60px;
+        row-gap: 12px;
         flex-direction: column;
         background-color: #ffffff;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.4s ease;
+        transition: all 0.3s ease;
         z-index: 100;
     }
 
@@ -377,8 +411,8 @@ a {
     .nav .nav-links a {
         color: #112170;
         font-weight: 500;
-        font-size: 14px;
-        padding: 8px 15px;
+        font-size: 13px;
+        padding: 6px 12px;
     }
 
     .logo-img {
@@ -390,31 +424,24 @@ a {
         display: none;
     }
     
+    /* MOBILE: Esconder links quando pesquisa aberta */
     .nav.openSearch .nav-links a {
         opacity: 0;
         pointer-events: none;
     }
-    
-    /* Botão de pesquisa discreto em mobile também */
-    .nav .search-box .search-btn {
-        background: transparent;
-        color: #666;
-        width: 30px;
-        height: 30px;
-    }
 }
 
-/* Tablets pequenos em portrait */
+/* Tablets portrait (768px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .nav .nav-links {
-        max-width: 320px;
-        padding-top: 90px;
-        row-gap: 20px;
+        max-width: 300px;
+        padding-top: 70px;
+        row-gap: 15px;
     }
 
     .nav .nav-links a {
-        font-size: 1rem;
-        padding: 10px 20px;
+        font-size: 14px;
+        padding: 8px 15px;
     }
 
     .logo-img {
@@ -425,21 +452,128 @@ a {
     .nav {
         padding: 12px 25px;
     }
+    
+    .mega-menu-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
 }
 
-/* Dispositivos móveis pequenos */
+/* Mobile (481px - 767px) */
 @media screen and (max-width: 767px) {
     .nav {
-        padding: 8px 15px;
+        padding: 10px 15px;
+        gap: 20px;
     }
     
     .logo-img {
-        height: 35px;
-        max-width: 100px;
+        height: 32px;
+        max-width: 90px;
     }
     
     .nav .search-box {
         left: 15px;
         right: 15px;
+    }
+    
+    .mega-menu-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+        gap: 15px;
+        max-width: 95%;
+    }
+    
+    .mega-menu-section h4 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .mega-menu-section a {
+        font-size: 11px;
+    }
+    
+    .nav .nav-links {
+        max-width: 250px;
+        padding-top: 50px;
+        row-gap: 10px;
+    }
+    
+    .nav .nav-links a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* Mobile pequeno (até 480px) */
+@media screen and (max-width: 480px) {
+    .nav {
+        padding: 8px 12px;
+        gap: 15px;
+    }
+    
+    .logo-img {
+        height: 30px;
+        max-width: 80px;
+    }
+    
+    .mega-menu-content {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
+    }
+    
+    .mega-menu-section {
+        margin-bottom: 10px;
+    }
+    
+    .mega-menu-section:last-child {
+        margin-bottom: 0;
+    }
+    
+    .nav .nav-links {
+        max-width: 220px;
+        padding-top: 45px;
+    }
+    
+    .nav .navOpenBtn {
+        font-size: 18px;
+    }
+    
+    .nav .navCloseBtn {
+        font-size: 18px;
+        top: 12px;
+        right: 12px;
+    }
+    
+    /* Ajustes para mobile pequeno */
+    .nav .search-box {
+        left: 12px;
+        right: 12px;
+    }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+    .nav .nav-links a,
+    .search-box .search-btn,
+    .mega-menu,
+    .mega-menu-section a,
+    .search-result-item {
+        transition: none !important;
+    }
+    
+    .mega-menu {
+        transition: none !important;
+    }
+}
+
+/* Touch devices optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav .nav-links a:hover {
+        color: inherit;
+    }
+    
+    .mega-menu-section a:hover {
+        padding-left: 0;
     }
 }
