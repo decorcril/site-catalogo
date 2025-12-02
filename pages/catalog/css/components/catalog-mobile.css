@@ -1,0 +1,260 @@
+/* ===== FILTROS MOBILE ===== */
+.mobile-filter-container {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.mobile-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-filter-toggle:hover {
+    border-color: #ff0084;
+    color: #ff0084;
+}
+
+.mobile-filter-toggle .filter-label {
+    flex: 1;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.mobile-filter-toggle i:first-child {
+    color: #ff0084;
+}
+
+/* DROPDOWN - ESTE É O IMPORTANTE */
+.mobile-filter-dropdown {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Classe para mostrar o dropdown */
+.mobile-filter-dropdown.active {
+    display: block;
+}
+
+/* Categorias dentro do dropdown */
+.filter-category {
+    margin-bottom: 20px;
+}
+
+.filter-category:last-child {
+    margin-bottom: 0;
+}
+
+.filter-category-title {
+    font-size: 0.9rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Opções de filtro em grid */
+.filter-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.mobile-filter-btn {
+    padding: 10px 12px;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-filter-btn:hover,
+.mobile-filter-btn.active {
+    background: #ff0084;
+    color: white;
+    border-color: #ff0084;
+}
+
+/* Filtros desktop - ocultar em mobile */
+.desktop-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* DESKTOP (768px+) - Mostra filtros desktop, oculta mobile */
+@media screen and (min-width: 769px) {
+    .desktop-filters {
+        display: flex;
+    }
+    
+    .mobile-filter-container {
+        display: none;
+    }
+    
+    .filter-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .filter-group::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .filter-group::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    .filter-group::-webkit-scrollbar-thumb {
+        background: #ddd;
+        border-radius: 2px;
+    }
+}
+
+/* MOBILE (até 768px) - Oculta desktop, mostra mobile */
+@media screen and (max-width: 768px) {
+    .desktop-filters {
+        display: none !important;
+    }
+    
+    .mobile-filter-container {
+        display: block !important;
+    }
+    
+    .catalog-filters {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sort-group {
+        width: 100%;
+        order: 3; /* Coloca a ordenação depois dos filtros */
+    }
+    
+}
+
+/* Mobile pequeno - ajusta grid para 1 coluna */
+@media screen and (max-width: 480px) {
+    .filter-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .mobile-filter-btn {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+    
+    .mobile-filter-dropdown {
+        padding: 15px;
+        max-height: 350px;
+    }
+}
+
+/* Tablet - mantém 2 colunas mas ajusta tamanhos */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .filter-options {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .mobile-filter-btn {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos para scrollbar do dropdown (opcional) */
+.mobile-filter-dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mobile-filter-dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.mobile-filter-dropdown::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.mobile-filter-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Animação suave para o dropdown */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-filter-dropdown.active {
+    animation: fadeInDown 0.3s ease forwards;
+}
+
+/* Estilo para o ícone de seta */
+.mobile-filter-toggle i.fa-chevron-down {
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.mobile-filter-toggle.active i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Indicador visual do filtro ativo */
+.mobile-filter-btn.active {
+    position: relative;
+    font-weight: 600;
+}
+
+.mobile-filter-btn.active::after {
+    content: '✓';
+    margin-left: 5px;
+    font-size: 0.9rem;
+}

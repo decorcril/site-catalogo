@@ -104,325 +104,514 @@
     </div>
 </nav>
 
-    <!-- Seção Catálogo -->
-    <section class="catalog" id="catalog">
-        <div class="container">
-            <!-- Cabeçalho -->
-            <div class="catalog-header">
-                <h2 class="catalog-title">Catálogo</h2>
-                <p class="catalog-subtitle">Descubra todos os nossos produtos em acrílico para festas e eventos</p>
+   <!-- Seção Catálogo -->
+<section class="catalog" id="catalog">
+    <div class="container">
+        <!-- Cabeçalho -->
+        <div class="catalog-header">
+            <h2 class="catalog-title">Catálogo</h2>
+            <p class="catalog-subtitle">Descubra todos os nossos produtos em acrílico para festas e eventos</p>
 
-                <!-- Filtros -->
-                <div class="catalog-filters">
-                    <div class="filter-group">
-                        <button class="filter-btn active" data-filter="all">Todos</button>
-                        <button class="filter-btn" data-filter="mesas">Mesas</button>
-                        <button class="filter-btn" data-filter="decoration">Decoração</button>
-                        <button class="filter-btn" data-filter="suportes">Suportes</button>
-                        <button class="filter-btn" data-filter="casamento">Casamento</button>
-                        <button class="filter-btn" data-filter="personalizados">Personalizados</button>
-                    </div>
+            <!-- Filtros - DESKTOP -->
+            <div class="catalog-filters">
+                <div class="filter-group desktop-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="mesas">Mesas</button>
+                    <button class="filter-btn" data-filter="tampos">Tampos</button>
+                    <button class="filter-btn" data-filter="bandejas">Bandejas</button>
+                    <button class="filter-btn" data-filter="boleiras">Boleiras</button>
+                    <button class="filter-btn" data-filter="carrinhos">Carrinhos</button>
+                    <button class="filter-btn" data-filter="bases-mesa">Bases</button>
+                    <button class="filter-btn" data-filter="colunas">Colunas</button>
+                    <button class="filter-btn" data-filter="pulpitos">Púlpitos</button>
+                    <button class="filter-btn" data-filter="cavaletes">Cavaletes</button>
+                    <button class="filter-btn" data-filter="escadas">Escadas</button>
+                    <button class="filter-btn" data-filter="cubos">Cubos</button>
+                    <button class="filter-btn" data-filter="cilindros">Cilindros</button>
+                    <button class="filter-btn" data-filter="caixas">Caixas</button>
+                    <button class="filter-btn" data-filter="trio-banquinhos">Trio Banquinhos</button>
+                    <button class="filter-btn" data-filter="porta-buques">Porta Buquês</button>
+                    <button class="filter-btn" data-filter="leds">LEDs</button>
+                    <button class="filter-btn" data-filter="personalizados">Personalizados</button>
+                </div>
 
-                    <div class="sort-group">
-                        <select class="sort-select">
-                            <option value="popular">Mais Populares</option>
-                            <option value="newest">Mais Recentes</option>
-                            <option value="price-low">Menor Preço</option>
-                            <option value="price-high">Maior Preço</option>
-                        </select>
+                <!-- Filtros Mobile - DROPDOWN -->
+                <div class="mobile-filter-container">
+                    <button class="mobile-filter-toggle" id="mobileFilterToggle">
+                        <i class="fas fa-filter"></i>
+                        <span class="filter-label">Filtrar</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    
+                    <div class="mobile-filter-dropdown" id="mobileFilterDropdown">
+                        <div class="filter-category">
+                            <h4 class="filter-category-title">Mesas e Buffet</h4>
+                            <div class="filter-options">
+                                <button class="mobile-filter-btn" data-filter="all">Todos</button>
+                                <button class="mobile-filter-btn" data-filter="mesas">Mesas</button>
+                                <button class="mobile-filter-btn" data-filter="tampos">Tampos</button>
+                                <button class="mobile-filter-btn" data-filter="bandejas">Bandejas</button>
+                                <button class="mobile-filter-btn" data-filter="boleiras">Boleiras</button>
+                                <button class="mobile-filter-btn" data-filter="carrinhos">Carrinhos</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-category">
+                            <h4 class="filter-category-title">Suportes e Bases</h4>
+                            <div class="filter-options">
+                                <button class="mobile-filter-btn" data-filter="bases-mesa">Bases</button>
+                                <button class="mobile-filter-btn" data-filter="colunas">Colunas</button>
+                                <button class="mobile-filter-btn" data-filter="pulpitos">Púlpitos</button>
+                                <button class="mobile-filter-btn" data-filter="cavaletes">Cavaletes</button>
+                                <button class="mobile-filter-btn" data-filter="escadas">Escadas</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-category">
+                            <h4 class="filter-category-title">Decoração</h4>
+                            <div class="filter-options">
+                                <button class="mobile-filter-btn" data-filter="cubos">Cubos</button>
+                                <button class="mobile-filter-btn" data-filter="cilindros">Cilindros</button>
+                                <button class="mobile-filter-btn" data-filter="caixas">Caixas</button>
+                                <button class="mobile-filter-btn" data-filter="trio-banquinhos">Trio Banquinhos</button>
+                                <button class="mobile-filter-btn" data-filter="porta-buques">Porta Buquês</button>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-category">
+                            <h4 class="filter-category-title">Outros</h4>
+                            <div class="filter-options">
+                                <button class="mobile-filter-btn" data-filter="leds">LEDs</button>
+                                <button class="mobile-filter-btn" data-filter="personalizados">Personalizados</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Grid de Produtos -->
-            <div class="catalog-grid">
-                <!-- Produto 1 - Mesa Redonda -->
-                <article class="catalog-card" data-category="mesas">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/cubo-sextavado-luli.jpeg" alt="Mesa Redonda em Acrílico"
-                            loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <span class="product-badge">Mais Vendido</span>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="review-count">(128)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Mesa Redonda em Acrílico</h3>
-                                <p class="product-description">Perfeita para centro de mesa e decorações elegantes</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 189,90</span>
-                                <span class="original-price">R$ 249,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produto 2 - Trio de Cilindros -->
-                <article class="catalog-card" data-category="decoration">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/cubo-sextavado-luli.jpeg" alt="Trio de Cilindros em Acrílico"
-                            loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <span class="product-badge new">Novidade</span>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="review-count">(64)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Trio de Cilindros</h3>
-                                <p class="product-description">Conjunto de 3 cilindros para decoração em alturas diferentes</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 249,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produto 3 - Base para Mesa -->
-                <article class="catalog-card" data-category="suportes">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/base-mesa.jpg" alt="Base para Mesa em Acrílico" loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <span class="product-badge discount">-25%</span>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="review-count">(92)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Base para Mesa</h3>
-                                <p class="product-description">Suporte em acrílico para mesas de buffet e decoração</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 129,90</span>
-                                <span class="original-price">R$ 169,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produto 4 - Porta Buquê de Noiva -->
-                <article class="catalog-card" data-category="casamento">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/porta-buque.jpg" alt="Porta Buquê de Noiva em Acrílico"
-                            loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <span class="review-count">(156)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Porta Buquê de Noiva</h3>
-                                <p class="product-description">Elegante porta buquê para cerimônias de casamento</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 89,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produto 5 - Caixa Personalizada -->
-                <article class="catalog-card" data-category="personalizados">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/caixa-personalizada.jpg" alt="Caixa Personalizada em Acrílico"
-                            loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <span class="product-badge personalizado">Personalizado</span>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                                <span class="review-count">(78)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Caixa Personalizada</h3>
-                                <p class="product-description">Caixa em acrílico com gravação personalizada</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 149,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produto 6 - Mesa de Buffet -->
-                <article class="catalog-card" data-category="mesas">
-                    <div class="catalog-card-image">
-                        <img src="../../assets/images/products/mesa-buffet.jpg" alt="Mesa de Buffet em Acrílico"
-                            loading="lazy">
-                        <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
-                            <i class="far fa-heart"></i>
-                        </button>
-                    </div>
-
-                    <div class="catalog-card-content">
-                        <div class="product-meta">
-                            <div class="product-rating">
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                                <span class="review-count">(45)</span>
-                            </div>
-                            
-                            <div class="product-info">
-                                <h3 class="product-title">Mesa de Buffet</h3>
-                                <p class="product-description">Mesa retangular ideal para buffets e mesas de doce</p>
-                            </div>
-                            
-                            <div class="product-price">
-                                <span class="current-price">R$ 299,90</span>
-                            </div>
-                        </div>
-
-                        <div class="product-actions">
-                            <button class="btn-quick-view">
-                                <i class="fas fa-eye"></i> Visualizar
-                            </button>
-                            <button class="btn-add-cart">
-                                <i class="fas fa-shopping-cart"></i> Comprar
-                            </button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Paginação -->
-            <div class="catalog-pagination">
-                <button class="pagination-btn prev" disabled>
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="pagination-btn active">1</button>
-                <button class="pagination-btn">2</button>
-                <button class="pagination-btn">3</button>
-                <button class="pagination-btn">4</button>
-                <span class="pagination-ellipsis">...</span>
-                <button class="pagination-btn">12</button>
-                <button class="pagination-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
         </div>
-    </section>
+
+        <!-- Grid de Produtos -->
+        <div class="catalog-grid">
+            <!-- Produto 1 - Mesa Redonda -->
+            <article class="catalog-card" data-category="mesas">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/cubo-sextavado-luli.jpeg" alt="Mesa Redonda em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <span class="product-badge">Mais Vendido</span>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(128)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Mesa Redonda em Acrílico</h3>
+                            <p class="product-description">Perfeita para centro de mesa e decorações elegantes</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 189,90</span>
+                            <span class="original-price">R$ 249,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 2 - Tampo -->
+            <article class="catalog-card" data-category="tampos">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/cubo-sextavado-luli.jpeg" alt="Tampo em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <span class="product-badge new">Novidade</span>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(64)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Tampo em Acrílico</h3>
+                            <p class="product-description">Tampo resistente para mesas de buffet e decoração</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 179,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 3 - Bandeja -->
+            <article class="catalog-card" data-category="bandejas">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/categories/bandejas/bandeja-gira-bolo.png" alt="Bandeja em Acrílico" loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <span class="product-badge discount">-15%</span>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(92)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Bandeja em Acrílico</h3>
+                            <p class="product-description">Bandeja elegante para servir drinks e petiscos</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 89,90</span>
+                            <span class="original-price">R$ 104,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 4 - Boleira -->
+            <article class="catalog-card" data-category="boleiras">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/porta-buque.jpg" alt="Boleira em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(156)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Boleira em Acrílico</h3>
+                            <p class="product-description">Boleira elegante para casamentos e eventos especiais</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 149,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 5 - Carrinho de Acrílico -->
+            <article class="catalog-card" data-category="carrinhos">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/caixa-personalizada.jpg" alt="Carrinho de Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="review-count">(78)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Carrinho de Acrílico</h3>
+                            <p class="product-description">Carrinho prático para servir em eventos e festas</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 299,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 6 - Base para Mesa -->
+            <article class="catalog-card" data-category="bases-mesa">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/mesa-buffet.jpg" alt="Base para Mesa em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(45)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Base para Mesa</h3>
+                            <p class="product-description">Suporte em acrílico para mesas de buffet e decoração</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 129,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 7 - Coluna -->
+            <article class="catalog-card" data-category="colunas">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/cubo-sextavado-luli.jpeg" alt="Coluna em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <span class="product-badge">Destaque</span>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(89)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Coluna Decorativa</h3>
+                            <p class="product-description">Coluna em acrílico para decoração de ambientes</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 199,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 8 - Púlpito -->
+            <article class="catalog-card" data-category="pulpitos">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/base-mesa.jpg" alt="Púlpito em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="review-count">(67)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Púlpito Cerimonial</h3>
+                            <p class="product-description">Púlpito elegante para casamentos e cerimônias</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 249,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Produto 9 - Caixa Personalizada -->
+            <article class="catalog-card" data-category="personalizados">
+                <div class="catalog-card-image">
+                    <img src="../../assets/images/products/caixa-personalizada.jpg" alt="Caixa Personalizada em Acrílico"
+                        loading="lazy">
+                    <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
+                        <i class="far fa-heart"></i>
+                    </button>
+                    <span class="product-badge personalizado">Personalizado</span>
+                </div>
+
+                <div class="catalog-card-content">
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="review-count">(78)</span>
+                        </div>
+                        
+                        <div class="product-info">
+                            <h3 class="product-title">Caixa Personalizada</h3>
+                            <p class="product-description">Caixa em acrílico com gravação personalizada</p>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">R$ 149,90</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn-quick-view">
+                            <i class="fas fa-eye"></i> Visualizar
+                        </button>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-shopping-cart"></i> Comprar
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Paginação -->
+        <div class="catalog-pagination">
+            <button class="pagination-btn prev" disabled>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn">4</button>
+            <span class="pagination-ellipsis">...</span>
+            <button class="pagination-btn">12</button>
+            <button class="pagination-btn next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
 
     <footer class="footer">
         <div class="footer__container">
@@ -518,6 +707,7 @@
 
     <script src="../../js/search.js"></script>
     <script src="./js/catalog.js"></script>
+    <script src="./js/catalogMobile.js"></script>
 </body>
 
 </html>
