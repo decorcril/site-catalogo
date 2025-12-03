@@ -1,0 +1,342 @@
+[
+  {
+    "id": 1,
+    "productCode": "7000-10",
+    "title": "Bandeja Gira Bolo",
+    "category": "bandejas",
+    "image": "../../assets/images/products/categories/tray/bandeja-gira-bolo.png",
+    "price": "R$ 250,00",
+    "oldPrice": "R$ 290,00",
+    "shortDescription": "Já pensou em levar movimento para os bolos da sua festa?",
+    "longDescription": "Já pensou em levar movimento para os bolos da sua festa? Confeccionamos essa linda bandeja giratória para dar vida a sua decoração. Produto bivolt.",
+    "kitPieces": [
+      {
+        "name": "Base Branca",
+        "Height": 13,
+        "Width": 6.5,
+        "Capacity": 1,
+        "thickness": 3
+      },
+      {
+        "name": "Disco",
+        "Height": 10,
+        "Width": 30,
+        "depth": 30,
+        "thickness": 3
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Bivolt"
+  },
+  {
+    "id": 2,
+    "productCode": "1040",
+    "title": "Conjunto de Bandejas",
+    "category": "bandejas",
+    "image": "../../assets/images/products/categories/tray/conjuto-bandejas.png",
+    "price": "R$ 450,00",
+    "oldPrice": "R$ 460,00",
+    "shortDescription": "Lindo conjunto giratório com 6 bandejas.",
+    "longDescription": "Lindo conjunto giratório com 6 bandejas para dar vida a sua decoração. O produto acrílico  cristalino e fica em movimento. Produto bivolt.",
+    "kitPieces": [
+      {
+        "name": "Base Branca",
+        "Height": 13,
+        "Width": 6.5,
+        "Capacity": 1,
+        "thickness": 3
+      },
+      {
+        "name": "Discos",
+        "Height": 10,
+        "Width": 30,
+        "depth": 30,
+        "thickness": 3
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Bivolt"
+  },
+  {
+    "id": 3,
+    "productCode": "9040-M3",
+    "title": "Porta Buquê para Noivas - M3",
+    "category": "porta-buques",
+    "image": "../../assets/images/products/categories/ceremonies/porta-buque-m3.png",
+    "price": "R$ 250,00",
+    "oldPrice": "R$ 270,00",
+    "shortDescription": "Eternize esse momento com essa linda caixa em acrílico.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.  capacidade para 14 unidades.",
+    "Height": 24,
+    "Width": 17,
+    "depth": 0,
+    "thickness": 3,
+    "Capacity": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 11,
+    "productCode": "9060-M1-P",
+    "title": "Suporte para Donuts - P",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-donuts-p.png",
+    "price": "R$ 120,00",
+    "oldPrice": "R$ 130,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 6 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.  capacidade para 14 unidades.",
+    "Height": 24,
+    "Width": 17,
+    "depth": 0,
+    "thickness": 3,
+    "Capacity": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 12,
+    "productCode": "9060-M1-G",
+    "title": "Suporte para Donuts - G",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-donuts-g.png",
+    "price": "R$ 440,00",
+    "oldPrice": "R$ 450,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 9 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.  capacidade para 14 unidades.",
+    "Height": 47,
+    "Width": 34,
+    "depth": 0,
+    "thickness": 6,
+    "Capacity": 44,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 13,
+    "productCode": "9060-M2",
+    "title": "Suporte para Donuts - Prateleira",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-donut-prateleira.png",
+    "price": "R$ 50,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, perfeito para loja de doces.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.",
+    "Height": 24,
+    "Width": 17,
+    "depth": 0,
+    "thickness": 3,
+    "Capacity": 9,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 14,
+    "productCode": "9060-M3-P",
+    "title": "Suporte para Donuts Circular - P",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-donuts-circular-p.png",
+    "price": "R$ 120,00",
+    "oldPrice": "R$ 100,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 14 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.  capacidade para 14 unidades.",
+    "Height": 47,
+    "Width": 34,
+    "depth": 0,
+    "thickness": 6,
+    "Capacity": 14,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 15,
+    "productCode": "9060-M3-P",
+    "title": "Suporte para Donuts Circular - G",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-donuts-circular-g.png",
+    "price": "R$ 120,00",
+    "oldPrice": "R$ 100,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 44 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais.  capacidade para 14 unidades.",
+    "Height": 70,
+    "Width": 64,
+    "depth": 0,
+    "thickness": 6,
+    "Capacity": 44,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 16,
+    "productCode": "9065-c",
+    "title": "Suporte Bota - Com Tampa",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/bota-c.png",
+    "price": "R$ 65,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Lindo expositor formato bota para utilidades. Perfeito para expor contetes ou doces.",
+    "longDescription": "Lindo expositor formato bota para utilidades. Caso queira usá-lo para colocar confetes ou doces, peça para a vendedora acrescentar a tampa de abre e fecha no pedido",
+    "Height": 30,
+    "Width": 24,
+    "depth": 10,
+    "thickness": 6,
+    "Capacity": 44,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 17,
+    "productCode": "9065-s",
+    "title": "Suporte Bota - Sem Tampa",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/bota-c.png",
+    "price": "R$ 65,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Lindo expositor formato bota para utilidades. Perfeito para expor contetes ou doces.",
+    "longDescription": "Lindo expositor formato bota para utilidades. Caso queira usá-lo para colocar confetes ou doces, peça para a vendedora acrescentar a tampa de abre e fecha no pedido",
+    "Height": 30,
+    "Width": 24,
+    "depth": 10,
+    "thickness": 6,
+    "Capacity": 44,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 18,
+    "productCode": "9020",
+    "title": "Suporte Meia Lua - Kit 3 Peças",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/suporte-meia-lua.png",
+    "price": "R$ 100,00",
+    "oldPrice": "R$ 120,00",
+    "shortDescription": "Kit com 3 discos meia lua em acrílico cristalino 6mm. Perfeito para expor doces.",
+    "longDescription": "Suporte para Doces Meia Lua, feito com Acrílico Cristalino de 6mm de espessura. Produto de altíssima qualidade para deixar a decoração com muito mais glamour e sofisticação.",
+    "kitPieces": [
+      {
+        "name": "Disco Pequeno",
+        "Height": 13,
+        "Width": 6.5,
+        "depth": 0,
+        "Capacity": 1,
+        "thickness": 6
+      },
+      {
+        "name": "Disco Médio",
+        "Height": 26,
+        "Width": 13,
+        "depth": 0,
+        "Capacity": 4,
+        "thickness": 6
+      },
+      {
+        "name": "Disco Grande",
+        "Height": 39,
+        "Width": 19.5,
+        "depth": 0,
+        "Capacity": 8,
+        "thickness": 6
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 19,
+    "productCode": "8020-3",
+    "title": "Porta Cupakes - 3 Andares",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/porta-cupcakes-3.png",
+    "price": "R$ 150,00",
+    "oldPrice": "R$ 170,00",
+    "shortDescription": "Nosso Porta Cup-Cakes, é perfeito para deixar a Decoração do seu Evento ainda mais Clean.",
+    "longDescription": "Nosso Porta Cup-Cakes, é perfeito para deixar a Decoração do seu Evento ainda mais Clean. Produto Feito no acrílico virgem de 4mm de espessura.",
+    "kitPieces": [
+      {
+        "name": "1º Disco",
+        "Height": 15,
+        "Width": 15,
+        "depth": 0,
+        "Capacity": 2,
+        "thickness": 4
+      },
+      {
+        "name": "2º Disco",
+        "Height": 20,
+        "Width": 20,
+        "depth": 0,
+        "Capacity": 4,
+        "thickness": 4
+      },
+      {
+        "name": "3º Disco",
+        "Height": 25,
+        "Width": 25,
+        "depth": 0,
+        "Capacity": 8,
+        "thickness": 6
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": ""
+  },
+  {
+    "id": 20,
+    "productCode": "8020-4",
+    "title": "Porta Cupakes - 4 Andares",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/porta-cupcakes-4.png",
+    "price": "R$ 250,00",
+    "oldPrice": "R$ 270,00",
+    "shortDescription": "Nosso Porta Cup-Cakes, é perfeito para deixar a Decoração do seu Evento ainda mais ‘’Clean’’.",
+    "longDescription": "Nosso Porta Cup-Cakes, é perfeito para deixar a Decoração do seu Evento ainda mais ‘’Clean’’. Produto Feito no acrílico virgem de 4mm de espessura.",
+    "kitPieces": [
+      {
+        "name": "1º Disco",
+        "Height": 15,
+        "Width": 15,
+        "depth": 0,
+        "Capacity": 2,
+        "thickness": 4
+      },
+      {
+        "name": "2º Disco",
+        "Height": 20,
+        "Width": 20,
+        "depth": 0,
+        "Capacity": 4,
+        "thickness": 4
+      },
+      {
+        "name": "3º Disco",
+        "Height": 25,
+        "Width": 25,
+        "depth": 0,
+        "Capacity": 8,
+        "thickness": 6
+      },
+      {
+        "name": "4º Disco",
+        "Height": 30,
+        "Width": 30,
+        "depth": 0,
+        "Capacity": 12,
+        "thickness": 6
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": ""
+  }
+]
