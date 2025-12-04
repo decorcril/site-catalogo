@@ -31,7 +31,7 @@ function renderProducts(products) {
                     <button class="wishlist-btn" aria-label="Adicionar aos favoritos">
                         <i class="far fa-heart"></i>
                     </button>
-                    ${product.badge ? `<span class="product-badge ${product.badge.toLowerCase().includes('novidade') ? 'new' : ''}">${product.badge}</span>` : ''}
+                    ${product.badge ? `<span class="product-badge ${product.badge.toLowerCase().replace(' ', '-')}">${product.badge}</span>` : ''}
                 </div>
                 <div class="catalog-card-content">
                     <div class="product-meta">
