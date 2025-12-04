@@ -15,7 +15,8 @@
         "height": 30,
         "width": 30,
         "capacity": 1,
-        "thickness": 3
+        "thickness": 3,
+        "voltage": "bivolt"
       },
       {
         "name": "Disco",
@@ -45,7 +46,8 @@
         "height": 13,
         "width": 6.5,
         "capacity": 1,
-        "thickness": 3
+        "thickness": 3,
+        "voltage": "bivolt"
       },
       {
         "name": "Discos",
@@ -68,7 +70,7 @@
     "price": "R$ 220,00",
     "oldPrice": "R$ 250,00",
     "shortDescription": "Eternize esse momento com essa linda caixa em acrílico.",
-    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
+    "longDescription": "Eternize o momento mais importante da sua vida! Não se trata apenas de um buquê, mas sim de uma memória, um momento lindo e especial que irá ficar guardado para sempre. Nossa linda caixa em acrílico cristalino de 3MM é a solução perfeita para preservar as flores do seu casamento, transformando-as em uma arte.",
     "height": 30,
     "width": 30,
     "depth": 30,
@@ -76,6 +78,7 @@
     "capacity": 1,
     "rating": 4.5,
     "reviews": 71,
+    "stock": 3,
     "badge": "Novidade"
   },
   {
@@ -205,7 +208,7 @@
     "price": "R$ 120,00",
     "oldPrice": "R$ 130,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 6 unidades.",
-    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 6 unidades.",
     "height": 24,
     "width": 17,
     "depth": 0,
@@ -224,7 +227,7 @@
     "price": "R$ 440,00",
     "oldPrice": "R$ 450,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 9 unidades.",
-    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
+    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 9 unidades.",
     "height": 47,
     "width": 34,
     "depth": 0,
@@ -258,7 +261,7 @@
     "productCode": "9060-M3-P",
     "title": "Suporte para Donuts Circular - Pequeno",
     "category": "suportes-utilidade",
-    "image": "../../assets/images/products/categories/utility-rack/9060-M1-P.png",
+    "image": "../../assets/images/products/categories/utility-rack/9060-M3-P.png",
     "price": "R$ 120,00",
     "oldPrice": "R$ 100,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 14 unidades.",
@@ -277,9 +280,9 @@
     "productCode": "9060-M3-G",
     "title": "Suporte para Donuts Circular - Grande",
     "category": "suportes-utilidade",
-    "image": "../../assets/images/products/categories/utility-rack/suporte-donuts-circular-g.png",
-    "price": "R$ 120,00",
-    "oldPrice": "R$ 100,00",
+    "image": "../../assets/images/products/categories/utility-rack/9060-M3-G.png",
+    "price": "R$ 450,00",
+    "oldPrice": "R$ 470,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico, capacidade para 44 unidades.",
     "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
     "height": 70,
@@ -289,7 +292,7 @@
     "capacity": 44,
     "rating": 4.5,
     "reviews": 71,
-    "badge": "Novidade"
+    "badge": "desconto"
   },
   {
     "id": 16,

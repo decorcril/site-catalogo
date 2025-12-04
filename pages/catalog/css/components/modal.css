@@ -1,59 +1,116 @@
-/* Modal Básico */
+/* Modal Básico - COBRE TELA INTEIRA */
 .product-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
+    overflow: hidden;
 }
 
+/* Modal em si - ocupa quase toda a tela */
 .product-modal {
     background: white;
     border-radius: 12px;
-    width: 90%;
-    max-width: 800px;
-    max-height: 90vh;
-    overflow-y: auto;
+    width: 95vw;
+    height: 95vh;
+    max-width: 1400px;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-/* Header */
+/* Header fixo no topo */
 .modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 30px;
     border-bottom: 1px solid #eee;
     background: white;
+    flex-shrink: 0;
+    z-index: 2;
 }
 
 .modal-header h3 {
     margin: 0;
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 700;
+    max-width: 80%;
+}
+
+/* DESCRIÇÃO COMPLETA */
+.description-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.description-section h4 {
     font-size: 1.3rem;
-    color: #333;
-    font-weight: 600;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.long-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.long-description p {
+    margin-bottom: 15px;
+}
+
+.long-description p:last-child {
+    margin-bottom: 0;
 }
 
 .close-modal {
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 32px;
     cursor: pointer;
     color: #666;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    line-height: 1;
+    transition: color 0.2s;
 }
 
 .close-modal:hover {
-    color: #333;
+    color: #222;
 }
 
-/* Conteúdo */
+/* Conteúdo com scroll */
 .modal-content {
-    padding: 20px;
+    padding: 30px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Layout da imagem e informações lado a lado */
+.modal-image-info {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* COLUNA DA IMAGEM */
+.modal-image-column {
+    flex: 1;
+    min-width: 300px;
 }
 
 .modal-image {
@@ -62,30 +119,38 @@
 }
 
 .modal-image img {
-    max-width: 100%;
-    max-height: 300px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
     border-radius: 8px;
 }
 
-/* PREÇOS */
+/* COLUNA DAS INFORMAÇÕES */
+.modal-info-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* PREÇOS (SEM BADGE) */
 .price-section {
     margin-bottom: 25px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #eee;
 }
 
 .current-price {
-    font-size: 1.8rem;
-    color: #222;
-    font-weight: 700;
+    font-size: 2.2rem;
+    color: #00FF00;
+    font-weight: 800;
     display: block;
     margin-bottom: 5px;
 }
 
 .original-price {
-    font-size: 1.1rem;
-    color: #999;
+    font-size: 1.3rem;
+    color: #ff0000;
     text-decoration: line-through;
+    display: block;
 }
 
 /* ESPECIFICAÇÕES */
@@ -94,17 +159,19 @@
 }
 
 .specs-section h4 {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-    font-weight: 600;
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
 }
 
 /* Tabela de especificações principais */
 .specs-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .specs-table tr {
@@ -112,98 +179,212 @@
 }
 
 .specs-table td {
-    padding: 10px 0;
+    padding: 12px 0;
     vertical-align: top;
 }
 
 .specs-table td:first-child {
-    color: #666;
-    width: 40%;
-    font-size: 0.9rem;
+    color: #555;
+    width: 35%;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .specs-table td:last-child {
-    font-weight: 500;
-    color: #333;
-    font-size: 0.95rem;
+    font-weight: 600;
+    color: #222;
+    font-size: 1rem;
 }
 
 /* Peças do Kit (se houver) */
 .kit-pieces {
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 25px;
+    padding-top: 25px;
     border-top: 1px solid #eee;
 }
 
 .kit-pieces h5 {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .kit-piece {
     background: #f9f9f9;
-    border-radius: 6px;
-    padding: 12px;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
     border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kit-piece:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .kit-piece-name {
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 8px;
-    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .kit-piece-specs {
-    font-size: 0.85rem;
-    color: #666;
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .kit-piece-specs span {
-    margin-right: 15px;
+    background: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 
 .kit-piece-specs strong {
-    color: #333;
+    color: #222;
+    margin-left: 5px;
 }
 
 /* Código do produto */
 .product-code {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 15px;
-    padding-top: 15px;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid #eee;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 .product-code strong {
-    color: #333;
+    color: #222;
 }
 
+/* BADGE DE URGÊNCIA DISCRETA */
+.urgency-badge-container {
+    margin-top: 10px;
+}
+
+.urgency-badge {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Scrollbar personalizada */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Animações para a badge de urgência */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(2px);
+    }
+}
+
+
 /* Responsividade */
+@media screen and (max-width: 1024px) {
+    .modal-image-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .modal-image-column, .modal-info-column {
+        min-width: 100%;
+    }
+    
+    .modal-image img {
+        max-height: 350px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .product-modal {
-        width: 95%;
-        max-height: 95vh;
+        width: 98vw;
+        height: 98vh;
+        max-height: 98vh;
+        border-radius: 8px;
+    }
+    
+    .modal-header {
+        padding: 15px 20px;
     }
     
     .modal-header h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+    }
+    
+    .modal-content {
+        padding: 20px;
     }
     
     .current-price {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
-    .specs-table td:first-child {
-        width: 45%;
+    .original-price {
+        font-size: 1.1rem;
+    }
+    
+    .close-modal {
+        font-size: 28px;
+        padding: 0 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .product-modal {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+    
     .modal-content {
         padding: 15px;
     }
@@ -212,12 +393,46 @@
         padding: 15px;
     }
     
+    .modal-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .current-price {
+        font-size: 1.6rem;
+    }
+    
+    .original-price {
+        font-size: 1rem;
+    }
+    
     .specs-table td {
-        padding: 8px 0;
-        font-size: 0.85rem;
+        padding: 10px 0;
+        font-size: 0.9rem;
+    }
+    
+    .specs-table td:first-child {
+        width: 45%;
     }
     
     .kit-piece {
-        padding: 10px;
+        padding: 12px;
+    }
+    
+    .kit-piece-specs {
+        gap: 10px;
+    }
+    
+    .close-modal {
+        font-size: 24px;
     }
 }
+
+/* Para telas menores */
+@media screen and (max-width: 768px) {
+    .urgency-badge {
+        font-size: 0.85rem;
+        padding: 5px 12px;
+    }
+}
+
+

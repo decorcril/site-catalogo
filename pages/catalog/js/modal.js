@@ -1,7 +1,9 @@
 function openProductModal(product) {
-    // Gerar especificações principais
+    // Gerar especificações principais - AGORA COM VOLTAGEM
     let mainSpecsHTML = '';
-    if (product.height || product.width || product.depth || product.capacity || product.thickness) {
+    const hasMainSpecs = product.height || product.width || product.depth || product.capacity || product.thickness || product.voltage;
+    
+    if (hasMainSpecs) {
         mainSpecsHTML = `
             <table class="specs-table">
                 ${product.height ? `<tr><td>Altura:</td><td><strong>${product.height} cm</strong></td></tr>` : ''}
@@ -10,11 +12,12 @@ function openProductModal(product) {
                 ${product.length ? `<tr><td>Comprimento:</td><td><strong>${product.length} cm</strong></td></tr>` : ''}
                 ${product.thickness ? `<tr><td>Espessura:</td><td><strong>${product.thickness} mm</strong></td></tr>` : ''}
                 ${product.capacity && product.capacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${product.capacity} unidades</strong></td></tr>` : ''}
+                ${product.voltage ? `<tr><td>Voltagem:</td><td><strong>${product.voltage}</strong></td></tr>` : ''}
             </table>
         `;
     }
     
-    // Gerar peças do kit
+    // Gerar peças do kit - AGORA COM VOLTAGEM NAS PEÇAS
     let kitPiecesHTML = '';
     if (product.kitPieces && product.kitPieces.length > 0) {
         kitPiecesHTML = `
@@ -30,6 +33,7 @@ function openProductModal(product) {
                             ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span>` : ''}
                             ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
                             ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span>` : ''}
+                            ${piece.voltage ? `<span>Voltagem: <strong>${piece.voltage}</strong></span>` : ''}
                         </div>
                     </div>
                 `).join('')}
@@ -37,14 +41,15 @@ function openProductModal(product) {
         `;
     }
     
-    // Adicionar badge se existir (igual aos cards)
-    const badgeHTML = product.badge ? 
-        `<div class="modal-badge-container">
-            <span class="product-badge ${product.badge.toLowerCase().replace(' ', '-')}">${product.badge}</span>
-        </div>` : 
-        '';
+    // BADGE DE URGÊNCIA DISCRETA - "Últimas Peças"
+    const showUrgencyBadge = product.stock && product.stock <= 5;
+    const urgencyBadgeHTML = showUrgencyBadge ? `
+        <div class="urgency-badge-container">
+            <span class="urgency-badge">ÚLTIMAS PEÇAS</span>
+        </div>
+    ` : '';
     
-    // Montar modal
+    // Montar modal COM LAYOUT DE DUAS COLUNAS
     const modalHTML = `
         <div class="product-modal-overlay" id="productModal">
             <div class="product-modal">
@@ -53,32 +58,48 @@ function openProductModal(product) {
                     <button class="close-modal">&times;</button>
                 </div>
                 <div class="modal-content">
-                    <div class="modal-image">
-                        <img src="${product.image}" alt="${product.title}">
-                    </div>
-                    
-                    <!-- PREÇOS E BADGE -->
-                    <div class="modal-price-badge-section">
-                        <div class="price-section">
-                            <span class="current-price">${product.price}</span>
-                            ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
+                    <div class="modal-image-info">
+                        <!-- COLUNA DA IMAGEM -->
+                        <div class="modal-image-column">
+                            <div class="modal-image">
+                                <img src="${product.image}" alt="${product.title}">
+                            </div>
                         </div>
-                        ${badgeHTML}
-                    </div>
-                    
-                    <!-- ESPECIFICAÇÕES -->
-                    ${(mainSpecsHTML || kitPiecesHTML) ? `
-                        <div class="specs-section">
-                            <h4>Especificações</h4>
-                            ${mainSpecsHTML}
-                            ${kitPiecesHTML}
-                            ${product.productCode ? `
-                                <div class="product-code">
-                                    <strong>Código:</strong> ${product.productCode}
+                        
+                        <!-- COLUNA DAS INFORMAÇÕES -->
+                        <div class="modal-info-column">
+                            <!-- PREÇOS COM BADGE DE URGÊNCIA -->
+                            <div class="price-section">
+                                <span class="current-price">${product.price}</span>
+                                ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
+                                ${urgencyBadgeHTML}
+                            </div>
+                            
+                            <!-- DESCRIÇÃO COMPLETA -->
+                            ${product.longDescription ? `
+                                <div class="description-section">
+                                    <h4>Descrição</h4>
+                                    <div class="long-description">
+                                        ${product.longDescription}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            
+                            <!-- ESPECIFICAÇÕES -->
+                            ${(mainSpecsHTML || kitPiecesHTML) ? `
+                                <div class="specs-section">
+                                    <h4>Especificações</h4>
+                                    ${mainSpecsHTML}
+                                    ${kitPiecesHTML}
+                                    ${product.productCode ? `
+                                        <div class="product-code">
+                                            <strong>Código:</strong> ${product.productCode}
+                                        </div>
+                                    ` : ''}
                                 </div>
                             ` : ''}
                         </div>
-                    ` : ''}
+                    </div>
                 </div>
             </div>
         </div>
