@@ -15,6 +15,62 @@ function generateStars(rating) {
     return stars;
 }
 
+// FUNÇÃO PARA VERIFICAR FILTRO DA URL AO CARREGAR
+function checkUrlFilterOnLoad() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterFromUrl = urlParams.get('filter');
+    
+    if (filterFromUrl) {
+        console.log('Filtro da URL detectado:', filterFromUrl);
+        
+        // Aplicar o filtro
+        if (typeof applyFilter === 'function') {
+            setTimeout(() => {
+                applyFilter(filterFromUrl);
+                updateActiveFilterButtons(filterFromUrl);
+                updateMobileFilterButton(filterFromUrl);
+            }, 300); // Pequeno delay para garantir que productsData foi carregado
+        }
+    }
+}
+
+// ATUALIZAR BOTÕES DE FILTRO DESKTOP
+function updateActiveFilterButtons(filter) {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    filterBtns.forEach(btn => {
+        if (btn.dataset.filter === filter) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+// ATUALIZAR BOTÃO MOBILE (se existir)
+function updateMobileFilterButton(filter) {
+    const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+    const mobileFilterBtns = document.querySelectorAll('.mobile-filter-btn');
+    
+    if (!mobileFilterToggle || !mobileFilterBtns.length) return;
+    
+    // Encontrar o botão mobile correspondente
+    const correspondingBtn = Array.from(mobileFilterBtns).find(btn => 
+        btn.dataset.filter === filter
+    );
+    
+    if (correspondingBtn && mobileFilterToggle.querySelector('.filter-label')) {
+        // Atualizar texto do botão mobile
+        mobileFilterToggle.querySelector('.filter-label').textContent = 
+            correspondingBtn.textContent.trim();
+        
+        // Atualizar estado ativo dos botões mobile
+        mobileFilterBtns.forEach(b => {
+            b.classList.toggle('active', b.dataset.filter === filter);
+        });
+    }
+}
+
 // Função para renderizar produtos
 function renderProducts(products) {
     const container = document.getElementById('productsContainer');
@@ -27,7 +83,7 @@ function renderProducts(products) {
         // Verificar se tem variações de preço
         const hasVariations = product.priceVariations && product.priceVariations.length > 0;
         
-        // Gerar HTML para variações se existirem
+        // Gerar HTML para variações com BOTÕES PILLS em vez de select
         let variationsHTML = '';
         if (hasVariations) {
             variationsHTML = `
@@ -35,15 +91,18 @@ function renderProducts(products) {
                     ${product.priceVariations.map(variation => `
                         <div class="variation-group" data-key="${variation.key}">
                             <label class="variation-label">${variation.name}:</label>
-                            <select class="variation-select" data-variation-key="${variation.key}">
-                                ${variation.options.map(option => `
-                                    <option value="${option.value}" 
-                                            data-price="${option.price}"
-                                            data-image="${option.image || ''}">
+                            <div class="variation-badges">
+                                ${variation.options.map((option, index) => `
+                                    <button 
+                                        class="variation-badge ${index === 0 ? 'active' : ''}" 
+                                        data-variation-key="${variation.key}"
+                                        data-value="${option.value}"
+                                        data-price="${option.price}"
+                                        data-image="${option.image || ''}">
                                         ${option.label}
-                                    </option>
+                                    </button>
                                 `).join('')}
-                            </select>
+                            </div>
                         </div>
                     `).join('')}
                 </div>
@@ -102,43 +161,54 @@ function renderProducts(products) {
     attachQuickViewEvents();
 }
 
-// Função para configurar eventos das variações de preço E IMAGEM
+// Função para configurar eventos das variações de preço E IMAGEM com PILLS
 function setupVariationEvents() {
-    // Para cada select de variação
-    document.querySelectorAll('.variation-select').forEach(select => {
-        select.addEventListener('change', function() {
+    // Para cada botão de variação PILL
+    document.querySelectorAll('.variation-badge').forEach(badge => {
+        badge.addEventListener('click', function() {
             const productCard = this.closest('.catalog-card');
             const currentPriceElement = productCard.querySelector('.current-price');
             const productImage = productCard.querySelector('.product-main-image');
             const basePrice = currentPriceElement.dataset.basePrice;
             const baseImage = productImage.dataset.baseImage;
             
+            // Remover 'active' dos outros badges do mesmo grupo
+            const variationGroup = this.closest('.variation-group');
+            variationGroup.querySelectorAll('.variation-badge').forEach(b => {
+                b.classList.remove('active');
+            });
+            
+            // Adicionar 'active' ao badge clicado
+            this.classList.add('active');
+            
             // Coletar todas as seleções deste produto
-            const variations = productCard.querySelectorAll('.variation-select');
+            const variations = productCard.querySelectorAll('.variation-group');
             let finalPrice = basePrice;
             let finalImage = baseImage;
             const selectedOptions = {};
             
             // Encontrar o preço e imagem da opção selecionada
-            variations.forEach(variation => {
-                const selectedOption = variation.options[variation.selectedIndex];
-                const selectedPrice = selectedOption.dataset.price;
-                const selectedImage = selectedOption.dataset.image;
-                const key = variation.dataset.variationKey;
-                const value = variation.value;
-                
-                // Salvar seleção
-                selectedOptions[key] = {
-                    value: value,
-                    price: selectedPrice,
-                    image: selectedImage
-                };
-                
-                if (selectedPrice) {
-                    finalPrice = selectedPrice;
-                }
-                if (selectedImage) {
-                    finalImage = selectedImage;
+            variations.forEach(variationGroup => {
+                const activeBadge = variationGroup.querySelector('.variation-badge.active');
+                if (activeBadge) {
+                    const key = activeBadge.dataset.variationKey;
+                    const value = activeBadge.dataset.value;
+                    const selectedPrice = activeBadge.dataset.price;
+                    const selectedImage = activeBadge.dataset.image;
+                    
+                    // Salvar seleção
+                    selectedOptions[key] = {
+                        value: value,
+                        price: selectedPrice,
+                        image: selectedImage
+                    };
+                    
+                    if (selectedPrice) {
+                        finalPrice = selectedPrice;
+                    }
+                    if (selectedImage) {
+                        finalImage = selectedImage;
+                    }
                 }
             });
             
@@ -183,23 +253,25 @@ function setupVariationEvents() {
             
             // Coletar opções selecionadas
             const selectedOptions = {};
-            const variations = productCard.querySelectorAll('.variation-select');
+            const variationGroups = productCard.querySelectorAll('.variation-group');
             
-            variations.forEach(variation => {
-                const key = variation.dataset.variationKey;
-                const value = variation.value;
-                const selectedOption = variation.options[variation.selectedIndex];
-                const price = selectedOption.dataset.price;
-                const image = selectedOption.dataset.image;
-                
-                selectedOptions[key] = {
-                    value: value,
-                    price: price,
-                    image: image
-                };
+            variationGroups.forEach(group => {
+                const activeBadge = group.querySelector('.variation-badge.active');
+                if (activeBadge) {
+                    const key = activeBadge.dataset.variationKey;
+                    const value = activeBadge.dataset.value;
+                    const price = activeBadge.dataset.price;
+                    const image = activeBadge.dataset.image;
+                    
+                    selectedOptions[key] = {
+                        value: value,
+                        price: price,
+                        image: image
+                    };
+                }
             });
             
-            // Aqui você pode adicionar ao carrinho
+            // Adicionar ao carrinho
             addToCart(productId, currentPrice, selectedOptions);
         });
     });
@@ -220,19 +292,27 @@ function updateCardFromModalSelections(productId) {
     let finalPrice = basePrice;
     let finalImage = baseImage;
     
-    // Atualizar cada select no card
-    productCard.querySelectorAll('.variation-select').forEach(select => {
-        const variationKey = select.dataset.variationKey;
+    // Atualizar cada grupo de badges no card
+    productCard.querySelectorAll('.variation-group').forEach(group => {
+        const variationKey = group.dataset.key;
         if (selectedOptions[variationKey]) {
-            // Definir o valor selecionado
-            select.value = selectedOptions[variationKey].value;
+            // Remover active de todos
+            group.querySelectorAll('.variation-badge').forEach(b => b.classList.remove('active'));
             
-            // Verificar se há preço ou imagem específicos
-            if (selectedOptions[variationKey].price) {
-                finalPrice = selectedOptions[variationKey].price;
-            }
-            if (selectedOptions[variationKey].image) {
-                finalImage = selectedOptions[variationKey].image;
+            // Adicionar active ao badge correto
+            const selectedBadge = group.querySelector(
+                `.variation-badge[data-value="${selectedOptions[variationKey].value}"]`
+            );
+            if (selectedBadge) {
+                selectedBadge.classList.add('active');
+                
+                // Verificar se há preço ou imagem específicos
+                if (selectedOptions[variationKey].price) {
+                    finalPrice = selectedOptions[variationKey].price;
+                }
+                if (selectedOptions[variationKey].image) {
+                    finalImage = selectedOptions[variationKey].image;
+                }
             }
         }
     });
@@ -242,37 +322,99 @@ function updateCardFromModalSelections(productId) {
     productImage.src = finalImage;
 }
 
-// FUNÇÃO PARA ABRIR O MODAL DE PRODUTO
+// FUNÇÃO PARA ABRIR O MODAL DE PRODUTO - VERSÃO CORRIGIDA
 function openProductModal(product) {
     // Verificar se há seleções salvas para este produto
     const savedSelections = window.modalSelections?.[product.id] || {};
     
-    // Gerar especificações principais - AGORA COM VOLTAGEM
+    // DADOS INICIAIS
+    let currentPrice = product.price;
+    let currentImage = product.image;
+    let currentThickness = product.thickness;
+    let currentHeight = product.height;
+    let currentWidth = product.width;
+    let currentDepth = product.depth;
+    let currentLength = product.length;
+    let currentCapacity = product.capacity;
+    let currentKitPieces = product.kitPieces || [];
+    
+    console.log('Abrindo modal para:', product.title);
+    
+    // SE HOUVER VARIAÇÕES E SELEÇÕES SALVAS, USAR ELAS
+    if (product.priceVariations && Object.keys(savedSelections).length > 0) {
+        console.log('Tem variações e seleções salvas');
+        
+        product.priceVariations.forEach(variation => {
+            const savedSelection = savedSelections[variation.key];
+            if (savedSelection) {
+                const selectedOption = variation.options.find(opt => opt.value === savedSelection.value);
+                
+                if (selectedOption) {
+                    // ATUALIZAR VALORES COM BASE NA OPÇÃO
+                    if (selectedOption.price) currentPrice = selectedOption.price;
+                    if (selectedOption.image) currentImage = selectedOption.image;
+                    if (selectedOption.thickness !== undefined) currentThickness = selectedOption.thickness;
+                    if (selectedOption.height !== undefined) currentHeight = selectedOption.height;
+                    if (selectedOption.width !== undefined) currentWidth = selectedOption.width;
+                    if (selectedOption.depth !== undefined) currentDepth = selectedOption.depth;
+                    if (selectedOption.length !== undefined) currentLength = selectedOption.length;
+                    if (selectedOption.capacity !== undefined) currentCapacity = selectedOption.capacity;
+                    
+                    // IMPORTANTE: Se a opção tiver kitPieces, usar eles!
+                    if (selectedOption.kitPieces && selectedOption.kitPieces.length > 0) {
+                        currentKitPieces = selectedOption.kitPieces;
+                    }
+                }
+            }
+        });
+    } 
+    // SE NÃO HOUVER SELEÇÕES SALVAS, USAR O PADRÃO DAS PRIMEIRAS VARIAÇÕES
+    else if (product.priceVariations && product.priceVariations.length > 0) {
+        const firstVariation = product.priceVariations[0];
+        const firstOption = firstVariation.options[0];
+        
+        // Usar valores da primeira opção como padrão
+        if (firstOption.price) currentPrice = firstOption.price;
+        if (firstOption.image) currentImage = firstOption.image;
+        if (firstOption.thickness !== undefined) currentThickness = firstOption.thickness;
+        if (firstOption.height !== undefined) currentHeight = firstOption.height;
+        if (firstOption.width !== undefined) currentWidth = firstOption.width;
+        if (firstOption.depth !== undefined) currentDepth = firstOption.depth;
+        if (firstOption.length !== undefined) currentLength = firstOption.length;
+        if (firstOption.capacity !== undefined) currentCapacity = firstOption.capacity;
+        
+        // IMPORTANTE: Se a primeira opção tiver kitPieces, usar eles!
+        if (firstOption.kitPieces && firstOption.kitPieces.length > 0) {
+            currentKitPieces = firstOption.kitPieces;
+        }
+    }
+    
+    // Gerar especificações principais - USANDO OS VALORES ATUALIZADOS
     let mainSpecsHTML = '';
-    const hasMainSpecs = product.height || product.width || product.depth || 
-                        product.capacity || product.thickness || product.voltage;
+    const hasMainSpecs = currentHeight || currentWidth || currentDepth || 
+                        currentCapacity || currentThickness || currentLength || product.voltage;
     
     if (hasMainSpecs) {
         mainSpecsHTML = `
             <table class="specs-table">
-                ${product.height ? `<tr><td>Altura:</td><td><strong>${product.height} cm</strong></td></tr>` : ''}
-                ${product.width ? `<tr><td>Largura:</td><td><strong>${product.width} cm</strong></td></tr>` : ''}
-                ${product.depth && product.depth > 0 ? `<tr><td>Profundidade:</td><td><strong>${product.depth} cm</strong></td></tr>` : ''}
-                ${product.length ? `<tr><td>Comprimento:</td><td><strong>${product.length} cm</strong></td></tr>` : ''}
-                ${product.thickness ? `<tr><td>Espessura:</td><td><strong>${product.thickness} mm</strong></td></tr>` : ''}
-                ${product.capacity && product.capacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${product.capacity} unidades</strong></td></tr>` : ''}
+                ${currentHeight ? `<tr><td>Altura:</td><td><strong>${currentHeight} cm</strong></td></tr>` : ''}
+                ${currentWidth ? `<tr><td>Largura:</td><td><strong>${currentWidth} cm</strong></td></tr>` : ''}
+                ${currentDepth && currentDepth > 0 ? `<tr><td>Profundidade:</td><td><strong>${currentDepth} cm</strong></td></tr>` : ''}
+                ${currentLength ? `<tr><td>Comprimento:</td><td><strong>${currentLength} cm</strong></td></tr>` : ''}
+                ${currentThickness ? `<tr><td>Espessura:</td><td><strong>${currentThickness} mm</strong></td></tr>` : ''}
+                ${currentCapacity && currentCapacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${currentCapacity} unidades</strong></td></tr>` : ''}
                 ${product.voltage ? `<tr><td>Voltagem:</td><td><strong>${product.voltage}</strong></td></tr>` : ''}
             </table>
         `;
     }
     
-    // Gerar peças do kit - AGORA COM VOLTAGEM NAS PEÇAS
+    // Gerar peças do kit - USANDO AS PEÇAS ATUALIZADAS
     let kitPiecesHTML = '';
-    if (product.kitPieces && product.kitPieces.length > 0) {
+    if (currentKitPieces && currentKitPieces.length > 0) {
         kitPiecesHTML = `
             <div class="kit-pieces">
-                <h5>Peças do Kit (${product.kitPieces.length})</h5>
-                ${product.kitPieces.map(piece => `
+                <h5>Peças do Kit (${currentKitPieces.length})</h5>
+                ${currentKitPieces.map(piece => `
                     <div class="kit-piece">
                         <div class="kit-piece-name">${piece.name}</div>
                         <div class="kit-piece-specs">
@@ -282,6 +424,7 @@ function openProductModal(product) {
                             ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span>` : ''}
                             ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
                             ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span>` : ''}
+                            ${piece.footThickness ? `<span>Espessura dos Pés: <strong>${piece.footThickness} mm</strong></span>` : ''}
                             ${piece.voltage ? `<span>Voltagem: <strong>${piece.voltage}</strong></span>` : ''}
                         </div>
                     </div>
@@ -290,31 +433,7 @@ function openProductModal(product) {
         `;
     }
     
-    // Pegar o preço e imagem selecionados nos cards ou usar os valores base
-    let currentPrice = product.price;
-    let currentImage = product.image;
-    
-    // Se houver seleções salvas, calcular o preço e imagem baseado nelas
-    if (product.priceVariations && Object.keys(savedSelections).length > 0) {
-        // Percorrer as variações para encontrar o preço e imagem corretos
-        product.priceVariations.forEach(variation => {
-            const savedSelection = savedSelections[variation.key];
-            if (savedSelection) {
-                // Encontrar a opção correspondente
-                const selectedOption = variation.options.find(opt => opt.value === savedSelection.value);
-                if (selectedOption) {
-                    if (selectedOption.price) {
-                        currentPrice = selectedOption.price;
-                    }
-                    if (selectedOption.image) {
-                        currentImage = selectedOption.image;
-                    }
-                }
-            }
-        });
-    }
-    
-    // BADGE DE URGÊNCIA DISCRETA - "Últimas Peças"
+    // BADGE DE URGÊNCIA
     const showUrgencyBadge = product.stock && product.stock <= 5;
     const urgencyBadgeHTML = showUrgencyBadge ? `
         <div class="urgency-badge-container">
@@ -322,30 +441,37 @@ function openProductModal(product) {
         </div>
     ` : '';
     
-    // Gerar HTML para variações no modal
+    // Gerar HTML para variações no modal COM PILLS
     let modalVariationsHTML = '';
     if (product.priceVariations && product.priceVariations.length > 0) {
         modalVariationsHTML = `
             <div class="modal-variations">
-                ${product.priceVariations.map(variation => `
-                    <div class="variation-group" data-key="${variation.key}">
-                        <label class="variation-label">${variation.name}:</label>
-                        <select class="modal-variation-select" data-variation-key="${variation.key}" data-product-id="${product.id}">
-                            ${variation.options.map(option => {
-                                // Verificar se esta opção está salva como selecionada
-                                const isSelected = savedSelections[variation.key]?.value === option.value;
-                                return `
-                                    <option value="${option.value}" 
+                ${product.priceVariations.map(variation => {
+                    // Determinar qual opção está selecionada
+                    let selectedValue = savedSelections[variation.key]?.value || variation.options[0].value;
+                    
+                    return `
+                        <div class="variation-group" data-key="${variation.key}">
+                            <label class="variation-label">${variation.name}:</label>
+                            <div class="variation-badges">
+                                ${variation.options.map(option => {
+                                    const isSelected = option.value === selectedValue;
+                                    return `
+                                        <button 
+                                            class="variation-badge modal-variation-badge ${isSelected ? 'active' : ''}" 
+                                            data-variation-key="${variation.key}"
+                                            data-value="${option.value}"
                                             data-price="${option.price}"
                                             data-image="${option.image || ''}"
-                                            ${isSelected ? 'selected' : ''}>
-                                        ${option.label}
-                                    </option>
-                                `;
-                            }).join('')}
-                        </select>
-                    </div>
-                `).join('')}
+                                            data-product-id="${product.id}">
+                                            ${option.label}
+                                        </button>
+                                    `;
+                                }).join('')}
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
             </div>
         `;
     }
@@ -389,6 +515,13 @@ function openProductModal(product) {
                                 </div>
                             ` : ''}
                             
+                            <!-- BOTÃO WHATSAPP NO MODAL -->
+                            <div class="modal-actions">
+                                <button class="btn-whatsapp-buy" data-product-id="${product.id}">
+                                    <i class="fab fa-whatsapp"></i> Comprar
+                                </button>
+                            </div>
+                            
                             <!-- ESPECIFICAÇÕES -->
                             ${(mainSpecsHTML || kitPiecesHTML) ? `
                                 <div class="specs-section">
@@ -418,14 +551,31 @@ function openProductModal(product) {
     // ⭐ DEFINIR A VARIÁVEL MODAL AQUI
     const modal = document.getElementById('productModal');
     
-    // Configurar eventos das variações no modal
-    modal.querySelectorAll('.modal-variation-select').forEach(select => {
-        select.addEventListener('change', function() {
-            const productId = this.dataset.productId;
+    // Configurar eventos das variações no modal COM PILLS
+    modal.querySelectorAll('.modal-variation-badge').forEach(badge => {
+        badge.addEventListener('click', function() {
+            const productId = parseInt(this.dataset.productId);
             const variationKey = this.dataset.variationKey;
-            const selectedOption = this.options[this.selectedIndex];
-            const selectedPrice = selectedOption.dataset.price;
-            const selectedImage = selectedOption.dataset.image;
+            const selectedPrice = this.dataset.price;
+            const selectedImage = this.dataset.image;
+            const selectedValue = this.dataset.value;
+            
+            // Encontrar o produto original
+            const product = window.productsData.find(p => p.id === productId);
+            if (!product || !product.priceVariations) return;
+            
+            // Encontrar a opção completa
+            const variation = product.priceVariations.find(v => v.key === variationKey);
+            const selectedOption = variation?.options.find(opt => opt.value === selectedValue);
+            
+            // Remover 'active' dos outros badges do mesmo grupo
+            const variationGroup = this.closest('.variation-group');
+            variationGroup.querySelectorAll('.modal-variation-badge').forEach(b => {
+                b.classList.remove('active');
+            });
+            
+            // Adicionar 'active' ao badge clicado
+            this.classList.add('active');
             
             // Salvar a seleção
             if (!window.modalSelections) {
@@ -435,10 +585,12 @@ function openProductModal(product) {
                 window.modalSelections[productId] = {};
             }
             
+            // Salvar TODOS os dados da opção, incluindo kitPieces
             window.modalSelections[productId][variationKey] = {
-                value: this.value,
+                value: selectedValue,
                 price: selectedPrice,
-                image: selectedImage
+                image: selectedImage,
+                kitPieces: selectedOption?.kitPieces || []
             };
             
             // Atualizar preço e imagem no modal
@@ -451,8 +603,73 @@ function openProductModal(product) {
                 const modalImage = modal.querySelector('#modalMainImage');
                 if (modalImage) modalImage.src = selectedImage;
             }
+            
+            // ATUALIZAR ESPECIFICAÇÕES NO MODAL
+            if (selectedOption) {
+                // Atualizar especificações na mesma tela
+                updateModalSpecs(modal, selectedOption, product);
+            }
         });
     });
+    
+    // FUNÇÃO PARA O BOTÃO DO WHATSAPP NO MODAL
+    function setupWhatsAppButton() {
+        const whatsappButton = modal.querySelector('.btn-whatsapp-buy');
+        
+        if (!whatsappButton) return;
+        
+        whatsappButton.addEventListener('click', function() {
+            const productId = product.id;
+            const productTitle = product.title;
+            const dynamicPrice = modal.querySelector('#dynamicPrice')?.textContent || product.price;
+            
+            // Coletar opções selecionadas
+            const selectedOptions = {};
+            let optionsText = '';
+            
+            modal.querySelectorAll('.modal-variation-badge.active').forEach(badge => {
+                const variationKey = badge.dataset.variationKey;
+                const value = badge.dataset.value;
+                const label = badge.textContent.trim();
+                
+                selectedOptions[variationKey] = {
+                    value: value,
+                    label: label
+                };
+                
+                optionsText += `• ${variationKey}: ${label}\n`;
+            });
+            
+            // Criar mensagem para WhatsApp
+            const message = encodeURIComponent(
+                `Olá! Gostaria de comprar:\n\n` +
+                `*${productTitle}*\n` +
+                `Preço: ${dynamicPrice}\n` +
+                `${optionsText ? `Opções:\n${optionsText}` : ''}` +
+                `\nCódigo: ${product.productCode || 'N/A'}\n\n` +
+                `Poderia me ajudar com essa compra?`
+            );
+            
+            // Número de telefone (substitua pelo seu)
+            const phoneNumber = '5511999999999'; // Substitua pelo seu número com DDD e sem +
+            
+            // Abrir WhatsApp
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            
+            // Feedback visual
+            const originalText = whatsappButton.innerHTML;
+            whatsappButton.innerHTML = '<i class="fas fa-check"></i> Redirecionando...';
+            whatsappButton.style.backgroundColor = '#128C7E';
+            
+            setTimeout(() => {
+                whatsappButton.innerHTML = originalText;
+                whatsappButton.style.backgroundColor = '#25D366';
+            }, 1500);
+        });
+    }
+    
+    // Configurar botão WhatsApp
+    setupWhatsAppButton();
     
     // Configurar eventos do modal (fechar) E ATUALIZAR CARD AO FECHAR
     const closeBtn = modal.querySelector('.close-modal');
@@ -478,6 +695,77 @@ function openProductModal(product) {
     });
 }
 
+// NOVA FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL
+function updateModalSpecs(modal, selectedOption, originalProduct) {
+    // Atualizar especificações com base na opção selecionada
+    const currentHeight = selectedOption.height || originalProduct.height;
+    const currentWidth = selectedOption.width || originalProduct.width;
+    const currentDepth = selectedOption.depth || originalProduct.depth;
+    const currentLength = selectedOption.length || originalProduct.length;
+    const currentThickness = selectedOption.thickness || originalProduct.thickness;
+    const currentCapacity = selectedOption.capacity || originalProduct.capacity;
+    const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
+    
+    // Gerar especificações atualizadas
+    let mainSpecsHTML = '';
+    const hasMainSpecs = currentHeight || currentWidth || currentDepth || 
+                        currentCapacity || currentThickness || currentLength || originalProduct.voltage;
+    
+    if (hasMainSpecs) {
+        mainSpecsHTML = `
+            <table class="specs-table">
+                ${currentHeight ? `<tr><td>Altura:</td><td><strong>${currentHeight} cm</strong></td></tr>` : ''}
+                ${currentWidth ? `<tr><td>Largura:</td><td><strong>${currentWidth} cm</strong></td></tr>` : ''}
+                ${currentDepth && currentDepth > 0 ? `<tr><td>Profundidade:</td><td><strong>${currentDepth} cm</strong></td></tr>` : ''}
+                ${currentLength ? `<tr><td>Comprimento:</td><td><strong>${currentLength} cm</strong></td></tr>` : ''}
+                ${currentThickness ? `<tr><td>Espessura:</td><td><strong>${currentThickness} mm</strong></td></tr>` : ''}
+                ${currentCapacity && currentCapacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${currentCapacity} unidades</strong></td></tr>` : ''}
+                ${originalProduct.voltage ? `<tr><td>Voltagem:</td><td><strong>${originalProduct.voltage}</strong></td></tr>` : ''}
+            </table>
+        `;
+    }
+    
+    // Gerar peças do kit atualizadas
+    let kitPiecesHTML = '';
+    if (currentKitPieces && currentKitPieces.length > 0) {
+        kitPiecesHTML = `
+            <div class="kit-pieces">
+                <h5>Peças do Kit (${currentKitPieces.length})</h5>
+                ${currentKitPieces.map(piece => `
+                    <div class="kit-piece">
+                        <div class="kit-piece-name">${piece.name}</div>
+                        <div class="kit-piece-specs">
+                            ${piece.height ? `<span>Altura: <strong>${piece.height} cm</strong></span>` : ''}
+                            ${piece.width ? `<span>Largura: <strong>${piece.width} cm</strong></span>` : ''}
+                            ${piece.depth && piece.depth > 0 ? `<span>Profundidade: <strong>${piece.depth} cm</strong></span>` : ''}
+                            ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span>` : ''}
+                            ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
+                            ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span>` : ''}
+                            ${piece.footThickness ? `<span>Espessura dos Pés: <strong>${piece.footThickness} mm</strong></span>` : ''}
+                            ${piece.voltage ? `<span>Voltagem: <strong>${piece.voltage}</strong></span>` : ''}
+                        </div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+    }
+    
+    // Atualizar a seção de especificações no modal
+    const specsSection = modal.querySelector('.specs-section');
+    if (specsSection) {
+        specsSection.innerHTML = `
+            <h4>Especificações</h4>
+            ${mainSpecsHTML}
+            ${kitPiecesHTML}
+            ${originalProduct.productCode ? `
+                <div class="product-code">
+                    <strong>Código:</strong> ${originalProduct.productCode}
+                </div>
+            ` : ''}
+        `;
+    }
+}
+
 // Função para adicionar ao carrinho (placeholder)
 function addToCart(productId, price, options) {
     console.log('Adicionando ao carrinho:', {
@@ -488,6 +776,47 @@ function addToCart(productId, price, options) {
     
     // Aqui você implementaria a lógica real do carrinho
     alert(`Produto ${productId} adicionado ao carrinho!\nPreço: ${price}\nOpções: ${JSON.stringify(options)}`);
+}
+
+// ATUALIZAR URL COM O FILTRO
+function updateUrlFilter(filter) {
+    const currentUrl = new URL(window.location);
+    
+    if (filter === 'all') {
+        currentUrl.searchParams.delete('filter');
+    } else {
+        currentUrl.searchParams.set('filter', filter);
+    }
+    
+    window.history.pushState({ filter: filter }, '', currentUrl.toString());
+}
+
+// Aplicar filtro
+function applyFilter(filter) {
+    console.log('DEBUG applyFilter chamado com:', filter);
+    console.log('DEBUG productsData existe?', !!window.productsData);
+    
+    // Se não houver productsData ainda, esperar um pouco
+    if (!window.productsData) {
+        console.log('Aguardando productsData...');
+        setTimeout(() => applyFilter(filter), 100);
+        return;
+    }
+    
+    console.log('Aplicando filtro:', filter);
+    
+    if (filter === 'all') {
+        renderProducts(window.productsData);
+    } else {
+        const filteredProducts = window.productsData.filter(product =>
+            product.category === filter
+        );
+        console.log('Produtos filtrados:', filteredProducts.length);
+        renderProducts(filteredProducts);
+    }
+    
+    // Atualizar URL sem recarregar a página
+    updateUrlFilter(filter);
 }
 
 // Função para carregar produtos do JSON
@@ -501,18 +830,22 @@ async function loadProducts() {
             window.productsData = products; // Salva globalmente para os filtros
             renderProducts(products);
             setupFilters();
+            return products; // Retorna os produtos
         } else {
             // Fallback: usar dados embutidos no catalogData.js
             if (typeof productsData !== 'undefined') {
                 window.productsData = productsData;
                 renderProducts(productsData);
                 setupFilters();
+                return productsData;
             } else {
                 console.error('Não foi possível carregar os produtos');
+                return [];
             }
         }
     } catch (error) {
         console.error('Erro ao carregar produtos:', error);
+        return [];
     }
 }
 
@@ -544,20 +877,11 @@ function setupFilters() {
             filterBtns.forEach(b => {
                 b.classList.toggle('active', b.dataset.filter === filter);
             });
+            
+            // Atualizar botão mobile
+            updateMobileFilterButton(filter);
         });
     });
-}
-
-// Aplicar filtro
-function applyFilter(filter) {
-    if (filter === 'all') {
-        renderProducts(window.productsData);
-    } else {
-        const filteredProducts = window.productsData.filter(product =>
-            product.category === filter
-        );
-        renderProducts(filteredProducts);
-    }
 }
 
 // Eventos para o modal
@@ -576,10 +900,25 @@ function attachQuickViewEvents() {
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', function () {
-    loadProducts();
-
+    // Primeiro carregar produtos
+    loadProducts().then(() => {
+        // DEPOIS que os produtos carregarem, verificar filtro da URL
+        checkUrlFilterOnLoad();
+    });
+    
     // Seus filtros mobile continuam funcionando
     if (typeof setupMobileFilters === 'function') {
         setupMobileFilters();
     }
+    
+    // Adicionar listener para mudanças de estado (voltar/avançar)
+    window.addEventListener('popstate', function(event) {
+        if (event.state && event.state.filter) {
+            applyFilter(event.state.filter);
+            updateActiveFilterButtons(event.state.filter);
+        } else {
+            applyFilter('all');
+            updateActiveFilterButtons('all');
+        }
+    });
 });
