@@ -72,6 +72,8 @@ function updateMobileFilterButton(filter) {
 }
 
 // Função para renderizar produtos
+// Função para renderizar produtos
+// Função para renderizar produtos
 function renderProducts(products) {
     const container = document.getElementById('productsContainer');
 
@@ -138,6 +140,12 @@ function renderProducts(products) {
                             <span class="current-price" data-base-price="${product.price}">${product.price}</span>
                             ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
                         </div>
+                        ${hasVariations ? `
+                            <button class="btn-expand-variations" data-product-id="${product.id}">
+                                <span>Ver opções</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        ` : ''}
                         ${variationsHTML}
                     </div>
                     <div class="product-actions">
@@ -159,7 +167,38 @@ function renderProducts(products) {
     setupVariationEvents();
     // Reatachar eventos dos botões "Visualizar"
     attachQuickViewEvents();
+    // Configurar botões de expandir variações
+    setupExpandButtons();
 }
+
+// FUNÇÃO PARA CONFIGURAR BOTÕES DE EXPANDIR
+function setupExpandButtons() {
+    document.querySelectorAll('.btn-expand-variations').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const productCard = this.closest('.catalog-card');
+            const variationsSection = productCard.querySelector('.product-variations');
+            
+            // Toggle expandido
+            const isExpanded = variationsSection.classList.contains('expanded');
+            
+            if (isExpanded) {
+                // Recolher
+                variationsSection.classList.remove('expanded');
+                this.classList.remove('expanded');
+                productCard.classList.remove('expanded');
+                this.querySelector('span').textContent = 'Ver opções';
+            } else {
+                // Expandir
+                variationsSection.classList.add('expanded');
+                this.classList.add('expanded');
+                productCard.classList.add('expanded');
+                this.querySelector('span').textContent = 'Ocultar opções';
+            }
+        });
+    });
+}
+
+// FUNÇÃO PARA CONFIGURAR BOTÕES DE EXPANDIR
 
 // Função para configurar eventos das variações de preço E IMAGEM com PILLS
 function setupVariationEvents() {
