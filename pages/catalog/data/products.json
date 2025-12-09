@@ -163,9 +163,6 @@
             "value": "6mm",
             "price": "R$ 995,00",
             "image": "../../assets/images/products/categories/tables/2121-M1.png",
-            "thickness": 6,
-            "height": 46,
-            "width": 120,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -186,13 +183,10 @@
             ]
           },
           {
-            "label": "8mm", 
+            "label": "8mm",
             "value": "8mm",
             "price": "R$ 1450,00",
             "image": "../../assets/images/products/categories/tables/2121-M2.png",
-            "thickness": 8,
-            "height": 48,
-            "width": 125,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -240,9 +234,6 @@
             "value": "6mm",
             "price": "R$ 995,00",
             "image": "../../assets/images/products/categories/tables/2122.png",
-            "thickness": 6,
-            "height": 46,
-            "width": 120,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -257,96 +248,16 @@
                 "height": 90,
                 "width": 33,
                 "footHeight": 50,
-                 "footThickness": 4,
+                "footThickness": 4,
                 "thickness": 6
               }
             ]
           },
           {
-            "label": "8mm", 
+            "label": "8mm",
             "value": "8mm",
             "price": "R$ 1450,00",
             "image": "../../assets/images/products/categories/tables/2122.png",
-            "thickness": 8,
-            "height": 46,
-            "width": 120,
-            "kitPieces": [
-              {
-                "name": "Mesa alta",
-                "height": 46,
-                "width": 120,
-                "footHeight": 80,
-                "footThickness": 6,
-                "thickness": 8
-              },
-              {
-                "name": "Mesa baixa",
-                "height": 90,
-                "width": 33,
-                "footHeight": 50,
-                "footThickness": 6,
-                "thickness": 8
-              }
-            ]
-          }
-        ],
-        "default": "6mm"
-      }
-    ],
-    "rating": 4.5,
-    "reviews": 71,
-    "stock": 2,
-    "badge": "mais vendido"
-  },
-  {
-    "id": 9,
-    "productCode": "2123-M1",
-    "title": "Kit Mesa Orgânicas - Pés em V Ondulados",
-    "category": "mesas",
-    "image": "../../assets/images/products/categories/tables/2123-M1.png",
-    "price": "R$ 995,00",
-    "shortDescription": "Lindo kit de mesas orgânicas com pés ondulados idealizado pela decoradora Paula Gaião.",
-    "longDescription": "Lindo kit de mesas orgânicas com pés ondulados idealizado pela decoradora Paula Gaião. É a oportunidade perfeita para você levar duas nesas pelo preço de uma.",
-    "priceVariations": [
-      {
-        "name": "Espessura",
-        "key": "thickness",
-        "options": [
-          {
-            "label": "6mm",
-            "value": "6mm",
-            "price": "R$ 995,00",
-            "image": "../../assets/images/products/categories/tables/2123-M1.png",
-            "thickness": 6,
-            "height": 50,
-            "width": 110,
-            "kitPieces": [
-              {
-                "name": "Mesa alta",
-                "height": 50,
-                "width": 110,
-                "footHeight": 80,
-                "footThickness": 6,
-                "thickness": 6
-              },
-              {
-                "name": "Mesa baixa",
-                "height": 95,
-                "width": 41,
-                "footHeight": 50,
-                 "footThickness": 6,
-                "thickness": 8
-              }
-            ]
-          },
-          {
-            "label": "8mm", 
-            "value": "8mm",
-            "price": "R$ 1450,00",
-            "image": "../../assets/images/products/categories/tables/2123-M1.png",
-            "thickness": 8,
-            "height": 46,
-            "width": 120,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -383,7 +294,7 @@
     "image": "../../assets/images/products/categories/tables/2123-M2.png",
     "price": "R$ 995,00",
     "shortDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião",
-    "longDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião. É a oportunidade perfeita para você levar duas nesas pelo preço de uma.",
+    "longDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião. É a oportunidade perfeita para você levar duas mesas pelo preço de uma.",
     "priceVariations": [
       {
         "name": "Espessura",
@@ -394,9 +305,6 @@
             "value": "6mm",
             "price": "R$ 995,00",
             "image": "../../assets/images/products/categories/tables/2123-M2.png",
-            "thickness": 6,
-            "height": 50,
-            "width": 110,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -411,19 +319,16 @@
                 "height": 95,
                 "width": 41,
                 "footHeight": 50,
-                 "footThickness": 6,
+                "footThickness": 6,
                 "thickness": 8
               }
             ]
           },
           {
-            "label": "8mm", 
+            "label": "8mm",
             "value": "8mm",
             "price": "R$ 1450,00",
             "image": "../../assets/images/products/categories/tables/2123-M2.png",
-            "thickness": 8,
-            "height": 46,
-            "width": 120,
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -453,104 +358,62 @@
     "badge": "mais vendido"
   },
   {
-  "id": 11,
-  "productCode": "2124",
-  "title": "Mesa retangular - Pés em X",
-  "category": "mesas",
-  "image": "../../assets/images/products/categories/tables/2124.png",
-  "price": "R$ 995,00",
-  "shortDescription": "Esta mesa em acrílico é perfeita para ser levada para onde você precisar.",
-  "longDescription": "Esta mesa em acrílico é perfeita para ser levada para onde você precisar. Seus pés em 'X' são facilmente desmontáveis: basta encaixar o tampo sobre os pés para montar essa linda mesa. Disponível em dois comprimentos.",
-  "height": 80,    
-  "width": 58,     
-  "length": 160,   
-  "thickness": 8,  
-  "priceVariations": [
-    {
-      "name": "Comprimento",  
-      "key": "length",
-      "options": [
-        {
-          "label": "160cm",
-          "value": "160cm",
-          "price": "R$ 1450,00",
-          "image": "../../assets/images/products/categories/tables/2124.png",
-          "length": 160,
-          "width": 58,
-          "height": 80,
-          "footHeight": 80,
-          "thickness": 8
-        },
-        {
-          "label": "100cm", 
-          "value": "100cm",
-          "price": "R$ 750,00",
-          "image": "../../assets/images/products/categories/tables/2124.png",
-          "length": 100,
-          "width": 50,
-          "height": 80,
-          "footHeight": 80,
-          "thickness": 8
-        }
-      ],
-      "default": "160cm"
-    }
-  ],
-  "rating": 4.5,
-  "reviews": 71,
-  "stock": 2,
-  "badge": "mais vendido"
-},
-{
-  "id": 12,
-  "productCode": "2125",
-  "title": "Mesa Sublime",
-  "category": "mesas",
-  "image": "../../assets/images/products/categories/tables/2125.png",
-  "price": "R$ 1450,00",
-  "shortDescription": "Linda mesa floreira em acrílico virgem e cristalino. Luxo e transparência para suas festas.",
-  "longDescription": "Linda mesa floreira em acrílico virgem e cristalino. Leve luxo e transparência para as suas decorações com esse produto incrivel, idealizado pela decoradora Aline Mendes.",
-  "kitPieces": [
-    {
-      "name": "Tampo",
-      "length": 120,
-      "width": 50,
-      "thickness": 10
-    },
-    {
-      "name": "Pés",
-      "height": 70,
-      "width": 25,
-      "depth": 24
-    }
-  ],
-  "rating": 4.5,
-  "reviews": 71,
-  "stock": 4,
-  "badge": "mais vendido"
-},
+    "id": 12,
+    "productCode": "2125",
+    "title": "Mesa Sublime",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2125.png",
+    "price": "R$ 1450,00",
+    "shortDescription": "Linda mesa floreira em acrílico virgem e cristalino. Luxo e transparência para suas festas.",
+    "longDescription": "Linda mesa floreira em acrílico virgem e cristalino. Leve luxo e transparência para as suas decorações com esse produto incrivel, idealizado pela decoradora Aline Mendes.",
+    "length": 120,
+    "width": 50,
+    "thickness": 10,
+    "footHeight": 70,
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 4,
+    "badge": "mais vendido"
+  },
   {
-  "id": 16,
-  "productCode": "9060-M2",
-  "title": "Suporte para Donuts - Prateleira",
-  "category": "suportes-utilidade",
-  "image": "../../assets/images/products/categories/utility-rack/9060-M2.png",
-  "price": "R$ 50,00",
-  "oldPrice": "R$ 70,00",
-  "shortDescription": "Lindo suporte para Donuts em acrílico, perfeito para loja de doces.",
-  "longDescription": "Transforme a apresentação dos seus doces com este suporte em acrílico. Com um design moderno e cristalino em estilo prateleira, ele foi feito para destacar seus donuts em festas e eventos, elevando o nível da sua decoração. É a solução perfeita para buffets, cafeterias e eventos especiais que buscam sofisticação e praticidade. Fácil de montar e limpar, é a escolha ideal para uma apresentação impecável.",
-  "height": 24,
-  "width": 17,
-  "depth": 0,
-  "thickness": 3,
-  "capacity": 9,
-  "rating": 4.5,
-  "reviews": 71,
-  "stock": 6,
-  "badge": "Novidade"
-},
+    "id": 13,
+    "productCode": "2126",
+    "title": "Mesa Para Bolo",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2126.png",
+    "price": "R$ 1450,00",
+    "shortDescription": "Essa mesa possui um design incrível! Ela foi confeccionada em acrílico de 8mm com pés em X de 8mm desmontáveis.",
+    "longDescription": "Essa mesa possui um design incrível! Ela foi confeccionada em acrílico de 8mm com pés em X de 8mm desmontáveis. Basta você colocar um pé dentro do outro que eles se encaixam em forma de X, perfeita para pegue e monte!",
+    "diameter": 120,
+    "thickness": 8,
+    "footHeight": 80,
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 4,
+    "badge": "mais vendido"
+  },
   {
-    "id": 17,
+    "id": 14,
+    "productCode": "9060-M2",
+    "title": "Suporte para Donuts - Prateleira",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/9060-M2.png",
+    "price": "R$ 50,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Lindo suporte para Donuts em acrílico, perfeito para loja de doces.",
+    "longDescription": "Transforme a apresentação dos seus doces com este suporte em acrílico. Com um design moderno e cristalino em estilo prateleira, ele foi feito para destacar seus donuts em festas e eventos, elevando o nível da sua decoração. É a solução perfeita para buffets, cafeterias e eventos especiais que buscam sofisticação e praticidade. Fácil de montar e limpar, é a escolha ideal para uma apresentação impecável.",
+    "height": 24,
+    "width": 17,
+    "depth": 0,
+    "thickness": 3,
+    "capacity": 9,
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 6,
+    "badge": "Novidade"
+  },
+  {
+    "id": 15,
     "productCode": "9060-R",
     "title": "Suporte para Donuts - Retangular",
     "category": "suportes-utilidade",
@@ -574,7 +437,7 @@
             "capacity": 6
           },
           {
-            "label": "Grande", 
+            "label": "Grande",
             "value": "large",
             "price": "R$ 440,00",
             "image": "../../assets/images/products/categories/utility-rack/9060-M1-G.png",
@@ -597,7 +460,7 @@
     "badge": "Novidade"
   },
   {
-    "id": 18,
+    "id": 16,
     "productCode": "9060-C",
     "title": "Suporte para Donuts - Circular",
     "category": "suportes-utilidade",
@@ -621,7 +484,7 @@
             "capacity": 14
           },
           {
-            "label": "Grande", 
+            "label": "Grande",
             "value": "large",
             "price": "R$ 450,00",
             "image": "../../assets/images/products/categories/utility-rack/9060-M3-G.png",
@@ -644,7 +507,7 @@
     "badge": "Novidade"
   },
   {
-    "id": 19,
+    "id": 17,
     "productCode": "9065",
     "title": "Suporte Bota",
     "category": "suportes-utilidade",
@@ -665,7 +528,7 @@
             "image": "../../assets/images/products/categories/utility-rack/9065-C.png"
           },
           {
-            "label": "Sem Tampa", 
+            "label": "Sem Tampa",
             "value": "without_lid",
             "price": "R$ 55,00",
             "image": "../../assets/images/products/categories/utility-rack/9065-S.png"
@@ -685,7 +548,7 @@
     "badge": "Novidade"
   },
   {
-    "id": 20,
+    "id": 18,
     "productCode": "9020",
     "title": "Suporte Meia Lua - Kit 3 Peças",
     "category": "suportes-utilidade",
@@ -726,7 +589,7 @@
     "badge": "mais vendido"
   },
   {
-    "id": 21,
+    "id": 19,
     "productCode": "8020",
     "title": "Porta Cupcakes",
     "category": "suportes-utilidade",
@@ -774,7 +637,7 @@
             ]
           },
           {
-            "label": "4 Andares", 
+            "label": "4 Andares",
             "value": "4_levels",
             "price": "R$ 250,00",
             "image": "../../assets/images/products/categories/utility-rack/8020-4.png",

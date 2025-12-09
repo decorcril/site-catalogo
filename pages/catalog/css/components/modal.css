@@ -236,14 +236,16 @@
     color: #555;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 12px; /* AQUI: AUMENTEI O GAP ENTRE OS SPANS */
 }
 
 .kit-piece-specs span {
     background: white;
-    padding: 4px 10px;
+    padding: 8px 12px; /* AQUI: AUMENTEI O PADDING DOS SPANS */
     border-radius: 4px;
     border: 1px solid #ddd;
+    display: inline-block;
+    margin-bottom: 5px; /* AQUI: ADICIONEI MARGIN BOTTOM PARA RESPONSIVIDADE */
 }
 
 .kit-piece-specs strong {
@@ -464,7 +466,12 @@
     }
     
     .kit-piece-specs {
-        gap: 10px;
+        gap: 8px; /* AQUI: GAP REDUZIDO PARA MOBILE */
+    }
+    
+    .kit-piece-specs span {
+        padding: 6px 10px; /* AQUI: PADDING REDUZIDO PARA MOBILE */
+        margin-bottom: 4px;
     }
     
     .close-modal {
