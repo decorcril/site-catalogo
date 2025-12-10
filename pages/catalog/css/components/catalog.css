@@ -280,8 +280,8 @@
     width: 100%;
     padding: 8px 12px;
     margin-top: 10px;
-    background: #f8f8f8;
-    border: 1px solid #ddd;
+    background: #fff;
+    border: 1px solid #ff0084;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.85rem;
@@ -295,9 +295,17 @@
     order: 4;
 }
 
-.btn-expand-variations:hover {
-    background: #f0f0f0;
-    border-color: #ccc;
+.btn-expand-variations:hover:not(.expanded) {
+    background: #fff;
+    border-color: #ff0084;
+    color: #ff0084;
+}
+
+
+.btn-expand-variations.expanded:hover {
+    background: #ff0084; /* Mantém fundo rosa */
+    color: #fff; /* Mantém texto branco */
+    border-color: #ff0084; /* Mantém borda rosa */
 }
 
 .btn-expand-variations i {

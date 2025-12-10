@@ -1,79 +1,4 @@
-function generateStars(rating) {
-    let stars = '';
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 >= 0.5;
-
-    for (let i = 1; i <= 5; i++) {
-        if (i <= fullStars) {
-            stars += '<i class="fas fa-star"></i>';
-        } else if (hasHalfStar && i === fullStars + 1) {
-            stars += '<i class="fas fa-star-half-alt"></i>';
-        } else {
-            stars += '<i class="far fa-star"></i>';
-        }
-    }
-    return stars;
-}
-
-// FUNÇÃO PARA VERIFICAR FILTRO DA URL AO CARREGAR
-function checkUrlFilterOnLoad() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const filterFromUrl = urlParams.get('filter');
-    
-    if (filterFromUrl) {
-        console.log('Filtro da URL detectado:', filterFromUrl);
-        
-        // Aplicar o filtro
-        if (typeof applyFilter === 'function') {
-            setTimeout(() => {
-                applyFilter(filterFromUrl);
-                updateActiveFilterButtons(filterFromUrl);
-                updateMobileFilterButton(filterFromUrl);
-            }, 300); // Pequeno delay para garantir que productsData foi carregado
-        }
-    }
-}
-
-// ATUALIZAR BOTÕES DE FILTRO DESKTOP
-function updateActiveFilterButtons(filter) {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    
-    filterBtns.forEach(btn => {
-        if (btn.dataset.filter === filter) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
-    });
-}
-
-// ATUALIZAR BOTÃO MOBILE (se existir)
-function updateMobileFilterButton(filter) {
-    const mobileFilterToggle = document.getElementById('mobileFilterToggle');
-    const mobileFilterBtns = document.querySelectorAll('.mobile-filter-btn');
-    
-    if (!mobileFilterToggle || !mobileFilterBtns.length) return;
-    
-    // Encontrar o botão mobile correspondente
-    const correspondingBtn = Array.from(mobileFilterBtns).find(btn => 
-        btn.dataset.filter === filter
-    );
-    
-    if (correspondingBtn && mobileFilterToggle.querySelector('.filter-label')) {
-        // Atualizar texto do botão mobile
-        mobileFilterToggle.querySelector('.filter-label').textContent = 
-            correspondingBtn.textContent.trim();
-        
-        // Atualizar estado ativo dos botões mobile
-        mobileFilterBtns.forEach(b => {
-            b.classList.toggle('active', b.dataset.filter === filter);
-        });
-    }
-}
-
-// Função para renderizar produtos
-// Função para renderizar produtos
-// Função para renderizar produtos
+// Função para renderizar produtos COM oldPrice dinâmico
 function renderProducts(products) {
     const container = document.getElementById('productsContainer');
 
@@ -84,6 +9,18 @@ function renderProducts(products) {
     products.forEach(product => {
         // Verificar se tem variações de preço
         const hasVariations = product.priceVariations && product.priceVariations.length > 0;
+        
+        // Buscar oldPrice inicial (da primeira variação se existir)
+        let initialOldPrice = product.oldPrice;
+        if (!initialOldPrice && hasVariations) {
+            const firstOption = product.priceVariations[0].options[0];
+            if (firstOption && firstOption.oldPrice) {
+                initialOldPrice = firstOption.oldPrice;
+            }
+        }
+        
+        // Texto fixo de parcela
+        const installmentText = '6x sem juros';
         
         // Gerar HTML para variações com BOTÕES PILLS em vez de select
         let variationsHTML = '';
@@ -100,6 +37,7 @@ function renderProducts(products) {
                                         data-variation-key="${variation.key}"
                                         data-value="${option.value}"
                                         data-price="${option.price}"
+                                        data-old-price="${option.oldPrice || ''}"
                                         data-image="${option.image || ''}">
                                         ${option.label}
                                     </button>
@@ -138,7 +76,8 @@ function renderProducts(products) {
                         </div>
                         <div class="product-price">
                             <span class="current-price" data-base-price="${product.price}">${product.price}</span>
-                            ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
+                            ${initialOldPrice ? `<span class="original-price" data-base-old-price="${initialOldPrice}">${initialOldPrice}</span>` : ''}
+                            <div class="installment-text">${installmentText}</div>
                         </div>
                         ${hasVariations ? `
                             <button class="btn-expand-variations" data-product-id="${product.id}">
@@ -171,45 +110,18 @@ function renderProducts(products) {
     setupExpandButtons();
 }
 
-// FUNÇÃO PARA CONFIGURAR BOTÕES DE EXPANDIR
-function setupExpandButtons() {
-    document.querySelectorAll('.btn-expand-variations').forEach(btn => {
-        btn.addEventListener('click', function() {
-            const productCard = this.closest('.catalog-card');
-            const variationsSection = productCard.querySelector('.product-variations');
-            
-            // Toggle expandido
-            const isExpanded = variationsSection.classList.contains('expanded');
-            
-            if (isExpanded) {
-                // Recolher
-                variationsSection.classList.remove('expanded');
-                this.classList.remove('expanded');
-                productCard.classList.remove('expanded');
-                this.querySelector('span').textContent = 'Ver opções';
-            } else {
-                // Expandir
-                variationsSection.classList.add('expanded');
-                this.classList.add('expanded');
-                productCard.classList.add('expanded');
-                this.querySelector('span').textContent = 'Ocultar opções';
-            }
-        });
-    });
-}
-
-// FUNÇÃO PARA CONFIGURAR BOTÕES DE EXPANDIR
-
-// Função para configurar eventos das variações de preço E IMAGEM com PILLS
+// Função para configurar eventos das variações COM oldPrice dinâmico
 function setupVariationEvents() {
     // Para cada botão de variação PILL
     document.querySelectorAll('.variation-badge').forEach(badge => {
         badge.addEventListener('click', function() {
             const productCard = this.closest('.catalog-card');
             const currentPriceElement = productCard.querySelector('.current-price');
+            const oldPriceElement = productCard.querySelector('.original-price');
             const productImage = productCard.querySelector('.product-main-image');
             const basePrice = currentPriceElement.dataset.basePrice;
             const baseImage = productImage.dataset.baseImage;
+            const baseOldPrice = oldPriceElement?.dataset.baseOldPrice || '';
             
             // Remover 'active' dos outros badges do mesmo grupo
             const variationGroup = this.closest('.variation-group');
@@ -223,27 +135,33 @@ function setupVariationEvents() {
             // Coletar todas as seleções deste produto
             const variations = productCard.querySelectorAll('.variation-group');
             let finalPrice = basePrice;
+            let finalOldPrice = baseOldPrice;
             let finalImage = baseImage;
             const selectedOptions = {};
             
-            // Encontrar o preço e imagem da opção selecionada
+            // Encontrar o preço, oldPrice e imagem da opção selecionada
             variations.forEach(variationGroup => {
                 const activeBadge = variationGroup.querySelector('.variation-badge.active');
                 if (activeBadge) {
                     const key = activeBadge.dataset.variationKey;
                     const value = activeBadge.dataset.value;
                     const selectedPrice = activeBadge.dataset.price;
+                    const selectedOldPrice = activeBadge.dataset.oldPrice;
                     const selectedImage = activeBadge.dataset.image;
                     
                     // Salvar seleção
                     selectedOptions[key] = {
                         value: value,
                         price: selectedPrice,
+                        oldPrice: selectedOldPrice,
                         image: selectedImage
                     };
                     
                     if (selectedPrice) {
                         finalPrice = selectedPrice;
+                    }
+                    if (selectedOldPrice) {
+                        finalOldPrice = selectedOldPrice;
                     }
                     if (selectedImage) {
                         finalImage = selectedImage;
@@ -253,6 +171,26 @@ function setupVariationEvents() {
             
             // Atualizar o preço exibido
             currentPriceElement.textContent = finalPrice;
+            
+            // Atualizar o oldPrice (criar se não existir)
+            if (finalOldPrice) {
+                if (oldPriceElement) {
+                    oldPriceElement.textContent = finalOldPrice;
+                    oldPriceElement.style.display = '';
+                } else {
+                    // Criar elemento oldPrice se não existir
+                    const newOldPrice = document.createElement('span');
+                    newOldPrice.className = 'original-price';
+                    newOldPrice.dataset.baseOldPrice = baseOldPrice;
+                    newOldPrice.textContent = finalOldPrice;
+                    currentPriceElement.parentNode.appendChild(newOldPrice);
+                }
+            } else {
+                // Esconder oldPrice se não houver
+                if (oldPriceElement) {
+                    oldPriceElement.style.display = 'none';
+                }
+            }
             
             // Atualizar a imagem exibida
             productImage.src = finalImage;
@@ -273,6 +211,19 @@ function setupVariationEvents() {
                         // Atualizar o preço no modal
                         const dynamicPrice = modal.querySelector('#dynamicPrice');
                         if (dynamicPrice) dynamicPrice.textContent = finalPrice;
+                        
+                        // Atualizar o oldPrice no modal
+                        const modalOldPrice = modal.querySelector('.modal-old-price');
+                        if (finalOldPrice) {
+                            if (modalOldPrice) {
+                                modalOldPrice.textContent = finalOldPrice;
+                                modalOldPrice.style.display = '';
+                            }
+                        } else {
+                            if (modalOldPrice) {
+                                modalOldPrice.style.display = 'none';
+                            }
+                        }
                         
                         // Atualizar a imagem no modal
                         const modalImage = modal.querySelector('.modal-image img');
@@ -300,11 +251,13 @@ function setupVariationEvents() {
                     const key = activeBadge.dataset.variationKey;
                     const value = activeBadge.dataset.value;
                     const price = activeBadge.dataset.price;
+                    const oldPrice = activeBadge.dataset.oldPrice;
                     const image = activeBadge.dataset.image;
                     
                     selectedOptions[key] = {
                         value: value,
                         price: price,
+                        oldPrice: oldPrice,
                         image: image
                     };
                 }
@@ -316,7 +269,7 @@ function setupVariationEvents() {
     });
 }
 
-// Função para atualizar o card com base nas seleções do modal
+// Função para atualizar o card com base nas seleções do modal (COM oldPrice)
 function updateCardFromModalSelections(productId) {
     const productCard = document.querySelector(`.btn-quick-view[data-product-id="${productId}"]`)?.closest('.catalog-card');
     
@@ -324,11 +277,14 @@ function updateCardFromModalSelections(productId) {
     
     const selectedOptions = window.modalSelections[productId];
     const currentPriceElement = productCard.querySelector('.current-price');
+    const oldPriceElement = productCard.querySelector('.original-price');
     const productImage = productCard.querySelector('.product-main-image');
     const basePrice = currentPriceElement.dataset.basePrice;
     const baseImage = productImage.dataset.baseImage;
+    const baseOldPrice = oldPriceElement?.dataset.baseOldPrice || '';
     
     let finalPrice = basePrice;
+    let finalOldPrice = baseOldPrice;
     let finalImage = baseImage;
     
     // Atualizar cada grupo de badges no card
@@ -345,9 +301,12 @@ function updateCardFromModalSelections(productId) {
             if (selectedBadge) {
                 selectedBadge.classList.add('active');
                 
-                // Verificar se há preço ou imagem específicos
+                // Verificar se há preço, oldPrice ou imagem específicos
                 if (selectedOptions[variationKey].price) {
                     finalPrice = selectedOptions[variationKey].price;
+                }
+                if (selectedOptions[variationKey].oldPrice) {
+                    finalOldPrice = selectedOptions[variationKey].oldPrice;
                 }
                 if (selectedOptions[variationKey].image) {
                     finalImage = selectedOptions[variationKey].image;
@@ -356,18 +315,31 @@ function updateCardFromModalSelections(productId) {
         }
     });
     
-    // Atualizar preço e imagem no card
+    // Atualizar preço, oldPrice e imagem no card
     currentPriceElement.textContent = finalPrice;
+    
+    if (finalOldPrice) {
+        if (oldPriceElement) {
+            oldPriceElement.textContent = finalOldPrice;
+            oldPriceElement.style.display = '';
+        }
+    } else {
+        if (oldPriceElement) {
+            oldPriceElement.style.display = 'none';
+        }
+    }
+    
     productImage.src = finalImage;
 }
 
-// FUNÇÃO PARA ABRIR O MODAL DE PRODUTO - VERSÃO CORRIGIDA
+// FUNÇÃO PARA ABRIR O MODAL DE PRODUTO - COM oldPrice dinâmico
 function openProductModal(product) {
     // Verificar se há seleções salvas para este produto
     const savedSelections = window.modalSelections?.[product.id] || {};
     
     // DADOS INICIAIS
     let currentPrice = product.price;
+    let currentOldPrice = product.oldPrice || '';
     let currentImage = product.image;
     let currentThickness = product.thickness;
     let currentHeight = product.height;
@@ -377,12 +349,19 @@ function openProductModal(product) {
     let currentCapacity = product.capacity;
     let currentKitPieces = product.kitPieces || [];
     
-    console.log('Abrindo modal para:', product.title);
+    // Texto fixo de parcela
+    const installmentText = '6x sem juros';
+    
+    // SE HOUVER VARIAÇÕES, buscar oldPrice da primeira opção se não existir
+    if (product.priceVariations && !currentOldPrice) {
+        const firstOption = product.priceVariations[0].options[0];
+        if (firstOption && firstOption.oldPrice) {
+            currentOldPrice = firstOption.oldPrice;
+        }
+    }
     
     // SE HOUVER VARIAÇÕES E SELEÇÕES SALVAS, USAR ELAS
     if (product.priceVariations && Object.keys(savedSelections).length > 0) {
-        console.log('Tem variações e seleções salvas');
-        
         product.priceVariations.forEach(variation => {
             const savedSelection = savedSelections[variation.key];
             if (savedSelection) {
@@ -391,6 +370,7 @@ function openProductModal(product) {
                 if (selectedOption) {
                     // ATUALIZAR VALORES COM BASE NA OPÇÃO
                     if (selectedOption.price) currentPrice = selectedOption.price;
+                    if (selectedOption.oldPrice) currentOldPrice = selectedOption.oldPrice;
                     if (selectedOption.image) currentImage = selectedOption.image;
                     if (selectedOption.thickness !== undefined) currentThickness = selectedOption.thickness;
                     if (selectedOption.height !== undefined) currentHeight = selectedOption.height;
@@ -399,7 +379,6 @@ function openProductModal(product) {
                     if (selectedOption.length !== undefined) currentLength = selectedOption.length;
                     if (selectedOption.capacity !== undefined) currentCapacity = selectedOption.capacity;
                     
-                    // IMPORTANTE: Se a opção tiver kitPieces, usar eles!
                     if (selectedOption.kitPieces && selectedOption.kitPieces.length > 0) {
                         currentKitPieces = selectedOption.kitPieces;
                     }
@@ -412,8 +391,8 @@ function openProductModal(product) {
         const firstVariation = product.priceVariations[0];
         const firstOption = firstVariation.options[0];
         
-        // Usar valores da primeira opção como padrão
         if (firstOption.price) currentPrice = firstOption.price;
+        if (firstOption.oldPrice) currentOldPrice = firstOption.oldPrice;
         if (firstOption.image) currentImage = firstOption.image;
         if (firstOption.thickness !== undefined) currentThickness = firstOption.thickness;
         if (firstOption.height !== undefined) currentHeight = firstOption.height;
@@ -422,13 +401,12 @@ function openProductModal(product) {
         if (firstOption.length !== undefined) currentLength = firstOption.length;
         if (firstOption.capacity !== undefined) currentCapacity = firstOption.capacity;
         
-        // IMPORTANTE: Se a primeira opção tiver kitPieces, usar eles!
         if (firstOption.kitPieces && firstOption.kitPieces.length > 0) {
             currentKitPieces = firstOption.kitPieces;
         }
     }
     
-    // Gerar especificações principais - USANDO OS VALORES ATUALIZADOS
+    // Gerar especificações principais
     let mainSpecsHTML = '';
     const hasMainSpecs = currentHeight || currentWidth || currentDepth || 
                         currentCapacity || currentThickness || currentLength || product.voltage;
@@ -447,7 +425,7 @@ function openProductModal(product) {
         `;
     }
     
-    // Gerar peças do kit - USANDO AS PEÇAS ATUALIZADAS
+    // Gerar peças do kit
     let kitPiecesHTML = '';
     if (currentKitPieces && currentKitPieces.length > 0) {
         kitPiecesHTML = `
@@ -480,13 +458,12 @@ function openProductModal(product) {
         </div>
     ` : '';
     
-    // Gerar HTML para variações no modal COM PILLS
+    // Gerar HTML para variações no modal COM PILLS e data-old-price
     let modalVariationsHTML = '';
     if (product.priceVariations && product.priceVariations.length > 0) {
         modalVariationsHTML = `
             <div class="modal-variations">
                 ${product.priceVariations.map(variation => {
-                    // Determinar qual opção está selecionada
                     let selectedValue = savedSelections[variation.key]?.value || variation.options[0].value;
                     
                     return `
@@ -501,6 +478,7 @@ function openProductModal(product) {
                                             data-variation-key="${variation.key}"
                                             data-value="${option.value}"
                                             data-price="${option.price}"
+                                            data-old-price="${option.oldPrice || ''}"
                                             data-image="${option.image || ''}"
                                             data-product-id="${product.id}">
                                             ${option.label}
@@ -515,7 +493,7 @@ function openProductModal(product) {
         `;
     }
     
-    // Montar modal COM LAYOUT DE DUAS COLUNAS
+    // Montar modal COM oldPrice dinâmico e 6x sem juros (AGORA ABAIXO DO OLD PRICE)
     const modalHTML = `
         <div class="product-modal-overlay" id="productModal">
             <div class="product-modal">
@@ -525,26 +503,22 @@ function openProductModal(product) {
                 </div>
                 <div class="modal-content">
                     <div class="modal-image-info">
-                        <!-- COLUNA DA IMAGEM -->
                         <div class="modal-image-column">
                             <div class="modal-image">
                                 <img src="${currentImage}" alt="${product.title}" id="modalMainImage">
                             </div>
                         </div>
                         
-                        <!-- COLUNA DAS INFORMAÇÕES -->
                         <div class="modal-info-column">
-                            <!-- PREÇOS -->
                             <div class="price-section">
                                 <span class="current-price" id="dynamicPrice">${currentPrice}</span>
-                                ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
+                                ${currentOldPrice ? `<span class="original-price modal-old-price">${currentOldPrice}</span>` : ''}
+                                <div class="installment-text">${installmentText}</div>
                                 ${urgencyBadgeHTML}
                             </div>
                             
-                            <!-- VARIAÇÕES NO MODAL -->
                             ${modalVariationsHTML}
                             
-                            <!-- DESCRIÇÃO COMPLETA -->
                             ${product.longDescription ? `
                                 <div class="description-section">
                                     <h4>Descrição</h4>
@@ -554,14 +528,12 @@ function openProductModal(product) {
                                 </div>
                             ` : ''}
                             
-                            <!-- BOTÃO WHATSAPP NO MODAL -->
                             <div class="modal-actions">
                                 <button class="btn-whatsapp-buy" data-product-id="${product.id}">
                                     <i class="fab fa-whatsapp"></i> Comprar
                                 </button>
                             </div>
                             
-                            <!-- ESPECIFICAÇÕES -->
                             ${(mainSpecsHTML || kitPiecesHTML) ? `
                                 <div class="specs-section">
                                     <h4>Especificações</h4>
@@ -587,23 +559,21 @@ function openProductModal(product) {
     
     document.body.insertAdjacentHTML('beforeend', modalHTML);
     
-    // ⭐ DEFINIR A VARIÁVEL MODAL AQUI
     const modal = document.getElementById('productModal');
     
-    // Configurar eventos das variações no modal COM PILLS
+    // Configurar eventos das variações no modal COM oldPrice
     modal.querySelectorAll('.modal-variation-badge').forEach(badge => {
         badge.addEventListener('click', function() {
             const productId = parseInt(this.dataset.productId);
             const variationKey = this.dataset.variationKey;
             const selectedPrice = this.dataset.price;
+            const selectedOldPrice = this.dataset.oldPrice;
             const selectedImage = this.dataset.image;
             const selectedValue = this.dataset.value;
             
-            // Encontrar o produto original
             const product = window.productsData.find(p => p.id === productId);
             if (!product || !product.priceVariations) return;
             
-            // Encontrar a opção completa
             const variation = product.priceVariations.find(v => v.key === variationKey);
             const selectedOption = variation?.options.find(opt => opt.value === selectedValue);
             
@@ -613,7 +583,6 @@ function openProductModal(product) {
                 b.classList.remove('active');
             });
             
-            // Adicionar 'active' ao badge clicado
             this.classList.add('active');
             
             // Salvar a seleção
@@ -624,97 +593,65 @@ function openProductModal(product) {
                 window.modalSelections[productId] = {};
             }
             
-            // Salvar TODOS os dados da opção, incluindo kitPieces
             window.modalSelections[productId][variationKey] = {
                 value: selectedValue,
                 price: selectedPrice,
+                oldPrice: selectedOldPrice,
                 image: selectedImage,
                 kitPieces: selectedOption?.kitPieces || []
             };
             
-            // Atualizar preço e imagem no modal
+            // Atualizar preço no modal
             if (selectedPrice) {
                 const dynamicPrice = modal.querySelector('#dynamicPrice');
                 if (dynamicPrice) dynamicPrice.textContent = selectedPrice;
             }
             
+            // Atualizar oldPrice no modal
+            const modalOldPrice = modal.querySelector('.modal-old-price');
+            if (selectedOldPrice) {
+                if (modalOldPrice) {
+                    modalOldPrice.textContent = selectedOldPrice;
+                    modalOldPrice.style.display = '';
+                } else {
+                    // Criar elemento se não existir
+                    const priceSection = modal.querySelector('.price-section');
+                    const newOldPrice = document.createElement('span');
+                    newOldPrice.className = 'original-price modal-old-price';
+                    newOldPrice.textContent = selectedOldPrice;
+                    // Inserir após o preço atual e antes do 6x sem juros
+                    const installmentElement = modal.querySelector('.installment-text');
+                    if (installmentElement) {
+                        installmentElement.insertAdjacentElement('beforebegin', newOldPrice);
+                    } else {
+                        priceSection.querySelector('#dynamicPrice').after(newOldPrice);
+                    }
+                }
+            } else {
+                if (modalOldPrice) {
+                    modalOldPrice.style.display = 'none';
+                }
+            }
+            
+            // Atualizar imagem
             if (selectedImage) {
                 const modalImage = modal.querySelector('#modalMainImage');
                 if (modalImage) modalImage.src = selectedImage;
             }
             
-            // ATUALIZAR ESPECIFICAÇÕES NO MODAL
+            // Atualizar especificações
             if (selectedOption) {
-                // Atualizar especificações na mesma tela
                 updateModalSpecs(modal, selectedOption, product);
             }
         });
     });
     
-    // FUNÇÃO PARA O BOTÃO DO WHATSAPP NO MODAL
-    function setupWhatsAppButton() {
-        const whatsappButton = modal.querySelector('.btn-whatsapp-buy');
-        
-        if (!whatsappButton) return;
-        
-        whatsappButton.addEventListener('click', function() {
-            const productId = product.id;
-            const productTitle = product.title;
-            const dynamicPrice = modal.querySelector('#dynamicPrice')?.textContent || product.price;
-            
-            // Coletar opções selecionadas
-            const selectedOptions = {};
-            let optionsText = '';
-            
-            modal.querySelectorAll('.modal-variation-badge.active').forEach(badge => {
-                const variationKey = badge.dataset.variationKey;
-                const value = badge.dataset.value;
-                const label = badge.textContent.trim();
-                
-                selectedOptions[variationKey] = {
-                    value: value,
-                    label: label
-                };
-                
-                optionsText += `• ${variationKey}: ${label}\n`;
-            });
-            
-            // Criar mensagem para WhatsApp
-            const message = encodeURIComponent(
-                `Olá! Gostaria de comprar:\n\n` +
-                `*${productTitle}*\n` +
-                `Preço: ${dynamicPrice}\n` +
-                `${optionsText ? `Opções:\n${optionsText}` : ''}` +
-                `\nCódigo: ${product.productCode || 'N/A'}\n\n` +
-                `Poderia me ajudar com essa compra?`
-            );
-            
-            // Número de telefone (substitua pelo seu)
-            const phoneNumber = '5511999999999'; // Substitua pelo seu número com DDD e sem +
-            
-            // Abrir WhatsApp
-            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
-            
-            // Feedback visual
-            const originalText = whatsappButton.innerHTML;
-            whatsappButton.innerHTML = '<i class="fas fa-check"></i> Redirecionando...';
-            whatsappButton.style.backgroundColor = '#128C7E';
-            
-            setTimeout(() => {
-                whatsappButton.innerHTML = originalText;
-                whatsappButton.style.backgroundColor = '#25D366';
-            }, 1500);
-        });
-    }
-    
     // Configurar botão WhatsApp
-    setupWhatsAppButton();
+    setupWhatsAppButton(modal, product);
     
-    // Configurar eventos do modal (fechar) E ATUALIZAR CARD AO FECHAR
+    // Configurar eventos de fechar
     const closeBtn = modal.querySelector('.close-modal');
-    
     closeBtn.addEventListener('click', () => {
-        // Atualizar o card antes de remover o modal
         updateCardFromModalSelections(product.id);
         modal.remove();
     });
@@ -734,9 +671,52 @@ function openProductModal(product) {
     });
 }
 
-// NOVA FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL
+// Funções auxiliares (mantidas do seu código original)
+function setupWhatsAppButton(modal, product) {
+    const whatsappButton = modal.querySelector('.btn-whatsapp-buy');
+    
+    if (!whatsappButton) return;
+    
+    whatsappButton.addEventListener('click', function() {
+        const productTitle = product.title;
+        const dynamicPrice = modal.querySelector('#dynamicPrice')?.textContent || product.price;
+        
+        const selectedOptions = {};
+        let optionsText = '';
+        
+        modal.querySelectorAll('.modal-variation-badge.active').forEach(badge => {
+            const variationKey = badge.dataset.variationKey;
+            const label = badge.textContent.trim();
+            
+            selectedOptions[variationKey] = { label: label };
+            optionsText += `• ${variationKey}: ${label}\n`;
+        });
+        
+        const message = encodeURIComponent(
+            `Olá! Gostaria de comprar:\n\n` +
+            `*${productTitle}*\n` +
+            `Preço: ${dynamicPrice}\n` +
+            `Parcelamento: 6x sem juros\n` +
+            `${optionsText ? `Opções:\n${optionsText}` : ''}` +
+            `\nCódigo: ${product.productCode || 'N/A'}\n\n` +
+            `Poderia me ajudar com essa compra?`
+        );
+        
+        const phoneNumber = '5511999999999';
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        
+        const originalText = whatsappButton.innerHTML;
+        whatsappButton.innerHTML = '<i class="fas fa-check"></i> Redirecionando...';
+        whatsappButton.style.backgroundColor = '#128C7E';
+        
+        setTimeout(() => {
+            whatsappButton.innerHTML = originalText;
+            whatsappButton.style.backgroundColor = '#25D366';
+        }, 1500);
+    });
+}
+
 function updateModalSpecs(modal, selectedOption, originalProduct) {
-    // Atualizar especificações com base na opção selecionada
     const currentHeight = selectedOption.height || originalProduct.height;
     const currentWidth = selectedOption.width || originalProduct.width;
     const currentDepth = selectedOption.depth || originalProduct.depth;
@@ -745,7 +725,6 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     const currentCapacity = selectedOption.capacity || originalProduct.capacity;
     const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
     
-    // Gerar especificações atualizadas
     let mainSpecsHTML = '';
     const hasMainSpecs = currentHeight || currentWidth || currentDepth || 
                         currentCapacity || currentThickness || currentLength || originalProduct.voltage;
@@ -764,7 +743,6 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
         `;
     }
     
-    // Gerar peças do kit atualizadas
     let kitPiecesHTML = '';
     if (currentKitPieces && currentKitPieces.length > 0) {
         kitPiecesHTML = `
@@ -789,7 +767,6 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
         `;
     }
     
-    // Atualizar a seção de especificações no modal
     const specsSection = modal.querySelector('.specs-section');
     if (specsSection) {
         specsSection.innerHTML = `
@@ -805,7 +782,47 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     }
 }
 
-// Função para adicionar ao carrinho (placeholder)
+// Funções restantes (mantidas do seu código original)
+function generateStars(rating) {
+    let stars = '';
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+
+    for (let i = 1; i <= 5; i++) {
+        if (i <= fullStars) {
+            stars += '<i class="fas fa-star"></i>';
+        } else if (hasHalfStar && i === fullStars + 1) {
+            stars += '<i class="fas fa-star-half-alt"></i>';
+        } else {
+            stars += '<i class="far fa-star"></i>';
+        }
+    }
+    return stars;
+}
+
+function setupExpandButtons() {
+    document.querySelectorAll('.btn-expand-variations').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const productCard = this.closest('.catalog-card');
+            const variationsSection = productCard.querySelector('.product-variations');
+            
+            const isExpanded = variationsSection.classList.contains('expanded');
+            
+            if (isExpanded) {
+                variationsSection.classList.remove('expanded');
+                this.classList.remove('expanded');
+                productCard.classList.remove('expanded');
+                this.querySelector('span').textContent = 'Ver opções';
+            } else {
+                variationsSection.classList.add('expanded');
+                this.classList.add('expanded');
+                productCard.classList.add('expanded');
+                this.querySelector('span').textContent = 'Ocultar opções';
+            }
+        });
+    });
+}
+
 function addToCart(productId, price, options) {
     console.log('Adicionando ao carrinho:', {
         productId: productId,
@@ -813,11 +830,58 @@ function addToCart(productId, price, options) {
         options: options
     });
     
-    // Aqui você implementaria a lógica real do carrinho
     alert(`Produto ${productId} adicionado ao carrinho!\nPreço: ${price}\nOpções: ${JSON.stringify(options)}`);
 }
 
-// ATUALIZAR URL COM O FILTRO
+function checkUrlFilterOnLoad() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const filterFromUrl = urlParams.get('filter');
+    
+    if (filterFromUrl) {
+        console.log('Filtro da URL detectado:', filterFromUrl);
+        
+        if (typeof applyFilter === 'function') {
+            setTimeout(() => {
+                applyFilter(filterFromUrl);
+                updateActiveFilterButtons(filterFromUrl);
+                updateMobileFilterButton(filterFromUrl);
+            }, 300);
+        }
+    }
+}
+
+function updateActiveFilterButtons(filter) {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    
+    filterBtns.forEach(btn => {
+        if (btn.dataset.filter === filter) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function updateMobileFilterButton(filter) {
+    const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+    const mobileFilterBtns = document.querySelectorAll('.mobile-filter-btn');
+    
+    if (!mobileFilterToggle || !mobileFilterBtns.length) return;
+    
+    const correspondingBtn = Array.from(mobileFilterBtns).find(btn => 
+        btn.dataset.filter === filter
+    );
+    
+    if (correspondingBtn && mobileFilterToggle.querySelector('.filter-label')) {
+        mobileFilterToggle.querySelector('.filter-label').textContent = 
+            correspondingBtn.textContent.trim();
+        
+        mobileFilterBtns.forEach(b => {
+            b.classList.toggle('active', b.dataset.filter === filter);
+        });
+    }
+}
+
 function updateUrlFilter(filter) {
     const currentUrl = new URL(window.location);
     
@@ -830,12 +894,10 @@ function updateUrlFilter(filter) {
     window.history.pushState({ filter: filter }, '', currentUrl.toString());
 }
 
-// Aplicar filtro
 function applyFilter(filter) {
     console.log('DEBUG applyFilter chamado com:', filter);
     console.log('DEBUG productsData existe?', !!window.productsData);
     
-    // Se não houver productsData ainda, esperar um pouco
     if (!window.productsData) {
         console.log('Aguardando productsData...');
         setTimeout(() => applyFilter(filter), 100);
@@ -854,24 +916,20 @@ function applyFilter(filter) {
         renderProducts(filteredProducts);
     }
     
-    // Atualizar URL sem recarregar a página
     updateUrlFilter(filter);
 }
 
-// Função para carregar produtos do JSON
 async function loadProducts() {
     try {
-        // Tenta carregar do arquivo JSON
         const response = await fetch('data/products.json');
 
         if (response.ok) {
             const products = await response.json();
-            window.productsData = products; // Salva globalmente para os filtros
+            window.productsData = products;
             renderProducts(products);
             setupFilters();
-            return products; // Retorna os produtos
+            return products;
         } else {
-            // Fallback: usar dados embutidos no catalogData.js
             if (typeof productsData !== 'undefined') {
                 window.productsData = productsData;
                 renderProducts(productsData);
@@ -888,17 +946,13 @@ async function loadProducts() {
     }
 }
 
-// Configuração dos filtros
 function setupFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const mobileFilterBtns = document.querySelectorAll('.mobile-filter-btn');
 
-    // Filtros desktop
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function () {
-            // Remove classe active de todos
             filterBtns.forEach(b => b.classList.remove('active'));
-            // Adiciona ao clicado
             this.classList.add('active');
 
             const filter = this.dataset.filter;
@@ -906,24 +960,20 @@ function setupFilters() {
         });
     });
 
-    // Filtros mobile
     mobileFilterBtns.forEach(btn => {
         btn.addEventListener('click', function () {
             const filter = this.dataset.filter;
             applyFilter(filter);
 
-            // Atualiza botões desktop também
             filterBtns.forEach(b => {
                 b.classList.toggle('active', b.dataset.filter === filter);
             });
             
-            // Atualizar botão mobile
             updateMobileFilterButton(filter);
         });
     });
 }
 
-// Eventos para o modal
 function attachQuickViewEvents() {
     document.querySelectorAll('.btn-quick-view').forEach(btn => {
         btn.addEventListener('click', function () {
@@ -937,20 +987,15 @@ function attachQuickViewEvents() {
     });
 }
 
-// Inicialização
 document.addEventListener('DOMContentLoaded', function () {
-    // Primeiro carregar produtos
     loadProducts().then(() => {
-        // DEPOIS que os produtos carregarem, verificar filtro da URL
         checkUrlFilterOnLoad();
     });
     
-    // Seus filtros mobile continuam funcionando
     if (typeof setupMobileFilters === 'function') {
         setupMobileFilters();
     }
     
-    // Adicionar listener para mudanças de estado (voltar/avançar)
     window.addEventListener('popstate', function(event) {
         if (event.state && event.state.filter) {
             applyFilter(event.state.filter);

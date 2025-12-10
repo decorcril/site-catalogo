@@ -686,219 +686,452 @@
     "stock": 5,
     "badge": "desconto"
   },
-    {
-  "id": 20,
-  "productCode": "2024",
-  "title": "Quarteto de Cubos",
-  "category": "cubos",
-  "image": "../../assets/images/products/categories/cubes/2024.png",
-  "price": "R$ 300,00",
-  "shortDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade.",
-  "longDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
-  "priceVariations": [
-    {
-      "name": "Opção de Compra",
-      "key": "purchase_option",
-      "options": [
-        {
-          "label": "Cubo P - 3mm",
-          "value": "individual_P_3mm",
-          "price": "R$ 300,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Pequeno 3mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 3
-            }
-          ]
-        },
-        {
-          "label": "Cubo M - 3mm",
-          "value": "individual_M_3mm",
-          "price": "R$ 400,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Médio 3mm",
-              "width": 40,
-              "depth": 40,
-              "height": 60,
-              "thickness": 3
-            }
-          ]
-        },
-        {
-          "label": "Cubo G - 3mm",
-          "value": "individual_G_3mm",
-          "price": "R$ 500,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Grande 3mm",
-              "width": 50,
-              "depth": 50,
-              "height": 60,
-              "thickness": 3
-            }
-          ]
-        },
-        {
-          "label": "Cubo GG - 3mm",
-          "value": "individual_GG_3mm",
-          "price": "R$ 600,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Extra Grande 3mm",
-              "width": 60,
-              "depth": 60,
-              "height": 60,
-              "thickness": 3
-            }
-          ]
-        },
-        {
-          "label": "Cubo P - 4mm",
-          "value": "individual_P_4mm",
-          "price": "R$ 300,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Pequeno 4mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 4
-            }
-          ]
-        },
-        {
-          "label": "Cubo M - 4mm",
-          "value": "individual_M_4mm",
-          "price": "R$ 400,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Médio 4mm",
-              "width": 40,
-              "depth": 40,
-              "height": 60,
-              "thickness": 4
-            }
-          ]
-        },
-        {
-          "label": "Cubo G - 4mm",
-          "value": "individual_G_4mm",
-          "price": "R$ 500,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Grande 4mm",
-              "width": 50,
-              "depth": 50,
-              "height": 60,
-              "thickness": 4
-            }
-          ]
-        },
-        {
-          "label": "Cubo GG - 4mm",
-          "value": "individual_GG_4mm",
-          "price": "R$ 600,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Extra Grande 4mm",
-              "width": 60,
-              "depth": 60,
-              "height": 60,
-              "thickness": 4
-            }
-          ]
-        },
-        {
-          "label": "Kit Completo 3mm",
-          "value": "kit_completo_3mm",
-          "price": "R$ 1.250,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Pequeno - 3mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 3
-            },
-            {
-              "name": "Cubo Médio - 3mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 3
-            },
-            {
-              "name": "Cubo Grande - 3mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 3
-            },
-            {
-              "name": "Cubo Extra Grande - 3mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 3
-            }
-          ]
-        },
-        {
-          "label": "Kit Completo 4mm",
-          "value": "kit_completo_4mm",
-          "price": "R$ 1.350,00",
-          "image": "../../assets/images/products/categories/cubes/2024.png",
-          "kitPieces": [
-            {
-              "name": "Cubo Pequeno - 4mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 4
-            },
-            {
-              "name": "Cubo Médio - 4mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 4
-            },
-            {
-              "name": "Cubo Grande - 4mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 4
-            },
-            {
-              "name": "Cubo Extra Grande - 4mm",
-              "width": 31,
-              "depth": 31,
-              "height": 60,
-              "thickness": 4
-            }
-          ]
-        }
-      ],
-      "default": "individual_P_3mm"
-    }
-  ],
-  "rating": 4.8,
-  "reviews": 64,
-  "stock": 10,
-  "badge": "novidade"
-}
+  {
+    "id": 20,
+    "productCode": "2024",
+    "title": "Quarteto de Cubos",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2024.png",
+    "price": "R$ 300,00",
+    "shortDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade.",
+    "longDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo P - 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 300,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 400,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 3mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 500,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 3mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo GG - 3mm",
+            "value": "individual_GG_3mm",
+            "price": "R$ 600,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Extra Grande 3mm",
+                "width": 60,
+                "depth": 60,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo P - 4mm",
+            "value": "individual_P_4mm",
+            "price": "R$ 300,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 4mm",
+            "value": "individual_M_4mm",
+            "price": "R$ 400,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 4mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 4mm",
+            "value": "individual_G_4mm",
+            "price": "R$ 500,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 4mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo GG - 4mm",
+            "value": "individual_GG_4mm",
+            "price": "R$ 600,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Extra Grande 4mm",
+                "width": 60,
+                "depth": 60,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Extra Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 4mm",
+            "value": "kit_completo_4mm",
+            "price": "R$ 1.350,00",
+            "image": "../../assets/images/products/categories/cubes/2024.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Extra Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "novidade"
+  },
+  {
+    "id": 21,
+    "productCode": "2023",
+    "title": "Trio de Cubos Luli Reis",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2023.png",
+    "price": "R$ 300,00",
+    "shortDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade.",
+    "longDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo P - 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 345,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 425,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 3mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 575,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 3mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo P - 4mm",
+            "value": "individual_P_4mm",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 4mm",
+            "value": "individual_M_4mm",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 4mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 4mm",
+            "value": "individual_G_4mm",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 4mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 995,00",
+            "oldPrice": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Colorido 3mm",
+            "value": "kit_completo_colorido_3mm",
+            "price": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 4mm",
+            "value": "kit_completo_4mm",
+            "price": "R$ 1095,00",
+            "oldPrice": "R$ 1.450,00",
+            "badge": "desconto",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Colorido 4mm",
+            "value": "kit_completo__colorido_4mm",
+            "price": "R$ 1350,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
+    
+  }
 ]

@@ -3,15 +3,16 @@ function openProductModal(product) {
     // Verificar se há seleções salvas para este produto
     const savedSelections = window.modalSelections?.[product.id] || {};
 
-    // DADOS INICIAIS - ADICIONAR currentDiameter
+    // DADOS INICIAIS - ADICIONAR currentDiameter e currentOldPrice
     let currentPrice = product.price;
+    let currentOldPrice = product.oldPrice || null;
     let currentImage = product.image;
     let currentThickness = product.thickness;
     let currentHeight = product.height;
     let currentWidth = product.width;
     let currentDepth = product.depth;
     let currentLength = product.length;
-    let currentDiameter = product.diameter; // ← ADICIONE ESTA LINHA
+    let currentDiameter = product.diameter;
     let currentCapacity = product.capacity;
     let currentFootHeight = product.footHeight;
     let currentKitPieces = product.kitPieces || [];
@@ -33,13 +34,14 @@ function openProductModal(product) {
 
                     // ATUALIZAR VALORES COM BASE NA OPÇÃO
                     if (selectedOption.price) currentPrice = selectedOption.price;
+                    if (selectedOption.oldPrice !== undefined) currentOldPrice = selectedOption.oldPrice;
                     if (selectedOption.image) currentImage = selectedOption.image;
                     if (selectedOption.thickness !== undefined) currentThickness = selectedOption.thickness;
                     if (selectedOption.height !== undefined) currentHeight = selectedOption.height;
                     if (selectedOption.width !== undefined) currentWidth = selectedOption.width;
                     if (selectedOption.depth !== undefined) currentDepth = selectedOption.depth;
                     if (selectedOption.length !== undefined) currentLength = selectedOption.length;
-                    if (selectedOption.diameter !== undefined) currentDiameter = selectedOption.diameter; // ← ADICIONE ESTA
+                    if (selectedOption.diameter !== undefined) currentDiameter = selectedOption.diameter;
                     if (selectedOption.capacity !== undefined) currentCapacity = selectedOption.capacity;
                     if (selectedOption.footHeight !== undefined) currentFootHeight = selectedOption.footHeight;
 
@@ -61,13 +63,14 @@ function openProductModal(product) {
 
         // Usar valores da primeira opção como padrão
         if (firstOption.price) currentPrice = firstOption.price;
+        if (firstOption.oldPrice !== undefined) currentOldPrice = firstOption.oldPrice;
         if (firstOption.image) currentImage = firstOption.image;
         if (firstOption.thickness !== undefined) currentThickness = firstOption.thickness;
         if (firstOption.height !== undefined) currentHeight = firstOption.height;
         if (firstOption.width !== undefined) currentWidth = firstOption.width;
         if (firstOption.depth !== undefined) currentDepth = firstOption.depth;
         if (firstOption.length !== undefined) currentLength = firstOption.length;
-        if (firstOption.diameter !== undefined) currentDiameter = firstOption.diameter; // ← ADICIONE ESTA
+        if (firstOption.diameter !== undefined) currentDiameter = firstOption.diameter;
         if (firstOption.capacity !== undefined) currentCapacity = firstOption.capacity;
         if (firstOption.footHeight !== undefined) currentFootHeight = firstOption.footHeight;
 
@@ -110,7 +113,7 @@ function openProductModal(product) {
     } else {
         const hasMainSpecs = currentHeight || currentWidth || currentDepth ||
             currentCapacity || currentThickness || currentLength ||
-            currentDiameter || product.voltage; // ← ADICIONE currentDiameter AQUI
+            currentDiameter || product.voltage;
 
         if (hasMainSpecs) {
             mainSpecsHTML = `
@@ -119,7 +122,7 @@ function openProductModal(product) {
                     ${currentWidth ? `<tr><td>Largura:</td><td><strong>${currentWidth} cm</strong></td></tr>` : ''}
                     ${currentDepth && currentDepth > 0 ? `<tr><td>Profundidade:</td><td><strong>${currentDepth} cm</strong></td></tr>` : ''}
                     ${currentLength ? `<tr><td>Comprimento:</td><td><strong>${currentLength} cm</strong></td></tr>` : ''}
-                    ${currentDiameter ? `<tr><td>Diâmetro:</td><td><strong>${currentDiameter} cm</strong></td></tr>` : ''} <!-- ← ADICIONE ESTA LINHA -->
+                    ${currentDiameter ? `<tr><td>Diâmetro:</td><td><strong>${currentDiameter} cm</strong></td></tr>` : ''}
                     ${currentThickness ? `<tr><td>Espessura:</td><td><strong>${currentThickness} mm</strong></td></tr>` : ''}
                     ${currentCapacity && currentCapacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${currentCapacity} unidades</strong></td></tr>` : ''}
                     ${currentFootHeight ? `<tr><td>Altura dos pés:</td><td><strong>${currentFootHeight} cm</strong></td></tr>` : ''}
@@ -213,6 +216,7 @@ function openProductModal(product) {
                                             data-variation-key="${variation.key}"
                                             data-value="${option.value}"
                                             data-price="${option.price}"
+                                            data-old-price="${option.oldPrice || ''}" // ← ADICIONE ESTE DATA ATTRIBUTE
                                             data-image="${option.image || ''}"
                                             data-product-id="${product.id}">
                                             ${option.label}
@@ -227,7 +231,7 @@ function openProductModal(product) {
         `;
     }
 
-    // Montar modal
+    // Montar modal - ADICIONAR currentOldPrice E 6x SEM JUROS NO HTML
     const modalHTML = `
         <div class="product-modal-overlay" id="productModal">
             <div class="product-modal">
@@ -246,7 +250,8 @@ function openProductModal(product) {
                         <div class="modal-info-column">
                             <div class="price-section">
                                 <span class="current-price" id="dynamicPrice">${currentPrice}</span>
-                                ${product.oldPrice ? `<span class="original-price">${product.oldPrice}</span>` : ''}
+                                ${currentOldPrice ? `<span class="original-price" id="dynamicOldPrice">${currentOldPrice}</span>` : ''}
+                                <div class="installment-text">6x sem juros</div>
                                 ${urgencyBadgeHTML}
                             </div>
                             
@@ -300,6 +305,7 @@ function openProductModal(product) {
             const productId = parseInt(this.dataset.productId);
             const variationKey = this.dataset.variationKey;
             const selectedPrice = this.dataset.price;
+            const selectedOldPrice = this.dataset.oldPrice || null;
             const selectedImage = this.dataset.image;
             const selectedValue = this.dataset.value;
 
@@ -326,26 +332,51 @@ function openProductModal(product) {
             window.modalSelections[productId][variationKey] = {
                 value: selectedValue,
                 price: selectedPrice,
+                oldPrice: selectedOldPrice,
                 image: selectedImage,
                 thickness: selectedOption?.thickness,
                 height: selectedOption?.height,
                 width: selectedOption?.width,
                 length: selectedOption?.length,
-                diameter: selectedOption?.diameter, // ← ADICIONE ESTA LINHA
+                diameter: selectedOption?.diameter,
                 footHeight: selectedOption?.footHeight,
                 kitPieces: selectedOption?.kitPieces || []
             };
 
+            // Atualizar preço atual
             if (selectedPrice) {
                 const dynamicPrice = modal.querySelector('#dynamicPrice');
                 if (dynamicPrice) dynamicPrice.textContent = selectedPrice;
             }
 
+            // Atualizar preço antigo
+            const oldPriceElement = modal.querySelector('#dynamicOldPrice');
+            if (oldPriceElement) {
+                if (selectedOldPrice) {
+                    oldPriceElement.textContent = selectedOldPrice;
+                    oldPriceElement.style.display = 'inline';
+                } else {
+                    oldPriceElement.style.display = 'none';
+                }
+            } else if (selectedOldPrice) {
+                const priceSection = modal.querySelector('.price-section');
+                const currentPriceElement = modal.querySelector('#dynamicPrice');
+                if (priceSection && currentPriceElement) {
+                    const newOldPriceElement = document.createElement('span');
+                    newOldPriceElement.className = 'original-price';
+                    newOldPriceElement.id = 'dynamicOldPrice';
+                    newOldPriceElement.textContent = selectedOldPrice;
+                    currentPriceElement.insertAdjacentElement('afterend', newOldPriceElement);
+                }
+            }
+
+            // Atualizar imagem
             if (selectedImage) {
                 const modalImage = modal.querySelector('#modalMainImage');
                 if (modalImage) modalImage.src = selectedImage;
             }
 
+            // Atualizar especificações
             if (selectedOption) {
                 updateModalSpecs(modal, selectedOption, product);
             }
@@ -374,7 +405,7 @@ function openProductModal(product) {
         }
     });
 }
-// FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL
+
 // FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL
 function updateModalSpecs(modal, selectedOption, originalProduct) {
     // Atualizar especificações com base na opção selecionada
@@ -382,7 +413,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     const currentWidth = selectedOption.width || originalProduct.width;
     const currentDepth = selectedOption.depth || originalProduct.depth;
     const currentLength = selectedOption.length || originalProduct.length;
-    const currentDiameter = selectedOption.diameter || originalProduct.diameter; // ← ADICIONE ESTA LINHA
+    const currentDiameter = selectedOption.diameter || originalProduct.diameter;
     const currentThickness = selectedOption.thickness || originalProduct.thickness;
     const currentCapacity = selectedOption.capacity || originalProduct.capacity;
     const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
@@ -420,7 +451,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     } else {
         const hasMainSpecs = currentHeight || currentWidth || currentDepth ||
             currentCapacity || currentThickness || currentLength ||
-            currentDiameter || originalProduct.voltage; // ← ADICIONE currentDiameter AQUI
+            currentDiameter || originalProduct.voltage;
 
         if (hasMainSpecs) {
             mainSpecsHTML = `
@@ -429,7 +460,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
                     ${currentWidth ? `<tr><td>Largura:</td><td><strong>${currentWidth} cm</strong></td></tr>` : ''}
                     ${currentDepth && currentDepth > 0 ? `<tr><td>Profundidade:</td><td><strong>${currentDepth} cm</strong></td></tr>` : ''}
                     ${currentLength ? `<tr><td>Comprimento:</td><td><strong>${currentLength} cm</strong></td></tr>` : ''}
-                    ${currentDiameter ? `<tr><td>Diâmetro:</td><td><strong>${currentDiameter} cm</strong></td></tr>` : ''} <!-- ← ADICIONE ESTA LINHA -->
+                    ${currentDiameter ? `<tr><td>Diâmetro:</td><td><strong>${currentDiameter} cm</strong></td></tr>` : ''}
                     ${currentThickness ? `<tr><td>Espessura:</td><td><strong>${currentThickness} mm</strong></td></tr>` : ''}
                     ${currentCapacity && currentCapacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${currentCapacity} unidades</strong></td></tr>` : ''}
                     ${currentFootHeight ? `<tr><td>Altura dos pés:</td><td><strong>${currentFootHeight} cm</strong></td></tr>` : ''}
