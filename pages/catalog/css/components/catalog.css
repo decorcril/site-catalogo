@@ -88,10 +88,11 @@
 .catalog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    grid-auto-rows: 1fr;
     gap: 30px;
     margin-bottom: 50px;
+    align-items: stretch; /* Mude para stretch em vez de start */
 }
+
 
 /* Cards de Produto */
 .catalog-card {
@@ -99,16 +100,29 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    transition: all 0.25s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     opacity: 1;
     display: flex;
     flex-direction: column;
+    transform-origin: top center;
+    will-change: transform, height; /* Otimização de performance */
 }
-
-.catalog-card.expanded {
-    grid-row: span 2;
-    overflow: visible;
+@keyframes cardExpand {
+    0% {
+        transform: translateY(0) scale(1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+    100% {
+        transform: translateY(-10px) scale(1.02);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    }
+}
+.catalog-card.is-expanded {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    animation: cardExpand 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .catalog-card:hover {
@@ -188,7 +202,7 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 1; /* Já tem isso, ótimo! */
 }
 
 /* Meta do Produto - DESKTOP - ESTRELAS EM CIMA DO TÍTULO */
@@ -199,7 +213,7 @@
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
-    flex-grow: 1;
+    flex-grow: 1; /* Adicione esta linha */
 }
 
 /* Rating (estrelas) agora fica primeiro */
@@ -295,23 +309,25 @@
 
 /* ===== VARIAÇÕES DE PREÇO EM BADGES - EXPANDÍVEL ===== */
 .product-variations {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
-    order: 5;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+    transform: translateY(-20px); /* Alterado de -10px para -20px para mais suavidade */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    order: 4; /* Adicione esta linha para garantir a ordem correta */
+    width: 100%; /* Garantir largura total */
 }
 
 .product-variations.expanded {
-    max-height: 500px;
+    max-height: 75px;
     opacity: 1;
+    transform: translateY(0);
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid #eee;
+    overflow-y: auto;
 }
+
 
 .variation-group {
     margin-bottom: 12px;
@@ -336,7 +352,7 @@
     background: #f5f5f5;
     border: 2px solid #ddd;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     color: #555;
     cursor: pointer;
@@ -736,7 +752,7 @@
     
     .variation-badge {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 0.55rem;
         min-height: 32px;
         border-radius: 16px;
     }
