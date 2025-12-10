@@ -107,6 +107,7 @@
     flex-direction: column;
     transform-origin: top center;
     will-change: transform, height; /* Otimização de performance */
+    height: 100%;
 }
 @keyframes cardExpand {
     0% {
@@ -285,7 +286,7 @@
     cursor: pointer;
     font-size: 0.85rem;
     font-weight: 500;
-    color: #555;
+    color: #ff0084;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -358,7 +359,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     outline: none;
-    min-height: 40px;
+    min-height: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -656,7 +657,7 @@
     .variation-badge {
         padding: 6px 12px;
         font-size: 13px;
-        min-height: 36px;
+        min-height: 1rem;
     }
 
     /* Botão expandir no mobile */
@@ -753,7 +754,7 @@
     .variation-badge {
         padding: 5px 10px;
         font-size: 0.55rem;
-        min-height: 32px;
+        min-height: 1rem;
         border-radius: 16px;
     }
 
@@ -810,7 +811,7 @@
     .variation-badge {
         padding: 4px 8px;
         font-size: 11px;
-        min-height: 28px;
+        min-height: 1rem;
     }
 
     /* Ajustes finos para telas muito pequenas */
@@ -873,7 +874,7 @@
     .variation-badge {
         padding: 4px 8px;
         font-size: 12px;
-        min-height: 30px;
+        min-height: 1rem;
     }
 
     /* Garantir que o hover não funcione em landscape também */
