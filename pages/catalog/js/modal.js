@@ -232,64 +232,67 @@ function openProductModal(product) {
     }
 
     // Montar modal - ADICIONAR currentOldPrice E 6x SEM JUROS NO HTML
-    const modalHTML = `
-        <div class="product-modal-overlay" id="productModal">
-            <div class="product-modal">
-                <div class="modal-header">
-                    <h3>${product.title}</h3>
-                    <button class="close-modal">&times;</button>
-                </div>
-                <div class="modal-content">
-                    <div class="modal-image-info">
-                        <div class="modal-image-column">
-                            <div class="modal-image">
-                                <img src="${currentImage}" alt="${product.title}" id="modalMainImage">
-                            </div>
+    // Na função openProductModal, modifique esta parte do modalHTML:
+
+const modalHTML = `
+    <div class="product-modal-overlay" id="productModal">
+        <div class="product-modal">
+            <div class="modal-header">
+                <h3>${product.title}</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-image-info">
+                    <div class="modal-image-column">
+                        <div class="modal-image">
+                            <img src="${currentImage}" alt="${product.title}" id="modalMainImage">
+                        </div>
+                    </div>
+                    
+                    <div class="modal-info-column">
+                        <div class="price-section">
+                            <span class="current-price" id="dynamicPrice">${currentPrice}</span>
+                            ${currentOldPrice ? `<span class="original-price" id="dynamicOldPrice">${currentOldPrice}</span>` : ''}
+                            <div class="installment-text">6x sem juros</div>
+                            ${urgencyBadgeHTML}
                         </div>
                         
-                        <div class="modal-info-column">
-                            <div class="price-section">
-                                <span class="current-price" id="dynamicPrice">${currentPrice}</span>
-                                ${currentOldPrice ? `<span class="original-price" id="dynamicOldPrice">${currentOldPrice}</span>` : ''}
-                                <div class="installment-text">6x sem juros</div>
-                                ${urgencyBadgeHTML}
-                            </div>
-                            
-                            ${modalVariationsHTML}
-                            
-                            ${product.longDescription ? `
-                                <div class="description-section">
-                                    <h4>Descrição</h4>
-                                    <div class="long-description">
-                                        ${product.longDescription}
-                                    </div>
-                                </div>
-                            ` : ''}
-                            
-                            <div class="modal-actions">
-                                <button class="btn-whatsapp-buy" data-product-id="${product.id}">
-                                    <i class="fab fa-whatsapp"></i> Comprar
-                                </button>
-                            </div>
-
-                            ${(mainSpecsHTML || kitPiecesHTML) ? `
-                                <div class="specs-section">
-                                    <h4>Especificações</h4>
-                                    ${mainSpecsHTML}
-                                    ${kitPiecesHTML}
-                                    ${product.productCode ? `
-                                        <div class="product-code">
-                                            <strong>Código:</strong> ${product.productCode}
-                                        </div>
-                                    ` : ''}
-                                </div>
-                            ` : ''}
+                        ${modalVariationsHTML}
+                        
+                        <!-- BOTÃO MOVIDO PARA AQUI (ACIMA DA DESCRIÇÃO) -->
+                        <div class="modal-actions">
+                            <button class="btn-whatsapp-buy" data-product-id="${product.id}">
+                                <i class="fab fa-whatsapp"></i> Comprar
+                            </button>
                         </div>
+                        
+                        ${product.longDescription ? `
+                            <div class="description-section">
+                                <h4>Descrição</h4>
+                                <div class="long-description">
+                                    ${product.longDescription}
+                                </div>
+                            </div>
+                        ` : ''}
+
+                        ${(mainSpecsHTML || kitPiecesHTML) ? `
+                            <div class="specs-section">
+                                <h4>Especificações</h4>
+                                ${mainSpecsHTML}
+                                ${kitPiecesHTML}
+                                ${product.productCode ? `
+                                    <div class="product-code">
+                                        <strong>Código:</strong> ${product.productCode}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        ` : ''}
                     </div>
                 </div>
             </div>
         </div>
-    `;
+    </div>
+`;
 
     // Adicionar ao DOM
     const existingModal = document.getElementById('productModal');
