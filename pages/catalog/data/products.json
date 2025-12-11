@@ -5,6 +5,7 @@
     "title": "Bandeja Gira Bolo",
     "category": "bandejas",
     "image": "../../assets/images/products/categories/tray/7000.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 250,00",
     "oldPrice": "R$ 290,00",
     "shortDescription": "Já pensou em levar movimento para os bolos da sua festa?",
@@ -38,6 +39,7 @@
     "title": "Conjunto de Bandejas",
     "category": "bandejas",
     "image": "../../assets/images/products/categories/tray/1040.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 450,00",
     "oldPrice": "R$ 460,00",
     "shortDescription": "Lindo conjunto giratório com 6 bandejas.",
@@ -150,6 +152,7 @@
     "title": "Kit Mesa Oceano - Pés em V",
     "category": "mesas",
     "image": "../../assets/images/products/categories/tables/2121-M1.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 995,00",
     "shortDescription": "A mesa oceano com pés em V é a queridinha do momento.",
     "longDescription": "A mesa oceano com pés em V é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
@@ -221,6 +224,7 @@
     "title": "Kit Mesa Oceano - Pés Retangulares",
     "category": "mesas",
     "image": "../../assets/images/products/categories/tables/2122.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 995,00",
     "shortDescription": "A mesa oceano com pés retangulares é a queridinha do momento.",
     "longDescription": "A mesa oceano com pés retangulares é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
@@ -393,6 +397,24 @@
     "badge": "mais vendido"
   },
   {
+    "id": 22,
+    "productCode": "2050",
+    "title": "Mesa Balcão/Báu em Acrílico",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2050.png",
+    "price": "R$ 1195,00",
+    "shortDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu.",
+    "longDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu. Luxo, Versatilidade e Durabilidade Incomparável.",
+    "height": 40,
+    "length": 90,
+    "depth": 80,
+    "thickness": 8,
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 4,
+    "badge": "mais vendido"
+  },
+  {
     "id": 14,
     "productCode": "9060-M2",
     "title": "Suporte para Donuts - Prateleira",
@@ -418,6 +440,7 @@
     "title": "Suporte para Donuts - Retangular",
     "category": "suportes-utilidade",
     "image": "../../assets/images/products/categories/utility-rack/9060-M1-P.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 120,00",
     "oldPrice": "R$ 130,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico.",
@@ -465,6 +488,7 @@
     "title": "Suporte para Donuts - Circular",
     "category": "suportes-utilidade",
     "image": "../../assets/images/products/categories/utility-rack/9060-M3-P.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 120,00",
     "oldPrice": "R$ 140,00",
     "shortDescription": "Lindo suporte circular para Donuts em acrílico.",
@@ -509,10 +533,11 @@
   {
     "id": 17,
     "productCode": "9065",
-    "title": "Suporte Bota",
+    "title": "Suporte Bota (com tampa ou sem)",
     "category": "suportes-utilidade",
     "image": "../../assets/images/products/categories/utility-rack/9065-C.png",
-    "price": "R$ 65,00",
+    "pricePrefix": "A partir de",
+    "price": "R$ 55,00",
     "oldPrice": "R$ 70,00",
     "shortDescription": "Lindo expositor formato bota para utilidades. Perfeito para expor contetes ou doces.",
     "longDescription": "Adicione um toque de charme e criatividade à sua decoração com este lindo expositor em formato de bota! Uma peça versátil, perfeita para organizar utilidades, pequenos objetos ou como um item decorativo único. Dica de uso: Para transformá-lo em um encantador pote para confetes, doces ou lembrancinhas, basta solicitar a inclusão da tampa opcional de abre e fecha no seu pedido.",
@@ -525,12 +550,14 @@
             "label": "Com Tampa",
             "value": "with_lid",
             "price": "R$ 65,00",
+            "oldPrice": "R$ 70,00",
             "image": "../../assets/images/products/categories/utility-rack/9065-C.png"
           },
           {
             "label": "Sem Tampa",
             "value": "without_lid",
             "price": "R$ 55,00",
+            "oldPrice": "R$ 60,00",
             "image": "../../assets/images/products/categories/utility-rack/9065-S.png"
           }
         ],
@@ -594,6 +621,7 @@
     "title": "Porta Cupcakes",
     "category": "suportes-utilidade",
     "image": "../../assets/images/products/categories/utility-rack/8020-3.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 150,00",
     "oldPrice": "R$ 170,00",
     "shortDescription": "Nosso Porta Cupcakes, é perfeito para deixar a Decoração do seu Evento ainda mais Clean.",
@@ -689,10 +717,11 @@
   {
     "id": 20,
     "productCode": "2024",
-    "title": "Quarteto de Cubos",
+    "title": "Quarteto de Cubos Luli Reis",
     "category": "cubos",
     "image": "../../assets/images/products/categories/cubes/2024.png",
-    "price": "R$ 300,00",
+    "pricePrefix": "A partir de",
+    "price": "R$ 295,00",
     "shortDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade.",
     "longDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
     "priceVariations": [
@@ -703,7 +732,7 @@
           {
             "label": "Cubo P - 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 300,00",
+            "price": "R$ 295,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -718,7 +747,7 @@
           {
             "label": "Cubo M - 3mm",
             "value": "individual_M_3mm",
-            "price": "R$ 400,00",
+            "price": "R$ 365,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -733,7 +762,7 @@
           {
             "label": "Cubo G - 3mm",
             "value": "individual_G_3mm",
-            "price": "R$ 500,00",
+            "price": "R$ 475,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -748,7 +777,7 @@
           {
             "label": "Cubo GG - 3mm",
             "value": "individual_GG_3mm",
-            "price": "R$ 600,00",
+            "price": "R$ 675,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -763,7 +792,7 @@
           {
             "label": "Cubo P - 4mm",
             "value": "individual_P_4mm",
-            "price": "R$ 300,00",
+            "price": "R$ 364,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -778,7 +807,7 @@
           {
             "label": "Cubo M - 4mm",
             "value": "individual_M_4mm",
-            "price": "R$ 400,00",
+            "price": "R$ 430,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -793,7 +822,7 @@
           {
             "label": "Cubo G - 4mm",
             "value": "individual_G_4mm",
-            "price": "R$ 500,00",
+            "price": "R$ 525,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -808,7 +837,7 @@
           {
             "label": "Cubo GG - 4mm",
             "value": "individual_GG_4mm",
-            "price": "R$ 600,00",
+            "price": "R$ 675,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -823,6 +852,7 @@
           {
             "label": "Kit Completo 3mm",
             "value": "kit_completo_3mm",
+            "oldPrice": "R$ 1.450,00",
             "price": "R$ 1.250,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
@@ -859,6 +889,7 @@
           {
             "label": "Kit Completo 4mm",
             "value": "kit_completo_4mm",
+            "oldPrice": "R$ 1.650,00",
             "price": "R$ 1.350,00",
             "image": "../../assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
@@ -907,7 +938,8 @@
     "title": "Trio de Cubos Luli Reis",
     "category": "cubos",
     "image": "../../assets/images/products/categories/cubes/2023.png",
-    "price": "R$ 300,00",
+    "pricePrefix": "A partir de",
+    "price": "R$ 345,00",
     "shortDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade.",
     "longDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
     "priceVariations": [
@@ -1132,6 +1164,256 @@
     "reviews": 64,
     "stock": 10,
     "badge": "desconto"
-    
+  },
+  {
+    "id": 22,
+    "productCode": "2025",
+    "title": "Trio de Sextavados Luli Reis",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2025.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 345,00",
+    "shortDescription": "Conheça a linha de Sextavados Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade.",
+    "longDescription": "Conheça a linha de Sextavados Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Sextavado P - 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 345,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Sextavado M - 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 425,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Médio 3mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Sextavado G - 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 575,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Grande 3mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Sextavado P - 4mm",
+            "value": "individual_P_4mm",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Sextavado M - 4mm",
+            "value": "individual_M_4mm",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Médio 4mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Sextavado G - 4mm",
+            "value": "individual_G_4mm",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Grande 4mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 995,00",
+            "oldPrice": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Colorido 3mm",
+            "value": "kit_completo_colorido_3mm",
+            "price": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 4mm",
+            "value": "kit_completo_4mm",
+            "price": "R$ 1095,00",
+            "oldPrice": "R$ 1.450,00",
+            "badge": "desconto",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Colorido 4mm",
+            "value": "kit_completo__colorido_4mm",
+            "price": "R$ 1350,00",
+            "image": "../../assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
+  },
+  {
+    "id": 23,
+    "productCode": "2026",
+    "title": "Mesa Balcão Luli reis",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2026.png",
+    "price": "R$ 1150,00",
+    "shortDescription": "A mesa Bancão Luli Reis é uma grande novidade, ela segue o mesm conceito dos cubos Luli Reis.",
+    "longDescription": "A mesa Bancão Luli Reis é uma grande novidade, ela segue o mesm conceito dos cubos Luli Reis, você pode  colocar itens dentro e usar como vitrine. A parte transparente é removível e fica fica por cima da parte branca.",
+    "height": 80,
+    "width": 90,
+    "length": 40,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 4,
+    "badge": "novidade"
   }
 ]
