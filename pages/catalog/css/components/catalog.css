@@ -90,7 +90,8 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
-    align-items: stretch; /* Mude para stretch em vez de start */
+    align-items: stretch;
+    /* Mude para stretch em vez de start */
 }
 
 
@@ -106,19 +107,23 @@
     display: flex;
     flex-direction: column;
     transform-origin: top center;
-    will-change: transform, height; /* Otimização de performance */
+    will-change: transform, height;
+    /* Otimização de performance */
     height: 100%;
 }
+
 @keyframes cardExpand {
     0% {
         transform: translateY(0) scale(1);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     }
+
     100% {
         transform: translateY(-10px) scale(1.02);
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
     }
 }
+
 .catalog-card.is-expanded {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
@@ -190,7 +195,7 @@
 
 .product-badge.bivolt {
     background: #EED202;
-   color: #000;
+    color: #000;
 }
 
 /* Fallback para badges sem classe específica */
@@ -203,7 +208,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Já tem isso, ótimo! */
+    flex-grow: 1;
+    /* Já tem isso, ótimo! */
 }
 
 /* Meta do Produto - DESKTOP - ESTRELAS EM CIMA DO TÍTULO */
@@ -214,7 +220,8 @@
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eee;
-    flex-grow: 1; /* Adicione esta linha */
+    flex-grow: 1;
+    /* Adicione esta linha */
 }
 
 /* Rating (estrelas) agora fica primeiro */
@@ -264,7 +271,8 @@
 }
 
 .current-price {
-    font-size: 1.2rem; /* Tamanho aumentado para desktop */
+    font-size: 1.2rem;
+    /* Tamanho aumentado para desktop */
     color: #222;
     font-weight: 700;
 }
@@ -303,9 +311,12 @@
 
 
 .btn-expand-variations.expanded:hover {
-    background: #ff0084; /* Mantém fundo rosa */
-    color: #fff; /* Mantém texto branco */
-    border-color: #ff0084; /* Mantém borda rosa */
+    background: #ff0084;
+    /* Mantém fundo rosa */
+    color: #fff;
+    /* Mantém texto branco */
+    border-color: #ff0084;
+    /* Mantém borda rosa */
 }
 
 .btn-expand-variations i {
@@ -321,10 +332,13 @@
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transform: translateY(-20px); /* Alterado de -10px para -20px para mais suavidade */
+    transform: translateY(-20px);
+    /* Alterado de -10px para -20px para mais suavidade */
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    order: 4; /* Adicione esta linha para garantir a ordem correta */
-    width: 100%; /* Garantir largura total */
+    order: 4;
+    /* Adicione esta linha para garantir a ordem correta */
+    width: 100%;
+    /* Garantir largura total */
 }
 
 .product-variations.expanded {
@@ -598,7 +612,8 @@
 
     /* Ajuste do current-price para 768px - TAMANHO REDUZIDO */
     .current-price {
-        font-size: 1rem; /* Reduzido de 1.2rem para 1rem */
+        font-size: 1rem;
+        /* Reduzido de 1.2rem para 1rem */
     }
 
     /* REMOVER HOVER NO MOBILE */
@@ -657,10 +672,10 @@
     .variation-badges {
         gap: 6px;
     }
-    
+
     .variation-badge {
         padding: 6px 12px;
-        font-size: 13px;
+        font-size: 0.8rem;
         min-height: 1rem;
     }
 
@@ -754,10 +769,10 @@
     .variation-badges {
         gap: 5px;
     }
-    
+
     .variation-badge {
         padding: 5px 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         min-height: 1rem;
         border-radius: 16px;
     }
@@ -768,7 +783,8 @@
     }
 
     .current-price {
-        font-size: 0.9rem; /* Reduzido ainda mais para mobile pequeno */
+        font-size: 0.9rem;
+        /* Reduzido ainda mais para mobile pequeno */
     }
 
     .product-title {
@@ -811,10 +827,10 @@
     .variation-badges {
         justify-content: center;
     }
-    
+
     .variation-badge {
         padding: 4px 8px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         min-height: 1rem;
     }
 
@@ -874,10 +890,10 @@
     .variation-badges {
         gap: 4px;
     }
-    
+
     .variation-badge {
         padding: 4px 8px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         min-height: 1rem;
     }
 
@@ -938,7 +954,7 @@
         color: #555;
         background: #f5f5f5;
     }
-    
+
     .variation-badge.active:hover {
         background: #4CAF50;
         color: white;
@@ -956,31 +972,31 @@
     .catalog-title {
         font-size: 1.4rem;
     }
-    
+
     .current-price {
         font-size: 0.85rem;
     }
-    
+
     .product-title {
         font-size: 0.8rem;
     }
-    
+
     .product-description {
         font-size: 0.75rem;
     }
-    
+
     .btn-quick-view,
     .btn-add-cart {
         font-size: 0.7rem;
         padding: 6px;
     }
-    
+
     .variation-badge {
         padding: 4px 8px;
         font-size: 0.8rem;
         min-height: 26px;
     }
-    
+
     .variation-label {
         font-size: 0.7rem;
     }
