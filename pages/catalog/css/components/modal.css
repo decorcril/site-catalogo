@@ -236,16 +236,19 @@
     color: #555;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px; /* AQUI: AUMENTEI O GAP ENTRE OS SPANS */
+    gap: 12px;
+    /* AQUI: AUMENTEI O GAP ENTRE OS SPANS */
 }
 
 .kit-piece-specs span {
     background: white;
-    padding: 8px 12px; /* AQUI: AUMENTEI O PADDING DOS SPANS */
+    padding: 8px 12px;
+    /* AQUI: AUMENTEI O PADDING DOS SPANS */
     border-radius: 4px;
     border: 1px solid #ddd;
     display: inline-block;
-    margin-bottom: 5px; /* AQUI: ADICIONEI MARGIN BOTTOM PARA RESPONSIVIDADE */
+    margin-bottom: 5px;
+    /* AQUI: ADICIONEI MARGIN BOTTOM PARA RESPONSIVIDADE */
 }
 
 .kit-piece-specs strong {
@@ -349,6 +352,80 @@
     font-size: 24px;
 }
 
+/* SEÇÃO DE PREÇOS */
+.price-section {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* PREÇO SIMPLES (para produtos sem opções de pagamento) */
+.simple-price {
+    margin-bottom: 10px;
+}
+
+.simple-price .current-price {
+    font-size: 2.2rem;
+    color: #00FF00;
+    font-weight: 800;
+    display: block;
+}
+
+/* OPÇÕES DE PAGAMENTO */
+.payment-option-pix {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-option-pix .payment-type {
+    font-size: 1.5rem;
+    color: #222;
+    font-weight: 600;
+}
+
+.payment-option-pix .payment-value {
+    font-size: 2.2rem;
+    color: #00FF00;
+    font-weight: 800;
+}
+
+/* OPÇÃO DE PARCELAMENTO */
+.payment-option-installment {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-option-installment .payment-label {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.payment-option-installment .payment-value {
+    font-size: 1.8rem;
+    color: #222;
+    font-weight: 700;
+}
+
+.payment-option-installment .installment-text {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* PREÇO ORIGINAL RISCADO */
+.original-price {
+    font-size: 1.3rem;
+    color: #ff0000;
+    text-decoration: line-through;
+    display: block;
+    margin-top: 5px;
+}
+
 
 
 /* Animações para a badge de urgência */
@@ -356,9 +433,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.02);
     }
+
     100% {
         transform: scale(1);
     }
@@ -368,6 +447,7 @@
     0% {
         transform: translateX(-2px);
     }
+
     100% {
         transform: translateX(2px);
     }
@@ -380,11 +460,12 @@
         flex-direction: column;
         gap: 30px;
     }
-    
-    .modal-image-column, .modal-info-column {
+
+    .modal-image-column,
+    .modal-info-column {
         min-width: 100%;
     }
-    
+
     .modal-image img {
         max-height: 350px;
     }
@@ -397,27 +478,27 @@
         max-height: 98vh;
         border-radius: 8px;
     }
-    
+
     .modal-header {
         padding: 15px 20px;
     }
-    
+
     .modal-header h3 {
         font-size: 1.2rem;
     }
-    
+
     .modal-content {
         padding: 20px;
     }
-    
+
     .current-price {
         font-size: 1.8rem;
     }
-    
+
     .original-price {
         font-size: 1.1rem;
     }
-    
+
     .close-modal {
         font-size: 28px;
         padding: 0 10px;
@@ -431,49 +512,51 @@
         max-height: 100vh;
         border-radius: 0;
     }
-    
+
     .modal-content {
         padding: 15px;
     }
-    
+
     .modal-header {
         padding: 15px;
     }
-    
+
     .modal-header h3 {
         font-size: 1.1rem;
     }
-    
+
     .current-price {
         font-size: 1.6rem;
     }
-    
+
     .original-price {
         font-size: 1rem;
     }
-    
+
     .specs-table td {
         padding: 10px 0;
         font-size: 0.9rem;
     }
-    
+
     .specs-table td:first-child {
         width: 45%;
     }
-    
+
     .kit-piece {
         padding: 12px;
     }
-    
+
     .kit-piece-specs {
-        gap: 8px; /* AQUI: GAP REDUZIDO PARA MOBILE */
+        gap: 8px;
+        /* AQUI: GAP REDUZIDO PARA MOBILE */
     }
-    
+
     .kit-piece-specs span {
-        padding: 6px 10px; /* AQUI: PADDING REDUZIDO PARA MOBILE */
+        padding: 6px 10px;
+        /* AQUI: PADDING REDUZIDO PARA MOBILE */
         margin-bottom: 4px;
     }
-    
+
     .close-modal {
         font-size: 24px;
     }
@@ -494,8 +577,71 @@
         font-size: 16px;
         max-width: 100%;
     }
-    
+
     .btn-whatsapp-buy i {
         font-size: 22px;
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    /* ... código existente ... */
+
+    /* Responsividade para opções de pagamento */
+    .payment-option-pix .payment-type {
+        font-size: 1.3rem;
+    }
+
+    .payment-option-pix .payment-value {
+        font-size: 1.8rem;
+    }
+
+    .payment-option-installment .payment-value {
+        font-size: 1.5rem;
+    }
+
+    .simple-price .current-price {
+        font-size: 1.8rem;
+    }
+
+    .original-price {
+        font-size: 1.1rem;
+    }
+}
+
+/* Celular (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    /* ... código existente ... */
+
+    /* Responsividade para opções de pagamento - mobile */
+    .payment-option-pix {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .payment-option-pix .payment-type {
+        font-size: 1.2rem;
+    }
+
+    .payment-option-pix .payment-value {
+        font-size: 1.6rem;
+    }
+
+    .payment-option-installment {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .payment-option-installment .payment-value {
+        font-size: 1.4rem;
+    }
+
+    .simple-price .current-price {
+        font-size: 1.6rem;
+    }
+
+    .original-price {
+        font-size: 1rem;
     }
 }

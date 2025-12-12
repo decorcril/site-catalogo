@@ -405,9 +405,9 @@
     "price": "R$ 1195,00",
     "shortDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu.",
     "longDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu. Luxo, Versatilidade e Durabilidade Incomparável.",
-    "height": 40,
+    "height": 80,
     "length": 90,
-    "depth": 80,
+    "width": 40,
     "thickness": 8,
     "rating": 4.5,
     "reviews": 71,
@@ -1415,5 +1415,169 @@
     "reviews": 71,
     "stock": 4,
     "badge": "novidade"
+  },
+  {
+    "id": 24,
+    "productCode": "2024",
+    "title": "Trio de Cilindros Transparentes",
+    "category": "cilindros",
+    "image": "../../assets/images/products/categories/cylinder/2026.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 270,00",
+    "shortDescription": "O trio de cilindros é o destaque das decorações e um item indispensável no seu acervo.",
+    "longDescription": "O trio de cilindros é o destaque das decorações e um item indispensável no seu acervo. Ele possui o corpo confeccionado em policarbonato super-resistente e o tampo é feito em acrílico de 3mm. É o preferido da decoradora Diná Teixeira.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cilindro Tradicional Pequeno",
+            "value": "individual_P_3mm",
+            "price": "R$ 270,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Pequeno",
+                "diameter": 31,
+                "height": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Tradicional Médio",
+            "value": "individual_M_3mm",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Médio",
+                "diameter": 35,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Tradicional Grande",
+            "value": "individual_G_3mm",
+            "price": "R$ 410,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Grande",
+                "diameter": 39,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio Tradicional",
+            "value": "kit_completo_3mm",
+            "price": "R$ 795,00",
+            "paymentType": "No Pix",
+            "installmentPrice": "R$ 850,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Pequeno",
+                "diameter": 31,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Tradicional Médio",
+                "diameter": 35,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Tradicional Grande",
+                "diameter": 39,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Mais Largo Pequeno",
+            "value": "individual_P",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Pequeno",
+                "diameter": 35,
+                "height": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Mais Largo Médio",
+            "value": "individual_M",
+            "price": "R$ 420,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Médio",
+                "diameter": 40,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Tradicional Grande",
+            "value": "individual_G",
+            "price": "R$ 410,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Grande",
+                "diameter": 45,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio Mais Largo",
+            "value": "kit_completo",
+            "price": "R$ 895,00",
+            "paymentType": "No Pix",
+            "installmentPrice": "R$ 950,00",
+            "image": "../../assets/images/products/categories/cylinder/2026.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Mais Largo Pequeno",
+                "diameter": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Mais Largo Médio",
+                "diameter": 40,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Mais Largo Grande",
+                "diameter": 45,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
   }
 ]
