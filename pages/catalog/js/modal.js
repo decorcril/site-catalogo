@@ -44,7 +44,10 @@ function initializeModalData(product, savedSelections) {
             product.priceVariations.forEach(variation => {
                 const savedSelection = savedSelections[variation.key];
                 if (savedSelection) {
-                    updateDataFromOption(data, variation.options.find(opt => opt.value === savedSelection.value));
+                    const option = variation.options.find(opt => opt.value === savedSelection.value);
+                    if (option) {
+                        updateDataFromOption(data, option);
+                    }
                 }
             });
         } else if (product.priceVariations.length > 0) {
@@ -77,11 +80,22 @@ function updateDataFromOption(data, option) {
     }
 }
 
-// Função auxiliar 3: Criar especificações HTML
+// Função auxiliar 3: Criar especificações HTML - VERSÃO CORRIGIDA ÚNICA
 function createSpecsHTML(data, product) {
     let specsHTML = '';
-
-    if (data.diameter && data.thickness && data.footHeight) {
+    
+    // Primeiro, verificar se temos kitPieces (como no caso dos cubos)
+    // Verificar tanto no data (que pode vir da variação) quanto no produto original
+    const hasKitPieces = (data.kitPieces && data.kitPieces.length > 0) || 
+                         (product.kitPieces && product.kitPieces.length > 0);
+    
+    if (hasKitPieces) {
+        // Se temos kitPieces, NÃO mostrar a tabela geral aqui
+        // As especificações serão mostradas APENAS na seção de kitPieces
+        return '';
+    }
+    // CASOS ESPECIAIS PARA MESAS
+    else if (data.diameter && data.thickness && data.footHeight) {
         specsHTML = `
             <table class="specs-table">
                 <tr><td colspan="2"><strong>Tampo Redondo:</strong></td></tr>
@@ -92,7 +106,8 @@ function createSpecsHTML(data, product) {
                 <tr><td>Espessura:</td><td><strong>${data.thickness} mm</strong></td></tr>
             </table>
         `;
-    } else if (data.length && data.width && data.thickness && data.footHeight) {
+    }
+    else if (data.length && data.width && data.thickness && data.footHeight) {
         specsHTML = `
             <table class="specs-table">
                 <tr><td colspan="2"><strong>Tampo:</strong></td></tr>
@@ -104,7 +119,9 @@ function createSpecsHTML(data, product) {
                 <tr><td>Espessura:</td><td><strong>${data.thickness} mm</strong></td></tr>
             </table>
         `;
-    } else {
+    }
+    // CASO GERAL (quando não temos kitPieces nem é mesa com pés)
+    else {
         const hasMainSpecs = data.height || data.width || data.depth ||
             data.capacity || data.thickness || data.length ||
             data.diameter || product.voltage;
@@ -129,7 +146,7 @@ function createSpecsHTML(data, product) {
     return specsHTML;
 }
 
-// Função auxiliar 4: Criar HTML das peças do kit
+// Função auxiliar 4: Criar HTML das peças do kit - VERSÃO ÚNICA
 function createKitPiecesHTML(kitPieces) {
     if (!kitPieces || kitPieces.length === 0) return '';
 
@@ -137,8 +154,9 @@ function createKitPiecesHTML(kitPieces) {
         <div class="kit-pieces">
             <h5>Peças do Kit (${kitPieces.length})</h5>
             ${kitPieces.map(piece => {
+        // Verificar se é uma mesa com tampo e pés
         const isMesaComPes = (piece.footHeight && piece.width);
-
+        
         if (isMesaComPes) {
             return `
                         <div class="kit-piece">
@@ -159,18 +177,20 @@ function createKitPiecesHTML(kitPieces) {
                         </div>
                     `;
         } else {
+            // PARA CUBOS E OUTROS PRODUTOS - ADICIONEI COMPRIMENTO AQUI
             return `
                         <div class="kit-piece">
                             <div class="kit-piece-name">${piece.name}</div>
                             <div class="kit-piece-specs">
-                                ${piece.height ? `<span>Altura: <strong>${piece.height} cm</strong></span>` : ''}
-                                ${piece.diameter ? `<span>Diâmetro: <strong>${piece.diameter} cm</strong></span>` : ''}
-                                ${piece.width ? `<span>Largura: <strong>${piece.width} cm</strong></span>` : ''}
-                                ${piece.depth && piece.depth > 0 ? `<span>Profundidade: <strong>${piece.depth} cm</strong></span>` : ''}
-                                ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span>` : ''}
-                                ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
-                                ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span>` : ''}
-                                ${piece.footThickness ? `<span>Espessura dos Pés: <strong>${piece.footThickness} mm</strong></span>` : ''}
+                                ${piece.height ? `<span>Altura: <strong>${piece.height} cm</strong></span><br>` : ''}
+                                ${piece.length ? `<span>Comprimento: <strong>${piece.length} cm</strong></span><br>` : ''}
+                                ${piece.width ? `<span>Largura: <strong>${piece.width} cm</strong></span><br>` : ''}
+                                ${piece.diameter ? `<span>Diâmetro: <strong>${piece.diameter} cm</strong></span><br>` : ''}
+                                ${piece.depth && piece.depth > 0 ? `<span>Profundidade: <strong>${piece.depth} cm</strong></span><br>` : ''}
+                                ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span><br>` : ''}
+                                ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span><br>` : ''}
+                                ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span><br>` : ''}
+                                ${piece.footThickness ? `<span>Espessura dos Pés: <strong>${piece.footThickness} mm</strong></span><br>` : ''}
                                 ${piece.voltage ? `<span>Voltagem: <strong>${piece.voltage}</strong></span>` : ''}
                             </div>
                         </div>
@@ -302,7 +322,7 @@ function createModalHTML(product, data) {
                                 </div>
                             ` : ''}
 
-                            ${(specsHTML || kitPiecesHTML) ? `
+                            ${(specsHTML || kitPiecesHTML || product.productCode) ? `
                                 <div class="specs-section">
                                     <h4>Especificações</h4>
                                     ${specsHTML}
@@ -489,7 +509,7 @@ function closeModal(productId, modal) {
     if (modal) modal.remove();
 }
 
-// FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL
+// FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL - VERSÃO CORRIGIDA
 function updateModalSpecs(modal, selectedOption, originalProduct) {
     // Atualizar especificações com base na opção selecionada
     const currentHeight = selectedOption.height || originalProduct.height;
@@ -502,11 +522,19 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
     const currentFootHeight = selectedOption.footHeight || originalProduct.footHeight;
 
+    // Verificar se temos kitPieces
+    const hasKitPieces = (currentKitPieces && currentKitPieces.length > 0) || 
+                         (originalProduct.kitPieces && originalProduct.kitPieces.length > 0);
+    
     // Gerar especificações atualizadas
     let mainSpecsHTML = '';
 
+    // SE TEM KITPIECES, NÃO MOSTRAR TABELA GERAL
+    if (hasKitPieces) {
+        mainSpecsHTML = '';
+    }
     // VERIFICAR SE É UMA MESA REDONDA COM PÉS
-    if (currentDiameter && currentThickness && currentFootHeight) {
+    else if (currentDiameter && currentThickness && currentFootHeight) {
         mainSpecsHTML = `
             <table class="specs-table">
                 <tr><td colspan="2"><strong>Tampo Redondo:</strong></td></tr>
@@ -556,55 +584,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     // Gerar peças do kit atualizadas
     let kitPiecesHTML = '';
     if (currentKitPieces && currentKitPieces.length > 0) {
-        kitPiecesHTML = `
-            <div class="kit-pieces">
-                <h5>Peças do Kit (${currentKitPieces.length})</h5>
-                ${currentKitPieces.map(piece => {
-            // Verificar se é uma mesa com tampo e pés
-            const isMesaComPes = (piece.footHeight && piece.width);
-
-            if (isMesaComPes) {
-                // Para mesa com tampo e pés: formato especial
-                return `
-                            <div class="kit-piece">
-                                <div class="kit-piece-name">${piece.name}</div>
-                                <div class="kit-piece-specs">
-                                    <div class="specs-group">
-                                        <strong>Tampo:</strong><br>
-                                        ${piece.height ? `<span>Comprimento: <strong>${piece.height} cm</strong></span><br>` : ''}
-                                        ${piece.width ? `<span>Largura: <strong>${piece.width} cm</strong></span><br>` : ''}
-                                        ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
-                                    </div>
-                                    <div class="specs-group">
-                                        <strong>Pés:</strong><br>
-                                        <span>Altura: <strong>${piece.footHeight} cm</strong></span><br>
-                                        <span>Espessura: <strong>${piece.footThickness || piece.thickness} mm</strong></span>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-            } else {
-                // Formato padrão para outras peças
-                return `
-                            <div class="kit-piece">
-                                <div class="kit-piece-name">${piece.name}</div>
-                                <div class="kit-piece-specs">
-                                    ${piece.height ? `<span>Altura: <strong>${piece.height} cm</strong></span>` : ''}
-                                    ${piece.diameter ? `<span>Diâmetro: <strong>${piece.diameter} cm</strong></span>` : ''}
-                                    ${piece.width ? `<span>Largura: <strong>${piece.width} cm</strong></span>` : ''}
-                                    ${piece.depth && piece.depth > 0 ? `<span>Profundidade: <strong>${piece.depth} cm</strong></span>` : ''}
-                                    ${piece.capacity && piece.capacity > 0 ? `<span>Capacidade: <strong>${piece.capacity} un</strong></span>` : ''}
-                                    ${piece.thickness ? `<span>Espessura: <strong>${piece.thickness} mm</strong></span>` : ''}
-                                    ${piece.footHeight ? `<span>Pés: <strong>${piece.footHeight} cm</strong></span>` : ''}
-                                    ${piece.footThickness ? `<span>Espessura dos Pés: <strong>${piece.footThickness} mm</strong></span>` : ''}
-                                    ${piece.voltage ? `<span>Voltagem: <strong>${piece.voltage}</strong></span>` : ''}
-                                </div>
-                            </div>
-                        `;
-            }
-        }).join('')}
-            </div>
-        `;
+        kitPiecesHTML = createKitPiecesHTML(currentKitPieces);
     }
 
     // Atualizar a seção de especificações no modal

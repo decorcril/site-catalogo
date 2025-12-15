@@ -1579,5 +1579,411 @@
     "reviews": 64,
     "stock": 10,
     "badge": "desconto"
+  },
+  {
+    "id": 25,
+    "productCode": "2032",
+    "title": "Trio de Cubos Transparentes Tradicionais",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2032.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 345,00",
+    "shortDescription": "Conheça a linha de cubos transparentes em trio 100% acrílico cristalino virgem. Temos nas versões tradicionais (todas as partes coladas) e na versão onde ele é totalmente dobrado.",
+    "longDescription": "Conheça a linha de cubos transparentes em trio 100% acrílico cristalino virgem. Temos nas versões tradicionais (todas as partes coladas) e na versão onde ele é totalmente dobrado, possuindo somente um encontro.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo Sextavado pequeno 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 345,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado pequeno 3mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Médio Tradicional 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 425,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Grande Tradicional 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 410,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande Tradicional 3mm",
+                "height": 80,
+                "width": 40,
+                "length": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Tradicional 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 795,00",
+            "oldPrice": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno Tradicional 3mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio Tradicional 3mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande Tradicional 3mm",
+                "height": 80,
+                "width": 40,
+                "length": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Pequeno Tradicional 4mm",
+            "value": "individual_P",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeo Tradicional 4mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo Tradicional Médio 4mm",
+            "value": "individual_M",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Tradicional Médio 4mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo Tradicional Grande 4mm",
+            "value": "individual_G",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Tradicional Grande 4mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Tradicional 4mm",
+            "value": "kit_completo",
+            "price": "R$ 1095,00",
+            "oldPrice": "R$ 1.450,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Tradicional Pequeno 4mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Tradicional Médio 4mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Tradicional Grande 4mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Dobrado 3mm",
+            "value": "kit_completo",
+            "price": "R$ 1295,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Dobrado Pequeno 3mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Dobrado Médio 3mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Dobrado Grande 3mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Dobrado 4mm",
+            "value": "kit_completo",
+            "price": "R$ 1395,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Dobrado Pequeno 4mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Dobrado Médio 4mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Dobrado Grande 4mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
+  },
+  {
+    "id": 26,
+    "productCode": "2033",
+    "title": "Trio de Sextavados Transparente",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2033.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 345,00",
+    "shortDescription": "Destaque seu espaço com o trio de sextavados transparentes 100% acrílico cristalino virgem. Nossa versão tradicional, com todas as partes cuidadosamente coladas, garante um acabamento impecável e máxima resistência.",
+    "longDescription": "Destaque seu espaço com o trio de sextavados transparentes 100% acrílico cristalino virgem. Nossa versão tradicional, com todas as partes cuidadosamente coladas, garante um acabamento impecável e máxima resistência. Estas peças agregam um toque de modernidade e sofisticação, ideais para elevar a decoração de eventos ou a exposição de produtos com elegância atemporal.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo Sextavado Pequeno 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 345,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Pequeno 3mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Sextavado Médio 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 425,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Médio 3mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Sextavado grande 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 575,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado grande 3mm",
+                "height": 80,
+                "width": 40,
+                "length": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Sextavados 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 995,00",
+            "oldPrice": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavados Pequeno 3mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Sextavado Médio 3mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Sextavado Grande 3mm",
+                "height": 80,
+                "width": 40,
+                "length": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Sextavado pequeno 4mm",
+            "value": "individual_P",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Pequeno 4mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo Sextavado Médio 4mm",
+            "value": "individual_M",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Médio 4mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo Sextavado Grande 4mm",
+            "value": "individual_G",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2033.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Grande 4mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Trio Cubos Sextavado 4mm",
+            "value": "kit_completo",
+            "price": "R$ 995,00",
+            "oldPrice": "R$ 1250,00",
+            "image": "../../assets/images/products/categories/cubes/2032.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Sextavado Pequeno 4mm",
+                "height": 40,
+                "width": 35,
+                "length": 35,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Sextavado Médio 4mm",
+                "height": 60,
+                "width": 37.5,
+                "length": 37.5,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Sextavado Grande 4mm",
+                "height": 60,
+                "width": 40,
+                "length": 40,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
   }
 ]
