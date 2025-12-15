@@ -1985,5 +1985,233 @@
     "reviews": 64,
     "stock": 10,
     "badge": "desconto"
+  },
+  {
+    "id": 27,
+    "productCode": "2030",
+    "title": "Trio de Boleiras Redondas",
+    "category": "boleiras",
+    "image": "../../assets/images/products/categories/cake-stand/2030.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 320,00",
+    "shortDescription": "Nos juntamos ao Cake Design  mais querido do Brasil Caique Ribeiro o mais para lançarmos juntos essas lindas boleiras e você não pode ficar sem a sua.",
+    "longDescription": "Nos juntamos ao Cake Design  mais querido do Brasil Caique Ribeiro o mais para lançarmos juntos essas lindas boleiras e você não pode ficar sem a sua. Produto confeccionado exclusivamente para agregar valor ao seu trabalho.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Trio de Boleiras Pequeno",
+            "value": "kit_completo_3mm",
+            "price": "R$ 320,00",
+            "image": "../../assets/images/products/categories/cake-stand/2030.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "height": 10,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Média",
+                "height": 10,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Grande",
+                "height": 10,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Boleiras Grande",
+            "value": "kit_completo",
+            "price": "R$ 420,00",
+            "image": "../../assets/images/products/categories/cake-stand/2030.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "height": 15,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Média",
+                "height": 15,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Grande",
+                "height": 15,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "Novidade"
+  },
+  {
+    "id": 28,
+    "productCode": "2031",
+    "title": "Trio de Boleiras Quadradas",
+    "category": "boleiras",
+    "image": "../../assets/images/products/categories/cake-stand/2031.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 320,00",
+    "shortDescription": "Mais uma linda parceria de sucesso! Nos unimos ao Cake Design Caique Ribeiro o mais querido do Brasil para lançar estas boleiras exclusivas!",
+    "longDescription": "Mais uma linda parceria de sucesso! Nos unimos ao Cake Design Caique Ribeiro o mais mais querido do Brasil para lançar estas boleiras exclusivas! Um produto confeccionado com carinho e design pensado para agregar ainda mais valor e sofisticação ao seu trabalho. Garanta a sua e arrase nas suas criações!",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Trio de Boleiras Quadradas Pequeno",
+            "value": "kit_completo_3mm",
+            "price": "R$ 320,00",
+            "image": "../../assets/images/products/categories/cake-stand/2031.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Oitavada Pequena",
+                "height": 10,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Média",
+                "height": 10,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Grande",
+                "height": 10,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Boleiras Quadradas Grande",
+            "value": "kit_completo",
+            "price": "R$ 420,00",
+            "image": "../../assets/images/products/categories/cake-stand/2031.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Oitavada Pequena",
+                "height": 15,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Média",
+                "height": 15,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Grande",
+                "height": 15,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "Novidade"
+  },
+  {
+    "id": 29,
+    "productCode": "2320",
+    "title": "Trio de Boleiras Quadradas",
+    "category": "boleiras",
+    "image": "../../assets/images/products/categories/cake-stand/2320.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 320,00",
+    "shortDescription": "Fruto de uma grande parceria! Nos unimos ao Cake Design Caique Ribeiro, o mais querido do Brasil, para lançar estas exclusivas boleiras quadradas!",
+    "longDescription": "Fruto de uma grande parceria! Nos unimos ao Cake Design Caique Ribeiro, o mais querido do Brasil, para lançar estas exclusivas boleiras quadradas! Um produto confeccionado com carinho e um design inovador, pensado para agregar ainda mais valor e sofisticação ao seu trabalho. Garanta a sua e arrase nas suas criações!",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Trio de Boleiras Quadradas Pequeno",
+            "value": "kit_completo_3mm",
+            "price": "R$ 320,00",
+            "image": "../../assets/images/products/categories/cake-stand/2320.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Oitavada Pequena",
+                "height": 10,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Média",
+                "height": 10,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Grande",
+                "height": 10,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Boleiras Quadradas Grande",
+            "value": "kit_completo",
+            "price": "R$ 420,00",
+            "image": "../../assets/images/products/categories/cake-stand/2320.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Oitavada Pequena",
+                "height": 15,
+                "diameter": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Média",
+                "height": 15,
+                "diameter": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Boleira Oitavada Grande",
+                "height": 15,
+                "diameter": 35,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "Novidade"
   }
 ]
