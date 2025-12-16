@@ -2269,12 +2269,12 @@
   },
   {
     "id": 31,
-    "productCode": "2029-GG",
+    "productCode": "9045",
     "title": "Mesa Aquário Borbulhante com base Branca",
     "category": "colunas",
-    "image": "../../assets/images/products/categories/column/2029-GG.png",
+    "image": "../../assets/images/products/categories/column/9045.png",
     "price": "R$ 650,00",
-    "shortDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido; é a escolha perfeita para criar decorações impactantes e sofisticadas em qualquer ambiente.",
+    "shortDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido.",
     "longDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido; é a escolha perfeita para criar decorações impactantes e sofisticadas em qualquer ambiente.",
     "kitPieces": [
       {
@@ -2288,6 +2288,510 @@
         "name": "Tampo",
         "diameter": 50,
         "thickness": 6
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64
+  },
+  {
+    "id": 32,
+    "productCode": "2027",
+    "title": "Tampo Orgânico ",
+    "category": "tampos",
+    "image": "../../assets/images/products/categories/top/2027.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 960,00",
+    "shortDescription": "Apresentamos o Tampo Orgânico, uma peça de design versátil e de alta qualidade que combina com todas as decorações. Temos este tampo disponível nas espessuras de 6mm, 8mm e 10mm.",
+    "longDescription": "Apresentamos o Tampo Orgânico, uma peça de design versátil e de alta qualidade que combina com todas as decorações. Com um acabamento elegante e moderno, ele irá agregar valor ao seu ambiente. Temos este tampo disponível nas espessuras de 6mm, 8mm e 10mm.",
+    "priceVariations": [
+      {
+        "name": "Tamanho",
+        "key": "size",
+        "options": [
+          {
+            "label": "Tampo 8mm",
+            "value": "small",
+            "price": "R$ 960,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 75,
+            "length": 170,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 10mm",
+            "value": "medium",
+            "price": "R$ 1250,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 75,
+            "length": 170,
+            "thickness": 10
+          }
+        ],
+        "default": "small"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 33,
+    "productCode": "2035",
+    "title": "Tampo Redondo em Acrílico",
+    "category": "tampos",
+    "image": "../../assets/images/products/categories/top/2035.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 480,00",
+    "shortDescription": "Com o tampo de acrílico redondo, você terá uma peça de alta qualidade para a sua decoração.",
+    "longDescription": "Com o tampo de acrílico redondo, você terá uma peça de alta qualidade para a sua decoração. Com um acabamento elegante e moderno, ele irá agregar valor ao seu ambiente. Os pés são vendidos separadamente. Temos a opção em 6mm, 8mm e 10mm.",
+    "priceVariations": [
+      {
+        "name": "Tamanho",
+        "key": "size",
+        "options": [
+          {
+            "label": "Tampo 100x100 6mm",
+            "value": "small",
+            "price": "R$ 480,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 100,
+            "thickness": 6
+          },
+          {
+            "label": "Tampo 100x100 8mm",
+            "value": "medium",
+            "price": "R$ 580,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 100,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 100x100 10mm",
+            "value": "large",
+            "price": "R$ 720,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 100,
+            "thickness": 10
+          },
+          {
+            "label": "Tampo 90x90 6mm",
+            "value": "small_90",
+            "price": "R$ 420,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 90,
+            "thickness": 6
+          },
+          {
+            "label": "Tampo 90x90 8mm",
+            "value": "medium_90",
+            "price": "R$ 580,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 90,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 90x90 10mm",
+            "value": "large_90",
+            "price": "R$ 640,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "diameter": 90,
+            "thickness": 10
+          }
+        ],
+        "default": "small"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 34,
+    "productCode": "2040",
+    "title": "Tampo Mesa Sinuosa em 2 Tamanhos",
+    "category": "tampos",
+    "image": "../../assets/images/products/categories/top/2040.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 760,00",
+    "shortDescription": "Nossos tampos são feitos em acrílico cristalino de excelente qualidade. Observação: os pés são vendidos separadamente.",
+    "longDescription": "Nossos tampos são feitos em acrílico cristalino de excelente qualidade. Para criar essa configuração específica, são necessárias duas unidades do tampo. Observação: os pés são vendidos separadamente.",
+    "priceVariations": [
+      {
+        "name": "Tamanho",
+        "key": "size",
+        "options": [
+          {
+            "label": "Tampo 160x60 6mm",
+            "value": "small",
+            "price": "R$ 760,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 75,
+            "length": 170,
+            "thickness": 6
+          },
+          {
+            "label": "Tampo 160x60 8mm",
+            "value": "medium",
+            "price": "R$ 940,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 75,
+            "length": 170,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 160x60 10mm",
+            "value": "large",
+            "price": "R$ 1260,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 75,
+            "length": 170,
+            "thickness": 10
+          },
+          {
+            "label": "Tampo 180x80 8mm",
+            "value": "small_180",
+            "price": "R$ 1180,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 180x80 10mm",
+            "value": "large_180",
+            "price": "R$ 1350,00",
+            "image": "../../assets/images/products/categories/top/2035.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 10
+          }
+        ],
+        "default": "small"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 35,
+    "productCode": "2300",
+    "title": "Tampo Orgânico Modelo 1",
+    "category": "tampos",
+    "image": "../../assets/images/products/categories/top/2300.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 1190,00",
+    "shortDescription": "Apresentamos o Tampo Oval, o mais novo lançamento da Decorcril, confeccionado 100% com acrílico virgem.",
+    "longDescription": "Apresentamos o Tampo Oval, o mais novo lançamento da Decorcril, confeccionado 100% com acrílico virgem. Seu design se destaca pelas belas curvas suaves e arredondadas em suas laterais, justificando seu nome.",
+    "priceVariations": [
+      {
+        "name": "Tamanho",
+        "key": "size",
+        "options": [
+          {
+            "label": "Tampo 8mm",
+            "value": "small",
+            "price": "R$ 1190,00",
+            "image": "../../assets/images/products/categories/top/2300.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 10mm",
+            "value": "medium",
+            "price": "R$ 1295,00",
+            "image": "../../assets/images/products/categories/top/2300.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 10
+          }
+        ],
+        "default": "small"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 36,
+    "productCode": "2320",
+    "title": "Tampo Orgânico Modelo 2",
+    "category": "tampos",
+    "image": "../../assets/images/products/categories/top/2320.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 1190,00",
+    "shortDescription": "O mais novo lançamento da Decorcril é o Tampo Oval Modelo 2. Confeccionado em acrílico 100% virgem e transparente.",
+    "longDescription": "O mais novo lançamento da Decorcril é o Tampo Oval Modelo 2. Confeccionado em acrílico 100% virgem e transparente, este tampo se destaca por suas belas curvas suaves e arredondadas nas laterais, que justificam seu nome.É a escolha ideal para ambientes modernos, garantindo um visual leve e sofisticado.",
+    "priceVariations": [
+      {
+        "name": "Tamanho",
+        "key": "size",
+        "options": [
+          {
+            "label": "Tampo 8mm",
+            "value": "small",
+            "price": "R$ 1190,00",
+            "image": "../../assets/images/products/categories/top/2320.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 8
+          },
+          {
+            "label": "Tampo 10mm",
+            "value": "medium",
+            "price": "R$ 1295,00",
+            "image": "../../assets/images/products/categories/top/2320.png",
+            "width": 80,
+            "length": 180,
+            "thickness": 10
+          }
+        ],
+        "default": "small"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 37,
+    "productCode": "2043-6",
+    "title": "Mesa Sinuosa Compacta",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2043-6.png",
+    "pricePrefix": "A partir de",
+    "oldPrice": "R$ 1650,00",
+    "price": "R$ 1450,00",
+    "shortDescription": "Mesa Sinuosa Compacta: Elegância Minimalista para Seu Espaço!",
+    "longDescription": "Mesa Sinuosa Compacta: Elegância Minimalista para Seu Espaço! Uma versão menor da mesa sinuosa para decorações minimalistas. A solução perfeita para os decoradores quem sonham com essa mesa, mas não possuem condições de investir na mesa grande.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 995,00",
+            "image": "../../assets/images/products/categories/tables/2121-M1.png",
+            "kitPieces": [
+              {
+                "name": "Tampo",
+                "height": 111,
+                "width": 38,
+                "thickness": 6,
+                "footHeight": 80,
+                "footThickness": 6
+              },
+              {
+                "name": "Comprimento Total da Mesa com os dois módulos",
+                "height": 111
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "novidade"
+  },
+  {
+    "id": 38,
+    "productCode": "6000",
+    "title": "Trio de Mesas Margaridas",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/6000.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 850,00",
+    "shortDescription": "Nosso Trio de Mesas Margaridas é a solução ideal para o Pegue e Monte.",
+    "longDescription": "Nosso Trio de Mesas Margaridas é a solução ideal para o Pegue e Monte. Desmontáveis e fáceis de manusear, permitem que você monte com estilo e desmonte com facilidade. Um produto exclusivo assinado pela renomada decoradora Cris Reis, conhecida como a Rainha do Pegue e Monte, disponível nas versões de 6mm e 8mm para atender às suas necessidades.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "../../assets/images/products/categories/tables/6000.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "diameter": 50,
+                "height": 80,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa Média",
+                "diameter": 45,
+                "height": 60,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa Pequena",
+                "diameter": 40,
+                "height": 40,
+                "thickness": 6
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1450,00",
+            "image": "../../assets/images/products/categories/tables/6000.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "diameter": 50,
+                "height": 80,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Média",
+                "diameter": 45,
+                "height": 60,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Pequena",
+                "diameter": 40,
+                "height": 40,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 39,
+    "productCode": "2209",
+    "title": "Trio de Mesas Pegue e Monte",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2209.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 850,00",
+    "shortDescription": "Nosso Trio de Mesas desmontáveis é perfeito para o Pegue e Monte. Monte com estilo e desmonte com facilidade.",
+    "longDescription": "Nosso Trio de Mesas desmontáveis é perfeito para o Pegue e Monte. Monte com estilo e desmonte com facilidade. É um produto assinado pela decoradora Cris Reis, conhecida como a Rainha do Pegue e Monte.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "../../assets/images/products/categories/tables/2209.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "diameter": 50,
+                "height": 80,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa Média",
+                "diameter": 45,
+                "height": 60,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa Pequena",
+                "diameter": 40,
+                "height": 40,
+                "thickness": 6
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1450,00",
+            "image": "../../assets/images/products/categories/tables/2209.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "diameter": 50,
+                "height": 80,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Média",
+                "diameter": 45,
+                "height": 60,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Pequena",
+                "diameter": 40,
+                "height": 40,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 40,
+    "productCode": "9045-M1",
+    "title": "Mesa Borboleta Desmontável M1",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/9045.png",
+    "price": "R$ 650,00",
+    "shortDescription": "Essa mesa borboleta é perfeita para apresentar seu o bolo da festa. É desmontável e extremamente fácil de transportar.",
+    "longDescription": "Essa mesa borboleta é perfeita para apresentar seu o bolo da festa. É desmontável e extremamente fácil de transportar, otimizando o espaço no seu veículo. Modelo idealizado pela decoradora Tábita Cintra, uma influenciadora e mentora de decoradores.",
+    "kitPieces": [
+      {
+        "name": "tampo",
+        "diameter": 66,
+        "thickness": 6
+      },
+      {
+        "name": "Asas",
+        "width": 66,
+        "height": 80,
+        "thickness": 6
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64
+  },
+  {
+    "id": 41,
+    "productCode": "9045-M2",
+    "title": "Mesa Borboleta Desmontável M2",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/9045-M2.png",
+    "price": "R$ 650,00",
+    "shortDescription": "Ideal para destacar seu bolo e doces, esta mesa borboleta combina design inovador com funcionalidade.",
+    "longDescription": "Ideal para destacar seu bolo e doces, esta mesa borboleta combina design inovador com funcionalidade. Desmontável e leve, ela oferece a máxima praticidade para o transporte, ocupando o mínimo de espaço no seu veículo. Este é um produto original, assinado e aprovado pela aclamada decoradora Andreia Sato, uma verdadeira referência e mentora no mercado de decoração de festas.",
+    "kitPieces": [
+      {
+        "name": "tampo",
+        "diameter": 100,
+        "thickness": 6
+      },
+      {
+        "name": "Asas",
+        "width": 90,
+        "height": 80,
+        "thickness": 8
       }
     ],
     "rating": 4.8,
