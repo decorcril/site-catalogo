@@ -2213,5 +2213,84 @@
     "reviews": 64,
     "stock": 10,
     "badge": "Novidade"
+  },
+  {
+    "id": 30,
+    "productCode": "2028",
+    "title": "Coluna Borbulhante com Iluminação",
+    "category": "colunas",
+    "image": "../../assets/images/products/categories/column/2028.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 320,00",
+    "badge": "127 Volts",
+    "shortDescription": "As colunas borbulhantes possuem spot para iluminação interna e uma bomba de água para criar o efeito de borbulhamento. Oferecemos em duas versões: com a base branca e com a base transparente.",
+    "longDescription": "As colunas borbulhantes possuem spot para iluminação interna e uma bomba de água para criar o efeito de borbulhamento. Oferecemos em duas versões: com a base branca e com a base transparente. São perfeitas para vários tipos de decoração, principalmente para o corredor de noiva.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Base Cristal",
+            "value": "kit_completo_3mm",
+            "price": "R$ 320,00",
+            "image": "../../assets/images/products/categories/column/2028.png",
+            "kitPieces": [
+              {
+                "name": "Base Cristal",
+                "height": 80,
+                "diameter": 20,
+                "voltage": "127 Volts",
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Base Branca",
+            "value": "kit_completo",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/column/2028.png",
+            "kitPieces": [
+              {
+                "name": "Base Branca",
+                "height": 80,
+                "diameter": 20,
+                "voltage": "127 Volts",
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64
+  },
+  {
+    "id": 31,
+    "productCode": "2029-GG",
+    "title": "Mesa Aquário Borbulhante com base Branca",
+    "category": "colunas",
+    "image": "../../assets/images/products/categories/column/2029-GG.png",
+    "price": "R$ 650,00",
+    "shortDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido; é a escolha perfeita para criar decorações impactantes e sofisticadas em qualquer ambiente.",
+    "longDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido; é a escolha perfeita para criar decorações impactantes e sofisticadas em qualquer ambiente.",
+    "kitPieces": [
+      {
+        "name": "Base",
+        "height": 80,
+        "width": 30,
+        "thickness": 6,
+        "voltage": "127 Volts"
+      },
+      {
+        "name": "Tampo",
+        "diameter": 50,
+        "thickness": 6
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64
   }
 ]
