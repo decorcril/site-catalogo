@@ -33,6 +33,7 @@ function initializeModalData(product, savedSelections) {
         capacity: product.capacity,
         footHeight: product.footHeight,
         kitPieces: product.kitPieces || [],
+        customSpecs: product.customSpecs || null,
         paymentType: null,
         installmentPrice: null
     };
@@ -78,20 +79,23 @@ function updateDataFromOption(data, option) {
     if (option.kitPieces && option.kitPieces.length > 0) {
         data.kitPieces = option.kitPieces;
     }
+
+    // Copiar especificações customizadas
+    if (option.customSpecs) {
+        data.customSpecs = option.customSpecs;
+    }
 }
 
-// Função auxiliar 3: Criar especificações HTML - VERSÃO CORRIGIDA ÚNICA
+// Função auxiliar 3: Criar especificações HTML - COM SUPORTE A CUSTOMSPECS
 function createSpecsHTML(data, product) {
     let specsHTML = '';
     
-    // Primeiro, verificar se temos kitPieces (como no caso dos cubos)
-    // Verificar tanto no data (que pode vir da variação) quanto no produto original
+    // Primeiro, verificar se temos kitPieces
     const hasKitPieces = (data.kitPieces && data.kitPieces.length > 0) || 
                          (product.kitPieces && product.kitPieces.length > 0);
     
     if (hasKitPieces) {
         // Se temos kitPieces, NÃO mostrar a tabela geral aqui
-        // As especificações serão mostradas APENAS na seção de kitPieces
         return '';
     }
     // CASOS ESPECIAIS PARA MESAS
@@ -120,7 +124,7 @@ function createSpecsHTML(data, product) {
             </table>
         `;
     }
-    // CASO GERAL (quando não temos kitPieces nem é mesa com pés)
+    // CASO GERAL
     else {
         const hasMainSpecs = data.height || data.width || data.depth ||
             data.capacity || data.thickness || data.length ||
@@ -143,10 +147,25 @@ function createSpecsHTML(data, product) {
         }
     }
 
+    // ADICIONAR ESPECIFICAÇÕES CUSTOMIZADAS
+    const customSpecs = data.customSpecs || product.customSpecs;
+    if (customSpecs && Array.isArray(customSpecs) && customSpecs.length > 0) {
+        specsHTML += `
+            <table class="specs-table">
+                ${customSpecs.map(spec => `
+                    <tr>
+                        <td>${spec.label}:</td>
+                        <td><strong>${spec.value}${spec.unit || ''}</strong></td>
+                    </tr>
+                `).join('')}
+            </table>
+        `;
+    }
+
     return specsHTML;
 }
 
-// Função auxiliar 4: Criar HTML das peças do kit - VERSÃO ÚNICA
+// Função auxiliar 4: Criar HTML das peças do kit
 function createKitPiecesHTML(kitPieces) {
     if (!kitPieces || kitPieces.length === 0) return '';
 
@@ -154,7 +173,6 @@ function createKitPiecesHTML(kitPieces) {
         <div class="kit-pieces">
             <h5>Peças do Kit (${kitPieces.length})</h5>
             ${kitPieces.map(piece => {
-        // Verificar se é uma mesa com tampo e pés
         const isMesaComPes = (piece.footHeight && piece.width);
         
         if (isMesaComPes) {
@@ -177,7 +195,6 @@ function createKitPiecesHTML(kitPieces) {
                         </div>
                     `;
         } else {
-            // PARA CUBOS E OUTROS PRODUTOS - ADICIONEI COMPRIMENTO AQUI
             return `
                         <div class="kit-piece">
                             <div class="kit-piece-name">${piece.name}</div>
@@ -410,7 +427,8 @@ function handleVariationClick(badge, product, modal) {
         length: selectedOption?.length,
         diameter: selectedOption?.diameter,
         footHeight: selectedOption?.footHeight,
-        kitPieces: selectedOption?.kitPieces || []
+        kitPieces: selectedOption?.kitPieces || [],
+        customSpecs: selectedOption?.customSpecs || null
     };
 
     // Atualizar UI
@@ -509,7 +527,7 @@ function closeModal(productId, modal) {
     if (modal) modal.remove();
 }
 
-// FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL - VERSÃO CORRIGIDA
+// FUNÇÃO PARA ATUALIZAR ESPECIFICAÇÕES NO MODAL - COM CUSTOMSPECS
 function updateModalSpecs(modal, selectedOption, originalProduct) {
     // Atualizar especificações com base na opção selecionada
     const currentHeight = selectedOption.height || originalProduct.height;
@@ -521,6 +539,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     const currentCapacity = selectedOption.capacity || originalProduct.capacity;
     const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
     const currentFootHeight = selectedOption.footHeight || originalProduct.footHeight;
+    const currentCustomSpecs = selectedOption.customSpecs || originalProduct.customSpecs;
 
     // Verificar se temos kitPieces
     const hasKitPieces = (currentKitPieces && currentKitPieces.length > 0) || 
@@ -579,6 +598,20 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
                 </table>
             `;
         }
+    }
+
+    // ADICIONAR ESPECIFICAÇÕES CUSTOMIZADAS
+    if (currentCustomSpecs && Array.isArray(currentCustomSpecs) && currentCustomSpecs.length > 0) {
+        mainSpecsHTML += `
+            <table class="specs-table">
+                ${currentCustomSpecs.map(spec => `
+                    <tr>
+                        <td>${spec.label}:</td>
+                        <td><strong>${spec.value}${spec.unit || ''}</strong></td>
+                    </tr>
+                `).join('')}
+            </table>
+        `;
     }
 
     // Gerar peças do kit atualizadas

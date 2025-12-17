@@ -2271,8 +2271,8 @@
     "id": 31,
     "productCode": "9045",
     "title": "Mesa Aquário Borbulhante com base Branca",
-    "category": "colunas",
-    "image": "../../assets/images/products/categories/column/9045.png",
+    "category": "mesas",
+    "image": "../../assets/images/products/categories/tables/2029-GG.png",
     "price": "R$ 650,00",
     "shortDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido.",
     "longDescription": "A Mesa Aquário é o novo lançamento da Decorcril, um item exclusivo que possui uma bomba d'água silenciosa e um spot para lâmpada embutido; é a escolha perfeita para criar decorações impactantes e sofisticadas em qualquer ambiente.",
@@ -2573,7 +2573,7 @@
             "image": "../../assets/images/products/categories/tables/2121-M1.png",
             "kitPieces": [
               {
-                "name": "Tampo",
+                "name": "Mesa Sinuosa",
                 "height": 111,
                 "width": 38,
                 "thickness": 6,
@@ -2796,5 +2796,78 @@
     ],
     "rating": 4.8,
     "reviews": 64
+  },
+  {
+    "id": 42,
+    "productCode": "2034",
+    "title": "Base Meia Lua",
+    "category": "bases-mesa",
+    "image": "../../assets/images/products/categories/base/2034.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 445,00",
+    "shortDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
+    "longDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
+    "priceVariations": [
+      {
+        "name": "VALOR UNITÁRIO",
+        "key": "size",
+        "options": [
+          {
+            "label": "Base 6mm",
+            "value": "6mm",
+            "price": "R$ 445,00",
+            "image": "../../assets/images/products/categories/base/2034.png",
+            "width": 63,
+            "height": 80,
+            "curvatura": 170,
+            "thickness": 6,
+            "customSpecs": [
+              {
+                "label": "Curvatura",
+                "value": "92",
+                "unit": " cm"
+              }
+            ]
+          },
+          {
+            "label": "Base 8mm",
+            "value": "8mm",
+            "price": "R$ 545,00",
+            "image": "../../assets/images/products/categories/base/2034.png",
+            "width": 63,
+            "height": 80,
+            "curvatura": 170,
+            "thickness": 8,
+            "customSpecs": [
+              {
+                "label": "Curvatura",
+                "value": "92",
+                "unit": " cm"
+              }
+            ]
+          },
+          {
+            "label": "Base 10mm",
+            "value": "10mm",
+            "price": "R$ 645,00",
+            "image": "../../assets/images/products/categories/base/2034.png",
+            "width": 63,
+            "height": 80,
+            "curvatura": 170,
+            "thickness": 10,
+            "customSpecs": [
+              {
+                "label": "Curvatura",
+                "value": "92",
+                "unit": " cm"
+              }
+            ]
+          }
+        ],
+        "default": "10mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
