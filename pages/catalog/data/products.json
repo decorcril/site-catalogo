@@ -3009,5 +3009,131 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 45,
+    "productCode": "2334",
+    "title": "Púlpito em Acrílico",
+    "category": "pulpitos",
+    "image": "../../assets/images/products/categories/pulpit/2334.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 1250,00",
+    "shortDescription": "Púlpito em acrílico, moderno e clean, com estrutura transparente que garante discrição e integração visual ao altar, sem obstruir a vista dos fiéis.",
+    "longDescription": "Púlpito em acrílico, moderno e clean, com estrutura transparente que garante discrição e integração visual ao altar, sem obstruir a vista dos fiéis. Inclui uma prateleira interna funcional para apoiar a Bíblia, livros litúrgicos ou anotações do celebrante. Perfeito para diversas ocasiões. Ideal para uso em igrejas, capelas, comunidades e auditórios religiosos, proporcionando um visual leve, contemporâneo e respeitoso para missas, cultos, celebrações e eventos especiais.",
+    "priceVariations": [
+      {
+        "name": "Púlpito em Acrílico",
+        "key": "size",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 1250,00",
+            "image": "../../assets/images/products/categories/pulpit/2334.png",
+            "height": 115,
+            "depth": 50,
+            "width": 100,
+            "thickness": 6
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1450,00",
+            "image": "../../assets/images/products/categories/pulpit/2334.png",
+            "height": 115,
+            "depth": 50,
+            "width": 100,
+            "thickness": 8
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 46,
+    "productCode": "2326",
+    "title": "Púlpito em Acrílico com pé estreito",
+    "category": "pulpitos",
+    "image": "../../assets/images/products/categories/pulpit/2326.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 850,00",
+    "shortDescription": "Púlpito em acrílico, moderno e clean, com estrutura transparente que garante discrição e integração visual ao altar, sem obstruir a vista dos fiéis.",
+    "longDescription": "Púlpito em acrílico, moderno e clean, com estrutura transparente que garante discrição e integração visual ao altar, sem obstruir a vista dos fiéis. Inclui uma prateleira interna funcional para apoiar a Bíblia, livros litúrgicos ou anotações do celebrante. Perfeito para diversas ocasiões. Ideal para uso em igrejas, capelas, comunidades e auditórios religiosos, proporcionando um visual leve, contemporâneo e respeitoso para missas, cultos, celebrações e eventos especiais.",
+    "priceVariations": [
+      {
+        "name": "Púlpito em Acrílico com pé estreito",
+        "key": "size",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "../../assets/images/products/categories/pulpit/2326.png",
+            "height": 117,
+            "depth": 30,
+            "width": 50,
+            "thickness": 6
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 950,00",
+            "image": "../../assets/images/products/categories/pulpit/2326.png",
+            "height": 117,
+            "depth": 30,
+            "width": 50,
+            "thickness": 8
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 47,
+    "productCode": "2344",
+    "title": "Púlpito em Acrílico para Eventos",
+    "category": "pulpitos",
+    "image": "../../assets/images/products/categories/pulpit/2344.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 850,00",
+    "shortDescription": "Púlpito em acrílico, contemporâneo e sofisticado, com estrutura transparente que oferece discrição visual e harmoniza-se perfeitamente com qualquer decoração. Conta com uma prateleira interna prática para apoio de cerimonial, anotações ou dispositivo eletrônico.",
+    "longDescription": "Púlpito em acrílico, contemporâneo e sofisticado, com estrutura transparente que oferece discrição visual e harmoniza-se perfeitamente com qualquer decoração. Conta com uma prateleira interna prática para apoio de cerimonial, anotações ou dispositivo eletrônico. Simplesmente perfeito para as mais variadas ocasiões. Ideal para cerimônias de casamento, colações de grau, noites de gala, conferências corporativas, palestras de alto padrão ou para embelezar com modernidade o espaço de honra em salões de festa e auditórios exclusivos.",
+    "priceVariations": [
+      {
+        "name": "Púlpito em Acrílico com pé estreito",
+        "key": "size",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "../../assets/images/products/categories/pulpit/2344.png",
+            "height": 113,
+            "depth": 31,
+            "width": 50,
+            "thickness": 6
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 950,00",
+            "image": "../../assets/images/products/categories/pulpit/2344.png",
+            "height": 113,
+            "depth": 31,
+            "width": 50,
+            "thickness": 8
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
