@@ -2869,5 +2869,145 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 43,
+    "productCode": "2400",
+    "title": "Carrinho Gourmet",
+    "category": "carrinhos",
+    "image": "../../assets/images/products/categories/cart/2400.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 995,00",
+    "shortDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa.",
+    "longDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. O produto é assinado pela Marianna Rattes, apresentadora e decoradora, que o usa e recomenda como 'simplesmente PERFEITO para diversas ocasiões'. Ideal para montagem do cantinho do Bar, chá, café ou para servir comes e bebes na sua festa, ou almoço em hotéis.",
+    "priceVariations": [
+      {
+        "name": "Carrinho Gourmet",
+        "key": "size",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 995,00",
+            "image": "../../assets/images/products/categories/cart/2400.png",
+            "length": 80,
+            "height": 83,
+            "width": 40,
+            "thickness": 6
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1095,00",
+            "image": "../../assets/images/products/categories/cart/2400.png",
+            "length": 80,
+            "height": 83,
+            "width": 40,
+            "thickness": 8
+          },
+          {
+            "label": "Tamanho Baby",
+            "value": "baby",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/cart/2400.png",
+            "length": 60,
+            "height": 70,
+            "width": 35,
+            "thickness": 6
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 44,
+    "productCode": "2400-C",
+    "title": "Carrinho Gourmet com cuba de gelo",
+    "category": "carrinhos",
+    "image": "../../assets/images/products/categories/cart/2400-C.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 995,00",
+    "shortDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. Inclui uma prática cuba para gelo, mantendo suas bebidas geladas por mais tempo.",
+    "longDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. Inclui uma prática cuba para gelo, mantendo suas bebidas geladas por mais tempo. Simplesmente PERFEITO para diversas ocasiões. Ideal para montagem do cantinho do Bar, chá, café ou para servir comes e bebes na sua festa, ou almoço em hotéis.",
+    "priceVariations": [
+      {
+        "name": "Carrinho Gourmet com cuba de gelo",
+        "key": "size",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 995,00",
+            "image": "../../assets/images/products/categories/cart/2400-C.png",
+            "kitPieces": [
+              {
+                "name": "Carrinho",
+                "length": 80,
+                "height": 83,
+                "width": 40,
+                "thickness": 6
+              },
+              {
+                "name": "Cuba de gelo",
+                "length": 28,
+                "height": 23,
+                "width": 28,
+                "thickness": 6
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1095,00",
+            "image": "../../assets/images/products/categories/cart/2400-C.png",
+            "kitPieces": [
+              {
+                "name": "Carrinho",
+                "length": 80,
+                "height": 83,
+                "width": 40,
+                "thickness": 8
+              },
+              {
+                "name": "Cuba de gelo",
+                "length": 28,
+                "height": 23,
+                "width": 28,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "Tamanho Baby",
+            "value": "baby",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/cart/2400-C.png",
+            "kitPieces": [
+              {
+                "name": "Carrinho",
+                "length": 80,
+                "height": 83,
+                "width": 40,
+                "thickness": 6
+              },
+              {
+                "name": "Cuba de gelo",
+                "length": 28,
+                "height": 23,
+                "width": 28,
+                "thickness": 6
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
