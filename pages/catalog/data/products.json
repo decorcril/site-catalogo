@@ -2988,10 +2988,10 @@
             "image": "../../assets/images/products/categories/cart/2400-C.png",
             "kitPieces": [
               {
-                "name": "Carrinho",
-                "length": 80,
-                "height": 83,
-                "width": 40,
+                "name": "Carrinho Tamanho Baby",
+                "length": 60,
+                "height": 70,
+                "width": 35,
                 "thickness": 6
               },
               {
