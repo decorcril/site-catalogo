@@ -3215,5 +3215,38 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 50,
+    "productCode": "9030",
+    "title": "Mini Escadinha para Doces",
+    "category": "escadas",
+    "image": "../../assets/images/products/categories/staircase/9030.png",
+    "price": "R$ 50,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Esse produto é composto por 3 degraus, elevando e organizando seus doces com sofisticação. Ideal para tornar suas sobremesas muito mais chamativas e elegantes em qualquer decoração de festa ou evento.",
+    "longDescription": "Esse produto é composto por 3 degraus, elevando e organizando seus doces com sofisticação. Ideal para tornar suas sobremesas muito mais chamativas e elegantes em qualquer decoração de festa ou evento.",
+    "height": 25,
+    "width": 17,
+    "thickness": 3,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
+  },
+  {
+    "id": 51,
+    "productCode": "2060",
+    "title": "Escada em Acrílico",
+    "category": "escadas",
+    "image": "../../assets/images/products/categories/staircase/2060.png",
+    "price": "R$ 850,00",
+    "shortDescription": "A escada decorativa em acrílico pode ser usada como uma mesinha na sua decoração. Trata-se de uma peça com conceito inovador e tendência, que dará um charme inigualável e moderno ao ambiente por ser toda confeccionada em acrílico transparente.",
+    "longDescription": "A escada decorativa em acrílico pode ser usada como uma mesinha na sua decoração. Trata-se de uma peça com conceito inovador e tendência, que dará um charme inigualável e moderno ao ambiente por ser toda confeccionada em acrílico transparente.",
+    "height": 72,
+    "width": 50,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
   }
 ]
