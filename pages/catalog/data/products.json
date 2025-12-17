@@ -3135,5 +3135,85 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 48,
+    "productCode": "2260",
+    "title": "Placa para Cavalete",
+    "category": "placas",
+    "image": "../../assets/images/products/categories/board/2260.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 260,00",
+    "shortDescription": "Esta placa de acrílico transparente foi projetada para ser exibida em cavaletes. Seu design versátil funciona como um elegante 'envelope', permitindo que você insira facilmente qualquer papel ou arte personalizada em seu interior. É a solução perfeita para sinalização sofisticada e um toque especial na sua festa ou evento!",
+    "longDescription": "Esta placa de acrílico transparente foi projetada para ser exibida em cavaletes. Seu design versátil funciona como um elegante 'envelope', permitindo que você insira facilmente qualquer papel ou arte personalizada em seu interior. É a solução perfeita para sinalização sofisticada e um toque especial na sua festa ou evento!",
+    "priceVariations": [
+      {
+        "name": "Placa para Cavalete",
+        "key": "size",
+        "options": [
+          {
+            "label": "60cm de Largura",
+            "value": "60",
+            "price": "R$ 260,00",
+            "image": "../../assets/images/products/categories/board/2260.png",
+            "height": 60,
+            "width": 55,
+            "thickness": 6
+          },
+          {
+            "label": "70cm de Largura",
+            "value": "70",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/board/2260.png",
+            "height": 70,
+            "width": 55,
+            "thickness": 6
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 49,
+    "productCode": "2270",
+    "title": "Placa Boy or Girl",
+    "category": "placas",
+    "image": "../../assets/images/products/categories/board/2270.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 250,00",
+    "shortDescription": "Placa de acrílico transparente, desenvolvida para uso sobre cavalete. Confeccionada especialmente para chá revelação, é a peça perfeita para tornar esse momento único. Temos os modelos Ursinhos e Corações em acabamento branco.",
+    "longDescription": "Placa de acrílico transparente, desenvolvida para uso sobre cavalete. Confeccionada especialmente para chá revelação, é a peça perfeita para tornar esse momento único. Temos os modelos Ursinhos e Corações em acabamento branco. Escolha o seu modelo preferido e celebre com estilo!",
+    "priceVariations": [
+      {
+        "name": "Placa Boy or Girl",
+        "key": "size",
+        "options": [
+          {
+            "label": "Modelo Coração",
+            "value": "60",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/board/2270.png",
+            "height": 60,
+            "width": 50,
+            "thickness": 6
+          },
+          {
+            "label": "Modelo Ursinho",
+            "value": "70",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/board/2270.png",
+            "height": 60,
+            "width": 50,
+            "thickness": 6
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
