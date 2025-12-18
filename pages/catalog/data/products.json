@@ -3673,7 +3673,7 @@
   {
     "id": 55,
     "productCode": "2199-MB",
-    "title": "MIni Cubo Baby",
+    "title": "Mini Cubo Baby",
     "category": "cubos",
     "image": "../../assets/images/products/categories/cubes/2199-MB-1.png",
     "pricePrefix": "A partir de",
@@ -3682,7 +3682,7 @@
     "longDescription": "Descubra nossa exclusiva linha de Mini Cubos Baby, o detalhe perfeito para encantar a decoração da mesa da sua festa. Temos disponível nas cores branco, azul bebê, rosa bebê e dourado, para combinar com o tema ideal da sua celebração.",
     "priceVariations": [
       {
-        "name": "MIni Cubo Baby",
+        "name": "Mini Cubo Baby",
         "key": "size",
         "options": [
           {
@@ -3925,5 +3925,118 @@
     "rating": 4.5,
     "reviews": 71,
     "badge": "Novidade"
+  },
+  {
+    "id": 58,
+    "productCode": "5020",
+    "title": "Trio de Caixas de Presentes com Tampa",
+    "category": "caixas",
+    "image": "../../assets/images/products/categories/box/5020.png",
+    "price": "R$ 595,00",
+    "shortDescription": "Adicione um toque de elegância à sua Decoração de Natal com nosso trio de caixas de acrílico! Perfeitas para compor sua mesa festiva e também para embrulhar presentes de forma sofisticada e personalizada.",
+    "longDescription": "Adicione um toque de elegância à sua Decoração de Natal com nosso trio de caixas de acrílico! Perfeitas para compor sua mesa festiva e também para embrulhar presentes de forma sofisticada e personalizada. As caixas possuem tampas e são encaixáveis, cabendo uma dentro da outra para fácil armazenamento.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Trio de Caixas Pequenas",
+            "value": "pequeno",
+            "price": "R$ 595,00",
+            "image": "../../assets/images/products/categories/box/5020.png",
+            "kitPieces": [
+              {
+                "name": "Caixa Pequena",
+                "width": 25,
+                "length": 25,
+                "height": 25,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Média",
+                "width": 30,
+                "length": 30,
+                "height": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Grande",
+                "width": 35,
+                "length": 35,
+                "height": 35,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Caixas Médias",
+            "value": "medio",
+            "price": "R$ 850,00",
+            "image": "../../assets/images/products/categories/box/5020.png",
+            "kitPieces": [
+              {
+                "name": "Caixa Pequena",
+                "width": 30,
+                "length": 30,
+                "height": 30,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Média",
+                "width": 35,
+                "length": 35,
+                "height": 35,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Grande",
+                "width": 40,
+                "length": 40,
+                "height": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Caixas Grandes",
+            "value": "grande",
+            "price": "R$ 1250,00",
+            "image": "../../assets/images/products/categories/box/5020.png",
+            "kitPieces": [
+              {
+                "name": "Caixa Pequena",
+                "width": 40,
+                "length": 40,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Média",
+                "width": 45,
+                "length": 45,
+                "height": 45,
+                "thickness": 3
+              },
+              {
+                "name": "Caixa Grande",
+                "width": 50,
+                "length": 50,
+                "height": 50,
+                "thickness": 3
+              }
+            ]
+          }
+          
+          
+          
+        ],
+        "default": "pequeno"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
   }
 ]
