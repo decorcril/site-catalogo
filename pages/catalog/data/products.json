@@ -3248,5 +3248,664 @@
     "rating": 4.5,
     "reviews": 71,
     "badge": "Novidade"
+  },
+  {
+    "id": 52,
+    "productCode": "2800-3",
+    "title": "Trio de Cubos Preto com Prata Espelhados",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2800-3.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 395,00",
+    "shortDescription": "Descubra nossa exclusiva linha de Cubos de Acrílico Espelhados! Desenvolvidos especialmente para decoradores que buscam luxo e sofisticação, esses cubos são perfeitos para elevar a decoração de qualquer festa.",
+    "longDescription": "Descubra nossa exclusiva linha de Cubos de Acrílico Espelhados! Desenvolvidos especialmente para decoradores que buscam luxo e sofisticação, esses cubos são perfeitos para elevar a decoração de qualquer festa. Com design encaixável (um cubo dentro do outro), estrutura em acrílico preto e superfície espelhada, eles trazem um toque de modernidade e elegância para mesas, centrais de mesa e cenários de eventos como casamentos, aniversários e celebrações especiais.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo Pequeno",
+            "value": "individual_P_3mm",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno",
+                "width": 35,
+                "length": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Cubo Médio",
+            "value": "individual_M_3mm",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio",
+                "width": 37.5,
+                "depth": 37.5,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Cubo Grande",
+            "value": "individual_G_3mm",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande",
+                "width": 40,
+                "depth": 40,
+                "height": 80,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo",
+            "value": "kit_completo_3mm",
+            "price": "R$ 1.350,00",
+            "oldPrice": "R$ 1.400,00",
+            "image": "../../assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno",
+                "width": 35,
+                "length": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              },
+              {
+                "name": "Cubo Médio",
+                "width": 37.5,
+                "depth": 37.5,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              },
+              {
+                "name": "Cubo Grande",
+                "width": 40,
+                "depth": 40,
+                "height": 80,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "Mais Vendido"
+  },
+  {
+    "id": 53,
+    "productCode": "2800-3-D-T",
+    "title": "Trio de Cubos Branco com Dourado Espelhados",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2800-3-D-T.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 395,00",
+    "shortDescription": "Descubra nossa exclusiva linha de Cubos de Acrílico Espelhados! Desenvolvidos especialmente para decoradores que buscam luxo e sofisticação, esses cubos são perfeitos para elevar a decoração de qualquer festa.",
+    "longDescription": "Descubra nossa exclusiva linha de Cubos de Acrílico Espelhados! Desenvolvidos especialmente para decoradores que buscam luxo e sofisticação, esses cubos são perfeitos para elevar a decoração de qualquer festa. Com design encaixável (um cubo dentro do outro), estrutura em acrílico branco e superfície espelhada dourada, eles trazem um toque de modernidade e elegância para mesas, centrais de mesa e cenários de eventos como casamentos, aniversários e celebrações especiais.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo Pequeno",
+            "value": "individual_P_3mm",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3-D-T.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno",
+                "width": 35,
+                "length": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Cubo Médio",
+            "value": "individual_M_3mm",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3-D-T.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio",
+                "width": 37.5,
+                "depth": 37.5,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Cubo Grande",
+            "value": "individual_G_3mm",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3-D-T.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande",
+                "width": 40,
+                "depth": 40,
+                "height": 80,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo",
+            "value": "kit_completo_3mm",
+            "price": "R$ 1.350,00",
+            "oldPrice": "R$ 1.400,00",
+            "image": "../../assets/images/products/categories/cubes/2800-3-D-T.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno",
+                "width": 35,
+                "length": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              },
+              {
+                "name": "Cubo Médio",
+                "width": 37.5,
+                "depth": 37.5,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              },
+              {
+                "name": "Cubo Grande",
+                "width": 40,
+                "depth": 40,
+                "height": 80,
+                "thickness": 3
+              },
+              {
+                "name": "Espelho em Acrílico",
+                "thickness": 2
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "Mais Vendido"
+  },
+  {
+    "id": 54,
+    "productCode": "2800-4",
+    "title": "Trio de Cubos Pretos",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2800-4.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 345,00",
+    "shortDescription": "Nosso cubo de acrílico todo preto foi desenvolvido especialmente para decoradores que buscam luxo e sofisticação. Perfeito para elevar a decoração de qualquer festa, ele apresenta um design encaixável inovador, permitindo que um cubo seja posicionado dentro do outro para criar composições elegantes e modernas.",
+    "longDescription": "Nosso cubo de acrílico todo preto foi desenvolvido especialmente para decoradores que buscam luxo e sofisticação. Perfeito para elevar a decoração de qualquer festa, ele apresenta um design encaixável inovador, permitindo que um cubo seja posicionado dentro do outro para criar composições elegantes e modernas.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cubo P - 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 345,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 425,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 3mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 575,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 3mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo P - 4mm",
+            "value": "individual_P_4mm",
+            "price": "R$ 395,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo M - 4mm",
+            "value": "individual_M_4mm",
+            "price": "R$ 470,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Médio 4mm",
+                "width": 40,
+                "depth": 40,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cubo G - 4mm",
+            "value": "individual_G_4mm",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Grande 4mm",
+                "width": 50,
+                "depth": 50,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 1.100,00",
+            "oldPrice": "R$ 1.250,00",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo 4mm",
+            "value": "kit_completo_4mm",
+            "price": "R$ 1.250,00",
+            "oldPrice": "R$ 1.450,00",
+            "badge": "desconto",
+            "image": "../../assets/images/products/categories/cubes/2800-4.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "desconto"
+  },
+  {
+    "id": 55,
+    "productCode": "2199-MB",
+    "title": "MIni Cubo Baby",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/2199-MB-1.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 250,00",
+    "shortDescription": "Descubra nossa exclusiva linha de Mini Cubos Baby, o detalhe perfeito para encantar a decoração da mesa da sua festa. Temos disponível nas cores branco, azul bebê, rosa bebê e dourado, para combinar com o tema ideal da sua celebração.",
+    "longDescription": "Descubra nossa exclusiva linha de Mini Cubos Baby, o detalhe perfeito para encantar a decoração da mesa da sua festa. Temos disponível nas cores branco, azul bebê, rosa bebê e dourado, para combinar com o tema ideal da sua celebração.",
+    "priceVariations": [
+      {
+        "name": "MIni Cubo Baby",
+        "key": "size",
+        "options": [
+          {
+            "label": "Gold",
+            "value": "gold",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cubes/2199-MB-1.png",
+            "height": 12,
+            "width": 12,
+            "length": 12,
+            "thickness": 3
+          },
+          {
+            "label": "Branco",
+            "value": "branco",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cubes/2199-MB-1.png",
+            "height": 12,
+            "width": 12,
+            "length": 12,
+            "thickness": 3
+          },
+          {
+            "label": "Rosa Bebê",
+            "value": "rosa",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cubes/2199-MB-2.png",
+            "height": 12,
+            "width": 12,
+            "length": 12,
+            "thickness": 3
+          },
+          {
+            "label": "Azul Bebê",
+            "value": "azul",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cubes/2199-MB-2.png",
+            "height": 12,
+            "width": 12,
+            "length": 12,
+            "thickness": 3
+          }
+        ],
+        "default": "3mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 56,
+    "productCode": "1060",
+    "title": "Kit Baby com 4 Cubos",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/1060-1.png",
+    "price": "R$ 800,00",
+    "shortDescription": "Nossos cubos Baby são confeccionados 100% em acrílico para uso versátil nas mais diversas decorações. Temos disponível nos modelos Cristal, Branco e Dourado.",
+    "longDescription": "Nossos cubos Baby são confeccionados 100% em acrílico para uso versátil nas mais diversas decorações. Temos disponível nos modelos Cristal, Branco e Dourado. As letras podem ser enviadas separadamente, permitindo que você monte e personalize conforme sua preferência.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Kit 4 Cubos Cristalino",
+            "value": "kit_completo_3mm",
+            "price": "R$ 800,00",
+            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Cristalino B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Cristalino A",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Cristalino B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Cristalino y",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Individual Cristalino",
+            "value": "individual_P_3mm",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "kitPieces": [
+              {
+                "name": "Cubo individual Cristal",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit 4 Cubos Dourado",
+            "value": "kit_completo_3mm",
+            "price": "R$ 800,00",
+            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Dourado B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Dourado A",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Dourado B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Dourado y",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Individual Dourado",
+            "value": "individual_M_3mm",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/cubes/1060-2.png",
+            "kitPieces": [
+              {
+                "name": "Cubo individual Dourado",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit 4 Cubos Branco",
+            "value": "kit_completo_3mm",
+            "price": "R$ 800,00",
+            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Branco B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Branco A",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Branco B",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Branco y",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cubo Individual Branco",
+            "value": "individual_G_3mm",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/cubes/1060-3.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Individual Branco",
+                "width": 33,
+                "length": 33,
+                "height": 33,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
   }
 ]
