@@ -3748,7 +3748,7 @@
         "options": [
           {
             "label": "Kit 4 Cubos Cristalino",
-            "value": "kit_completo_3mm",
+            "value": "kit_cristalino",
             "price": "R$ 800,00",
             "image": "../../assets/images/products/categories/cubes/1060-1.png",
             "kitPieces": [
@@ -3784,7 +3784,7 @@
           },
           {
             "label": "Cubo Individual Cristalino",
-            "value": "individual_P_3mm",
+            "value": "individual_cristalino",
             "price": "R$ 220,00",
             "image": "../../assets/images/products/categories/cubes/1060-1.png",
             "kitPieces": [
@@ -3799,9 +3799,9 @@
           },
           {
             "label": "Kit 4 Cubos Dourado",
-            "value": "kit_completo_3mm",
+            "value": "kit_dourado",
             "price": "R$ 800,00",
-            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "image": "../../assets/images/products/categories/cubes/1060-2.png",
             "kitPieces": [
               {
                 "name": "Cubo Dourado B",
@@ -3835,7 +3835,7 @@
           },
           {
             "label": "Cubo Individual Dourado",
-            "value": "individual_M_3mm",
+            "value": "individual_dourado",
             "price": "R$ 220,00",
             "image": "../../assets/images/products/categories/cubes/1060-2.png",
             "kitPieces": [
@@ -3850,9 +3850,9 @@
           },
           {
             "label": "Kit 4 Cubos Branco",
-            "value": "kit_completo_3mm",
+            "value": "kit_branco",
             "price": "R$ 800,00",
-            "image": "../../assets/images/products/categories/cubes/1060-1.png",
+            "image": "../../assets/images/products/categories/cubes/1060-3.png",
             "kitPieces": [
               {
                 "name": "Cubo Branco B",
@@ -3886,7 +3886,7 @@
           },
           {
             "label": "Cubo Individual Branco",
-            "value": "individual_G_3mm",
+            "value": "individual_branco",
             "price": "R$ 220,00",
             "image": "../../assets/images/products/categories/cubes/1060-3.png",
             "kitPieces": [
@@ -3900,12 +3900,30 @@
             ]
           }
         ],
-        "default": "individual_P_3mm"
+        "default": "kit_cristalino"
       }
     ],
     "rating": 4.8,
     "reviews": 64,
     "stock": 10,
     "badge": "mais vendido"
+  },
+  {
+    "id": 57,
+    "productCode": "7002",
+    "title": "Escada em Acrílico",
+    "category": "medidor-balao",
+    "image": "../../assets/images/products/categories/ballons/7002.png",
+    "oldPrice": "R$ 600,00",
+    "price": "R$ 350,00",
+    "shortDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
+    "longDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
+    "height": 40,
+    "width": 40,
+    "length": 40,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
   }
 ]
