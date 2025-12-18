@@ -3928,6 +3928,137 @@
   },
   {
     "id": 58,
+    "productCode": "6020",
+    "title": "Trio de Boleiras Desmontáveis",
+    "category": "boleiras",
+    "image": "../../assets/images/products/categories/cake-stand/6020.png",
+    "price": "R$ 250,00",
+    "oldPrice": "R$ 270,00",
+    "shortDescription": "Trio de Boleiras em Acrílico Cristal: elegância e praticidade para sua festa. Confeccionadas em acrílico premium de 8mm, essas peças possuem uma transparência brilhante que rivaliza com a beleza do vidro.",
+    "longDescription": "Trio de Boleiras em Acrílico Cristal: elegância e praticidade para sua festa. Confeccionadas em acrílico premium de 8mm, essas peças possuem uma transparência brilhante que rivaliza com a beleza do vidro. São desmontáveis, facilitando o transporte e a montagem, e perfeitas para exibir doces, bombons ou pequenas guloseimas com sofisticação em qualquer celebração.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Boleiras Redondas",
+            "value": "redondas",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cake-stand/6020.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "diameter": 10,
+                "height": 20,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Média",
+                "diameter": 15,
+                "height": 30,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Grande",
+                "diameter": 20,
+                "height": 30,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "Boleiras Quadradas",
+            "value": "quadradas",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cake-stand/6020-1.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "width": 20,
+                "length": 10,
+                "height": 20,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Média",
+                "width": 20,
+                "length": 15,
+                "height": 20,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Grande",
+                "width": 10,
+                "length": 10,
+                "height": 30,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "Boleira Margarida M1",
+            "value": "margarida",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cake-stand/6020-M1.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "diameter": 20,
+                "height": 10,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Média",
+                "diameter": 25,
+                "height": 15,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Grande",
+                "diameter": 30,
+                "height": 21,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "Boleira Margarida M2",
+            "value": "margarida_2",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/cake-stand/6020-M2.png",
+            "kitPieces": [
+              {
+                "name": "Boleira Pequena",
+                "diameter": 20,
+                "height": 10,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Média",
+                "diameter": 25,
+                "height": 15,
+                "thickness": 8
+              },
+              {
+                "name": "Boleira Grande",
+                "diameter": 30,
+                "height": 21,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "redondas"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 59,
     "productCode": "5020",
     "title": "Trio de Caixas de Presentes com Tampa",
     "category": "caixas",
@@ -4027,9 +4158,6 @@
               }
             ]
           }
-          
-          
-          
         ],
         "default": "pequeno"
       }
