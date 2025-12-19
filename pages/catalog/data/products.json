@@ -4308,5 +4308,46 @@
     "rating": 4.5,
     "reviews": 71,
     "badge": "Novidade"
+  },
+  {
+    "id": 63,
+    "productCode": "9070",
+    "title": "Expositores de Degustação",
+    "category": "expositores",
+    "image": "../../assets/images/products/categories/exhibitor/9070-M1.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 350,00",
+    "shortDescription": "Lindo expositor em acrílico virgem para degustação de doces na sua festa. Garante que os convidados só degustem na hora certa, com a baleira passando por todas as mesas. Não acompanha a alça.",
+    "longDescription": "Apresente seus doces com estilo e organização! Este lindo expositor é confeccionado em acrílico virgem e foi pensado para a degustação de doces em festas. Acabe com a preocupação de convidados pegarem doces antes da hora: nossa baleira volante circula por todas as mesas, permitindo que todos degustem no momento ideal e de forma controlada. Perfeito para valorizar suas sobremesas e manter a fluidez do seu evento. (Não acompanha a alça).",
+    "priceVariations": [
+      {
+        "name": "Expositores de Degustação",
+        "key": "size",
+        "options": [
+          {
+            "label": "Modelo 1",
+            "value": "modelo_1  ",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/exhibitor/9070-M1.png",
+            "width": 50,
+            "length": 55,
+            "thickness": 3
+          },
+          {
+            "label": "Modelo 2",
+            "value": "modelo_2",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/exhibitor/9070-M2.png",
+            "height": 24,
+            "width": 24,
+            "length": 88,
+            "thickness": 3
+          }
+        ],
+        "default": "3mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
