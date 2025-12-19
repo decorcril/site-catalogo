@@ -4290,5 +4290,23 @@
     "reviews": 64,
     "stock": 10,
     "badge": "mais vendido"
+  },
+  {
+    "id": 62,
+    "productCode": "9050",
+    "title": "Expositor de Bola de Futebol",
+    "category": "expositores",
+    "image": "../../assets/images/products/categories/exhibitor/9050.png",
+    "oldPrice": "R$ 280,00",
+    "price": "R$ 250,00",
+    "shortDescription": "Este expositor é ideal para proteger e valorizar objetos de arte, peças especiais ou artigos de coleção.",
+    "longDescription": "O expositor serve para proteger e emoldurar com elegância objetos de arte, peças especiais, artigos de coleção ou qualquer outro material de valor, preservando sua integridade e destacando sua importância de forma sofisticada.",
+    "height": 30,
+    "width": 30,
+    "depth": 30,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "Novidade"
   }
 ]
