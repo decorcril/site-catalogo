@@ -4166,5 +4166,47 @@
     "reviews": 64,
     "stock": 10,
     "badge": "mais vendido"
+  },
+  {
+    "id": 60,
+    "productCode": "4020",
+    "title": "Quarteto para Doces",
+    "category": "cubos",
+    "image": "../../assets/images/products/categories/cubes/4020.png",
+    "price": "R$ 450,00",
+    "shortDescription": "Estes cubos são perfeitos para a sua decoração. O kit acompanha 4 unidades que se encaixam perfeitamente, uma dentro da outra, para facilitar o transporte.",
+    "longDescription": "Estes cubos são perfeitos para serem usados na sua decoração, trazendo um toque moderno e sofisticado. O kit completo acompanha 4 unidades de diferentes tamanhos, que possuem um design inteligente e funcional, permitindo que sejam armazenados e transportados com facilidade, já que cabem perfeitamente um dentro do outro.",
+    "kitPieces": [
+      {
+        "name": "Cubo PP",
+        "width": 25,
+        "length": 25,
+        "height": 5,
+        "thickness": 3
+      },
+      {
+        "name": "Cubo P",
+        "width": 25,
+        "length": 25,
+        "height": 10,
+        "thickness": 3
+      },
+      {
+        "name": "Cubo M",
+        "width": 30,
+        "length": 30,
+        "height": 15,
+        "thickness": 3
+      },
+      {
+        "name": "Cubo G",
+        "width": 35,
+        "length": 35,
+        "height": 20,
+        "thickness": 3
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64
   }
 ]
