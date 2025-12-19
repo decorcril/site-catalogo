@@ -32,6 +32,7 @@ function initializeModalData(product, savedSelections) {
         diameter: product.diameter,
         capacity: product.capacity,
         footHeight: product.footHeight,
+        voltage: product.voltage || null,
         kitPieces: product.kitPieces || [],
         customSpecs: product.customSpecs || null,
         paymentType: null,
@@ -67,7 +68,7 @@ function updateDataFromOption(data, option) {
     const properties = [
         'price', 'oldPrice', 'image', 'thickness', 'height', 'width',
         'depth', 'length', 'diameter', 'capacity', 'footHeight',
-        'paymentType', 'installmentPrice'
+        'paymentType', 'installmentPrice', 'voltage'
     ];
 
     properties.forEach(prop => {
@@ -126,9 +127,10 @@ function createSpecsHTML(data, product) {
     }
     // CASO GERAL
     else {
+        const currentVoltage = data.voltage || product.voltage;
         const hasMainSpecs = data.height || data.width || data.depth ||
             data.capacity || data.thickness || data.length ||
-            data.diameter || product.voltage;
+            data.diameter || currentVoltage;
 
         if (hasMainSpecs) {
             specsHTML = `
@@ -141,7 +143,7 @@ function createSpecsHTML(data, product) {
                     ${data.thickness ? `<tr><td>Espessura:</td><td><strong>${data.thickness} mm</strong></td></tr>` : ''}
                     ${data.capacity && data.capacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${data.capacity} unidades</strong></td></tr>` : ''}
                     ${data.footHeight ? `<tr><td>Altura dos pés:</td><td><strong>${data.footHeight} cm</strong></td></tr>` : ''}
-                    ${product.voltage ? `<tr><td>Voltagem:</td><td><strong>${product.voltage}</strong></td></tr>` : ''}
+                    ${currentVoltage ? `<tr><td>Voltagem:</td><td><strong>${currentVoltage}</strong></td></tr>` : ''}
                 </table>
             `;
         }
@@ -427,6 +429,7 @@ function handleVariationClick(badge, product, modal) {
         length: selectedOption?.length,
         diameter: selectedOption?.diameter,
         footHeight: selectedOption?.footHeight,
+        voltage: selectedOption?.voltage,
         kitPieces: selectedOption?.kitPieces || [],
         customSpecs: selectedOption?.customSpecs || null
     };
@@ -539,6 +542,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     const currentCapacity = selectedOption.capacity || originalProduct.capacity;
     const currentKitPieces = selectedOption.kitPieces || originalProduct.kitPieces || [];
     const currentFootHeight = selectedOption.footHeight || originalProduct.footHeight;
+    const currentVoltage = selectedOption.voltage || originalProduct.voltage;
     const currentCustomSpecs = selectedOption.customSpecs || originalProduct.customSpecs;
 
     // Verificar se temos kitPieces
@@ -581,7 +585,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
     } else {
         const hasMainSpecs = currentHeight || currentWidth || currentDepth ||
             currentCapacity || currentThickness || currentLength ||
-            currentDiameter || originalProduct.voltage;
+            currentDiameter || currentVoltage;
 
         if (hasMainSpecs) {
             mainSpecsHTML = `
@@ -594,7 +598,7 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
                     ${currentThickness ? `<tr><td>Espessura:</td><td><strong>${currentThickness} mm</strong></td></tr>` : ''}
                     ${currentCapacity && currentCapacity > 0 ? `<tr><td>Capacidade:</td><td><strong>${currentCapacity} unidades</strong></td></tr>` : ''}
                     ${currentFootHeight ? `<tr><td>Altura dos pés:</td><td><strong>${currentFootHeight} cm</strong></td></tr>` : ''}
-                    ${originalProduct.voltage ? `<tr><td>Voltagem:</td><td><strong>${originalProduct.voltage}</strong></td></tr>` : ''}
+                    ${currentVoltage ? `<tr><td>Voltagem:</td><td><strong>${currentVoltage}</strong></td></tr>` : ''}
                 </table>
             `;
         }
