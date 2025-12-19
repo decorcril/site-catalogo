@@ -4349,5 +4349,215 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 64,
+    "productCode": "25879",
+    "title": "Números e Letras Infinitos",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/25879.png",
+    "oldPrice": "R$ 1.650,00",
+    "price": "R$ 1.400,00",
+    "shortDescription": "Letras e Números de LED Gigantes Infinitos, de A a Z e de 0 a 9. A maior tendência para decorações de luxo. Confeccionados em acrílico super resistente. O valor refere-se a cada unidade.",
+    "longDescription": "Letras de LED Gigantes Infinitas, de A a Z, e Números de 0 a 9 infinitos. Esta é a maior tendência para decorações de luxo, criando um efeito visual único e impressionante. Cada peça é confeccionada em acrílico super resistente, garantindo durabilidade e sofisticação para casamentos, festas e eventos especiais. Encomende seu LED com o efeito infinito e transforme qualquer ambiente. (O valor refere-se a cada unidade).",
+    "height": 90,
+    "width": 90,
+    "depth": 20,
+    "thickness": 3,
+    "rating": 4.5,
+    "reviews": 71,
+    "voltage": "Bivolt",
+    "badge": "Novidade"
+  },
+  {
+    "id": 65,
+    "productCode": "3047-4",
+    "title": "Letriro em Led Merry Christmas",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3047-4.png",
+    "price": "R$ 320,00",
+    "shortDescription": "Letreiro 'Merry Christmas' em acrílico de 4mm. Traz modernidade e brilho para a decoração natalina com design sofisticado.",
+    "longDescription": "Apresentamos nosso letreiro 'Merry Christmas', confeccionado em acrílico de 4mm para um acabamento resistente e de alta qualidade. Com design elegante e letras bem definidas, ele traz um toque contemporâneo e brilhante para a sua decoração natalina, perfeito para destacar na mesa, na lareira ou na entrada da casa durante as festas de fim de ano.",
+    "height": 40,
+    "length": 82,
+    "thickness": 4,
+    "rating": 4.5,
+    "reviews": 71,
+    "voltage": "Bivolt",
+    "badge": "Novidade"
+  },
+  {
+    "id": 66,
+    "productCode": "3036-4",
+    "title": "Letriro em Led Oh Baby",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3036-4.png",
+    "price": "R$ 320,00",
+    "shortDescription": "Placa de LED em formato de ursinho, o detalhe perfeito para criar um clima mágico e acolhedor. Ideal para decorar chás de bebê, quartos infantis, festas temáticas ou vitrines de lojas especiais.",
+    "longDescription": "Esta adorável placa de LED em formato de ursinho é confeccionada para encantar! Seu design delicado e a iluminação suave criam um clima de magia e aconchego, sendo o elemento perfeito para compor a decoração de ocasiões especiais. Ideal para chás de bebê e chá revelação, também traz um toque especial para quartos infantis, festas de aniversário temáticas e, claro, para valorizar a vitrine ou o balcão de lojas que desejam transmitir carinho e delicadeza. Um símbolo de amor e afeto em forma de luz.",
+    "height": 40,
+    "length": 82,
+    "thickness": 4,
+    "rating": 4.5,
+    "reviews": 71,
+    "voltage": "Bivolt",
+    "badge": "Novidade"
+  },
+  {
+    "id": 67,
+    "productCode": "3045",
+    "title": "Rena Deitada em Acrílico com Led",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3045.png",
+    "price": "R$ 995,00",
+    "shortDescription": "Confeccionamos esta linda Rena em acrílico para deixar suas decorações de Natal ainda mais luxuosas. A peça possui pés para estabilidade, podendo ser exibida deitada com perfeito equilíbrio.",
+    "longDescription": "Confeccionamos esta linda Rena em acrílico para elevar o luxo e a elegância das suas decorações de Natal. A peça possui pés que garantem uma base segura, permitindo que ela seja exibida na encantadora pose deitada com total estabilidade e sofisticação. Com proporções harmoniosas, ela se torna um ponto focal majestoso e atemporal para qualquer ambiente festivo durante as celebrações de fim de ano.",
+    "height": 100,
+    "length": 100,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "voltage": "Bivolt",
+    "badge": "Novidade"
+  },
+  {
+    "id": 68,
+    "productCode": "3044",
+    "title": "Rena Em Pé em Acrílico com Led",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3044.png",
+    "price": "R$ 1.150,00",
+    "shortDescription": "Confeccionamos esta linda Rena em acrílico para deixar suas decorações de Natal ainda mais luxuosas e elegantes. Com proporções harmoniosas, ela inclui pés de apoio que garantem estabilidade e segurança na exibição em pé.",
+    "longDescription": "Esta linda Rena foi confeccionada em acrílico para elevar a sofisticação e o brilho das suas decorações de Natal. Com uma altura imponente de 1,30 metro e proporções equilibradas que realçam sua elegância, a peça é ideal para criar um cenário festivo de grande impacto. Seus pés de apoio, integrados ao design, oferecem total estabilidade e segurança, permitindo que ela seja exibida em pé com majestade em qualquer ambiente. Perfeita para compor a entrada da casa, a mesa de ceia, vitrines ou eventos especiais, ela traz um toque de magia e alto padrão às suas celebrações de fim de ano.",
+    "height": 130,
+    "length": 130,
+    "thickness": 6,
+    "rating": 4.5,
+    "reviews": 71,
+    "voltage": "Bivolt",
+    "badge": "Novidade"
+  },
+  {
+    "id": 69,
+    "productCode": "3035",
+    "title": "Asas de Anjo Instagramável com Auréola",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3035.png",
+    "price": "R$ 1.150,00",
+    "shortDescription": "Lindas asas de anjo em acrílico, perfeitas para criar um ponto fotográfico instagramável na sua loja, evento ou decoração especial.",
+    "longDescription": "Lindas asas de anjo confeccionadas em acrílico, o acessório perfeito para criar um cenário fotográfico deslumbrante e altamente instagramável. Projetadas para encantar clientes e convidados, elas são ideais para compor pontos especiais em lojas, vitrines temáticas, casamentos, festas de aniversário, batizados ou qualquer evento que mereça um toque de magia e interação. Garanta recordações únicas e uma atmosfera encantadora com esta peça que transforma qualquer momento em uma foto perfeita.",
+    "priceVariations": [
+      {
+        "name": "Asas de Anjo Instagramável com Auréola",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 1.150,00",
+            "image": "../../assets/images/products/categories/leds/3035.png",
+            "width": 140,
+            "length": 110,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 1.150,00",
+            "image": "../../assets/images/products/categories/leds/3035.png",
+            "width": 140,
+            "length": 110,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 70,
+    "productCode": "3033",
+    "title": "Placa Luminosa Borboleta Dobrada",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3033.png",
+    "price": "R$ 150,00",
+    "shortDescription": "Borboleta em acrílico com LED neon 3D, ideal para criar um efeito mágico e sofisticado em qualquer ambiente. Sua leve curvatura para cima dá a impressionante sensação de que ela está voando.",
+    "longDescription": "Esta borboleta em acrílico com LED neon 3D é uma peça encantadora que combina tecnologia e design para criar um efeito visual único e sofisticado. Sua leve curvatura para cima foi cuidadosamente projetada para dar a impressão realista e mágica de que a borboleta está em pleno voo. Perfeita para destacar na decoração de ambientes residenciais, comerciais, eventos temáticos, ou como um ponto de luz artístico em qualquer espaço. Garanta um toque de elegância e movimento iluminado com esta obra-prima que transforma paredes e cenários.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminosa Borboleta Dobrada",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 150,00",
+            "image": "../../assets/images/products/categories/leds/3033.png",
+            "width": 35,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 150,00",
+            "image": "../../assets/images/products/categories/leds/3033.png",
+            "width": 35,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 71,
+    "productCode": "3029",
+    "title": "Letreiro de Led Love",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3029.png",
+    "price": "R$ 380,00",
+    "shortDescription": "Letreiro LOVE, a peça ideal para compor decorações românticas no Dia dos Namorados ou em celebrações do amor. Disponível nas versões Branco Frio e Branco Quente.",
+    "longDescription": "O letreiro LOVE é a peça perfeita para trazer um toque de sofisticação e romantismo à sua decoração. Ideal para celebrar o Dia dos Namorados, também se destaca em casamentos, jantares especiais ou na decoração do lar. Confeccionado com acabamento impecável, oferecemos a opção entre o Branco Frio, para um visual contemporâneo e marcante, e o Branco Quente, que traz um charme suave e acolhedor. Escolha a tonalidade que melhor combina com sua celebração e transforme qualquer ambiente em um cenário de amor.",
+    "priceVariations": [
+      {
+        "name": "Letreiro de Led Love",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 380,00",
+            "image": "../../assets/images/products/categories/leds/3029.png",
+            "width": 35,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 380,00",
+            "image": "../../assets/images/products/categories/leds/3029.png",
+            "width": 35,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
