@@ -4208,5 +4208,87 @@
     ],
     "rating": 4.8,
     "reviews": 64
+  },
+  {
+    "id": 61,
+    "productCode": "9080",
+    "title": "Trio de Banquinhos",
+    "category": "trio-banquinhos",
+    "image": "../../assets/images/products/categories/stools/9080.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 50,00",
+    "shortDescription": "Conheça nosso trio de banquinhos em dois modelos. Os Gigantes são perfeitos para buffet e a versão Mini é ideal para docinhos na sua festa.",
+    "longDescription": "Conheça nosso trio de banquinhos, oferecido em dois modelos versáteis. A versão Gigante é confeccionada em acrílico de alta resistência de 6mm, ideal para organizar e valorizar um buffet elegante. Já a versão Mini, feita em acrílico de 3mm, é a opção perfeita para exibir e servir docinhos e pequenas sobremesas com charme na sua decoração de festa. Ambos garantem organização e sofisticação para qualquer ocasião.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Trio Mini",
+            "value": "pequeno",
+            "price": "R$ 50,00",
+            "image": "../../assets/images/products/categories/stools/9080.png",
+            "kitPieces": [
+              {
+                "name": "Pequena",
+                "width": 11,
+                "length": 16,
+                "height": 6,
+                "thickness": 3
+              },
+              {
+                "name": "Média",
+                "width": 12,
+                "length": 17,
+                "height": 8,
+                "thickness": 3
+              },
+              {
+                "name": "Grande",
+                "width": 12,
+                "length": 18,
+                "height": 10,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio Gigante",
+            "value": "gigante",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/stools/9080.png",
+            "kitPieces": [
+              {
+                "name": "Pequena",
+                "width": 10,
+                "length": 27,
+                "height": 18,
+                "thickness": 6
+              },
+              {
+                "name": "Média",
+                "width": 12,
+                "length": 32,
+                "height": 23,
+                "thickness": 6
+              },
+              {
+                "name": "Grande",
+                "width": 20,
+                "length": 36,
+                "height": 26,
+                "thickness": 6
+              }
+            ]
+          }
+        ],
+        "default": "pequeno"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
   }
 ]
