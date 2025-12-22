@@ -4559,5 +4559,639 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 72,
+    "productCode": "3028",
+    "title": "Capelo #FORMEI!",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3038.png",
+    "price": "R$ 220,00",
+    "shortDescription": "Celebre uma das maiores conquistas com a elegância e o brilho que ela merece! Esta exclusiva placa de LED em formato de Capelo Acadêmico traz a frase #FORMEI gravada, criando uma peça emblemática e cheia de significado.",
+    "longDescription": "Celebre uma das maiores conquistas com a elegância e o brilho que ela merece! Esta exclusiva placa de LED em formato de Capelo Acadêmico traz a frase #FORMEI gravada, criando uma peça emblemática e cheia de significado.",
+    "priceVariations": [
+      {
+        "name": "Capelo #FORMEI!",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3038.png",
+            "width": 60,
+            "length": 52,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3038.png",
+            "width": 60,
+            "length": 52,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 73,
+    "productCode": "3025",
+    "title": "Coroa em Led",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3025.png",
+    "price": "R$ 220,00",
+    "shortDescription": "Placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral do seu design. Resultado: uma peça leve, com visual moderno e sofisticado, perfeita para valorizar qualquer mensagem ou elemento decorativo.",
+    "longDescription": "Placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral do seu design. Resultado: uma peça leve, com visual moderno e sofisticado, perfeita para valorizar qualquer mensagem ou elemento decorativo.",
+    "priceVariations": [
+      {
+        "name": "Coroa em Led",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3025.png",
+            "width": 60,
+            "length": 52,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3025.png",
+            "height": 28,
+            "length": 44,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 74,
+    "productCode": "3023",
+    "title": "Placa Luminária Asas de Anjo",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3023.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 250,00",
+    "shortDescription": "Asas de Anjo confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral da imagem. O resultado é uma peça delicada e luminosa, que traz leveza e um toque celestial a qualquer decoração.",
+    "longDescription": "Asas de Anjo confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral da imagem. O resultado é uma peça delicada e luminosa, que traz leveza e um toque celestial a qualquer decoração.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Asas de Anjo",
+        "key": "size",
+        "options": [
+          {
+            "label": "Asas Pequenas com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3023.png",
+            "height": 47,
+            "length": 41,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Asas Pequenas com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3023.png",
+            "height": 47,
+            "length": 41,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Asas Grandes com Cor Quente",
+            "value": "modelo_3",
+            "price": "R$ 490,00",
+            "image": "../../assets/images/products/categories/leds/3023.png",
+            "height": 68,
+            "length": 57,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Asas Grandes com Cor Fria",
+            "value": "modelo_4",
+            "price": "R$ 490,00",
+            "image": "../../assets/images/products/categories/leds/3023.png",
+            "height": 68,
+            "length": 57,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 75,
+    "productCode": "3022",
+    "title": "Rosto da Barbie",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3022.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 120,00",
+    "shortDescription": "Perfil da Barbie confeccionado sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral da personagem. Uma peça icônica e brilhante, perfeita para decorações temáticas e fãs da boneca mais famosa do mundo.",
+    "longDescription": "Perfil da Barbie confeccionado sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral da personagem. Uma peça icônica e brilhante, perfeita para decorações temáticas e fãs da boneca mais famosa do mundo.",
+    "priceVariations": [
+      {
+        "name": "Rosto da Barbie",
+        "key": "size",
+        "options": [
+          {
+            "label": "Pequena",
+            "value": "modelo_1",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/leds/3022.png",
+            "width": 40,
+            "length": 39,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Grande",
+            "value": "modelo_2",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3022.png",
+            "height": 50,
+            "length": 49,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 76,
+    "productCode": "3021",
+    "title": "Placa Luminária Estrela",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3021.png",
+    "price": "R$ 150,00",
+    "shortDescription": "Estrela feito sobre placa de acrílico transparente e cristalino, recortada contornando a forma geral da imagem. Uma peça atemporal e brilhante, ideal para trazer um toque de luz e magia para qualquer decoração.",
+    "longDescription": "Estrela feito sobre placa de acrílico transparente e cristalino, recortada contornando a forma geral da imagem. Uma peça atemporal e brilhante, ideal para trazer um toque de luz e magia para qualquer decoração.",
+    "priceVariations": [
+      {
+        "name": "Placa Lúminaria Estrela",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 150,00",
+            "image": "../../assets/images/products/categories/leds/3021.png",
+            "width": 40,
+            "length": 39,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 150,00",
+            "image": "../../assets/images/products/categories/leds/3021.png",
+            "height": 50,
+            "length": 49,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 77,
+    "productCode": "3018",
+    "title": "Placa Luminária Borboleta Pequena",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3018.png",
+    "price": "R$ 180,00",
+    "shortDescription": "A peça Borboleta Pequena é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
+    "longDescription": "A peça Borboleta Pequena é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Borboleta Pequena",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3018.png",
+            "width": 43,
+            "length": 61,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3018.png",
+            "width": 43,
+            "length": 61,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 78,
+    "productCode": "3017",
+    "title": "Placa Luminária Borboleta Grande",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3017.png",
+    "price": "R$ 180,00",
+    "shortDescription": "A peça Borboleta Grande é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
+    "longDescription": "A peça Borboleta Grande é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Borboleta Grande",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3017.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3017.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 79,
+    "productCode": "3016",
+    "title": "Placa Luminária Sol M2",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3016.png",
+    "price": "R$ 180,00",
+    "shortDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
+    "longDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Sol M2",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3016.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3016.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 80,
+    "productCode": "3015",
+    "title": "Placa Luminária Sol M1",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3015.png",
+    "price": "R$ 180,00",
+    "shortDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
+    "longDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Sol M1",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3015.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 180,00",
+            "image": "../../assets/images/products/categories/leds/3015.png",
+            "width": 50,
+            "length": 50,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 81,
+    "productCode": "3012",
+    "title": "Placa Luminária Sol M1",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3012.png",
+    "price": "R$ 580,00",
+    "shortDescription": "Letreiro luminoso Together Forever feito sobre placa de acrílico transparente e cristalino, recortado contornando a forma das letras. A peça ideal para iluminar e eternizar momentos especiais a dois com sofisticação.",
+    "longDescription": "Letreiro luminoso Together Forever feito sobre placa de acrílico transparente e cristalino, recortado contornando a forma das letras. A peça ideal para iluminar e eternizar momentos especiais a dois com sofisticação.",
+    "priceVariations": [
+      {
+        "name": "Placa Luminária Sol M1",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 580,00",
+            "image": "../../assets/images/products/categories/leds/3012.png",
+            "height": 72,
+            "length": 56,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 580,00",
+            "image": "../../assets/images/products/categories/leds/3012.png",
+            "height": 72,
+            "length": 56,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 82,
+    "productCode": "3011",
+    "title": "letreiro Personalizado em Led",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3011.png",
+    "price": "R$ 350,00",
+    "shortDescription": "Letreiro luminoso personalizado, feito sobre placa de acrílico transparente e cristalino, recortado para contornar perfeitamente o nome e a fonte de sua escolha. Crie uma peça única que ilumina e personaliza qualquer ambiente com sua identidade.",
+    "longDescription": "Letreiro luminoso personalizado, feito sobre placa de acrílico transparente e cristalino, recortado para contornar perfeitamente o nome e a fonte de sua escolha. Crie uma peça única que ilumina e personaliza qualquer ambiente com sua identidade.",
+    "priceVariations": [
+      {
+        "name": "letreiro Personalizado em Led",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/leds/3011.png",
+            "height": 25,
+            "length": 60,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 350,00",
+            "image": "../../assets/images/products/categories/leds/3011.png",
+            "height": 25,
+            "length": 60,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 83,
+    "productCode": "3010",
+    "title": "Kit de Placas Boy & Girl",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3010.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 220,00",
+    "shortDescription": "Letreiro luminoso Boy e Girl, confeccionado sobre placa de acrílico transparente e cristalino recortada com precisão. Peça moderna e romântica, ideal para chás revelação e decorações de quarto.",
+    "longDescription": "Letreiro luminoso Boy e Girl, confeccionado sobre placa de acrílico transparente e cristalino recortada com precisão. Peça moderna e romântica, ideal para chás revelação e decorações de quarto.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Placa Boy Cor Fria",
+            "value": "pequeno_b_f",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Cor Fria",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Placa Boy Cor Quente",
+            "value": "pequeno_b_g",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Cor Quente",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Placa Girl Cor Fria",
+            "value": "pequeno_g_f",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Cor Fria",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Placa Girl Cor Quente",
+            "value": "pequeno_g_f",
+            "price": "R$ 220,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Cor Quente",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Boy & Girl Cor Quente",
+            "value": "kit_q",
+            "price": "R$ 380,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Placa Boy Cor Quente",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              },
+              {
+                "name": "Placa Girl Cor Quente",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Boy & Girl Cor Fria",
+            "value": "kit_f",
+            "price": "R$ 380,00",
+            "image": "../../assets/images/products/categories/leds/3010.png",
+            "kitPieces": [
+              {
+                "name": "Placa Boy Cor Fria",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              },
+              {
+                "name": "Placa Girl Cor Fria",
+                "height":30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "pequeno_b_f"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 84,
+    "productCode": "3008",
+    "title": "Letreiro Luminoso Parabéns em Led",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3008.png",
+    "price": "R$ 290,00",
+    "shortDescription": "O letreiro luminoso Parabéns é confeccionado sobre placa de acrílico transparente e cristalino, recortado com precisão para contornar perfeitamente a forma de cada letra. Esta técnica garante um acabamento nítido e bordas suaves, enquanto a iluminação integrada faz com que a mensagem brilhe com um efeito vibrante e acolhedor.",
+    "longDescription": "O letreiro luminoso Parabéns é confeccionado sobre placa de acrílico transparente e cristalino, recortado com precisão para contornar perfeitamente a forma de cada letra. Esta técnica garante um acabamento nítido e bordas suaves, enquanto a iluminação integrada faz com que a mensagem brilhe com um efeito vibrante e acolhedor.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso Parabéns em Led",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 290,00",
+            "image": "../../assets/images/products/categories/leds/3008.png",
+            "height": 79,
+            "length": 39,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 290,00",
+            "image": "../../assets/images/products/categories/leds/3008.png",
+            "height": 79,
+            "length": 39,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
   }
 ]
