@@ -4563,7 +4563,7 @@
   {
     "id": 72,
     "productCode": "3028",
-    "title": "Capelo #FORMEI!",
+    "title": "Capelo em Led #FORMEI!",
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3038.png",
     "price": "R$ 220,00",
@@ -4707,7 +4707,7 @@
   {
     "id": 75,
     "productCode": "3022",
-    "title": "Rosto da Barbie",
+    "title": "Rosto da Barbie em Led",
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3022.png",
     "pricePrefix": "A partir de",
@@ -4995,7 +4995,7 @@
   {
     "id": 82,
     "productCode": "3011",
-    "title": "letreiro Personalizado em Led",
+    "title": "Letreiro Personalizado em Led",
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3011.png",
     "price": "R$ 350,00",
@@ -5003,7 +5003,7 @@
     "longDescription": "Letreiro luminoso personalizado, feito sobre placa de acrílico transparente e cristalino, recortado para contornar perfeitamente o nome e a fonte de sua escolha. Crie uma peça única que ilumina e personaliza qualquer ambiente com sua identidade.",
     "priceVariations": [
       {
-        "name": "letreiro Personalizado em Led",
+        "name": "Letreiro Personalizado em Led",
         "key": "size",
         "options": [
           {
@@ -5036,7 +5036,7 @@
   {
     "id": 83,
     "productCode": "3010",
-    "title": "Kit de Placas Boy & Girl",
+    "title": "Kit de Placas Luminosas em Led Boy - Girl",
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3010.png",
     "pricePrefix": "A partir de",
@@ -5056,7 +5056,7 @@
             "kitPieces": [
               {
                 "name": "Cor Fria",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5070,7 +5070,7 @@
             "kitPieces": [
               {
                 "name": "Cor Quente",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5084,7 +5084,7 @@
             "kitPieces": [
               {
                 "name": "Cor Fria",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5098,7 +5098,7 @@
             "kitPieces": [
               {
                 "name": "Cor Quente",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5112,13 +5112,13 @@
             "kitPieces": [
               {
                 "name": "Placa Boy Cor Quente",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               },
               {
                 "name": "Placa Girl Cor Quente",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5132,13 +5132,13 @@
             "kitPieces": [
               {
                 "name": "Placa Boy Cor Fria",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               },
               {
                 "name": "Placa Girl Cor Fria",
-                "height":30,
+                "height": 30,
                 "length": 50,
                 "thickness": 4
               }
@@ -5156,7 +5156,7 @@
   {
     "id": 84,
     "productCode": "3008",
-    "title": "Letreiro Luminoso Parabéns em Led",
+    "title": "Letreiro Luminoso em Led Parabéns",
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3008.png",
     "price": "R$ 290,00",
@@ -5164,7 +5164,7 @@
     "longDescription": "O letreiro luminoso Parabéns é confeccionado sobre placa de acrílico transparente e cristalino, recortado com precisão para contornar perfeitamente a forma de cada letra. Esta técnica garante um acabamento nítido e bordas suaves, enquanto a iluminação integrada faz com que a mensagem brilhe com um efeito vibrante e acolhedor.",
     "priceVariations": [
       {
-        "name": "Letreiro Luminoso Parabéns em Led",
+        "name": "Letreiro Luminoso em Led Parabéns",
         "key": "size",
         "options": [
           {
@@ -5193,5 +5193,481 @@
     ],
     "rating": 4.5,
     "reviews": 71
+  },
+  {
+    "id": 85,
+    "productCode": "3006-4",
+    "title": "Letreiro Luminoso em Led Arco-Íris",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3006-4.png",
+    "price": "R$ 650,00",
+    "shortDescription": "Lindo Arco-Íris decorativo confeccionado em placa de acrílico transparente e cristalino, recortado para seguir a forma da palavra. Uma peça alegre e luminosa que traz cor e um toque de magia para qualquer decoração.",
+    "longDescription": "Lindo Arco-Íris decorativo confeccionado em placa de acrílico transparente e cristalino, recortado para seguir a forma da palavra. Uma peça alegre e luminosa que traz cor e um toque de magia para qualquer decoração.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso em Led Arco-Íris",
+        "key": "size",
+        "options": [
+          {
+            "label": "Placa em Led Arco-Íris",
+            "value": "modelo_1",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3006-4.png",
+            "height": 95,
+            "length": 68,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 86,
+    "productCode": "3007",
+    "title": "Letreiro Luminoso em Led Oh Baby",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3007.png",
+    "price": "R$ 300,00",
+    "shortDescription": "Este letreiro luminoso Oh Baby é produzido sobre uma placa de acrílico transparente e cristalino, que é recortada para seguir a forma das letras, criando um efeito visual integrado e elegante. O acrílico de alta qualidade dá um brilho suave e difuso à luz, tornando a mensagem aconchegante e especial.",
+    "longDescription": "Este letreiro luminoso Oh Baby é produzido sobre uma placa de acrílico transparente e cristalino, que é recortada para seguir a forma das letras, criando um efeito visual integrado e elegante. O acrílico de alta qualidade dá um brilho suave e difuso à luz, tornando a mensagem aconchegante e especial.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso em Led Oh Baby",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 300,00",
+            "image": "../../assets/images/products/categories/leds/3007.png",
+            "height": 60,
+            "length": 65,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 300,00",
+            "image": "../../assets/images/products/categories/leds/3007.png",
+            "height": 60,
+            "length": 65,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 87,
+    "productCode": "3004",
+    "title": "Letreiro Luminoso em Led Let's Celebrate",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3004.png",
+    "price": "R$ 550,00",
+    "shortDescription": "Letreiro Let's Celebrate em LED, disponível nas opções de branco frio ou branco quente. Criado sobre uma placa de acrílico transparente cristalino, recortada no formato das letras para um efeito visual moderno e brilhante.",
+    "longDescription": "Letreiro Let's Celebrate em LED, disponível nas opções de branco frio ou branco quente. Criado sobre uma placa de acrílico transparente cristalino, recortada no formato das letras para um efeito visual moderno e brilhante.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso em Led Let's Celebrate",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 550,00",
+            "image": "../../assets/images/products/categories/leds/3004.png",
+            "height": 76,
+            "length": 52,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 550,00",
+            "image": "../../assets/images/products/categories/leds/3004.png",
+            "height": 76,
+            "length": 52,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 88,
+    "productCode": "3003",
+    "title": "Letreiro Luminoso em Led Happy Birthday M2",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3003.png",
+    "price": "R$ 450,00",
+    "shortDescription": "Luminária Led Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
+    "longDescription": "Luminária Led de Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso em Led Happy Birthday M2",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3003.png",
+            "height": 66,
+            "length": 44,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3003.png",
+            "height": 66,
+            "length": 44,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 89,
+    "productCode": "3002",
+    "title": "Letreiro Luminoso em Led Happy Birthday M1",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3002.png",
+    "price": "R$ 550,00",
+    "shortDescription": "Luminária Led Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
+    "longDescription": "Luminária Led de Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
+    "priceVariations": [
+      {
+        "name": "Letreiro Luminoso em Led Happy Birthday M1",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led com Cor Quente",
+            "value": "modelo_1",
+            "price": "R$ 550,00",
+            "image": "../../assets/images/products/categories/leds/3002.png",
+            "height": 66,
+            "length": 44,
+            "voltage": "Bivolt",
+            "thickness": 4
+          },
+          {
+            "label": "Led com Cor Fria",
+            "value": "modelo_2",
+            "price": "R$ 550,00",
+            "image": "../../assets/images/products/categories/leds/3002.png",
+            "height": 66,
+            "length": 44,
+            "voltage": "Bivolt",
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 90,
+    "productCode": "3001",
+    "title": "Kit Numeral de Led em Acrílico",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3001.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 100,00",
+    "shortDescription": "O Neon voltou para dominar a decoração! Oferecemos números de 0 a 9 confeccionados com técnica moderna, criando peças de luz cheias de estilo para personalizar qualquer ambiente.",
+    "longDescription": "O Neon voltou para dominar a decoração! Oferecemos números de 0 a 9 confeccionados com técnica moderna, criando peças de luz cheias de estilo para personalizar qualquer ambiente.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Quente P",
+            "value": "pequeno_b_q",
+            "price": "R$ 100,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais 0 a 9 Cor Quente",
+                "height": 50,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Fria P",
+            "value": "pequeno_b_f",
+            "price": "R$ 100,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais 0 a 9 Cor Fria Pequeno",
+                "height": 50,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Fria G",
+            "value": "pequeno_g_b_f",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais Cor Fria 0 a 9 Grande",
+                "height": 60,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Quente G",
+            "value": "pequeno_g_b_q",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais 0 a 9 Cor Quente Grande",
+                "height": 50,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Quente P",
+            "value": "kit_q_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Kit Numerais de 0 a 9 Cor Quente Pequeno",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Fria G",
+            "value": "kit_f_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais de 0 a 9 Cor Fria Grande",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Quente G",
+            "value": "kit_q_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Kit Numerais de 0 a 9 Cor Quente Grande",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Fria P",
+            "value": "kit_f_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais de 0 a 9 Cor Fria Pequeno",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "pequeno_b_f"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 91,
+    "productCode": "3200",
+    "title": "Números e Letras Gigantes de 0 a 9 ou A a Z",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3200.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 295,00",
+    "shortDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
+    "longDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Números Individuais 0 a 9 60cm com Led",
+            "value": "numeros_c_l",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm com Led",
+                "height": 60,
+                "length": 60,
+                "voltage":"Bivolt",
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Letras Individuais A a Z 60cm com Led",
+            "value": "letras_c_l",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais A a Z 60cm com Led",
+                "height": 60,
+                "length": 60,
+                "voltage":"Bivolt",
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Fria P",
+            "value": "pequeno_b_f",
+            "price": "R$ 100,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais 0 a 9 Cor Fria Pequeno",
+                "height": 50,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Fria G",
+            "value": "pequeno_g_b_f",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais Cor Fria 0 a 9 Grande",
+                "height": 60,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Numerais Individuais 0 a 9 Cor Quente G",
+            "value": "pequeno_g_b_q",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Numerais Individuais 0 a 9 Cor Quente Grande",
+                "height": 50,
+                "thickness": 4
+              }          
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Quente P",
+            "value": "kit_q_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Kit Numerais de 0 a 9 Cor Quente Pequeno",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Fria G",
+            "value": "kit_f_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Numerais de 0 a 9 Cor Fria Grande",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Quente G",
+            "value": "kit_q_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Kit Numerais de 0 a 9 Cor Quente Grande",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Numerais 0 a 9 Cor Fria P",
+            "value": "kit_f_p",
+            "price": "R$ 750,00",
+            "image": "../../assets/images/products/categories/leds/3001.png",
+            "kitPieces": [
+              {
+                "name": "Numerais de 0 a 9 Cor Fria Pequeno",
+                "height": 30,
+                "length": 50,
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "pequeno_b_f"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
   }
 ]
