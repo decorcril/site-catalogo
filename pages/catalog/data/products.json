@@ -96,7 +96,7 @@
     "price": "R$ 250,00",
     "oldPrice": "R$ 270,00",
     "shortDescription": "Eternize esse momento com essa linda caixa em acrílico.",
-    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
+    "longDescription": "Eternize esse momento com essa linda caixa em acrílico.",
     "height": 36,
     "width": 26,
     "depth": 15,
@@ -115,7 +115,7 @@
     "price": "R$ 250,00",
     "oldPrice": "R$ 270,00",
     "shortDescription": "Eternize esse momento com essa linda caixa em acrílico.",
-    "longDescription": "Suporte em acrílico premium para expor donuts em festas e eventos. Design moderno, fácil de montar e limpar. Ideal para buffets, cafeterias e eventos especiais. capacidade para 14 unidades.",
+    "longDescription": "Eternize esse momento com essa linda caixa em acrílico.",
     "height": 36,
     "width": 23,
     "depth": 0,
@@ -5716,6 +5716,391 @@
               }
             ]
           }
+        ],
+        "default": "pequeno_b_f"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 92,
+    "productCode": "2280",
+    "title": "Centro de Mesa para Flores",
+    "category": "centro-mesa-flores",
+    "image": "../../assets/images/products/categories/table-centerpiece/2280.png",
+    "price": "R$ 120,00",
+    "shortDescription": "Lindo suporte para flores, ideal para ser colocado como centro de mesa. Dentro do produto você pode colocar água pois possui vedação, e a tampa que se encaixa em cima tem furos para você preencher com 25 rosas.",
+    "longDescription": "Lindo suporte para flores, ideal para ser colocado como centro de mesa. Dentro do produto você pode colocar água pois possui vedação, e a tampa que se encaixa em cima tem furos para você preencher com 25 rosas.",
+    "priceVariations": [
+      {
+        "name": "Centro de Mesa Para Flores",
+        "key": "size",
+        "options": [
+          {
+            "label": "Modelo Redondo",
+            "value": "redondo",
+            "price": "R$ 120,00",
+            "image": "../../assets/images/products/categories/table-centerpiece/2280.png",
+            "height": 9,
+            "width": 30,
+            "length": 30,
+            "thickness": 4
+          },
+          {
+            "label": "Modelo Quadrado",
+            "value": "quadrado",
+            "price": "R$ 140,00",
+            "image": "../../assets/images/products/categories/table-centerpiece/2280.png",
+            "height": 9,
+            "width": 30,
+            "length": 30,
+            "thickness": 4
+          },
+          {
+            "label": "Modelo Retângular",
+            "value": "retangular",
+            "price": "R$ 130,00",
+            "image": "../../assets/images/products/categories/table-centerpiece/2280.png",
+            "height": 9,
+            "width": 15,
+            "length": 40,
+            "thickness": 4
+          }
+        ],
+        "default": "4mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71
+  },
+  {
+    "id": 93,
+    "productCode": "7020",
+    "title": "Mini Mesa Borboleta",
+    "category": "suportes-utilidade",
+    "image": "../../assets/images/products/categories/utility-rack/7020.png",
+    "price": "R$ 50,00",
+    "oldPrice": "R$ 70,00",
+    "shortDescription": "Nossa mesinha borboleta foi feita para colocar docinhos na sua decoração. Mas você pode abusar da sua criatividade e usar como desejar.",
+    "longDescription": "Nossa mesinha borboleta foi feita para colocar docinhos na sua decoração. Mas você pode abusar da sua criatividade e usar como desejar.",
+    "height": 20,
+    "length": 18,
+    "thickness": 3,
+    "rating": 4.0,
+    "reviews": 30
+  },
+  {
+    "id": 94,
+    "productCode": "9055",
+    "title": "Painel de Led Tubarão",
+    "category": "paineis",
+    "image": "../../assets/images/products/categories/panel/9055.png",
+    "price": "R$ 1.250,00",
+    "shortDescription": "Produto moderno de alto padrão de qualidade, para decoração em todo tipo de ambiente. Produto feito em acrílico virgem, e cristalino. A base pode ser feita transparente ou nas cores que o cliente desejar.",
+    "longDescription": "Produto moderno de alto padrão de qualidade, para decoração em todo tipo de ambiente. Produto feito em acrílico virgem, e cristalino. A base pode ser feita transparente ou nas cores que o cliente desejar.",
+    "height": 180,
+    "width": 90,
+    "thickness": 6,
+    "rating": 4.0,
+    "reviews": 30
+  },
+  {
+    "id": 95,
+    "productCode": "9505",
+    "title": "Painel de Led Aline Mendes",
+    "category": "paineis",
+    "image": "../../assets/images/products/categories/panel/9505.png",
+    "price": "R$ 1.450,00",
+    "shortDescription": "Conheça o mais novo lançamento de painel em led de acrilico cristalino em parceria com a decoradora Aline Mendes.",
+    "longDescription": "Conheça o mais novo lançamento de painel em led de acrilico cristalino em parceria com a decoradora Aline Mendes. Produzido em 100% acrilico transparente de 5mm e reforço de 6mm, ele vai transformar a sua decoração, deixando com aspecto muito mais elegante e profissional.",
+    "height": 180,
+    "width": 90,
+    "thickness": 6,
+    "rating": 4.0,
+    "reviews": 30
+  },
+  {
+    "id": 96,
+    "productCode": "3001",
+    "title": "Números e Letras Gigantes de 0 a 9 ou A a Z",
+    "category": "leds",
+    "image": "../../assets/images/products/categories/leds/3200.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 250,00",
+    "shortDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
+    "longDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Números Individuais 0 a 9 60cm com Led Quente",
+            "value": "numeros_c_l_q",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm com Led Quente",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais A a Z 60cm com Led Quente",
+            "value": "letras_c_l_q",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm com Led Quente",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 90cm com Led Quente",
+            "value": "numeros_c_l_q_g",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 90cm com Led Quente",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais A a Z 90cm com Led Quente",
+            "value": "letras_c_l_q_g",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 90cm com Led Quente",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 60cm com Led Frio",
+            "value": "numeros_c_l_f",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm com Led Frio",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 60cm com Led Frio",
+            "value": "letras_c_l_f",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 60cm com Led Frio",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 90cm com Led Frio",
+            "value": "numeros_c_l_f_g",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 90cm com Led Frio",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 90cm com Led Frio",
+            "value": "letras_c_l_f_g",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 90cm com Led Frio",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 60cm sem Led",
+            "value": "numeros_s_l",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm sem Led",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 60cm sem Led",
+            "value": "letras_s_l",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 60cm sem Led",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 90cm sem Led",
+            "value": "numeros_s_l_g",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 90cm sem Led",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 90cm sem Led",
+            "value": "letras_s_l_g",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 90cm sem Led",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          }
+        ],
+        "default": "pequeno_b_f"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "stock": 10,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 97,
+    "productCode": "1020",
+    "title": "Roda Gigante",
+    "category": "bandejas",
+    "image": "../../assets/images/products/categories/tray/1020.png",
+    "price": "R$ 350,00",
+    "shortDescription": "A Roda Gigante decorativa é feita em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante.",
+    "longDescription": "A Roda Gigante decorativa é feita em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
+    "height": 35,
+    "width": 25,
+    "thickness": 6,
+    "rating": 4.0,
+    "reviews": 30
+  },
+  {
+    "id": 97,
+    "productCode": "1030",
+    "title": "Carrossel de Doces",
+    "category": "bandejas",
+    "image": "../../assets/images/products/categories/tray/1030.png",
+    "price": "R$ 350,00",
+    "shortDescription": "O Carrossel decorativo é feito em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante.",
+    "longDescription": "O Carrossel decorativo é feito em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
+    "height": 35,
+    "width": 25,
+    "thickness": 6,
+    "rating": 4.0,
+    "reviews": 30
+  },
+  {
+    "id": 98,
+    "productCode": "1050",
+    "title": "Kit Parque de Diversões",
+    "category": "bandejas",
+    "image": "../../assets/images/products/categories/tray/1030.png",
+    "price": "R$ 1.000,00",
+    "shortDescription": "A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
+    "longDescription": "A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Roda Gigante",
+            "value": "roda",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Roda Gigante",
+                "height": 35,
+                "width": 25,
+                "thickness": 6
+              },
+              
+              {
+                "name": "Bandeja Gira Bolo",
+                "height": 30,
+                "width": 30,
+                "capacity": 1,
+                "thickness": 3,
+                "voltage": "bivolt"
+              },
+              {
+                "name": "Carrossel de Doces",
+                "height": 30,
+                "width": 30,
+                "capacity": 1,
+                "thickness": 3
+              }
+            ]
+          }
+          
         ],
         "default": "pequeno_b_f"
       }
