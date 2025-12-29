@@ -5414,7 +5414,7 @@
                 "name": "Numerais Individuais 0 a 9 Cor Quente",
                 "height": 50,
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
@@ -5427,7 +5427,7 @@
                 "name": "Numerais Individuais 0 a 9 Cor Fria Pequeno",
                 "height": 50,
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
@@ -5440,7 +5440,7 @@
                 "name": "Numerais Individuais Cor Fria 0 a 9 Grande",
                 "height": 60,
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
@@ -5453,7 +5453,7 @@
                 "name": "Numerais Individuais 0 a 9 Cor Quente Grande",
                 "height": 50,
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
@@ -5528,7 +5528,7 @@
     "category": "leds",
     "image": "../../assets/images/products/categories/leds/3200.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 295,00",
+    "price": "R$ 250,00",
     "shortDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
     "longDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
     "priceVariations": [
@@ -5537,126 +5537,181 @@
         "key": "purchase_option",
         "options": [
           {
-            "label": "Números Individuais 0 a 9 60cm com Led",
-            "value": "numeros_c_l",
+            "label": "Números Individuais 0 a 9 60cm com Led Quente",
+            "value": "numeros_c_l_q",
             "price": "R$ 295,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Números Individuais 0 a 9 60cm com Led",
+                "name": "Números Individuais 0 a 9 60cm com Led Quente",
                 "height": 60,
                 "length": 60,
-                "voltage":"Bivolt",
+                "voltage": "Bivolt",
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
-            "label": "Letras Individuais A a Z 60cm com Led",
-            "value": "letras_c_l",
+            "label": "Letras Individuais A a Z 60cm com Led Quente",
+            "value": "letras_c_l_q",
             "price": "R$ 295,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Letras Individuais A a Z 60cm com Led",
+                "name": "Números Individuais 0 a 9 60cm com Led Quente",
                 "height": 60,
                 "length": 60,
-                "voltage":"Bivolt",
+                "voltage": "Bivolt",
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
-            "label": "Numerais Individuais 0 a 9 Cor Fria P",
-            "value": "pequeno_b_f",
-            "price": "R$ 100,00",
+            "label": "Números Individuais 0 a 9 90cm com Led Quente",
+            "value": "numeros_c_l_q_g",
+            "price": "R$ 650,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Numerais Individuais 0 a 9 Cor Fria Pequeno",
-                "height": 50,
+                "name": "Números Individuais 0 a 9 90cm com Led Quente",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
                 "thickness": 4
-              }          
+              }
             ]
           },
           {
-            "label": "Numerais Individuais 0 a 9 Cor Fria G",
-            "value": "pequeno_g_b_f",
-            "price": "R$ 120,00",
+            "label": "Letras Individuais A a Z 90cm com Led Quente",
+            "value": "letras_c_l_q_g",
+            "price": "R$ 650,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Numerais Individuais Cor Fria 0 a 9 Grande",
+                "name": "Números Individuais 0 a 9 90cm com Led Quente",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 60cm com Led Frio",
+            "value": "numeros_c_l_f",
+            "price": "R$ 295,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm com Led Frio",
                 "height": 60,
-                "thickness": 4
-              }          
-            ]
-          },
-          {
-            "label": "Numerais Individuais 0 a 9 Cor Quente G",
-            "value": "pequeno_g_b_q",
-            "price": "R$ 120,00",
-            "image": "../../assets/images/products/categories/leds/3200.png",
-            "kitPieces": [
-              {
-                "name": "Numerais Individuais 0 a 9 Cor Quente Grande",
-                "height": 50,
-                "thickness": 4
-              }          
-            ]
-          },
-          {
-            "label": "Kit Numerais 0 a 9 Cor Quente P",
-            "value": "kit_q_p",
-            "price": "R$ 750,00",
-            "image": "../../assets/images/products/categories/leds/3200.png",
-            "kitPieces": [
-              {
-                "name": "Kit Numerais de 0 a 9 Cor Quente Pequeno",
-                "height": 30,
-                "length": 50,
+                "length": 60,
+                "voltage": "Bivolt",
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Fria G",
-            "value": "kit_f_p",
-            "price": "R$ 750,00",
+            "label": "Letras Individuais 0 a 9 60cm com Led Frio",
+            "value": "letras_c_l_f",
+            "price": "R$ 295,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Numerais de 0 a 9 Cor Fria Grande",
-                "height": 30,
-                "length": 50,
+                "name": "Letras Individuais 0 a 9 60cm com Led Frio",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Quente G",
-            "value": "kit_q_p",
-            "price": "R$ 750,00",
+            "label": "Números Individuais 0 a 9 90cm com Led Frio",
+            "value": "numeros_c_l_f_g",
+            "price": "R$ 650,00",
             "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Kit Numerais de 0 a 9 Cor Quente Grande",
-                "height": 30,
-                "length": 50,
+                "name": "Números Individuais 0 a 9 90cm com Led Frio",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Fria P",
-            "value": "kit_f_p",
-            "price": "R$ 750,00",
-            "image": "../../assets/images/products/categories/leds/3001.png",
+            "label": "Letras Individuais 0 a 9 90cm com Led Frio",
+            "value": "letras_c_l_f_g",
+            "price": "R$ 650,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
-                "name": "Numerais de 0 a 9 Cor Fria Pequeno",
-                "height": 30,
-                "length": 50,
+                "name": "Letras Individuais 0 a 9 90cm com Led Frio",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 60cm sem Led",
+            "value": "numeros_s_l",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 60cm sem Led",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 60cm sem Led",
+            "value": "letras_s_l",
+            "price": "R$ 250,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 60cm sem Led",
+                "height": 60,
+                "length": 60,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Números Individuais 0 a 9 90cm sem Led",
+            "value": "numeros_s_l_g",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Números Individuais 0 a 9 90cm sem Led",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Letras Individuais 0 a 9 90cm sem Led",
+            "value": "letras_s_l_g",
+            "price": "R$ 450,00",
+            "image": "../../assets/images/products/categories/leds/3200.png",
+            "kitPieces": [
+              {
+                "name": "Letras Individuais 0 a 9 90cm sem Led",
+                "height": 90,
+                "length": 90,
+                "voltage": "Bivolt",
                 "thickness": 4
               }
             ]
