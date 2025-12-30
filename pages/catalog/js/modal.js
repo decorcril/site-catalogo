@@ -645,34 +645,48 @@ const WHATSAPP_NUMBER = '5511978999091';
 
 // FUNÇÃO PARA LIDAR COM CLIQUE NO BOTÃO WHATSAPP
 function handleWhatsAppClick(productId) {
-    const product = products.find(p => p.id === productId);
-    if (!product) return;
+    // Pegar dados do modal aberto
+    const modal = document.getElementById('productModal');
+    if (!modal) {
+        console.error('Modal não encontrado');
+        return;
+    }
+
+    // Pegar título do produto
+    const titleElement = modal.querySelector('.modal-header h3');
+    const productTitle = titleElement ? titleElement.textContent : 'Produto';
+
+    // Pegar código do produto
+    const codeElement = modal.querySelector('.product-code strong');
+    const productCode = codeElement ? codeElement.textContent.replace('Código: ', '').trim() : null;
 
     // Recuperar seleções salvas do modal
     const savedSelections = window.modalSelections?.[productId] || {};
     
     // Montar mensagem
     let message = `Olá! Gostaria de fazer um orçamento do seguinte produto:\n\n`;
-    message += `*${product.title}*\n`;
+    message += `*${productTitle}*\n`;
     
     // Adicionar código do produto se existir
-    if (product.productCode) {
-        message += `Código: ${product.productCode}\n`;
+    if (productCode) {
+        message += `Código: ${productCode}\n`;
     }
     
     message += `\n`;
 
     // Adicionar variações selecionadas
-    if (product.priceVariations && Object.keys(savedSelections).length > 0) {
+    const variationGroups = modal.querySelectorAll('.variation-group');
+    if (variationGroups.length > 0) {
         message += `*Opções selecionadas:*\n`;
         
-        product.priceVariations.forEach(variation => {
-            const selection = savedSelections[variation.key];
-            if (selection) {
-                const option = variation.options.find(opt => opt.value === selection.value);
-                if (option) {
-                    message += `- ${variation.name}: ${option.label}\n`;
-                }
+        variationGroups.forEach(group => {
+            const label = group.querySelector('.variation-label');
+            const activeBadge = group.querySelector('.modal-variation-badge.active');
+            
+            if (label && activeBadge) {
+                const variationName = label.textContent.replace(':', '').trim();
+                const selectedValue = activeBadge.textContent.trim();
+                message += `- ${variationName}: ${selectedValue}\n`;
             }
         });
         
@@ -680,85 +694,52 @@ function handleWhatsAppClick(productId) {
     }
 
     // Adicionar preço
-    const currentPrice = savedSelections[Object.keys(savedSelections)[0]]?.price || product.price;
-    message += `Valor: ${currentPrice}\n`;
-
-    // Adicionar especificações se houver
-    const hasSpecs = product.height || product.width || product.depth || 
-                     product.length || product.diameter || product.thickness ||
-                     product.capacity || product.footHeight || product.voltage;
-    
-    if (hasSpecs) {
-        message += `\n*Especificações:*\n`;
-        
-        // Pegar dados da seleção atual ou do produto original
-        const currentSelection = savedSelections[Object.keys(savedSelections)[0]] || {};
-        
-        if (currentSelection.diameter && currentSelection.thickness && currentSelection.footHeight) {
-            // Mesa redonda com pés
-            message += `*Tampo Redondo:*\n`;
-            message += `- Diâmetro: ${currentSelection.diameter} cm\n`;
-            message += `- Espessura: ${currentSelection.thickness} mm\n`;
-            message += `*Pés:*\n`;
-            message += `- Altura: ${currentSelection.footHeight} cm\n`;
-            message += `- Espessura: ${currentSelection.thickness} mm\n`;
-        } else if (currentSelection.length && currentSelection.width && currentSelection.thickness && currentSelection.footHeight) {
-            // Mesa retangular com pés
-            message += `*Tampo:*\n`;
-            message += `- Comprimento: ${currentSelection.length} cm\n`;
-            message += `- Largura: ${currentSelection.width} cm\n`;
-            message += `- Espessura: ${currentSelection.thickness} mm\n`;
-            message += `*Pés:*\n`;
-            message += `- Altura: ${currentSelection.footHeight} cm\n`;
-            message += `- Espessura: ${currentSelection.thickness} mm\n`;
-        } else {
-            // Especificações gerais
-            const height = currentSelection.height || product.height;
-            const width = currentSelection.width || product.width;
-            const depth = currentSelection.depth || product.depth;
-            const length = currentSelection.length || product.length;
-            const diameter = currentSelection.diameter || product.diameter;
-            const thickness = currentSelection.thickness || product.thickness;
-            const capacity = currentSelection.capacity || product.capacity;
-            const footHeight = currentSelection.footHeight || product.footHeight;
-            const voltage = currentSelection.voltage || product.voltage;
-            
-            if (height && !footHeight) message += `- Altura: ${height} cm\n`;
-            if (diameter) message += `- Diâmetro: ${diameter} cm\n`;
-            if (width) message += `- Largura: ${width} cm\n`;
-            if (depth && depth > 0) message += `- Profundidade: ${depth} cm\n`;
-            if (length) message += `- Comprimento: ${length} cm\n`;
-            if (thickness) message += `- Espessura: ${thickness} mm\n`;
-            if (capacity && capacity > 0) message += `- Capacidade: ${capacity} unidades\n`;
-            if (footHeight) message += `- Altura dos pés: ${footHeight} cm\n`;
-            if (voltage) message += `- Voltagem: ${voltage}\n`;
-        }
+    const priceElement = modal.querySelector('#dynamicPrice, .payment-value, .current-price');
+    if (priceElement) {
+        const currentPrice = priceElement.textContent.trim();
+        message += `Valor: ${currentPrice}\n`;
     }
 
-    // Adicionar peças do kit se houver
-    const currentKitPieces = savedSelections[Object.keys(savedSelections)[0]]?.kitPieces || product.kitPieces;
-    if (currentKitPieces && currentKitPieces.length > 0) {
-        message += `\n*Peças do Kit (${currentKitPieces.length}):*\n`;
-        currentKitPieces.forEach((piece, index) => {
-            message += `\n${index + 1}. ${piece.name}\n`;
-            if (piece.height) message += `   - Altura: ${piece.height} cm\n`;
-            if (piece.width) message += `   - Largura: ${piece.width} cm\n`;
-            if (piece.length) message += `   - Comprimento: ${piece.length} cm\n`;
-            if (piece.diameter) message += `   - Diâmetro: ${piece.diameter} cm\n`;
-            if (piece.depth && piece.depth > 0) message += `   - Profundidade: ${piece.depth} cm\n`;
-            if (piece.thickness) message += `   - Espessura: ${piece.thickness} mm\n`;
-            if (piece.capacity && piece.capacity > 0) message += `   - Capacidade: ${piece.capacity} un\n`;
-            if (piece.footHeight) message += `   - Altura dos pés: ${piece.footHeight} cm\n`;
-            if (piece.voltage) message += `   - Voltagem: ${piece.voltage}\n`;
+    // Adicionar especificações
+    const specsTable = modal.querySelector('.specs-table');
+    if (specsTable) {
+        message += `\n*Especificações:*\n`;
+        
+        const rows = specsTable.querySelectorAll('tr');
+        rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            if (cells.length === 2) {
+                const label = cells[0].textContent.trim();
+                const value = cells[1].textContent.trim();
+                message += `- ${label} ${value}\n`;
+            } else if (cells.length === 1) {
+                // Cabeçalho de seção (ex: "Tampo:", "Pés:")
+                const text = cells[0].textContent.trim();
+                if (text) {
+                    message += `${text}\n`;
+                }
+            }
         });
     }
 
-    // Adicionar especificações customizadas se houver
-    const currentCustomSpecs = savedSelections[Object.keys(savedSelections)[0]]?.customSpecs || product.customSpecs;
-    if (currentCustomSpecs && Array.isArray(currentCustomSpecs) && currentCustomSpecs.length > 0) {
-        message += `\n*Informações adicionais:*\n`;
-        currentCustomSpecs.forEach(spec => {
-            message += `- ${spec.label}: ${spec.value}${spec.unit || ''}\n`;
+    // Adicionar peças do kit se houver
+    const kitPieces = modal.querySelectorAll('.kit-piece');
+    if (kitPieces.length > 0) {
+        message += `\n*Peças do Kit (${kitPieces.length}):*\n`;
+        
+        kitPieces.forEach((piece, index) => {
+            const pieceName = piece.querySelector('.kit-piece-name');
+            if (pieceName) {
+                message += `\n${index + 1}. ${pieceName.textContent.trim()}\n`;
+            }
+            
+            const specs = piece.querySelectorAll('.kit-piece-specs span');
+            specs.forEach(spec => {
+                const text = spec.textContent.trim();
+                if (text) {
+                    message += `   - ${text}\n`;
+                }
+            });
         });
     }
 
@@ -771,14 +752,3 @@ function handleWhatsAppClick(productId) {
     // Abrir WhatsApp em nova aba
     window.open(whatsappURL, '_blank');
 }
-
-// EXEMPLO DE USO:
-// O botão no modal já está configurado para chamar esta função:
-// <button class="btn-whatsapp-buy" data-product-id="${product.id}">
-//     <i class="fab fa-whatsapp"></i> Comprar
-// </button>
-
-// E o evento já está configurado em setupModalEvents():
-// modal.querySelector('.btn-whatsapp-buy').addEventListener('click', function () {
-//     handleWhatsAppClick(parseInt(this.dataset.productId));
-// });
