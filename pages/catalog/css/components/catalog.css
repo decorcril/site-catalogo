@@ -445,51 +445,6 @@
     transform: translateY(-2px);
 }
 
-/* Paginação */
-.catalog-pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-top: 40px;
-}
-
-.pagination-btn {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ddd;
-    background: white;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #555;
-    transition: all 0.2s ease;
-}
-
-.pagination-btn:hover:not(:disabled) {
-    border-color: #ff0084;
-    color: #ff0084;
-}
-
-.pagination-btn.active {
-    background: #ff0084;
-    color: white;
-    border-color: #ff0084;
-}
-
-.pagination-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.pagination-ellipsis {
-    padding: 0 10px;
-    color: #999;
-}
-
 /* Loader para produtos */
 .products-loader {
     text-align: center;

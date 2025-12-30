@@ -645,9 +645,66 @@ const WHATSAPP_NUMBER = '5511943510247';
 
 // FUNÇÃO PARA LIDAR COM CLIQUE NO BOTÃO WHATSAPP
 function handleWhatsAppClick(productId) {
-    // Criar link do WhatsApp SEM mensagem
-    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}`;
+    // Pegar dados do modal aberto
+    const modal = document.getElementById('productModal');
+    if (!modal) {
+        console.error('Modal não encontrado');
+        return;
+    }
+
+    // Pegar título do produto
+    const titleElement = modal.querySelector('.modal-header h3');
+    const productTitle = titleElement ? titleElement.textContent : 'Produto';
+
+    // Criar mensagem APENAS com o nome do produto
+    let message = `Olá! Gostaria de saber mais sobre o produto:\n\n`;
+    message += `*${productTitle}*`;
+
+    // Codificar mensagem para URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // Criar link do WhatsApp
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
     
     // Abrir WhatsApp em nova aba
     window.open(whatsappURL, '_blank');
+}
+
+// Versão ainda mais simples (só nome):
+function handleWhatsAppClick(productId) {
+    const modal = document.getElementById('productModal');
+    if (!modal) return;
+
+    const titleElement = modal.querySelector('.modal-header h3');
+    const productTitle = titleElement ? titleElement.textContent : 'Produto';
+
+    // Mensagem mínima
+    const message = `Olá! Gostaria de saber sobre: ${productTitle}`;
+    const encodedMessage = encodeURIComponent(message);
+    
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
+}
+
+// Versão com fallback (recomendada):
+function handleWhatsAppClick(productId) {
+    const modal = document.getElementById('productModal');
+    if (!modal) {
+        console.error('Modal não encontrado');
+        return;
+    }
+
+    const titleElement = modal.querySelector('.modal-header h3');
+    const productTitle = titleElement ? titleElement.textContent : 'Produto';
+
+    // Mensagem simples e direta
+    const message = `Olá! Tenho interesse no produto: ${productTitle}`;
+    const encodedMessage = encodeURIComponent(message);
+    
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    
+    // Tentar abrir nova aba, com fallback se falhar
+    const newWindow = window.open(whatsappURL, '_blank');
+    if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+        window.location.href = whatsappURL;
+    }
 }
