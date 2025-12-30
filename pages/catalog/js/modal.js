@@ -641,18 +641,12 @@ function updateModalSpecs(modal, selectedOption, originalProduct) {
 }
 
 // CONFIGURAÇÃO DO WHATSAPP
-const WHATSAPP_NUMBER = '5511978999091';
+const WHATSAPP_NUMBER = '5511943510247';
 
 // FUNÇÃO PARA LIDAR COM CLIQUE NO BOTÃO WHATSAPP
 function handleWhatsAppClick(productId) {
-    // Mensagem simples para ativar o bot
-    const message = '1';
-    
-    // Codificar mensagem para URL
-    const encodedMessage = encodeURIComponent(message);
-    
-    // Criar link do WhatsApp
-    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    // Criar link do WhatsApp SEM mensagem
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}`;
     
     // Abrir WhatsApp em nova aba
     window.open(whatsappURL, '_blank');
