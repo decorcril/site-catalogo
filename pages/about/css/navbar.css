@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0faff;
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    background: #2422b1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.nav,
+.nav .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ===== LOGO ===== */
+.nav .logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+}
+
+/* ===== MENU LINKS ===== */
+.nav .nav-links {
+    column-gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.nav .nav-links a {
+    transition: all 0.2s linear;
+    font-weight: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.nav .nav-links a:hover {
+    color: #ff0084;
+}
+
+/* ===== CAIXA DE PESQUISA ===== */
+.nav .search-container {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Ícone de pesquisa mobile */
+.nav .search-icon.mobile {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    padding: 8px;
+    border-radius: 50%;
+    display: none;
+}
+
+.nav .search-icon.mobile:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Caixa de pesquisa desktop */
+.nav .search-box {
+    position: relative;
+    height: 45px;
+    width: 350px;
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+/* Remover o ícone de lupa antigo dentro da caixa */
+.search-box .search-icon {
+    display: none;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0 45px 0 15px; /* Menos padding à direita para botão discreto */
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-box input:focus {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== BOTÃO DE PESQUISA DISCRETO ===== */
+.search-box .search-btn {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #666;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.search-box .search-btn:hover {
+    background: rgba(36, 34, 177, 0.1);
+    color: #2422b1;
+}
+
+.search-box .search-btn:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+/* ===== RESULTADOS DA BUSCA ===== */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 6px;
+    margin-top: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1001;
+    border: 1px solid #eee;
+}
+
+.search-results.active {
+    display: block;
+}
+
+.search-result-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.search-result-item:hover {
+    background: #f5f5f5;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* ===== BOTOES MOBILE ===== */
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+    display: none;
+}
+
+/* ===== MEGA MENU ===== */
+.nav-links .mega-menu-item {
+    position: static;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+    border-top: 1px solid #eee;
+}
+
+.mega-menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.mega-menu-section h4 {
+    color: #2422b1;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 0;
+}
+
+.mega-menu-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.mega-menu-section li {
+    margin-bottom: 8px;
+}
+
+.mega-menu-section a {
+    color: #333 !important;
+    padding: 5px 0;
+    display: block;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    padding-left: 0;
+}
+
+.mega-menu-section a:hover {
+    color: #2422b1 !important;
+    padding-left: 5px;
+}
+
+/* Mostrar mega menu no hover */
+.mega-menu-item:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.mega-menu-toggle i {
+    display: none !important;
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Telas grandes (desktop) - Pesquisa sempre visível */
+@media screen and (min-width: 1025px) {
+    .nav {
+        padding: 15px 200px;
+        justify-content: space-between;
+    }
+    
+    .nav .nav-links {
+        flex: 0 1 auto;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .nav .search-container {
+        flex-shrink: 0;
+    }
+    
+    .nav .search-box {
+        display: block;
+        width: 300px;
+    }
+    
+    .nav .search-icon.mobile {
+        display: none;
+    }
+    
+    /* Remover comportamentos de openSearch em desktop */
+    .nav.openSearch .nav-links a {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* Tablets e dispositivos menores */
+@media screen and (max-width: 1024px) {
+    .nav {
+        padding: 12px 20px;
+    }
+    
+    .nav .search-box {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        margin-top: 10px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    
+    .nav.openSearch .search-box {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .nav .search-icon.mobile {
+        display: block;
+    }
+    
+    .nav .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        max-width: 300px;
+        width: 100%;
+        padding-top: 70px;
+        row-gap: 15px;
+        flex-direction: column;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease;
+        z-index: 100;
+    }
+
+    .nav.openNav .nav-links {
+        left: 0;
+    }
+
+    .nav .navOpenBtn,
+    .nav .navCloseBtn {
+        display: block;
+    }
+
+    .nav .navOpenBtn {
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav .navCloseBtn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #000000;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .nav .nav-links a {
+        color: #112170;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .logo-img {
+        height: 35px;
+        max-width: 100px;
+    }
+
+    .mega-menu {
+        display: none;
+    }
+    
+    .nav.openSearch .nav-links a {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    /* Botão de pesquisa discreto em mobile também */
+    .nav .search-box .search-btn {
+        background: transparent;
+        color: #666;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Tablets pequenos em portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .nav .nav-links {
+        max-width: 320px;
+        padding-top: 90px;
+        row-gap: 20px;
+    }
+
+    .nav .nav-links a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .logo-img {
+        height: 40px;
+        max-width: 120px;
+    }
+
+    .nav {
+        padding: 12px 25px;
+    }
+}
+
+/* Dispositivos móveis pequenos */
+@media screen and (max-width: 767px) {
+    .nav {
+        padding: 8px 15px;
+    }
+    
+    .logo-img {
+        height: 35px;
+        max-width: 100px;
+    }
+    
+    .nav .search-box {
+        left: 15px;
+        right: 15px;
+    }
+}
