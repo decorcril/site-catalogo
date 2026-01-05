@@ -189,7 +189,7 @@
 
 .product-card__original-price {
     font-size: 1rem;
-    color: #999;
+    color: #ff0000;
     text-decoration: line-through;
     display: block;
     margin-bottom: 4px;

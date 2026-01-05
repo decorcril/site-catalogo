@@ -105,7 +105,7 @@
 
 .original-price {
     font-size: 1.4rem;
-    color: #999;
+    color: #ff0000;
     text-decoration: line-through;
     font-weight: 500;
 }
@@ -234,7 +234,7 @@
 
 .original-price {
     font-size: 1.1rem;
-    color: #999;
+    color: #ff0000;
     text-decoration: line-through;
     font-weight: 500;
 }
