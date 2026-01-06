@@ -31,13 +31,55 @@
     <!-- Favicon -->
     <link rel="icon" href="../../assets/images/background/ico.png" type="image/x-icon">
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
+    <nav class="nav" role="navigation" aria-label="Menu principal">
+        <i class="uil uil-bars navOpenBtn" aria-label="Abrir menu"></i>
+        <a href="../../index.html" class="logo">
+            <img src="../../assets/images/background/logo.png"
+                alt="Decorcril - Produtos em Acrílico para Festas e Eventos" class="logo-img">
+        </a>
+
+        <!-- Links de navegação -->
+        <ul class="nav-links">
+            <i class="uil uil-times navCloseBtn" aria-label="Fechar menu"></i>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="../blog/index.html" title="Ideias e Dicas para Decoração">Ideias</a></li>
+            <li><a href="../about/about.html" title="Sobre a Decorcril - Mais de 20 Anos de Experiência">Sobre</a></li>
+            <li><a href="https://wa.me/5511943510247" target="_blank" rel="noopener noreferrer"
+                    title="Fale conosco no WhatsApp">Fale Conosco</a></li>
+        </ul>
+
+        <div class="search-container">
+            <i class="uil uil-search search-icon mobile" id="searchIcon" aria-label="Buscar produtos"></i>
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produtos em acrílico..." id="searchInput"
+                    aria-label="Campo de busca de produtos" />
+                <button type="submit" class="search-btn" aria-label="Executar busca">
+                    <i class="uil uil-search"></i>
+                </button>
+                <div class="search-results" id="searchResults" role="listbox" aria-label="Resultados da busca"></div>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="header">
             <h1>Dúvidas Frequentes</h1>
@@ -148,28 +190,78 @@
         </div>
     </div>
 
-    <script>
-        // Accordion functionality
-        const faqItems = document.querySelectorAll('.faq-item');
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <img src="../../assets/images/background/logo.png" alt="Logo Decorcril" class="footer__logo-img">
+                </div>
+                <div class="footer__social">
+                    <p class="footer__social-text">Siga-nos nas redes sociais</p>
+                    <div class="footer__social-icons">
+                        <a href="https://www.instagram.com/acrilicosdecorcril/" target="_blank"
+                            class="footer__social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/acrilicosdecorcril/" target="_blank"
+                            class="footer__social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/5511943510247" class="footer__social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
+            <div class="footer__middle">
+                <div class="footer__column">
+                    <h4 class="footer__title">Ajuda</h4>
+                    <ul class="footer__list">
+                        <li><a href="../about/about.html" class="footer__link">Sobre nós</a></li>
+                        <li><a href="./pages/faq/faq.html" class="footer__link">Dúvidas Frequentes</a></li>
+                        <li><a href="./pages/faq/faq.html" class="footer__link">Trocas e Devoluções</a></li>
+                        <li><a href="./pages/faq/faq.html" class="footer__link">Formas de Pagamento</a></li>
+                    </ul>
+                </div>
 
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
+                <div class="footer__column">
+                    <h4 class="footer__title">Contato</h4>
+                    <ul class="footer__list">
+                        <li class="footer__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 97899-9091</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@decorcril.com</span>
+                        </li>
+                        <li class="footer__contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Suzano, SP</span>
+                        </li>
+                        <li class="footer__contact-item footer__contact-item--schedule">
+                            <i class="fas fa-clock"></i>
+                            <div class="footer__schedule">
+                                <span>Seg - Qui: 8h às 18h</span>
+                                <span>Sex: 8h às 17h</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                // Fechar todos os itens
-                faqItems.forEach(faq => {
-                    faq.classList.remove('active');
-                });
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">© 2025 Decorcril. Todos os direitos reservados.</p>
+                    <p class="footer__copyright-subtext">Produtos em acrílico para decoração de eventos</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                // Abrir o item clicado se não estava ativo
-                if (!isActive) {
-                    item.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <script src="./js/options.js"></script>
+    <script src="../../js/search.js"></script>
 </body>
 
 </html>
