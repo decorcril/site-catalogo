@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.querySelector('.carousel__btn--prev');
     const nextBtn = document.querySelector('.carousel__btn--next');
     const cards = document.querySelectorAll('.category__card');
-    const indicatorDots = document.querySelectorAll('.indicator-dot');
     
     let currentPosition = 0;
     let cardWidth = 0;
@@ -42,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         for (let i = 0; i < totalSlides; i++) {
             const dot = document.createElement('span');
-            dot.className = 'indicator-dot risk';
+            dot.className = 'indicator-dot risk'; // MUDANÇA AQUI: adicionei 'risk'
             dot.dataset.slide = i;
             if (i === 0) dot.classList.add('active');
             
@@ -96,12 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 nextBtn.style.display = 'flex';
             }
         } else {
-
             prevBtn.style.display = 'none';
             nextBtn.style.display = 'none';
         }
         
-
         updateIndicators();
     }
 
@@ -138,14 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    indicatorDots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            const slideIndex = parseInt(this.dataset.slide);
-            currentPosition = slideIndex;
-            updateCarousel();
-        });
-    });
 
     let startX = 0;
     let isDragging = false;
