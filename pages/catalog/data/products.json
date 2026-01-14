@@ -1952,7 +1952,7 @@
             "value": "kit_completo",
             "price": "R$ 995,00",
             "oldPrice": "R$ 1250,00",
-            "image": "/assets/images/products/categories/cubes/2032.png",
+            "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
               {
                 "name": "Cubo Sextavado Pequeno 4mm",
@@ -2312,7 +2312,7 @@
             "label": "Tampo 8mm",
             "value": "small",
             "price": "R$ 960,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2027.png",
             "width": 75,
             "length": 170,
             "thickness": 8
@@ -2321,7 +2321,7 @@
             "label": "Tampo 10mm",
             "value": "medium",
             "price": "R$ 1.250,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2027.png",
             "width": 75,
             "length": 170,
             "thickness": 10
@@ -2422,7 +2422,7 @@
             "label": "Tampo 160x60 6mm",
             "value": "small",
             "price": "R$ 760,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2040.png",
             "width": 75,
             "length": 170,
             "thickness": 6
@@ -2431,7 +2431,7 @@
             "label": "Tampo 160x60 8mm",
             "value": "medium",
             "price": "R$ 940,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2040.png",
             "width": 75,
             "length": 170,
             "thickness": 8
@@ -2440,7 +2440,7 @@
             "label": "Tampo 160x60 10mm",
             "value": "large",
             "price": "R$ 1.260,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2040.png",
             "width": 75,
             "length": 170,
             "thickness": 10
@@ -2449,7 +2449,7 @@
             "label": "Tampo 180x80 8mm",
             "value": "small_180",
             "price": "R$ 1.180,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2040.png",
             "width": 80,
             "length": 180,
             "thickness": 8
@@ -2458,7 +2458,7 @@
             "label": "Tampo 180x80 10mm",
             "value": "large_180",
             "price": "R$ 1.350,00",
-            "image": "/assets/images/products/categories/top/2035.png",
+            "image": "/assets/images/products/categories/top/2040.png",
             "width": 80,
             "length": 180,
             "thickness": 10
@@ -2570,7 +2570,7 @@
             "label": "6mm",
             "value": "6mm",
             "price": "R$ 995,00",
-            "image": "/assets/images/products/categories/tables/2121-M1.png",
+            "image": "/assets/images/products/categories/tables/2043-6.png",
             "kitPieces": [
               {
                 "name": "Mesa Sinuosa",
