@@ -131,7 +131,7 @@
     "title": "Mesa Floreira",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2055.png",
-    "price": "R$ 1.195,00",
+    "price": "R$ 1.350,00",
     "oldPrice": "",
     "shortDescription": "Linda mesa floreira em acrílico virgem e cristalino. Luxo e transparência para suas festas.",
     "longDescription": "Linda mesa floreira em acrílico virgem e cristalino. Leve luxo e transparência para as suas decorações com esse produto incrivel, idealizado pela decoradora Aline Mendes.",
@@ -149,13 +149,13 @@
   {
     "id": 7,
     "productCode": "2121",
-    "title": "Kit Mesa Oceano - Pés em V",
+    "title": "Kit Mesa Oceano - Pés em V Ondulados",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2121-M1.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 995,00",
-    "shortDescription": "A mesa oceano com pés em V é a queridinha do momento.",
-    "longDescription": "A mesa oceano com pés em V é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
+    "price": "R$ 1.250,00",
+    "shortDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento.",
+    "longDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
     "priceVariations": [
       {
         "name": "Espessura",
@@ -164,7 +164,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.250,00",
             "image": "/assets/images/products/categories/tables/2121-M1.png",
             "kitPieces": [
               {
@@ -188,7 +188,7 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.450,00",
+            "price": "R$ 1.650,00",
             "image": "/assets/images/products/categories/tables/2121-M2.png",
             "kitPieces": [
               {
@@ -225,7 +225,7 @@
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2122.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 995,00",
+    "price": "R$ 1.350,00",
     "shortDescription": "A mesa oceano com pés retangulares é a queridinha do momento.",
     "longDescription": "A mesa oceano com pés retangulares é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
     "priceVariations": [
@@ -236,7 +236,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.350,00",
             "image": "/assets/images/products/categories/tables/2122.png",
             "kitPieces": [
               {
@@ -260,8 +260,79 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.450,00",
+            "price": "R$ 1.750,00",
             "image": "/assets/images/products/categories/tables/2122.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "height": 46,
+                "width": 120,
+                "footHeight": 80,
+                "footThickness": 6,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa baixa",
+                "height": 90,
+                "width": 33,
+                "footHeight": 50,
+                "footThickness": 6,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 9,
+    "productCode": "2123-M2",
+    "title": "Kit Mesa Orgânicas - Pés em V Retos",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2123-M2.png",
+    "price": "R$ 1.250,00",
+    "shortDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião",
+    "longDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião. É a oportunidade perfeita para você levar duas mesas pelo preço de uma.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/tables/2123-M2.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "height": 50,
+                "width": 110,
+                "footHeight": 80,
+                "footThickness": 6,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa baixa",
+                "height": 95,
+                "width": 41,
+                "footHeight": 50,
+                "footThickness": 6,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1.650,00",
+            "image": "/assets/images/products/categories/tables/2123-M2.png",
             "kitPieces": [
               {
                 "name": "Mesa alta",
@@ -292,77 +363,6 @@
   },
   {
     "id": 10,
-    "productCode": "2123-M2",
-    "title": "Kit Mesa Orgânicas - Pés em V Retos",
-    "category": "mesas",
-    "image": "/assets/images/products/categories/tables/2123-M2.png",
-    "price": "R$ 995,00",
-    "shortDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião",
-    "longDescription": "Lindo kit de mesas orgânicas idealizado pela decoradora Paula Gaião. É a oportunidade perfeita para você levar duas mesas pelo preço de uma.",
-    "priceVariations": [
-      {
-        "name": "Espessura",
-        "key": "thickness",
-        "options": [
-          {
-            "label": "6mm",
-            "value": "6mm",
-            "price": "R$ 995,00",
-            "image": "/assets/images/products/categories/tables/2123-M2.png",
-            "kitPieces": [
-              {
-                "name": "Mesa alta",
-                "height": 50,
-                "width": 110,
-                "footHeight": 80,
-                "footThickness": 6,
-                "thickness": 6
-              },
-              {
-                "name": "Mesa baixa",
-                "height": 95,
-                "width": 41,
-                "footHeight": 50,
-                "footThickness": 6,
-                "thickness": 8
-              }
-            ]
-          },
-          {
-            "label": "8mm",
-            "value": "8mm",
-            "price": "R$ 1.450,00",
-            "image": "/assets/images/products/categories/tables/2123-M2.png",
-            "kitPieces": [
-              {
-                "name": "Mesa alta",
-                "height": 46,
-                "width": 120,
-                "footHeight": 80,
-                "footThickness": 6,
-                "thickness": 8
-              },
-              {
-                "name": "Mesa baixa",
-                "height": 90,
-                "width": 33,
-                "footHeight": 50,
-                "footThickness": 6,
-                "thickness": 8
-              }
-            ]
-          }
-        ],
-        "default": "6mm"
-      }
-    ],
-    "rating": 4.5,
-    "reviews": 71,
-    "stock": 2,
-    "badge": "mais vendido"
-  },
-  {
-    "id": 12,
     "productCode": "2125",
     "title": "Mesa Sublime",
     "category": "mesas",
@@ -380,9 +380,9 @@
     "badge": "mais vendido"
   },
   {
-    "id": 13,
+    "id": 12,
     "productCode": "2126",
-    "title": "Mesa Para Bolo",
+    "title": "Mesa Para Bolo - com Pés em X",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2126.png",
     "price": "R$ 650,00",
@@ -390,6 +390,7 @@
     "longDescription": "Essa mesa possui um design incrível! Ela foi confeccionada em acrílico de 8mm com pés em X de 8mm desmontáveis. Basta você colocar um pé dentro do outro que eles se encaixam em forma de X, perfeita para pegue e monte!",
     "diameter": 50,
     "thickness": 8,
+    "footThickness": 6,
     "footHeight": 80,
     "rating": 4.5,
     "reviews": 71,
@@ -397,12 +398,12 @@
     "badge": "mais vendido"
   },
   {
-    "id": 22,
+    "id": 13,
     "productCode": "2050",
     "title": "Mesa Balcão/Báu em Acrílico",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2050.png",
-    "price": "R$ 1.195,00",
+    "price": "R$ 1.250,00",
     "shortDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu.",
     "longDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu. Luxo, Versatilidade e Durabilidade Incomparável.",
     "height": 80,
@@ -721,7 +722,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2024.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 295,00",
+    "price": "R$ 395,00",
     "shortDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade.",
     "longDescription": "Conheça a linha de cubos Luli Reis: um quarteto 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
     "priceVariations": [
@@ -732,7 +733,7 @@
           {
             "label": "Cubo P - 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 295,00",
+            "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -747,7 +748,7 @@
           {
             "label": "Cubo M - 3mm",
             "value": "individual_M_3mm",
-            "price": "R$ 365,00",
+            "price": "R$ 425,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -762,7 +763,7 @@
           {
             "label": "Cubo G - 3mm",
             "value": "individual_G_3mm",
-            "price": "R$ 475,00",
+            "price": "R$ 575,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -792,7 +793,7 @@
           {
             "label": "Cubo P - 4mm",
             "value": "individual_P_4mm",
-            "price": "R$ 364,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -807,7 +808,7 @@
           {
             "label": "Cubo M - 4mm",
             "value": "individual_M_4mm",
-            "price": "R$ 430,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -822,7 +823,7 @@
           {
             "label": "Cubo G - 4mm",
             "value": "individual_G_4mm",
-            "price": "R$ 525,00",
+            "price": "R$ 650,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -837,7 +838,7 @@
           {
             "label": "Cubo GG - 4mm",
             "value": "individual_GG_4mm",
-            "price": "R$ 675,00",
+            "price": "R$ 720,00",
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
@@ -939,7 +940,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2023.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 345,00",
+    "price": "R$ 395,00",
     "shortDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade.",
     "longDescription": "Conheça a linha de cubos Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
     "priceVariations": [
@@ -950,7 +951,7 @@
           {
             "label": "Cubo P - 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 345,00",
+            "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -965,7 +966,7 @@
           {
             "label": "Cubo M - 3mm",
             "value": "individual_M_3mm",
-            "price": "R$ 425,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -980,7 +981,7 @@
           {
             "label": "Cubo G - 3mm",
             "value": "individual_G_3mm",
-            "price": "R$ 575,00",
+            "price": "R$ 650,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1040,7 +1041,7 @@
           {
             "label": "Kit Completo 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 995,00",
+            "price": "R$ 850,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
@@ -1068,8 +1069,66 @@
             ]
           },
           {
-            "label": "Kit Completo Colorido 3mm",
-            "value": "kit_completo_colorido_3mm",
+            "label": "Kit Completo Azul Bebê 3mm",
+            "value": "kit_completo_azul_3mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Rosa Bebê 3mm",
+            "value": "kit_completo_rosa_3mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cubo Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Preto 3mm",
+            "value": "kit_completo_preto_3mm",
             "price": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
@@ -1099,7 +1158,7 @@
           {
             "label": "Kit Completo 4mm",
             "value": "kit_completo_4mm",
-            "price": "R$ 1.095,00",
+            "price": "R$ 950,00",
             "oldPrice": "R$ 1.450,00",
             "badge": "desconto",
             "image": "/assets/images/products/categories/cubes/2023.png",
@@ -1128,9 +1187,70 @@
             ]
           },
           {
-            "label": "Kit Completo Colorido 4mm",
-            "value": "kit_completo__colorido_4mm",
+            "label": "Kit Completo Azul Bebê 4mm",
+            "value": "kit_completo_azul_4mm",
             "price": "R$ 1.350,00",
+            "badge": "desconto",
+            "image": "/assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Rosa Bebê 4mm",
+            "value": "kit_completo_rosa_4mm",
+            "price": "R$ 1.350,00",
+            "badge": "desconto",
+            "image": "/assets/images/products/categories/cubes/2023.png",
+            "kitPieces": [
+              {
+                "name": "Cubo Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Cubo Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Preto 4mm",
+            "value": "kit_completo_preto_4mm",
+            "price": "R$ 1.350,00",
+            "badge": "desconto",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1172,7 +1292,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2025.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 345,00",
+    "price": "R$ 395,00",
     "shortDescription": "Conheça a linha de Sextavados Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade.",
     "longDescription": "Conheça a linha de Sextavados Luli Reis: um trio 100% em acrílico cristal que oferece elegância e alta durabilidade. Ideal para ser usado como expositor premium, seu design transparente permite que você crie cenários encantadores ao colocar objetos, doces ou decorações dentro. É a solução perfeita para vitrines, festas e ambientes que buscam um toque de sofisticação com a qualidade e o brilho do acrílico virgem.",
     "priceVariations": [
@@ -1183,7 +1303,7 @@
           {
             "label": "Sextavado P - 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 345,00",
+            "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
               {
@@ -1228,7 +1348,7 @@
           {
             "label": "Sextavado P - 4mm",
             "value": "individual_P_4mm",
-            "price": "R$ 395,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
               {
@@ -1243,7 +1363,7 @@
           {
             "label": "Sextavado M - 4mm",
             "value": "individual_M_4mm",
-            "price": "R$ 470,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
               {
@@ -1273,7 +1393,7 @@
           {
             "label": "Kit Completo 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.100,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
@@ -1301,8 +1421,66 @@
             ]
           },
           {
-            "label": "Kit Completo Colorido 3mm",
-            "value": "kit_completo_colorido_3mm",
+            "label": "Kit Completo Base Azul Bebê 3mm",
+            "value": "kit_completo_azul_3mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Base Rosa Bebê 3mm",
+            "value": "kit_completo_rosa_3mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Médio - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Sextavado Grande - 3mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Base Preta 3mm",
+            "value": "kit_completo_preta_3mm",
             "price": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
@@ -1332,7 +1510,7 @@
           {
             "label": "Kit Completo 4mm",
             "value": "kit_completo_4mm",
-            "price": "R$ 1.095,00",
+            "price": "R$ 1.250,00",
             "oldPrice": "R$ 1.450,00",
             "badge": "desconto",
             "image": "/assets/images/products/categories/cubes/2025.png",
@@ -1361,8 +1539,66 @@
             ]
           },
           {
-            "label": "Kit Completo Colorido 4mm",
-            "value": "kit_completo__colorido_4mm",
+            "label": "Kit Completo Base Azul Bebê 4mm",
+            "value": "kit_completo_azul_4mm",
+            "price": "R$ 1.350,00",
+            "image": "/assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Base Rosa Bebê 4mm",
+            "value": "kit_completo_rosa_4mm",
+            "price": "R$ 1.350,00",
+            "image": "/assets/images/products/categories/cubes/2025.png",
+            "kitPieces": [
+              {
+                "name": "Sextavado Pequeno - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Médio - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              },
+              {
+                "name": "Sextavado Grande - 4mm",
+                "width": 31,
+                "depth": 31,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Kit Completo Base Preta 4mm",
+            "value": "kit_completo_rosa_4mm",
             "price": "R$ 1.350,00",
             "image": "/assets/images/products/categories/cubes/2025.png",
             "kitPieces": [
@@ -1400,11 +1636,11 @@
   },
   {
     "id": 23,
-    "productCode": "2026",
+    "productCode": "2022",
     "title": "Mesa Balcão Luli reis",
-    "category": "cubos",
+    "category": "mesas",
     "image": "/assets/images/products/categories/cubes/2026.png",
-    "price": "R$ 1.150,00",
+    "price": "R$ 1.250,00",
     "shortDescription": "A mesa Bancão Luli Reis é uma grande novidade, ela segue o mesm conceito dos cubos Luli Reis.",
     "longDescription": "A mesa Bancão Luli Reis é uma grande novidade, ela segue o mesm conceito dos cubos Luli Reis, você pode  colocar itens dentro e usar como vitrine. A parte transparente é removível e fica fica por cima da parte branca.",
     "height": 80,
@@ -1418,7 +1654,7 @@
   },
   {
     "id": 24,
-    "productCode": "2024",
+    "productCode": "2026",
     "title": "Trio de Cilindros Transparentes",
     "category": "cilindros",
     "image": "/assets/images/products/categories/cylinder/2026.png",
@@ -1476,9 +1712,7 @@
           {
             "label": "Trio Tradicional",
             "value": "kit_completo_3mm",
-            "price": "R$ 795,00",
-            "paymentType": "No Pix",
-            "installmentPrice": "R$ 850,00",
+            "price": "R$ 850,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -1532,7 +1766,7 @@
           {
             "label": "Cilindro Tradicional Grande",
             "value": "individual_G",
-            "price": "R$ 410,00",
+            "price": "R$ 480,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -1546,9 +1780,7 @@
           {
             "label": "Trio Mais Largo",
             "value": "kit_completo",
-            "price": "R$ 895,00",
-            "paymentType": "No Pix",
-            "installmentPrice": "R$ 950,00",
+            "price": "R$ 995,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -1587,7 +1819,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2032.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 345,00",
+    "price": "R$ 395,00",
     "shortDescription": "Conheça a linha de cubos transparentes em trio 100% acrílico cristalino virgem. Temos nas versões tradicionais (todas as partes coladas) e na versão onde ele é totalmente dobrado.",
     "longDescription": "Conheça a linha de cubos transparentes em trio 100% acrílico cristalino virgem. Temos nas versões tradicionais (todas as partes coladas) e na versão onde ele é totalmente dobrado, possuindo somente um encontro.",
     "priceVariations": [
@@ -1598,7 +1830,7 @@
           {
             "label": "Cubo Sextavado pequeno 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 345,00",
+            "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
               {
@@ -1628,7 +1860,7 @@
           {
             "label": "Cubo Grande Tradicional 3mm",
             "value": "individual_G_3mm",
-            "price": "R$ 410,00",
+            "price": "R$ 575,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
               {
@@ -1643,7 +1875,7 @@
           {
             "label": "Trio Cubos Tradicional 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 795,00",
+            "price": "R$ 1.100,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
@@ -1673,7 +1905,7 @@
           {
             "label": "Cubo Pequeno Tradicional 4mm",
             "value": "individual_P",
-            "price": "R$ 395,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
               {
@@ -1688,7 +1920,7 @@
           {
             "label": "Cubo Tradicional Médio 4mm",
             "value": "individual_M",
-            "price": "R$ 470,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
               {
@@ -1718,7 +1950,7 @@
           {
             "label": "Trio Cubos Tradicional 4mm",
             "value": "kit_completo",
-            "price": "R$ 1.095,00",
+            "price": "R$ 1.250,00",
             "oldPrice": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
@@ -1819,7 +2051,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2033.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 345,00",
+    "price": "R$ 395,00",
     "shortDescription": "Destaque seu espaço com o trio de sextavados transparentes 100% acrílico cristalino virgem. Nossa versão tradicional, com todas as partes cuidadosamente coladas, garante um acabamento impecável e máxima resistência.",
     "longDescription": "Destaque seu espaço com o trio de sextavados transparentes 100% acrílico cristalino virgem. Nossa versão tradicional, com todas as partes cuidadosamente coladas, garante um acabamento impecável e máxima resistência. Estas peças agregam um toque de modernidade e sofisticação, ideais para elevar a decoração de eventos ou a exposição de produtos com elegância atemporal.",
     "priceVariations": [
@@ -1830,7 +2062,7 @@
           {
             "label": "Cubo Sextavado Pequeno 3mm",
             "value": "individual_P_3mm",
-            "price": "R$ 345,00",
+            "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
               {
@@ -1875,7 +2107,7 @@
           {
             "label": "Trio Cubos Sextavados 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.100,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
@@ -1905,7 +2137,7 @@
           {
             "label": "Cubo Sextavado pequeno 4mm",
             "value": "individual_P",
-            "price": "R$ 395,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
               {
@@ -1920,7 +2152,7 @@
           {
             "label": "Cubo Sextavado Médio 4mm",
             "value": "individual_M",
-            "price": "R$ 470,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
               {
@@ -1950,8 +2182,8 @@
           {
             "label": "Trio Cubos Sextavado 4mm",
             "value": "kit_completo",
-            "price": "R$ 995,00",
-            "oldPrice": "R$ 1250,00",
+            "price": "R$ 1.250,00",
+            "oldPrice": "R$ 1450,00",
             "image": "/assets/images/products/categories/cubes/2033.png",
             "kitPieces": [
               {
@@ -2065,7 +2297,7 @@
   {
     "id": 28,
     "productCode": "2031",
-    "title": "Trio de Boleiras Quadradas",
+    "title": "Trio de Boleiras Oitavadas",
     "category": "boleiras",
     "image": "/assets/images/products/categories/cake-stand/2031.png",
     "pricePrefix": "A partir de",
@@ -2078,7 +2310,7 @@
         "key": "purchase_option",
         "options": [
           {
-            "label": "Trio de Boleiras Quadradas Pequeno",
+            "label": "Trio de Boleiras Oitavadas Pequeno",
             "value": "kit_completo_3mm",
             "price": "R$ 320,00",
             "image": "/assets/images/products/categories/cake-stand/2031.png",
@@ -2104,7 +2336,7 @@
             ]
           },
           {
-            "label": "Trio de Boleiras Quadradas Grande",
+            "label": "Trio de Boleiras Oitavadas Grande",
             "value": "kit_completo",
             "price": "R$ 420,00",
             "image": "/assets/images/products/categories/cake-stand/2031.png",
@@ -2154,7 +2386,7 @@
         "key": "purchase_option",
         "options": [
           {
-            "label": "Trio de Boleiras Quadradas Pequeno",
+            "label": "Trio de Boleiras Pequeno",
             "value": "kit_completo_3mm",
             "price": "R$ 320,00",
             "image": "/assets/images/products/categories/cake-stand/2320.png",
@@ -2180,7 +2412,7 @@
             ]
           },
           {
-            "label": "Trio de Boleiras Quadradas Grande",
+            "label": "Trio de Boleiras Grande",
             "value": "kit_completo",
             "price": "R$ 420,00",
             "image": "/assets/images/products/categories/cake-stand/2320.png",
@@ -2221,7 +2453,7 @@
     "category": "colunas",
     "image": "/assets/images/products/categories/column/2028.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 320,00",
+    "price": "R$ 350,00",
     "badge": "127 Volts",
     "shortDescription": "As colunas borbulhantes possuem spot para iluminação interna e uma bomba de água para criar o efeito de borbulhamento. Oferecemos em duas versões: com a base branca e com a base transparente.",
     "longDescription": "As colunas borbulhantes possuem spot para iluminação interna e uma bomba de água para criar o efeito de borbulhamento. Oferecemos em duas versões: com a base branca e com a base transparente. São perfeitas para vários tipos de decoração, principalmente para o corredor de noiva.",
@@ -2233,7 +2465,7 @@
           {
             "label": "Base Cristal",
             "value": "kit_completo_3mm",
-            "price": "R$ 320,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/column/2028.png",
             "kitPieces": [
               {
@@ -2383,7 +2615,7 @@
           {
             "label": "Tampo 90x90 8mm",
             "value": "medium_90",
-            "price": "R$ 580,00",
+            "price": "R$ 520,00",
             "image": "/assets/images/products/categories/top/2035.png",
             "diameter": 90,
             "thickness": 8
@@ -2406,7 +2638,7 @@
   {
     "id": 34,
     "productCode": "2040",
-    "title": "Tampo Mesa Sinuosa em 2 Tamanhos",
+    "title": "Tampo para Mesa Sinuosa em 2 Tamanhos",
     "category": "tampos",
     "image": "/assets/images/products/categories/top/2040.png",
     "pricePrefix": "A partir de",
@@ -2473,7 +2705,7 @@
   {
     "id": 35,
     "productCode": "2300",
-    "title": "Tampo Orgânico Modelo 1",
+    "title": "Tampo Oval Modelo 1",
     "category": "tampos",
     "image": "/assets/images/products/categories/top/2300.png",
     "pricePrefix": "A partir de",
@@ -2513,7 +2745,7 @@
   {
     "id": 36,
     "productCode": "2320",
-    "title": "Tampo Orgânico Modelo 2",
+    "title": "Tampo Oval Modelo 2",
     "category": "tampos",
     "image": "/assets/images/products/categories/top/2320.png",
     "pricePrefix": "A partir de",
@@ -2804,7 +3036,7 @@
     "category": "bases-mesa",
     "image": "/assets/images/products/categories/base/2034.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 445,00",
+    "price": "R$ 550,00",
     "shortDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
     "longDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
     "priceVariations": [
@@ -2815,7 +3047,7 @@
           {
             "label": "Base 6mm",
             "value": "6mm",
-            "price": "R$ 445,00",
+            "price": "R$ 550,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
@@ -2832,7 +3064,7 @@
           {
             "label": "Base 8mm",
             "value": "8mm",
-            "price": "R$ 545,00",
+            "price": "R$ 640,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
@@ -2849,7 +3081,7 @@
           {
             "label": "Base 10mm",
             "value": "10mm",
-            "price": "R$ 645,00",
+            "price": "R$ 720,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
@@ -5851,5 +6083,133 @@
     "thickness": 6,
     "rating": 4.0,
     "reviews": 30
+  },
+  {
+    "id": 98,
+    "productCode": "2123",
+    "title": "Kit Mesas Ogânicas - Pés em V Ondulados",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2123-M1.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 1.250,00",
+    "shortDescription": "A mesa Ogânica com pés em V Ondulados é a queridinha do momento.",
+    "longDescription": "A mesa Ogânica com pés em V Ondulados é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 1.250,00",
+            "image": "/assets/images/products/categories/tables/2123-M1.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "height": 110,
+                "width": 50,
+                "footHeight": 80,
+                "footThickness": 6,
+                "thickness": 6
+              },
+              {
+                "name": "Mesa baixa",
+                "height": 41,
+                "width": 95,
+                "footHeight": 50,
+                "footThickness": 6,
+                "thickness": 6
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1.650,00",
+            "image": "/assets/images/products/categories/tables/2123-M2.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "height": 110,
+                "width": 50,
+                "footHeight": 80,
+                "footThickness": 6,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa baixa",
+                "height": 95,
+                "width": 41,
+                "footHeight": 50,
+                "footThickness": 6,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "mais vendido"
+  },
+  {
+    "id": 99,
+    "productCode": "2124",
+    "title": "Mesa Retangular - Pés em X",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2124.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 850,00",
+    "shortDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento.",
+    "longDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "/assets/images/products/categories/tables/2124.png",
+            "kitPieces": [
+              {
+                "name": "Mesa Pequena",
+                "height": 100,
+                "width": 50,
+                "footHeight": 80,
+                "footThickness": 8,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "8mm",
+            "value": "8mm",
+            "price": "R$ 1.650,00",
+            "image": "/assets/images/products/categories/tables/2124.png",
+            "kitPieces": [
+              {
+                "name": "Mesa alta",
+                "height": 160,
+                "width": 58,
+                "footHeight": 80,
+                "footThickness": 8,
+                "thickness": 8
+              }
+            ]
+          }
+        ],
+        "default": "8mm"
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "stock": 2,
+    "badge": "mais vendido"
   }
 ]
