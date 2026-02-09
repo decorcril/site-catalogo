@@ -368,15 +368,36 @@
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2125.png",
     "price": "R$ 1.450,00",
-    "shortDescription": "Linda mesa floreira em acrílico virgem e cristalino. Luxo e transparência para suas festas.",
-    "longDescription": "Linda mesa floreira em acrílico virgem e cristalino. Leve luxo e transparência para as suas decorações com esse produto incrivel, idealizado pela decoradora Aline Mendes.",
-    "length": 120,
-    "width": 50,
-    "thickness": 10,
-    "footHeight": 70,
+    "shortDescription": "Mesa idealizada pela  decoradora Eli da Sublime  Festas. Mesa versátil, capaz de combinar com várias decorações",
+    "longDescription": "Mesa idealizada pela  decoradora Eli da Sublime  Festas. Mesa versátil, capaz de combinar com várias decorações",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 1.450,00",
+            "image": "/assets/images/products/categories/tables/2125.png",
+            "kitPieces": [
+              {
+                "name": "",
+                "height": 120,
+                "width": 50,
+                "footHeight": 70,
+                "footThickness": 6,
+                "thickness": 10
+              }
+            ]
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 4,
+    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -390,7 +411,7 @@
     "longDescription": "Essa mesa possui um design incrível! Ela foi confeccionada em acrílico de 8mm com pés em X de 8mm desmontáveis. Basta você colocar um pé dentro do outro que eles se encaixam em forma de X, perfeita para pegue e monte!",
     "diameter": 50,
     "thickness": 8,
-    "footThickness": 6,
+    "footThickness": 8,
     "footHeight": 80,
     "rating": 4.5,
     "reviews": 71,
@@ -442,8 +463,8 @@
     "category": "suportes-utilidade",
     "image": "/assets/images/products/categories/utility-rack/9060-M1-P.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 120,00",
-    "oldPrice": "R$ 130,00",
+    "price": "R$ 50,00",
+    "oldPrice": "R$ 120,00",
     "shortDescription": "Lindo suporte para Donuts em acrílico.",
     "longDescription": "Transforme a apresentação dos seus doces com este suporte em acrílico premium! Com um design moderno e cristalino, ele foi feito para destacar seus donuts em festas e eventos, elevando o nível da sua decoração. É a solução perfeita para buffets, cafeterias e eventos especiais que buscam sofisticação e praticidade.",
     "priceVariations": [
@@ -454,20 +475,18 @@
           {
             "label": "Pequeno",
             "value": "small",
-            "price": "R$ 120,00",
+            "price": "R$ 50,00",
             "image": "/assets/images/products/categories/utility-rack/9060-M1-P.png",
             "height": 24,
-            "width": 17,
-            "capacity": 6
+            "width": 17
           },
           {
             "label": "Grande",
             "value": "large",
-            "price": "R$ 440,00",
+            "price": "R$ 120,00",
             "image": "/assets/images/products/categories/utility-rack/9060-M1-G.png",
-            "height": 34,
-            "width": 25,
-            "capacity": 12
+            "height": 47,
+            "width": 34
           }
         ],
         "default": "small"
@@ -491,7 +510,6 @@
     "image": "/assets/images/products/categories/utility-rack/9060-M3-P.png",
     "pricePrefix": "A partir de",
     "price": "R$ 120,00",
-    "oldPrice": "R$ 140,00",
     "shortDescription": "Lindo suporte circular para Donuts em acrílico.",
     "longDescription": "Transforme a apresentação dos seus doces com este suporte circular em acrílico premium! Com um design moderno e cristalino, ele foi feito para destacar seus donuts em festas e eventos, criando um visual elegante e convidativo. É a solução perfeita para buffets, cafeterias e eventos especiais que buscam sofisticação e praticidade.",
     "priceVariations": [
@@ -513,22 +531,14 @@
             "value": "large",
             "price": "R$ 450,00",
             "image": "/assets/images/products/categories/utility-rack/9060-M3-G.png",
-            "height": 60,
-            "width": 45,
-            "capacity": 47
+            "height": 70,
+            "width": 64,
+            "capacity": 44
           }
         ],
         "default": "small"
       }
     ],
-    "height": 47,
-    "width": 34,
-    "depth": 0,
-    "thickness": 6,
-    "capacity": 14,
-    "rating": 4.5,
-    "reviews": 71,
-    "stock": 4,
     "badge": "Novidade"
   },
   {
@@ -538,7 +548,7 @@
     "category": "suportes-utilidade",
     "image": "/assets/images/products/categories/utility-rack/9065-C.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 55,00",
+    "price": "R$ 65,00",
     "oldPrice": "R$ 70,00",
     "shortDescription": "Lindo expositor formato bota para utilidades. Perfeito para expor contetes ou doces.",
     "longDescription": "Adicione um toque de charme e criatividade à sua decoração com este lindo expositor em formato de bota! Uma peça versátil, perfeita para organizar utilidades, pequenos objetos ou como um item decorativo único. Dica de uso: Para transformá-lo em um encantador pote para confetes, doces ou lembrancinhas, basta solicitar a inclusão da tampa opcional de abre e fecha no seu pedido.",
@@ -557,7 +567,7 @@
           {
             "label": "Sem Tampa",
             "value": "without_lid",
-            "price": "R$ 55,00",
+            "price": "R$ 65,00",
             "oldPrice": "R$ 60,00",
             "image": "/assets/images/products/categories/utility-rack/9065-S.png"
           }
@@ -2709,7 +2719,7 @@
     "category": "tampos",
     "image": "/assets/images/products/categories/top/2300.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 1.190,00",
+    "price": "R$ 1.180,00",
     "shortDescription": "Apresentamos o Tampo Oval, o mais novo lançamento da Decorcril, confeccionado 100% com acrílico virgem.",
     "longDescription": "Apresentamos o Tampo Oval, o mais novo lançamento da Decorcril, confeccionado 100% com acrílico virgem. Seu design se destaca pelas belas curvas suaves e arredondadas em suas laterais, justificando seu nome.",
     "priceVariations": [
@@ -2720,7 +2730,7 @@
           {
             "label": "Tampo 8mm",
             "value": "small",
-            "price": "R$ 1.190,00",
+            "price": "R$ 1.180,00",
             "image": "/assets/images/products/categories/top/2300.png",
             "width": 80,
             "length": 180,
@@ -2834,7 +2844,7 @@
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/6000.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 850,00",
+    "price": "R$ 995,00",
     "shortDescription": "Nosso Trio de Mesas Margaridas é a solução ideal para o Pegue e Monte.",
     "longDescription": "Nosso Trio de Mesas Margaridas é a solução ideal para o Pegue e Monte. Desmontáveis e fáceis de manusear, permitem que você monte com estilo e desmonte com facilidade. Um produto exclusivo assinado pela renomada decoradora Cris Reis, conhecida como a Rainha do Pegue e Monte, disponível nas versões de 6mm e 8mm para atender às suas necessidades.",
     "priceVariations": [
@@ -2845,7 +2855,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 850,00",
+            "price": "R$ 995,00",
             "image": "/assets/images/products/categories/tables/6000.png",
             "kitPieces": [
               {
@@ -2871,7 +2881,7 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.450,00",
+            "price": "R$ 1.550,00",
             "image": "/assets/images/products/categories/tables/6000.png",
             "kitPieces": [
               {
@@ -2910,7 +2920,7 @@
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2209.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 850,00",
+    "price": "R$ 995,00",
     "shortDescription": "Nosso Trio de Mesas desmontáveis é perfeito para o Pegue e Monte. Monte com estilo e desmonte com facilidade.",
     "longDescription": "Nosso Trio de Mesas desmontáveis é perfeito para o Pegue e Monte. Monte com estilo e desmonte com facilidade. É um produto assinado pela decoradora Cris Reis, conhecida como a Rainha do Pegue e Monte.",
     "priceVariations": [
@@ -2921,7 +2931,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 850,00",
+            "price": "R$ 995,00",
             "image": "/assets/images/products/categories/tables/2209.png",
             "kitPieces": [
               {
@@ -2947,7 +2957,7 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.450,00",
+            "price": "R$ 1.550,00",
             "image": "/assets/images/products/categories/tables/2209.png",
             "kitPieces": [
               {
@@ -2985,7 +2995,7 @@
     "title": "Mesa Borboleta Desmontável M1",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/9045.png",
-    "price": "R$ 650,00",
+    "price": "R$ 950,00",
     "shortDescription": "Essa mesa borboleta é perfeita para apresentar seu o bolo da festa. É desmontável e extremamente fácil de transportar.",
     "longDescription": "Essa mesa borboleta é perfeita para apresentar seu o bolo da festa. É desmontável e extremamente fácil de transportar, otimizando o espaço no seu veículo. Modelo idealizado pela decoradora Tábita Cintra, uma influenciadora e mentora de decoradores.",
     "kitPieces": [
@@ -3010,7 +3020,7 @@
     "title": "Mesa Borboleta Desmontável M2",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/9045-M2.png",
-    "price": "R$ 650,00",
+    "price": "R$ 1.250,00",
     "shortDescription": "Ideal para destacar seu bolo e doces, esta mesa borboleta combina design inovador com funcionalidade.",
     "longDescription": "Ideal para destacar seu bolo e doces, esta mesa borboleta combina design inovador com funcionalidade. Desmontável e leve, ela oferece a máxima praticidade para o transporte, ocupando o mínimo de espaço no seu veículo. Este é um produto original, assinado e aprovado pela aclamada decoradora Andreia Sato, uma verdadeira referência e mentora no mercado de decoração de festas.",
     "kitPieces": [
@@ -3109,7 +3119,7 @@
     "category": "carrinhos",
     "image": "/assets/images/products/categories/cart/2400.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 995,00",
+    "price": "R$ 1.250,00",
     "shortDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa.",
     "longDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. O produto é assinado pela Marianna Rattes, apresentadora e decoradora, que o usa e recomenda como 'simplesmente PERFEITO para diversas ocasiões'. Ideal para montagem do cantinho do Bar, chá, café ou para servir comes e bebes na sua festa, ou almoço em hotéis.",
     "priceVariations": [
@@ -3120,7 +3130,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cart/2400.png",
             "length": 80,
             "height": 83,
@@ -3130,7 +3140,7 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.095,00",
+            "price": "R$ 1.650,00",
             "image": "/assets/images/products/categories/cart/2400.png",
             "length": 80,
             "height": 83,
@@ -3140,7 +3150,7 @@
           {
             "label": "Tamanho Baby",
             "value": "baby",
-            "price": "R$ 750,00",
+            "price": "R$ 895,00",
             "image": "/assets/images/products/categories/cart/2400.png",
             "length": 60,
             "height": 70,
@@ -3161,7 +3171,7 @@
     "category": "carrinhos",
     "image": "/assets/images/products/categories/cart/2400-C.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 995,00",
+    "price": "R$ 1.350,00",
     "shortDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. Inclui uma prática cuba para gelo, mantendo suas bebidas geladas por mais tempo.",
     "longDescription": "Carrinho de acrílico com rodinhas, moderno e clean, com prateleiras transparentes para facilitar mobilidade por toda a casa e área externa. Inclui uma prática cuba para gelo, mantendo suas bebidas geladas por mais tempo. Simplesmente PERFEITO para diversas ocasiões. Ideal para montagem do cantinho do Bar, chá, café ou para servir comes e bebes na sua festa, ou almoço em hotéis.",
     "priceVariations": [
@@ -3172,7 +3182,7 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 995,00",
+            "price": "R$ 1.350,00",
             "image": "/assets/images/products/categories/cart/2400-C.png",
             "kitPieces": [
               {
@@ -3194,7 +3204,7 @@
           {
             "label": "8mm",
             "value": "8mm",
-            "price": "R$ 1.095,00",
+            "price": "R$ 1.750,00",
             "image": "/assets/images/products/categories/cart/2400-C.png",
             "kitPieces": [
               {
@@ -3216,7 +3226,7 @@
           {
             "label": "Tamanho Baby",
             "value": "baby",
-            "price": "R$ 750,00",
+            "price": "R$ 895,00",
             "image": "/assets/images/products/categories/cart/2400-C.png",
             "kitPieces": [
               {
@@ -3375,7 +3385,7 @@
     "category": "placas",
     "image": "/assets/images/products/categories/board/2260.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 260,00",
+    "price": "R$ 350,00",
     "shortDescription": "Esta placa de acrílico transparente foi projetada para ser exibida em cavaletes. Seu design versátil funciona como um elegante 'envelope', permitindo que você insira facilmente qualquer papel ou arte personalizada em seu interior. É a solução perfeita para sinalização sofisticada e um toque especial na sua festa ou evento!",
     "longDescription": "Esta placa de acrílico transparente foi projetada para ser exibida em cavaletes. Seu design versátil funciona como um elegante 'envelope', permitindo que você insira facilmente qualquer papel ou arte personalizada em seu interior. É a solução perfeita para sinalização sofisticada e um toque especial na sua festa ou evento!",
     "priceVariations": [
@@ -3386,7 +3396,7 @@
           {
             "label": "60cm de Largura",
             "value": "60",
-            "price": "R$ 260,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/board/2260.png",
             "height": 60,
             "width": 55,
@@ -3395,7 +3405,7 @@
           {
             "label": "70cm de Largura",
             "value": "70",
-            "price": "R$ 350,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/board/2260.png",
             "height": 70,
             "width": 55,
@@ -3415,7 +3425,7 @@
     "category": "placas",
     "image": "/assets/images/products/categories/board/2270.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 250,00",
+    "price": "R$ 450,00",
     "shortDescription": "Placa de acrílico transparente, desenvolvida para uso sobre cavalete. Confeccionada especialmente para chá revelação, é a peça perfeita para tornar esse momento único. Temos os modelos Ursinhos e Corações em acabamento branco.",
     "longDescription": "Placa de acrílico transparente, desenvolvida para uso sobre cavalete. Confeccionada especialmente para chá revelação, é a peça perfeita para tornar esse momento único. Temos os modelos Ursinhos e Corações em acabamento branco. Escolha o seu modelo preferido e celebre com estilo!",
     "priceVariations": [
@@ -3426,7 +3436,7 @@
           {
             "label": "Modelo Coração",
             "value": "60",
-            "price": "R$ 250,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/board/2270.png",
             "height": 60,
             "width": 50,
@@ -3435,7 +3445,7 @@
           {
             "label": "Modelo Ursinho",
             "value": "70",
-            "price": "R$ 350,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/board/2270.png",
             "height": 60,
             "width": 50,
@@ -3556,9 +3566,8 @@
           {
             "label": "Kit Completo",
             "value": "kit_completo_3mm",
-            "price": "R$ 1.350,00",
-            "oldPrice": "R$ 1.400,00",
-            "image": "/assets/images/products/categories/cubes/2023.png",
+            "price": "R$ 1.450,00",
+            "image": "/assets/images/products/categories/cubes/2800-3.png",
             "kitPieces": [
               {
                 "name": "Cubo Pequeno",
@@ -3679,8 +3688,7 @@
           {
             "label": "Kit Completo",
             "value": "kit_completo_3mm",
-            "price": "R$ 1.350,00",
-            "oldPrice": "R$ 1.400,00",
+            "price": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2800-3-D-T.png",
             "kitPieces": [
               {
@@ -3835,7 +3843,7 @@
           {
             "label": "Kit Completo 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 1.100,00",
+            "price": "R$ 1.200,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2800-4.png",
             "kitPieces": [
@@ -3865,7 +3873,7 @@
           {
             "label": "Kit Completo 4mm",
             "value": "kit_completo_4mm",
-            "price": "R$ 1.250,00",
+            "price": "R$ 1.350,00",
             "oldPrice": "R$ 1.450,00",
             "badge": "desconto",
             "image": "/assets/images/products/categories/cubes/2800-4.png",
@@ -3909,7 +3917,7 @@
     "category": "cubos",
     "image": "/assets/images/products/categories/cubes/2199-MB-1.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 250,00",
+    "price": "R$ 350,00",
     "shortDescription": "Descubra nossa exclusiva linha de Mini Cubos Baby, o detalhe perfeito para encantar a decoração da mesa da sua festa. Temos disponível nas cores branco, azul bebê, rosa bebê e dourado, para combinar com o tema ideal da sua celebração.",
     "longDescription": "Descubra nossa exclusiva linha de Mini Cubos Baby, o detalhe perfeito para encantar a decoração da mesa da sua festa. Temos disponível nas cores branco, azul bebê, rosa bebê e dourado, para combinar com o tema ideal da sua celebração.",
     "priceVariations": [
@@ -3920,7 +3928,7 @@
           {
             "label": "Gold",
             "value": "gold",
-            "price": "R$ 250,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/cubes/2199-MB-1.png",
             "height": 12,
             "width": 12,
@@ -3930,7 +3938,7 @@
           {
             "label": "Branco",
             "value": "branco",
-            "price": "R$ 250,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/cubes/2199-MB-1.png",
             "height": 12,
             "width": 12,
@@ -3940,7 +3948,7 @@
           {
             "label": "Rosa Bebê",
             "value": "rosa",
-            "price": "R$ 250,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/cubes/2199-MB-2.png",
             "height": 12,
             "width": 12,
@@ -3950,7 +3958,7 @@
           {
             "label": "Azul Bebê",
             "value": "azul",
-            "price": "R$ 250,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/cubes/2199-MB-2.png",
             "height": 12,
             "width": 12,
@@ -4147,7 +4155,7 @@
     "category": "medidor-balao",
     "image": "/assets/images/products/categories/ballons/7002.png",
     "oldPrice": "R$ 600,00",
-    "price": "R$ 350,00",
+    "price": "R$ 450,00",
     "shortDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
     "longDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
     "height": 40,
@@ -4295,6 +4303,7 @@
     "title": "Trio de Caixas de Presentes com Tampa",
     "category": "caixas",
     "image": "/assets/images/products/categories/box/5020.png",
+    "pricePrefix": "A partir de",
     "price": "R$ 595,00",
     "shortDescription": "Adicione um toque de elegância à sua Decoração de Natal com nosso trio de caixas de acrílico! Perfeitas para compor sua mesa festiva e também para embrulhar presentes de forma sofisticada e personalizada.",
     "longDescription": "Adicione um toque de elegância à sua Decoração de Natal com nosso trio de caixas de acrílico! Perfeitas para compor sua mesa festiva e também para embrulhar presentes de forma sofisticada e personalizada. As caixas possuem tampas e são encaixáveis, cabendo uma dentro da outra para fácil armazenamento.",
@@ -5628,7 +5637,7 @@
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3001.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 100,00",
+    "price": "R$ 120,00",
     "shortDescription": "O Neon voltou para dominar a decoração! Oferecemos números de 0 a 9 confeccionados com técnica moderna, criando peças de luz cheias de estilo para personalizar qualquer ambiente.",
     "longDescription": "O Neon voltou para dominar a decoração! Oferecemos números de 0 a 9 confeccionados com técnica moderna, criando peças de luz cheias de estilo para personalizar qualquer ambiente.",
     "priceVariations": [
@@ -5639,7 +5648,7 @@
           {
             "label": "Numerais Individuais 0 a 9 Cor Quente P",
             "value": "pequeno_b_q",
-            "price": "R$ 100,00",
+            "price": "R$ 120,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
@@ -5652,7 +5661,7 @@
           {
             "label": "Numerais Individuais 0 a 9 Cor Fria P",
             "value": "pequeno_b_f",
-            "price": "R$ 100,00",
+            "price": "R$ 120,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
@@ -5868,7 +5877,7 @@
           {
             "label": "Números Individuais 0 a 9 60cm com Led Quente",
             "value": "numeros_c_l_q",
-            "price": "R$ 295,00",
+            "price": "R$ 320,00",
             "image": "/assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
@@ -5883,7 +5892,7 @@
           {
             "label": "Letras Individuais A a Z 60cm com Led Quente",
             "value": "letras_c_l_q",
-            "price": "R$ 295,00",
+            "price": "R$ 320,00",
             "image": "/assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
@@ -5898,7 +5907,7 @@
           {
             "label": "Números Individuais 0 a 9 90cm com Led Quente",
             "value": "numeros_c_l_q_g",
-            "price": "R$ 650,00",
+            "price": "R$ 620,00",
             "image": "/assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
@@ -5913,7 +5922,7 @@
           {
             "label": "Letras Individuais A a Z 90cm com Led Quente",
             "value": "letras_c_l_q_g",
-            "price": "R$ 650,00",
+            "price": "R$ 620,00",
             "image": "/assets/images/products/categories/leds/3200.png",
             "kitPieces": [
               {
