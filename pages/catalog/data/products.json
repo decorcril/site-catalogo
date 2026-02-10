@@ -4629,11 +4629,11 @@
   },
   {
     "id": 66,
-    "productCode": "3036-4",
-    "title": "Letriro em Led Oh Baby",
+    "productCode": "3046-4",
+    "title": "Letreiro em Led Oh Baby",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3036-4.png",
-    "price": "R$ 320,00",
+    "price": "R$ 280,00",
     "shortDescription": "Placa de LED em formato de ursinho, o detalhe perfeito para criar um clima mágico e acolhedor. Ideal para decorar chás de bebê, quartos infantis, festas temáticas ou vitrines de lojas especiais.",
     "longDescription": "Esta adorável placa de LED em formato de ursinho é confeccionada para encantar! Seu design delicado e a iluminação suave criam um clima de magia e aconchego, sendo o elemento perfeito para compor a decoração de ocasiões especiais. Ideal para chás de bebê e chá revelação, também traz um toque especial para quartos infantis, festas de aniversário temáticas e, claro, para valorizar a vitrine ou o balcão de lojas que desejam transmitir carinho e delicadeza. Um símbolo de amor e afeto em forma de luz.",
     "height": 40,
@@ -4684,7 +4684,7 @@
     "title": "Asas de Anjo Instagramável com Auréola",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3035.png",
-    "price": "R$ 1.150,00",
+    "price": "R$ 950,00",
     "shortDescription": "Lindas asas de anjo em acrílico, perfeitas para criar um ponto fotográfico instagramável na sua loja, evento ou decoração especial.",
     "longDescription": "Lindas asas de anjo confeccionadas em acrílico, o acessório perfeito para criar um cenário fotográfico deslumbrante e altamente instagramável. Projetadas para encantar clientes e convidados, elas são ideais para compor pontos especiais em lojas, vitrines temáticas, casamentos, festas de aniversário, batizados ou qualquer evento que mereça um toque de magia e interação. Garanta recordações únicas e uma atmosfera encantadora com esta peça que transforma qualquer momento em uma foto perfeita.",
     "priceVariations": [
@@ -4695,7 +4695,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 1.150,00",
+            "price": "R$ 950,00",
             "image": "/assets/images/products/categories/leds/3035.png",
             "width": 140,
             "length": 110,
@@ -4705,7 +4705,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 1.150,00",
+            "price": "R$ 950,00",
             "image": "/assets/images/products/categories/leds/3035.png",
             "width": 140,
             "length": 110,
@@ -4848,7 +4848,7 @@
     "title": "Coroa em Led",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3025.png",
-    "price": "R$ 220,00",
+    "price": "R$ 120,00",
     "shortDescription": "Placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral do seu design. Resultado: uma peça leve, com visual moderno e sofisticado, perfeita para valorizar qualquer mensagem ou elemento decorativo.",
     "longDescription": "Placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral do seu design. Resultado: uma peça leve, com visual moderno e sofisticado, perfeita para valorizar qualquer mensagem ou elemento decorativo.",
     "priceVariations": [
@@ -4859,7 +4859,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 220,00",
+            "price": "R$ 120,00",
             "image": "/assets/images/products/categories/leds/3025.png",
             "width": 60,
             "length": 52,
@@ -4869,7 +4869,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 220,00",
+            "price": "R$ 180,00",
             "image": "/assets/images/products/categories/leds/3025.png",
             "height": 28,
             "length": 44,
@@ -4921,7 +4921,7 @@
           {
             "label": "Asas Grandes com Cor Quente",
             "value": "modelo_3",
-            "price": "R$ 490,00",
+            "price": "R$ 380,00",
             "image": "/assets/images/products/categories/leds/3023.png",
             "height": 68,
             "length": 57,
@@ -4931,7 +4931,7 @@
           {
             "label": "Asas Grandes com Cor Fria",
             "value": "modelo_4",
-            "price": "R$ 490,00",
+            "price": "R$ 380,00",
             "image": "/assets/images/products/categories/leds/3023.png",
             "height": 68,
             "length": 57,
@@ -5075,7 +5075,7 @@
     "title": "Placa Luminária Borboleta Grande",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3017.png",
-    "price": "R$ 180,00",
+    "price": "R$ 750,00",
     "shortDescription": "A peça Borboleta Grande é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
     "longDescription": "A peça Borboleta Grande é meticulosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para seguir fielmente a forma geral e os detalhes intrincados da imagem. Esta técnica resulta em uma silhueta nítida e elegante, com um brilho cristalino que realça sua delicadeza e transmite uma sensação de movimento e graça.",
     "priceVariations": [
@@ -5086,7 +5086,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 180,00",
+            "price": "R$ 750,00",
             "image": "/assets/images/products/categories/leds/3017.png",
             "width": 50,
             "length": 50,
@@ -5096,7 +5096,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 180,00",
+            "price": "R$ 750,00",
             "image": "/assets/images/products/categories/leds/3017.png",
             "width": 50,
             "length": 50,
@@ -5157,7 +5157,7 @@
     "title": "Placa Luminária Sol M1",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3015.png",
-    "price": "R$ 180,00",
+    "price": "R$ 230,00",
     "shortDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
     "longDescription": "A peça Sol é cuidadosamente confeccionada sobre placa de acrílico transparente e cristalino, recortada com precisão para contornar a forma geral e os raios definidos da imagem. Esse processo garante um acabamento com brilho intenso e bordas limpas, capturando a essência vibrante e calorosa do astro-rei.",
     "priceVariations": [
@@ -5168,7 +5168,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 180,00",
+            "price": "R$ 230,00",
             "image": "/assets/images/products/categories/leds/3015.png",
             "width": 50,
             "length": 50,
@@ -5178,7 +5178,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 180,00",
+            "price": "R$ 230,00",
             "image": "/assets/images/products/categories/leds/3015.png",
             "width": 50,
             "length": 50,
@@ -5195,21 +5195,21 @@
   {
     "id": 81,
     "productCode": "3012",
-    "title": "Placa Luminária Sol M1",
+    "title": "Placa Luminária Together Forever",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3012.png",
-    "price": "R$ 580,00",
+    "price": "R$ 420,00",
     "shortDescription": "Letreiro luminoso Together Forever feito sobre placa de acrílico transparente e cristalino, recortado contornando a forma das letras. A peça ideal para iluminar e eternizar momentos especiais a dois com sofisticação.",
     "longDescription": "Letreiro luminoso Together Forever feito sobre placa de acrílico transparente e cristalino, recortado contornando a forma das letras. A peça ideal para iluminar e eternizar momentos especiais a dois com sofisticação.",
     "priceVariations": [
       {
-        "name": "Placa Luminária Sol M1",
+        "name": "Placa  Together Forever",
         "key": "size",
         "options": [
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 580,00",
+            "price": "R$ 420,00",
             "image": "/assets/images/products/categories/leds/3012.png",
             "height": 72,
             "length": 56,
@@ -5219,7 +5219,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 580,00",
+            "price": "R$ 420,00",
             "image": "/assets/images/products/categories/leds/3012.png",
             "height": 72,
             "length": 56,
@@ -5239,7 +5239,7 @@
     "title": "Letreiro Personalizado em Led",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3011.png",
-    "price": "R$ 350,00",
+    "price": "R$ 280,00",
     "shortDescription": "Letreiro luminoso personalizado, feito sobre placa de acrílico transparente e cristalino, recortado para contornar perfeitamente o nome e a fonte de sua escolha. Crie uma peça única que ilumina e personaliza qualquer ambiente com sua identidade.",
     "longDescription": "Letreiro luminoso personalizado, feito sobre placa de acrílico transparente e cristalino, recortado para contornar perfeitamente o nome e a fonte de sua escolha. Crie uma peça única que ilumina e personaliza qualquer ambiente com sua identidade.",
     "priceVariations": [
@@ -5250,7 +5250,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 350,00",
+            "price": "R$ 280,00",
             "image": "/assets/images/products/categories/leds/3011.png",
             "height": 25,
             "length": 60,
@@ -5260,7 +5260,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 350,00",
+            "price": "R$ 280,00",
             "image": "/assets/images/products/categories/leds/3011.png",
             "height": 25,
             "length": 60,
@@ -5281,7 +5281,7 @@
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3010.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 220,00",
+    "price": "R$ 180,00",
     "shortDescription": "Letreiro luminoso Boy e Girl, confeccionado sobre placa de acrílico transparente e cristalino recortada com precisão. Peça moderna e romântica, ideal para chás revelação e decorações de quarto.",
     "longDescription": "Letreiro luminoso Boy e Girl, confeccionado sobre placa de acrílico transparente e cristalino recortada com precisão. Peça moderna e romântica, ideal para chás revelação e decorações de quarto.",
     "priceVariations": [
@@ -5292,7 +5292,7 @@
           {
             "label": "Placa Boy Cor Fria",
             "value": "pequeno_b_f",
-            "price": "R$ 220,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5306,7 +5306,7 @@
           {
             "label": "Placa Boy Cor Quente",
             "value": "pequeno_b_g",
-            "price": "R$ 220,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5320,7 +5320,7 @@
           {
             "label": "Placa Girl Cor Fria",
             "value": "pequeno_g_f",
-            "price": "R$ 220,00",
+            "price": "R$ 180,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5334,7 +5334,7 @@
           {
             "label": "Placa Girl Cor Quente",
             "value": "pequeno_g_f",
-            "price": "R$ 220,00",
+            "price": "R$ 180,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5348,7 +5348,7 @@
           {
             "label": "Kit Boy & Girl Cor Quente",
             "value": "kit_q",
-            "price": "R$ 380,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5368,7 +5368,7 @@
           {
             "label": "Kit Boy & Girl Cor Fria",
             "value": "kit_f",
-            "price": "R$ 380,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3010.png",
             "kitPieces": [
               {
@@ -5400,7 +5400,7 @@
     "title": "Letreiro Luminoso em Led Parabéns",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3008.png",
-    "price": "R$ 290,00",
+    "price": "R$ 350,00",
     "shortDescription": "O letreiro luminoso Parabéns é confeccionado sobre placa de acrílico transparente e cristalino, recortado com precisão para contornar perfeitamente a forma de cada letra. Esta técnica garante um acabamento nítido e bordas suaves, enquanto a iluminação integrada faz com que a mensagem brilhe com um efeito vibrante e acolhedor.",
     "longDescription": "O letreiro luminoso Parabéns é confeccionado sobre placa de acrílico transparente e cristalino, recortado com precisão para contornar perfeitamente a forma de cada letra. Esta técnica garante um acabamento nítido e bordas suaves, enquanto a iluminação integrada faz com que a mensagem brilhe com um efeito vibrante e acolhedor.",
     "priceVariations": [
@@ -5411,7 +5411,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 290,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3008.png",
             "height": 79,
             "length": 39,
@@ -5421,7 +5421,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 290,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3008.png",
             "height": 79,
             "length": 39,
@@ -5472,7 +5472,7 @@
     "title": "Letreiro Luminoso em Led Oh Baby",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3007.png",
-    "price": "R$ 300,00",
+    "price": "R$ 320,00",
     "shortDescription": "Este letreiro luminoso Oh Baby é produzido sobre uma placa de acrílico transparente e cristalino, que é recortada para seguir a forma das letras, criando um efeito visual integrado e elegante. O acrílico de alta qualidade dá um brilho suave e difuso à luz, tornando a mensagem aconchegante e especial.",
     "longDescription": "Este letreiro luminoso Oh Baby é produzido sobre uma placa de acrílico transparente e cristalino, que é recortada para seguir a forma das letras, criando um efeito visual integrado e elegante. O acrílico de alta qualidade dá um brilho suave e difuso à luz, tornando a mensagem aconchegante e especial.",
     "priceVariations": [
@@ -5483,7 +5483,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 300,00",
+            "price": "R$ 320,00",
             "image": "/assets/images/products/categories/leds/3007.png",
             "height": 60,
             "length": 65,
@@ -5493,7 +5493,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 300,00",
+            "price": "R$ 320,00",
             "image": "/assets/images/products/categories/leds/3007.png",
             "height": 60,
             "length": 65,
@@ -5513,7 +5513,7 @@
     "title": "Letreiro Luminoso em Led Let's Celebrate",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3004.png",
-    "price": "R$ 550,00",
+    "price": "R$ 350,00",
     "shortDescription": "Letreiro Let's Celebrate em LED, disponível nas opções de branco frio ou branco quente. Criado sobre uma placa de acrílico transparente cristalino, recortada no formato das letras para um efeito visual moderno e brilhante.",
     "longDescription": "Letreiro Let's Celebrate em LED, disponível nas opções de branco frio ou branco quente. Criado sobre uma placa de acrílico transparente cristalino, recortada no formato das letras para um efeito visual moderno e brilhante.",
     "priceVariations": [
@@ -5524,7 +5524,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 550,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3004.png",
             "height": 76,
             "length": 52,
@@ -5534,7 +5534,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 550,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3004.png",
             "height": 76,
             "length": 52,
@@ -5554,7 +5554,7 @@
     "title": "Letreiro Luminoso em Led Happy Birthday M2",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3003.png",
-    "price": "R$ 450,00",
+    "price": "R$ 350,00",
     "shortDescription": "Luminária Led Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
     "longDescription": "Luminária Led de Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
     "priceVariations": [
@@ -5565,7 +5565,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 450,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3003.png",
             "height": 66,
             "length": 44,
@@ -5575,7 +5575,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 450,00",
+            "price": "R$ 350,00",
             "image": "/assets/images/products/categories/leds/3003.png",
             "height": 66,
             "length": 44,
@@ -5595,7 +5595,7 @@
     "title": "Letreiro Luminoso em Led Happy Birthday M1",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3002.png",
-    "price": "R$ 550,00",
+    "price": "R$ 420,00",
     "shortDescription": "Luminária Led Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
     "longDescription": "Luminária Led de Neon em branco frio ou branco quente, aplicada sobre placa de acrílico transparente e cristalino, com recorte que acompanha a forma do seu design. Oferece iluminação suave e moderna para criar atmosferas únicas.",
     "priceVariations": [
@@ -5606,7 +5606,7 @@
           {
             "label": "Led com Cor Quente",
             "value": "modelo_1",
-            "price": "R$ 550,00",
+            "price": "R$ 480,00",
             "image": "/assets/images/products/categories/leds/3002.png",
             "height": 66,
             "length": 44,
@@ -5616,7 +5616,7 @@
           {
             "label": "Led com Cor Fria",
             "value": "modelo_2",
-            "price": "R$ 550,00",
+            "price": "R$ 420,00",
             "image": "/assets/images/products/categories/leds/3002.png",
             "height": 66,
             "length": 44,
@@ -5866,7 +5866,7 @@
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3200.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 250,00",
+    "price": "R$ 320,00",
     "shortDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
     "longDescription": "Os números e letras de chão tipo caixa são lindos para serem usados na sua decoração. Você também pode enchê-los de balões, pois a parte de baixo é vazada, tornando a peça ainda mais versátil e charmosa.",
     "priceVariations": [
