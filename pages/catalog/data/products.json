@@ -30,7 +30,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 8,
     "badge": "Bivolt"
   },
   {
@@ -64,7 +63,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 5,
     "badge": "Bivolt"
   },
   {
@@ -84,7 +82,6 @@
     "capacity": 1,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 3,
     "badge": "Novidade"
   },
   {
@@ -143,7 +140,6 @@
     "capacity": 6,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 4,
     "badge": "mais vendido"
   },
   {
@@ -215,7 +211,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -287,7 +282,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -358,7 +352,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -397,7 +390,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -415,7 +407,6 @@
     "footHeight": 80,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 4,
     "badge": "mais vendido"
   },
   {
@@ -433,7 +424,6 @@
     "thickness": 8,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 4,
     "badge": "mais vendido"
   },
   {
@@ -453,7 +443,6 @@
     "capacity": 9,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 6,
     "badge": "Novidade"
   },
   {
@@ -499,7 +488,6 @@
     "capacity": 6,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 8,
     "badge": "Novidade"
   },
   {
@@ -568,7 +556,7 @@
             "label": "Sem Tampa",
             "value": "without_lid",
             "price": "R$ 65,00",
-            "oldPrice": "R$ 60,00",
+            "oldPrice": "R$ 70,00",
             "image": "/assets/images/products/categories/utility-rack/9065-S.png"
           }
         ],
@@ -582,7 +570,6 @@
     "capacity": 44,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 10,
     "badge": "Novidade"
   },
   {
@@ -623,7 +610,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 7,
     "badge": "mais vendido"
   },
   {
@@ -722,7 +708,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 5,
     "badge": "desconto"
   },
   {
@@ -749,7 +734,7 @@
               {
                 "name": "Cubo Pequeno 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               }
@@ -763,9 +748,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Médio 3mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               }
             ]
@@ -778,9 +763,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Grande 3mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -793,9 +778,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Extra Grande 3mm",
-                "width": 60,
-                "depth": 60,
-                "height": 60,
+                "width": 40,
+                "length": 40,
+                "height": 90,
                 "thickness": 3
               }
             ]
@@ -809,7 +794,7 @@
               {
                 "name": "Cubo Pequeno 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               }
@@ -823,9 +808,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Médio 4mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               }
             ]
@@ -838,9 +823,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Grande 4mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -853,9 +838,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Extra Grande 4mm",
-                "width": 60,
-                "depth": 60,
-                "height": 60,
+                "width": 40,
+                "length": 40,
+                "height": 90,
                 "thickness": 4
               }
             ]
@@ -868,31 +853,31 @@
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
-                "name": "Cubo Pequeno - 3mm",
+                "name": "Cubo Pequeno 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
-                "name": "Cubo Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Médio 3mm",
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
-                "name": "Cubo Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Extra Grande 3mm",
+                "width": 40,
+                "length": 40,
+                "height": 80,
                 "thickness": 3
               },
               {
-                "name": "Cubo Extra Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Extra Grande 3mm",
+                "width": 40,
+                "length": 40,
+                "height": 90,
                 "thickness": 3
               }
             ]
@@ -905,31 +890,31 @@
             "image": "/assets/images/products/categories/cubes/2024.png",
             "kitPieces": [
               {
-                "name": "Cubo Pequeno - 4mm",
+                "name": "Cubo Pequeno 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
-                "name": "Cubo Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Médio 4mm",
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
-                "name": "Cubo Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Grande 4mm",
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               },
               {
-                "name": "Cubo Extra Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "name": "Cubo Extra Grande 4mm",
+                "width": 40,
+                "length": 40,
+                "height": 90,
                 "thickness": 4
               }
             ]
@@ -940,7 +925,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "novidade"
   },
   {
@@ -967,7 +951,7 @@
               {
                 "name": "Cubo Pequeno 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               }
@@ -981,9 +965,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Médio 3mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               }
             ]
@@ -996,9 +980,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Grande 3mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1012,7 +996,7 @@
               {
                 "name": "Cubo Pequeno 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               }
@@ -1026,9 +1010,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Médio 4mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               }
             ]
@@ -1041,9 +1025,9 @@
             "kitPieces": [
               {
                 "name": "Cubo Grande 4mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1058,22 +1042,22 @@
               {
                 "name": "Cubo Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Cubo Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Cubo Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 36,
+                "length": 36,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1087,22 +1071,22 @@
               {
                 "name": "Cubo Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "lenght": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Cubo Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "lenght": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Cubo Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "lenght": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1116,22 +1100,22 @@
               {
                 "name": "Cubo Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Cubo Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Cubo Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1145,22 +1129,22 @@
               {
                 "name": "Cubo Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Cubo Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Cubo Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1176,22 +1160,22 @@
               {
                 "name": "Cubo Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Cubo Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Cubo Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1206,22 +1190,22 @@
               {
                 "name": "Cubo Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Cubo Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Cubo Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1236,22 +1220,22 @@
               {
                 "name": "Cubo Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Cubo Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Cubo Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1266,22 +1250,22 @@
               {
                 "name": "Cubo Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Cubo Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Cubo Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1292,7 +1276,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -1319,7 +1302,7 @@
               {
                 "name": "Sextavado Pequeno 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               }
@@ -1333,9 +1316,9 @@
             "kitPieces": [
               {
                 "name": "Sextavado Médio 3mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               }
             ]
@@ -1348,9 +1331,9 @@
             "kitPieces": [
               {
                 "name": "Sextavado Grande 3mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1364,7 +1347,7 @@
               {
                 "name": "Sextavado Pequeno 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               }
@@ -1378,9 +1361,9 @@
             "kitPieces": [
               {
                 "name": "Sextavado Médio 4mm",
-                "width": 40,
-                "depth": 40,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               }
             ]
@@ -1393,9 +1376,9 @@
             "kitPieces": [
               {
                 "name": "Sextavado Grande 4mm",
-                "width": 50,
-                "depth": 50,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1410,22 +1393,22 @@
               {
                 "name": "Sextavado Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1439,22 +1422,22 @@
               {
                 "name": "Sextavado Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1468,22 +1451,22 @@
               {
                 "name": "Sextavado Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1497,22 +1480,22 @@
               {
                 "name": "Sextavado Pequeno - 3mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Médio - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 3
               },
               {
                 "name": "Sextavado Grande - 3mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 3
               }
             ]
@@ -1528,22 +1511,22 @@
               {
                 "name": "Sextavado Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1557,22 +1540,22 @@
               {
                 "name": "Sextavado Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1586,22 +1569,22 @@
               {
                 "name": "Sextavado Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1615,22 +1598,22 @@
               {
                 "name": "Sextavado Pequeno - 4mm",
                 "width": 31,
-                "depth": 31,
+                "length": 31,
                 "height": 60,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Médio - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 34,
+                "length": 34,
+                "height": 70,
                 "thickness": 4
               },
               {
                 "name": "Sextavado Grande - 4mm",
-                "width": 31,
-                "depth": 31,
-                "height": 60,
+                "width": 37,
+                "length": 37,
+                "height": 80,
                 "thickness": 4
               }
             ]
@@ -1641,7 +1624,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -1659,7 +1641,6 @@
     "thickness": 6,
     "rating": 4.5,
     "reviews": 71,
-    "stock": 4,
     "badge": "novidade"
   },
   {
@@ -1819,7 +1800,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -2051,7 +2031,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -2225,7 +2204,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -2301,7 +2279,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "Novidade"
   },
   {
@@ -2377,7 +2354,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "Novidade"
   },
   {
@@ -2453,7 +2429,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "Novidade"
   },
   {
@@ -2834,7 +2809,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "novidade"
   },
   {
@@ -2910,7 +2884,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -2986,7 +2959,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -3610,7 +3582,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "Mais Vendido"
   },
   {
@@ -3732,7 +3703,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "Mais Vendido"
   },
   {
@@ -3907,7 +3877,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "desconto"
   },
   {
@@ -4145,7 +4114,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -4294,7 +4262,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -4405,7 +4372,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -4529,7 +4495,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -4613,7 +4578,7 @@
   {
     "id": 65,
     "productCode": "3047-4",
-    "title": "Letriro em Led Merry Christmas",
+    "title": "Letreiro em Led Merry Christmas",
     "category": "leds",
     "image": "/assets/images/products/categories/leds/3047-4.png",
     "price": "R$ 320,00",
@@ -5391,7 +5356,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -5759,7 +5723,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -6060,7 +6023,6 @@
     ],
     "rating": 4.8,
     "reviews": 64,
-    "stock": 10,
     "badge": "mais vendido"
   },
   {
@@ -6162,7 +6124,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   },
   {
@@ -6218,7 +6179,6 @@
     ],
     "rating": 4.5,
     "reviews": 71,
-    "stock": 2,
     "badge": "mais vendido"
   }
 ]
