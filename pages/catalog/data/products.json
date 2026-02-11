@@ -4386,8 +4386,8 @@
     "kitPieces": [
       {
         "name": "Cubo PP",
-        "width": 25,
-        "length": 25,
+        "width": 20,
+        "length": 20,
         "height": 5,
         "thickness": 3
       },
@@ -4400,9 +4400,9 @@
       },
       {
         "name": "Cubo M",
-        "width": 30,
-        "length": 30,
-        "height": 15,
+        "width": 35,
+        "length": 35,
+        "height": 20,
         "thickness": 3
       },
       {
