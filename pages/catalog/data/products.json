@@ -960,7 +960,7 @@
           {
             "label": "Cubo M - 3mm",
             "value": "individual_M_3mm",
-            "price": "R$ 570,00",
+            "price": "R$ 425,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -975,7 +975,7 @@
           {
             "label": "Cubo G - 3mm",
             "value": "individual_G_3mm",
-            "price": "R$ 650,00",
+            "price": "R$ 575,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -990,7 +990,7 @@
           {
             "label": "Cubo P - 4mm",
             "value": "individual_P_4mm",
-            "price": "R$ 395,00",
+            "price": "R$ 450,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1005,7 +1005,7 @@
           {
             "label": "Cubo M - 4mm",
             "value": "individual_M_4mm",
-            "price": "R$ 470,00",
+            "price": "R$ 570,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1035,7 +1035,7 @@
           {
             "label": "Kit Completo 3mm",
             "value": "kit_completo_3mm",
-            "price": "R$ 850,00",
+            "price": "R$ 1.100,00",
             "oldPrice": "R$ 1.250,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
@@ -1065,7 +1065,7 @@
           {
             "label": "Kit Completo Azul Bebê 3mm",
             "value": "kit_completo_azul_3mm",
-            "price": "R$ 1.250,00",
+            "price": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1094,7 +1094,7 @@
           {
             "label": "Kit Completo Rosa Bebê 3mm",
             "value": "kit_completo_rosa_3mm",
-            "price": "R$ 1.250,00",
+            "price": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1123,7 +1123,7 @@
           {
             "label": "Kit Completo Preto 3mm",
             "value": "kit_completo_preto_3mm",
-            "price": "R$ 1.250,00",
+            "price": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
               {
@@ -1152,98 +1152,8 @@
           {
             "label": "Kit Completo 4mm",
             "value": "kit_completo_4mm",
-            "price": "R$ 950,00",
+            "price": "R$ 1.250,00",
             "oldPrice": "R$ 1.450,00",
-            "badge": "desconto",
-            "image": "/assets/images/products/categories/cubes/2023.png",
-            "kitPieces": [
-              {
-                "name": "Cubo Pequeno - 4mm",
-                "width": 31,
-                "length": 31,
-                "height": 60,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Médio - 4mm",
-                "width": 34,
-                "length": 34,
-                "height": 70,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Grande - 4mm",
-                "width": 37,
-                "length": 37,
-                "height": 80,
-                "thickness": 4
-              }
-            ]
-          },
-          {
-            "label": "Kit Completo Azul Bebê 4mm",
-            "value": "kit_completo_azul_4mm",
-            "price": "R$ 1.350,00",
-            "badge": "desconto",
-            "image": "/assets/images/products/categories/cubes/2023.png",
-            "kitPieces": [
-              {
-                "name": "Cubo Pequeno - 4mm",
-                "width": 31,
-                "length": 31,
-                "height": 60,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Médio - 4mm",
-                "width": 34,
-                "length": 34,
-                "height": 70,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Grande - 4mm",
-                "width": 37,
-                "length": 37,
-                "height": 80,
-                "thickness": 4
-              }
-            ]
-          },
-          {
-            "label": "Kit Completo Rosa Bebê 4mm",
-            "value": "kit_completo_rosa_4mm",
-            "price": "R$ 1.350,00",
-            "badge": "desconto",
-            "image": "/assets/images/products/categories/cubes/2023.png",
-            "kitPieces": [
-              {
-                "name": "Cubo Pequeno - 4mm",
-                "width": 31,
-                "length": 31,
-                "height": 60,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Médio - 4mm",
-                "width": 34,
-                "length": 34,
-                "height": 70,
-                "thickness": 4
-              },
-              {
-                "name": "Cubo Grande - 4mm",
-                "width": 37,
-                "length": 37,
-                "height": 80,
-                "thickness": 4
-              }
-            ]
-          },
-          {
-            "label": "Kit Completo Preto 4mm",
-            "value": "kit_completo_preto_4mm",
-            "price": "R$ 1.350,00",
             "badge": "desconto",
             "image": "/assets/images/products/categories/cubes/2023.png",
             "kitPieces": [
@@ -1818,13 +1728,13 @@
         "key": "purchase_option",
         "options": [
           {
-            "label": "Cubo Sextavado pequeno 3mm",
+            "label": "Cubo Pequeno Tradiconal 3mm",
             "value": "individual_P_3mm",
             "price": "R$ 395,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
               {
-                "name": "Cubo Sextavado pequeno 3mm",
+                "name": "Cubo Pequeno Tradiconal 3mm",
                 "height": 40,
                 "width": 35,
                 "length": 35,
@@ -2799,7 +2709,7 @@
               },
               {
                 "name": "Comprimento Total da Mesa com os dois módulos",
-                "height": 111
+                "height": 200
               }
             ]
           }
@@ -6037,6 +5947,8 @@
     "height": 35,
     "width": 25,
     "thickness": 6,
+    "voltage":"Bivolt",
+    "badge":"Bivolt",
     "rating": 4.0,
     "reviews": 30
   },
@@ -6051,6 +5963,8 @@
     "longDescription": "O Carrossel decorativo é feito em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
     "height": 35,
     "width": 25,
+    "voltage":"Bivolt",
+    "badge":"Bivolt",
     "thickness": 6,
     "rating": 4.0,
     "reviews": 30
