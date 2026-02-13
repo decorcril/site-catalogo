@@ -122,6 +122,50 @@
     "reviews": 71,
     "badge": "Novidade"
   },
+
+  {
+    "id": 100,
+    "productCode": "2177",
+    "title": "Mesa Diamente",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2177.jpg",
+    "price": "R$ 850,00",
+    "shortDescription": "A mesa Diamente é um Lançamento Exclusivo da Decorcril, desenvolvida especialmente para ser o destaque da mesa de bolo.",
+    "longDescription": "A mesa Diamente é um Lançamento Exclusivo da Decorcril, desenvolvida especialmente para ser o destaque da mesa de bolo. Com design moderno e elegante, ela une sofisticação e funcionalidade em um único produto. Além de prática, a mesa é totalmente desmontável, facilitando o transporte e o armazenamento, sem abrir mão da resistência e estabilidade.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "/assets/images/products/categories/tables/2177.jpg",
+            "kitPieces": [
+              {
+                "name": "Tampo",
+                "height": 65,
+                "width":65,
+                "thickness": 6
+              },
+              {
+                "name": "Base",
+                "width": 60,
+                "height": 80,
+                "thickness": 4
+              }
+
+            ]
+          }
+        ]
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 71,
+    "badge": "novidade"
+  },
+
   {
     "id": 6,
     "productCode": "2055",
@@ -6048,8 +6092,8 @@
     "image": "/assets/images/products/categories/tables/2124.png",
     "pricePrefix": "A partir de",
     "price": "R$ 850,00",
-    "shortDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento.",
-    "longDescription": "A mesa oceano com pés em V Ondulados é a queridinha do momento. Pois, além de linda e compacta possui um design em formato de ondas. O kit acompanha as duas mesas com os pés inclusos.",
+    "shortDescription": "A Mesa Retangular com pés em X é perfeita para transportar, pois os pés são desmontáveis. Elegância e Praticidade.",
+    "longDescription": "A Mesa Retangular com pés em X é perfeita para transportar, pois os pés são desmontáveis. Basta colocar o tampo em cima dos pés para formar essa linda mesa.",
     "priceVariations": [
       {
         "name": "Espessura",
