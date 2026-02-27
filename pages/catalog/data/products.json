@@ -1600,13 +1600,13 @@
   {
     "id": 24,
     "productCode": "2026",
-    "title": "Trio de Cilindros de Policarbonato",
+    "title": "Trio de Cilindros de Policarbonato by Diná Teixeira",
     "category": "cilindros",
     "image": "/assets/images/products/categories/cylinder/2026.png",
     "pricePrefix": "A partir de",
     "price": "R$ 270,00",
-    "shortDescription": "O trio de cilindros é o destaque das decorações e um item indispensável no seu acervo.",
-    "longDescription": "O trio de cilindros é o destaque das decorações e um item indispensável no seu acervo. Ele possui o corpo confeccionado em policarbonato super-resistente e o tampo é feito em acrílico de 3mm. É o preferido da decoradora Diná Teixeira.",
+    "shortDescription": "O trio de cilindros Diná Teixeira é o destaque das decorações e um item indispensável no seu acervo.",
+    "longDescription": "O trio de cilindros Dina Teixeira é o destaque das decorações e um item indispensável no seu acervo. Ele possui o corpo confeccionado em policarbonato super-resistente e o tampo é feito em acrílico de 3mm. É o preferido da decoradora Diná Teixeira.",
     "priceVariations": [
       {
         "name": "Opção de Compra",
@@ -1657,7 +1657,7 @@
           {
             "label": "Trio Tradicional",
             "value": "kit_completo_3mm",
-            "price": "R$ 850,00",
+            "price": "R$ 695,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -1725,7 +1725,7 @@
           {
             "label": "Trio Mais Largo",
             "value": "kit_completo",
-            "price": "R$ 995,00",
+            "price": "R$ 795,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
