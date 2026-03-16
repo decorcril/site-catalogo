@@ -1599,7 +1599,7 @@
   },
   {
     "id": 24,
-    "productCode": "2026",
+    "productCode": "2027",
     "title": "Trio de Cilindros de Policarbonato by Diná Teixeira",
     "category": "cilindros",
     "image": "/assets/images/products/categories/cylinder/2026.png",
@@ -6138,5 +6138,60 @@
     "rating": 4.5,
     "reviews": 71,
     "badge": "mais vendido"
+  },
+  {
+    "id": 101,
+    "productCode": "2066",
+    "title": "Kit de Tampos Orgânicos Diná Teixeira",
+    "category": "tampos",
+    "image": "/assets/images/products/categories/top/2066.jpg",
+    "price": "R$ 850,00",
+    "shortDescription": "O Kit de Tampos Orgânicos Diná Teixeira foi desenvolvido para transformar suas decorações com elegância e sofisticação.",
+    "longDescription": "O de Kit de Tampos Orgânicos Diná Teixeira foi desenvolvido para transformar suas decorações com elegância, movimento e sofisticação. com design moderno e formatos orgânicos, ele é perfeito para criar composições mais dinâmicas e valorizadas nas suas montagens. O kit contém 4 tampos, produzidos especialmente para serem utilizados com Cilindros Tradicionais de policarbonato, garantindo encaixe perfeito e um acabamento impecável.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Kit de Tampos Orgânicos",
+            "value": "kit_completo_3mm",
+            "price": "R$ 850,00",
+            "image": "/assets/images/products/categories/top/2066.jpg",
+            "kitPieces": [
+              {
+                "name": "Tampo Pequeno",
+                "length": 50,
+                "width": 45,
+                "thickness": 6
+              },
+              {
+                "name": "Tampo Médio",
+                "length": 65,
+                "width": 50,
+                "thickness": 6
+              },
+              {
+                "name": "Tampo Grande",
+                "length": 75,
+                "width": 55,
+                "thickness": 6
+              },
+              {
+                "name": "Tampo Extra Grande",
+                "length": 100,
+                "width": 55,
+                "thickness": 6
+              }
+            ]
+          }
+          
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "badge": "Novidade"
   }
 ]
