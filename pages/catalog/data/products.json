@@ -29,7 +29,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 62,
     "badge": "Bivolt"
   },
   {
@@ -62,7 +62,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71,
+    "reviews":64,
     "badge": "Bivolt"
   },
   {
@@ -81,7 +81,7 @@
     "thickness": 3,
     "capacity": 1,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 61,
     "badge": "Novidade"
   },
   {
@@ -100,7 +100,7 @@
     "thickness": 3,
     "capacity": 1,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 87,
     "badge": "Novidade"
   },
   {
@@ -119,7 +119,7 @@
     "thickness": 3,
     "capacity": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 75,
     "badge": "Novidade"
   },
   {
@@ -160,7 +160,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 20,
     "badge": "novidade"
   },
   {
@@ -180,7 +180,7 @@
     "thickness": 3,
     "capacity": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 59,
     "badge": "mais vendido"
   },
   {
@@ -568,7 +568,9 @@
         "default": "small"
       }
     ],
-    "badge": "Novidade"
+    "badge": "Novidade",
+    "rating": 4.7,
+    "reviews": 20
   },
   {
     "id": 17,
@@ -3032,8 +3034,8 @@
         "default": "10mm"
       }
     ],
-    "rating": 4.5,
-    "reviews": 71
+    "rating": 5,
+    "reviews": 50
   },
   {
     "id": 43,
@@ -3085,7 +3087,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 32
   },
   {
     "id": 44,
@@ -3173,7 +3175,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 64
   },
   {
     "id": 45,
@@ -3215,7 +3217,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 30
   },
   {
     "id": 46,
@@ -3256,8 +3258,8 @@
         "default": "6mm"
       }
     ],
-    "rating": 4.5,
-    "reviews": 71
+    "rating": 4.8,
+    "reviews": 14
   },
   {
     "id": 47,
@@ -3299,7 +3301,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 40
   },
   {
     "id": 48,
@@ -3339,7 +3341,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 25
   },
   {
     "id": 49,
@@ -3378,8 +3380,8 @@
         "default": "6mm"
       }
     ],
-    "rating": 4.5,
-    "reviews": 71
+    "rating": 5,
+    "reviews": 48
   },
   {
     "id": 50,
@@ -3395,7 +3397,7 @@
     "width": 17,
     "thickness": 3,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 28,
     "badge": "Novidade"
   },
   {
@@ -3411,7 +3413,7 @@
     "width": 50,
     "thickness": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews":51,
     "badge": "Novidade"
   },
   {
@@ -3890,7 +3892,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 87
   },
   {
     "id": 56,
@@ -4070,19 +4072,19 @@
   {
     "id": 57,
     "productCode": "7002",
-    "title": "Escada em Acrílico",
+    "title": "Medidor de Balões",
     "category": "medidor-balao",
     "image": "/assets/images/products/categories/ballons/7002.png",
     "oldPrice": "R$ 600,00",
     "price": "R$ 450,00",
-    "shortDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
-    "longDescription": "Em parceria com a renomada Designer de Balões Naita Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
+    "shortDescription": "Em parceria com a renomada Designer de Balões Naila Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
+    "longDescription": "Em parceria com a renomada Designer de Balões Naila Balões, lançamos esse luxuoso medidor decorativo de Balões para atender um mercado carente de peças de luxo. Produto confeccionado com acrílico de alta resistência.",
     "height": 40,
     "width": 40,
     "length": 40,
     "thickness": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 45,
     "badge": "Novidade"
   },
   {
@@ -4463,7 +4465,7 @@
     "depth": 30,
     "thickness": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 29,
     "badge": "Novidade"
   },
   {
@@ -4505,7 +4507,7 @@
       }
     ],
     "rating": 4.5,
-    "reviews": 71
+    "reviews": 50
   },
   {
     "id": 64,
@@ -4522,7 +4524,7 @@
     "depth": 20,
     "thickness": 3,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 30,
     "voltage": "Bivolt",
     "badge": "Novidade"
   },
@@ -4539,7 +4541,7 @@
     "length": 82,
     "thickness": 4,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews":77,
     "voltage": "Bivolt",
     "badge": "Novidade"
   },
@@ -4556,7 +4558,7 @@
     "length": 82,
     "thickness": 4,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 65,
     "voltage": "Bivolt",
     "badge": "Novidade"
   },
@@ -4573,7 +4575,7 @@
     "length": 100,
     "thickness": 6,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 54,
     "voltage": "Bivolt",
     "badge": "Novidade"
   },
@@ -6197,7 +6199,6 @@
     "category": "escadas",
     "image": "/assets/images/products/categories/staircase/9031.jpg",
     "price": "R$ 2.500,00",
-    
     "shortDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável.",
     "longDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável. Desenvolvida para quem busca sofisticação, segunrança e impacto visual em cada detalhe, ela é ideal para subir e descer com total estabilidade. Sua estrutura reforçada suporta até 120kg, oferecendo confiança sem abrir mão do design moderno e elegante. Perfeita para compor palcos, cenários e criar momentos de destaque inisquecíveis.",
     "height": 81,
@@ -6207,5 +6208,49 @@
     "rating": 5,
     "reviews": 5,
     "badge": "Novidade"
+  },
+  {
+    "id":103,
+    "productCode": "3039",
+    "title": "Lustre Curvo em Acrílico",
+    "category": "lustres",
+    "image": "/assets/images/products/categories/chandelier/3039.jpg",
+    "price": "R$ 385,00",
+    "shortDescription": "O Lustre Curvo em Acrílico é uma peça de alto padrão, confeccionada 100% em acrílico de 6mm, que combina leveza visual com um design moderno e imponente.",
+    "longDescription": "O Lustre Curvo em Acrílico é uma peça de alto padrão, confeccionada 100% em acrílico de 6mm, que combina leveza visual com um design moderno e imponente. Seu formato curvo traz movimento e exclusividade à decoração, tornando qualquer ambiente mais sofisticado e memorável. Ele conta com iluminação em LED nas cores branco frio e branco quente, permitindo criar diferentes atmosferas - desde um ambiente mais clean e contemporâneo até um clima mais acolhedor e intimista.",
+    "priceVariations": [
+      {
+        "name": "Lustre Curvo em Acrílico",
+        "key": "size",
+        "options": [
+          {
+            "label": "Led Branco Quente",
+            "value": "modelo_1",
+            "price": "R$ 385,00",
+            "image": "/assets/images/products/categories/chandelier/3039.jpg",
+            "height": 20,
+            "curvatura": 92,
+            "length": 64,
+            "voltage": "Bivolt",
+            "thickness": 6
+          },
+          {
+            "label": "Led Branco Frio",
+            "value": "modelo_2",
+            "price": "R$ 385,00",
+            "image": "/assets/images/products/categories/chandelier/3039.jpg",
+            "height": 20,
+            "curvatura": 92,
+            "length": 64,
+            "voltage": "Bivolt",
+            "thickness": 6
+          }
+        ],
+        "default": "6mm"
+      }
+    ],
+    "rating": 5,
+    "reviews": 15,
+     "badge": "Novidade"
   }
 ]

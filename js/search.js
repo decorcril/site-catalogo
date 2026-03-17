@@ -49,7 +49,9 @@ const searchKeywords = {
     'expositores': 'expositores',
     'medidor': 'medidor-balao',
     'balao': 'medidor-balao',
-    'balão': 'medidor-balao'
+    'balão': 'medidor-balao',
+    'lustres': 'lustres',
+    'lustre': 'lustres'
 };
 
 
