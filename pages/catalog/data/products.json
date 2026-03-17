@@ -122,7 +122,6 @@
     "reviews": 71,
     "badge": "Novidade"
   },
-
   {
     "id": 100,
     "productCode": "2177",
@@ -146,7 +145,7 @@
               {
                 "name": "Tampo",
                 "height": 65,
-                "width":65,
+                "width": 65,
                 "thickness": 6
               },
               {
@@ -155,7 +154,6 @@
                 "height": 80,
                 "thickness": 4
               }
-
             ]
           }
         ]
@@ -165,7 +163,6 @@
     "reviews": 71,
     "badge": "novidade"
   },
-
   {
     "id": 6,
     "productCode": "2055",
@@ -5991,8 +5988,8 @@
     "height": 35,
     "width": 25,
     "thickness": 6,
-    "voltage":"Bivolt",
-    "badge":"Bivolt",
+    "voltage": "Bivolt",
+    "badge": "Bivolt",
     "rating": 4.0,
     "reviews": 30
   },
@@ -6007,8 +6004,8 @@
     "longDescription": "O Carrossel decorativo é feito em Acrílico Transparente. A linha parque de diversões da Decorcril, vai trazer a leveza necessária para deixar a sua decoração ainda mais elegante. Coloque movimento no seu cenário, e surpreenda os convidados com esses itens que não podem faltar na sua festa.",
     "height": 35,
     "width": 25,
-    "voltage":"Bivolt",
-    "badge":"Bivolt",
+    "voltage": "Bivolt",
+    "badge": "Bivolt",
     "thickness": 6,
     "rating": 4.0,
     "reviews": 30
@@ -6185,13 +6182,30 @@
               }
             ]
           }
-          
         ],
         "default": "individual_P_3mm"
       }
     ],
     "rating": 4.8,
     "reviews": 64,
+    "badge": "Novidade"
+  },
+  {
+    "id": 102,
+    "productCode": "9031",
+    "title": "Escada Cristal para Acesso",
+    "category": "escadas",
+    "image": "/assets/images/products/categories/staircase/9031.jpg",
+    "price": "R$ 2.500,00",
+    
+    "shortDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável.",
+    "longDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável. Desenvolvida para quem busca sofisticação, segunrança e impacto visual em cada detalhe, ela é ideal para subir e descer com total estabilidade. Sua estrutura reforçada suporta até 120kg, oferecendo confiança sem abrir mão do design moderno e elegante. Perfeita para compor palcos, cenários e criar momentos de destaque inisquecíveis.",
+    "height": 81,
+    "width": 100,
+    "depth": 86,
+    "thickness": 10,
+    "rating": 5,
+    "reviews": 5,
     "badge": "Novidade"
   }
 ]
