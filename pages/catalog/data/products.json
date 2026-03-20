@@ -6214,7 +6214,7 @@
     "productCode": "3039",
     "title": "Lustre Curvo em Acrílico",
     "category": "lustres",
-    "image": "/assets/images/products/categories/chandelier/3039.jpg",
+    "image": "/assets/images/products/categories/chandelier/3090.JPG",
     "price": "R$ 385,00",
     "shortDescription": "O Lustre Curvo em Acrílico é uma peça de alto padrão, confeccionada 100% em acrílico de 6mm, que combina leveza visual com um design moderno e imponente.",
     "longDescription": "O Lustre Curvo em Acrílico é uma peça de alto padrão, confeccionada 100% em acrílico de 6mm, que combina leveza visual com um design moderno e imponente. Seu formato curvo traz movimento e exclusividade à decoração, tornando qualquer ambiente mais sofisticado e memorável. Ele conta com iluminação em LED nas cores branco frio e branco quente, permitindo criar diferentes atmosferas - desde um ambiente mais clean e contemporâneo até um clima mais acolhedor e intimista.",
@@ -6227,7 +6227,7 @@
             "label": "Led Branco Quente",
             "value": "modelo_1",
             "price": "R$ 385,00",
-            "image": "/assets/images/products/categories/chandelier/3039.jpg",
+            "image": "/assets/images/products/categories/chandelier/3090.JPG",
             "height": 20,
             "curvatura": 92,
             "length": 64,
@@ -6238,7 +6238,7 @@
             "label": "Led Branco Frio",
             "value": "modelo_2",
             "price": "R$ 385,00",
-            "image": "/assets/images/products/categories/chandelier/3039.jpg",
+            "image": "/assets/images/products/categories/chandelier/3090.JPG",
             "height": 20,
             "curvatura": 92,
             "length": 64,
@@ -6252,5 +6252,46 @@
     "rating": 5,
     "reviews": 15,
      "badge": "Novidade"
+  },
+  {
+    "id": 104,
+    "productCode": "2188",
+    "title": "Mesa Cascata",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2188.JPG",
+    "price": "R$ 1.450,00",
+    "shortDescription": "A Mesa Cascata é o mais novo lançamento da Decorcril, uma peça que une design moderno, leveza e sofisticação em cada detalhe, sendo perfeita para composições temáticas como fundo do mar...",
+    "longDescription": "A Mesa Cascata é o mais novo lançamento da Decorcril, uma peça que une design moderno, leveza e sofisticação em cada detalhe. Com seu efeito fluido, ela traz movimento e vida paraa sua decoração, sendo perfeita para composições temáticas comofundo do mar, festas de 15 anos e eventos que pedem um toque criativo e elegante. Produzida com tampo oceano em acrílico 6mm, ela encanta pelo acabamento impecável e pela transparência que valoriza ainda mais o cenário.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "6mm",
+            "value": "6mm",
+            "price": "R$ 850,00",
+            "image": "/assets/images/products/categories/tables/2188.JPG",
+            "kitPieces": [
+              {
+                "name": "Tampo Oceano",
+                "length": 120,
+                "width": 50,
+                "thickness": 6
+              },
+              {
+                "name": "Bases",
+                "width": 46,
+                "height": 80,
+                "thickness": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 20,
+    "badge": "novidade"
   }
 ]
