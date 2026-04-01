@@ -1724,7 +1724,7 @@
           {
             "label": "Trio Mais Largo",
             "value": "kit_completo",
-            "price": "R$ 795,00",
+            "price": "R$ 850,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -6293,5 +6293,165 @@
     "rating": 4.5,
     "reviews": 20,
     "badge": "novidade"
+  },
+{
+    "id": 105,
+    "productCode": "2026C",
+    "title": "Trio de Cilindros 100% Acrílico by Diná Teixeira",
+    "category": "cilindros",
+    "image": "/assets/images/products/categories/cylinder/2026C.png",
+    "pricePrefix": "A partir de",
+    "price": "R$ 400,00",
+    "shortDescription": "O Trio de Cilindros 100% em Acrílico agora é Realidade! Atendendo aos inúmeros pedidos, a Decorcril transformou o pedido de Milhares de clientes em uma peça belissima...",
+    "longDescription": "O Trio de Cilindros 100% em Acrílico agora é Realidade! Atendendo aos inúmeros pedidos, a Decorcril transformou o pedido de Milhares de clientes em uma peça belissima, produzida com Acrílico resistente e de altíssima qualidade. Peça ideializada por Dina Teixeira.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Cilindro Pequeno 3mm",
+            "value": "individual_P_3mm",
+            "price": "R$ 400,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Pequeno 3mm",
+                "diameter": 31,
+                "height": 40,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Médio 3mm",
+            "value": "individual_M_3mm",
+            "price": "R$ 500,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Médio 3mm",
+                "diameter": 35,
+                "height": 60,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Grande 3mm",
+            "value": "individual_G_3mm",
+            "price": "R$ 600,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Grande 3mm",
+                "diameter": 39,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Trio de Cilindros 3mm",
+            "value": "kit_completo_3mm",
+            "price": "R$ 1.450,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Pequeno 3mm",
+                "diameter": 31,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Médio 3mm",
+                "diameter": 35,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Grande 3mm",
+                "diameter": 39,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Pequeno 4mm",
+            "value": "individual_P",
+            "price": "R$ 450,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Pequeno 4mm",
+                "diameter": 35,
+                "height": 40,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Médio 4mm",
+            "value": "individual_M",
+            "price": "R$ 550,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Médio 4mm",
+                "diameter": 40,
+                "height": 60,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Cilindro Grande 4mm",
+            "value": "individual_G",
+            "price": "R$ 650,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Tradicional Grande",
+                "diameter": 45,
+                "height": 80,
+                "thickness": 4
+              }
+            ]
+          },
+          {
+            "label": "Trio de Cilindros 4mm",
+            "value": "kit_completo_dina_4mm",
+            "price": "R$ 1.650,00",
+            "image": "/assets/images/products/categories/cylinder/2026C.png",
+            "kitPieces": [
+              {
+                "name": "Cilindro Pequeno 4mm",
+                "diameter": 35,
+                "height": 40,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Médio 4mm",
+                "diameter": 40,
+                "height": 60,
+                "thickness": 3
+              },
+              {
+                "name": "Cilindro Grande 4mm",
+                "diameter": 45,
+                "height": 80,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "individual_P_3mm"
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 64,
+    "badge": "novidade"
   }
+  
 ]
