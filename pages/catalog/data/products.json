@@ -6429,19 +6429,19 @@
                 "name": "Cilindro Pequeno 4mm",
                 "diameter": 35,
                 "height": 40,
-                "thickness": 3
+                "thickness": 4
               },
               {
                 "name": "Cilindro Médio 4mm",
                 "diameter": 40,
                 "height": 60,
-                "thickness": 3
+                "thickness": 4
               },
               {
                 "name": "Cilindro Grande 4mm",
                 "diameter": 45,
                 "height": 80,
-                "thickness": 3
+                "thickness": 4
               }
             ]
           }
