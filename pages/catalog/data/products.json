@@ -6553,5 +6553,45 @@
     "rating": 5,
     "reviews": 51,
     "badge": "novidade"
+  },
+  {
+    "id": 110,
+    "productCode": "2002-Q8",
+    "title": "Quarteto de Doceiras Orgânicas Desmontáveis",
+    "category": "suportes-utilidade",
+    "image": "/assets/images/products/categories/utility-rack/2002-Q8.jpg",
+    "price": "R$ 180,00",
+    "shortDescription": "Um conjunto sofisticado e versátil, produzido em Acrílico Premium de 8mm, que garante resistência, transparência impecável e acabamento de auto padrão...",
+    "longDescription": "Um conjunto sofisticado e versátil, produzido em Acrílico Premium de 8mm, que garante resistência, transparência impecável e acabamento de auto padrão. Seu design orgânico traz leveza e modernidade, valorizando ainda mais a apresentação dos doces e elevando o nível da sua decoração. Além de elegantes, são desmotáveis, facilitando o transporte e armazenamento - perfeito para profissionais e eventos de alto padrão.",
+    "kitPieces": [
+      {
+        "name": "1",
+        "height": 25,
+        "width": 16,
+        "depth": 0,
+        "thickness": 8
+      },
+      {
+        "name": "2",
+        "height": 30,
+        "width": 17,
+        "thickness": 8
+      },
+      {
+        "name": "3",
+        "height": 20,
+        "width": 11,
+        "thickness": 8
+      },
+      {
+        "name": "4",
+        "height": 25,
+        "width": 15,
+        "thickness": 8
+      }
+    ],
+    "rating": 5,
+    "reviews": 10,
+    "badge": "novidade"
   }
 ]
