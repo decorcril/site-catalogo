@@ -184,6 +184,93 @@
     "badge": "mais vendido"
   },
   {
+    "id": 108,
+    "productCode": "2128",
+    "title": "Trio Orgânico em Acrílico - Sala de Estar",
+    "category": "mesas",
+    "image": "/assets/images/products/categories/tables/2128.jpg",
+    "pricePrefix": "A partir de",
+    "price": "R$ 2.200,00",
+    "shortDescription": "Apresentamos o sofisticado Trio de Orgânicos em Acrílico - Sala de Estar, uma peça de alto padrão desenvolvida para quem busca luxo, modernidade e exclusividade na decoração...",
+    "longDescription": "Apresentamos o sofisticado Trio de Orgânicos em Acrílico - Sala de Estar, uma peça de alto padrão desenvolvida para quem busca luxo, modernidade e exclusividade na decoração. Fabricado em acrílico Premium nas versões 8mm ou 10mm, esse conjunto une design orgânico contemporâneo com transparência impecável, trazendo leveza visual e valorizando cada detalhe do seu espaço.",
+    "priceVariations": [
+      {
+        "name": "Espessura",
+        "key": "thickness",
+        "options": [
+          {
+            "label": "Tampos - 8mm",
+            "value": "8mm",
+            "price": "R$ 2.200,00",
+            "image": "/assets/images/products/categories/tables/2128.jpg",
+            "kitPieces": [
+              {
+                "name": "Mesa Pequena",
+                "height": 60,
+                "width": 48,
+                "footHeight": 20,
+                "footThickness": 8,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Média",
+                "height": 75,
+                "width": 59,
+                "footHeight": 30,
+                "footThickness": 8,
+                "thickness": 8
+              },
+              {
+                "name": "Mesa Grande",
+                "height": 76,
+                "width": 70,
+                "footHeight": 40,
+                "footThickness": 8,
+                "thickness": 8
+              }
+            ]
+          },
+          {
+            "label": "Tampos - 10mm",
+            "value": "10mm",
+            "price": "R$ 3.300,00",
+            "image": "/assets/images/products/categories/tables/2128-2.jpg",
+            "kitPieces": [
+              {
+                "name": "Mesa Pequena",
+                "height": 60,
+                "width": 48,
+                "footHeight": 20,
+                "footThickness": 10,
+                "thickness": 10
+              },
+              {
+                "name": "Mesa Média",
+                "height": 75,
+                "width": 59,
+                "footHeight": 30,
+                "footThickness": 10,
+                "thickness": 10
+              },
+              {
+                "name": "Mesa Grande",
+                "height": 76,
+                "width": 70,
+                "footHeight": 40,
+                "footThickness": 10,
+                "thickness": 10
+              }
+            ]
+          }
+        ],
+        "default": "8mm"
+      }
+    ],
+    "rating": 5,
+    "reviews": 25,
+    "badge": "novidade"
+  },
+  {
     "id": 7,
     "productCode": "2121",
     "title": "Kit Mesa Oceano - Pés em V Ondulados",
@@ -206,8 +293,8 @@
             "kitPieces": [
               {
                 "name": "Mesa alta",
-                "height": 46,
-                "width": 120,
+                "height": 120,
+                "width": 46,
                 "footHeight": 80,
                 "footThickness": 6,
                 "thickness": 6
@@ -230,16 +317,16 @@
             "kitPieces": [
               {
                 "name": "Mesa alta",
-                "height": 48,
-                "width": 125,
+                "height": 120,
+                "width": 46,
                 "footHeight": 80,
                 "footThickness": 6,
                 "thickness": 8
               },
               {
                 "name": "Mesa baixa",
-                "height": 92,
-                "width": 35,
+                "height": 90,
+                "width": 33,
                 "footHeight": 50,
                 "footThickness": 6,
                 "thickness": 8
@@ -256,7 +343,7 @@
   },
   {
     "id": 8,
-    "productCode": "2022",
+    "productCode": "2122",
     "title": "Kit Mesa Oceano - Pés Retangulares",
     "category": "mesas",
     "image": "/assets/images/products/categories/tables/2122.png",
@@ -460,11 +547,11 @@
     "shortDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu.",
     "longDescription": "Linda Mesa Bancão em Acrílico Virgem e cristalino, você também  pode usa-la como Báu. Luxo, Versatilidade e Durabilidade Incomparável.",
     "height": 80,
-    "length": 90,
-    "width": 40,
+    "length": 40,
+    "width": 90,
     "thickness": 8,
     "rating": 4.5,
-    "reviews": 71,
+    "reviews": 74,
     "badge": "mais vendido"
   },
   {
@@ -1591,7 +1678,7 @@
     "height": 80,
     "width": 90,
     "length": 40,
-    "thickness": 6,
+    "thickness": 4,
     "rating": 4.5,
     "reviews": 71,
     "badge": "novidade"
@@ -1656,7 +1743,7 @@
           {
             "label": "Trio Tradicional",
             "value": "kit_completo_3mm",
-            "price": "R$ 695,00",
+            "price": "R$ 750,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
             "kitPieces": [
               {
@@ -1708,7 +1795,7 @@
             ]
           },
           {
-            "label": "Cilindro Tradicional Grande",
+            "label": "Cilindro Mais Largo Grande",
             "value": "individual_G",
             "price": "R$ 480,00",
             "image": "/assets/images/products/categories/cylinder/2026.png",
@@ -1883,7 +1970,7 @@
             "kitPieces": [
               {
                 "name": "Cubo Tradicional Grande 4mm",
-                "height": 60,
+                "height": 80,
                 "width": 40,
                 "length": 40,
                 "thickness": 4
@@ -1892,7 +1979,7 @@
           },
           {
             "label": "Trio Cubos Tradicional 4mm",
-            "value": "kit_completo",
+            "value": "kit_completo_t_4mm",
             "price": "R$ 1.250,00",
             "oldPrice": "R$ 1.450,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
@@ -1913,7 +2000,7 @@
               },
               {
                 "name": "Cubo Tradicional Grande 4mm",
-                "height": 60,
+                "height": 80,
                 "width": 40,
                 "length": 40,
                 "thickness": 4
@@ -1942,7 +2029,7 @@
               },
               {
                 "name": "Cubo Dobrado Grande 3mm",
-                "height": 60,
+                "height": 80,
                 "width": 40,
                 "length": 40,
                 "thickness": 4
@@ -1951,7 +2038,7 @@
           },
           {
             "label": "Trio Cubos Dobrado 4mm",
-            "value": "kit_completo",
+            "value": "kit_completo_d_4mm",
             "price": "R$ 1.395,00",
             "image": "/assets/images/products/categories/cubes/2032.png",
             "kitPieces": [
@@ -1971,7 +2058,7 @@
               },
               {
                 "name": "Cubo Dobrado Grande 4mm",
-                "height": 60,
+                "height": 80,
                 "width": 40,
                 "length": 40,
                 "thickness": 4
@@ -2114,7 +2201,7 @@
             "kitPieces": [
               {
                 "name": "Cubo Sextavado Grande 4mm",
-                "height": 60,
+                "height": 80,
                 "width": 40,
                 "length": 40,
                 "thickness": 4
@@ -2964,16 +3051,16 @@
     "rating": 4.8,
     "reviews": 64
   },
-  {
+{
     "id": 42,
     "productCode": "2034",
     "title": "Base Meia Lua",
     "category": "bases-mesa",
     "image": "/assets/images/products/categories/base/2034.png",
     "pricePrefix": "A partir de",
-    "price": "R$ 550,00",
-    "shortDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
-    "longDescription": "As bases meia lua são tendência, feita 100% com Acrilico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
+    "price": "R$ 590,00",
+    "shortDescription": "As bases Meia Lua são tendência, feitas 100% com Acrílico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
+    "longDescription": "As bases Meia Lua são tendência, feitas 100% com Acrílico transparente e cristalino. Seu design é meticulosamente moldada no formato de meia lua, esta base oferece um ponto de partida único para a criação da mesa dos seus sonhos.",
     "priceVariations": [
       {
         "name": "VALOR UNITÁRIO",
@@ -2982,11 +3069,10 @@
           {
             "label": "Base 6mm",
             "value": "6mm",
-            "price": "R$ 550,00",
+            "price": "R$ 590,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
-            "curvatura": 170,
             "thickness": 6,
             "customSpecs": [
               {
@@ -2999,11 +3085,10 @@
           {
             "label": "Base 8mm",
             "value": "8mm",
-            "price": "R$ 640,00",
+            "price": "R$ 690,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
-            "curvatura": 170,
             "thickness": 8,
             "customSpecs": [
               {
@@ -3016,11 +3101,10 @@
           {
             "label": "Base 10mm",
             "value": "10mm",
-            "price": "R$ 720,00",
+            "price": "R$ 790,00",
             "image": "/assets/images/products/categories/base/2034.png",
             "width": 63,
             "height": 80,
-            "curvatura": 170,
             "thickness": 10,
             "customSpecs": [
               {
@@ -3035,7 +3119,7 @@
       }
     ],
     "rating": 5,
-    "reviews": 50
+    "reviews": 59
   },
   {
     "id": 43,
@@ -5563,35 +5647,35 @@
         "key": "purchase_option",
         "options": [
           {
-            "label": "Numerais Individuais 0 a 9 Cor Quente P",
+            "label": "Numerais Individuais 0 a 9 Cor Quente 40cm",
             "value": "pequeno_b_q",
             "price": "R$ 120,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Numerais Individuais 0 a 9 Cor Quente",
-                "height": 50,
+                "height": 40,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Numerais Individuais 0 a 9 Cor Fria P",
+            "label": "Numerais Individuais 0 a 9 Cor Fria 40cm",
             "value": "pequeno_b_f",
             "price": "R$ 120,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Numerais Individuais 0 a 9 Cor Fria Pequeno",
-                "height": 50,
+                "height": 40,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Numerais Individuais 0 a 9 Cor Fria G",
+            "label": "Numerais Individuais 0 a 9 Cor Fria 60cm",
             "value": "pequeno_g_b_f",
-            "price": "R$ 120,00",
+            "price": "R$ 180,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
@@ -5602,69 +5686,69 @@
             ]
           },
           {
-            "label": "Numerais Individuais 0 a 9 Cor Quente G",
+            "label": "Numerais Individuais 0 a 9 Cor Quente 60cm",
             "value": "pequeno_g_b_q",
-            "price": "R$ 120,00",
+            "price": "R$ 180,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Numerais Individuais 0 a 9 Cor Quente Grande",
-                "height": 50,
+                "height": 60,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Quente P",
+            "label": "Kit Numerais 0 a 9 Cor Quente 40cm",
             "value": "kit_q_p",
-            "price": "R$ 750,00",
+            "price": "R$ 995,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Kit Numerais de 0 a 9 Cor Quente Pequeno",
-                "height": 30,
+                "height": 40,
                 "length": 50,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Fria G",
-            "value": "kit_f_p",
-            "price": "R$ 750,00",
+            "label": "Kit Numerais 0 a 9 Cor Fria 60cm",
+            "value": "kit_f_g",
+            "price": "R$ 1.495,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Numerais de 0 a 9 Cor Fria Grande",
-                "height": 30,
+                "height": 60,
                 "length": 50,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Quente G",
-            "value": "kit_q_p",
-            "price": "R$ 750,00",
+            "label": "Kit Numerais 0 a 9 Cor Quente 60cm",
+            "value": "kit_q_g",
+            "price": "R$ 1.495,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Kit Numerais de 0 a 9 Cor Quente Grande",
-                "height": 30,
+                "height": 60,
                 "length": 50,
                 "thickness": 4
               }
             ]
           },
           {
-            "label": "Kit Numerais 0 a 9 Cor Fria P",
+            "label": "Kit Numerais 0 a 9 Cor Fria 40cm",
             "value": "kit_f_p",
-            "price": "R$ 750,00",
+            "price": "R$ 995,00",
             "image": "/assets/images/products/categories/leds/3001.png",
             "kitPieces": [
               {
                 "name": "Numerais de 0 a 9 Cor Fria Pequeno",
-                "height": 30,
+                "height": 40,
                 "length": 50,
                 "thickness": 4
               }
@@ -6197,7 +6281,7 @@
     "productCode": "9031",
     "title": "Escada Cristal para Acesso",
     "category": "escadas",
-    "image": "/assets/images/products/categories/staircase/9031.jpg",
+    "image": "/assets/images/products/categories/staircase/9031.JPG",
     "price": "R$ 2.500,00",
     "shortDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável.",
     "longDescription": "Nossa escada de acesso a palcos é produzida com acrílico virgem de 10mm de espessura, garantindo alta resistência, durabilidade e um acabamento impecável. Desenvolvida para quem busca sofisticação, segunrança e impacto visual em cada detalhe, ela é ideal para subir e descer com total estabilidade. Sua estrutura reforçada suporta até 120kg, oferecendo confiança sem abrir mão do design moderno e elegante. Perfeita para compor palcos, cenários e criar momentos de destaque inisquecíveis.",
@@ -6258,10 +6342,10 @@
     "productCode": "2188",
     "title": "Mesa Cascata",
     "category": "mesas",
-    "image": "/assets/images/products/categories/tables/2188.JPG",
+    "image": "/assets/images/products/categories/tables/2188.jpg",
     "price": "R$ 1.450,00",
     "shortDescription": "A Mesa Cascata é o mais novo lançamento da Decorcril, uma peça que une design moderno, leveza e sofisticação em cada detalhe, sendo perfeita para composições temáticas como fundo do mar...",
-    "longDescription": "A Mesa Cascata é o mais novo lançamento da Decorcril, uma peça que une design moderno, leveza e sofisticação em cada detalhe. Com seu efeito fluido, ela traz movimento e vida paraa sua decoração, sendo perfeita para composições temáticas comofundo do mar, festas de 15 anos e eventos que pedem um toque criativo e elegante. Produzida com tampo oceano em acrílico 6mm, ela encanta pelo acabamento impecável e pela transparência que valoriza ainda mais o cenário.",
+    "longDescription": "A Mesa Cascata é o mais novo lançamento da Decorcril, uma peça que une design moderno, leveza e sofisticação em cada detalhe. Com seu efeito fluido, ela traz movimento e vida para sua decoração, sendo perfeita para composições temáticas como fundo do mar, festas de 15 anos e eventos que pedem um toque criativo e elegante. Produzida com tampo oceano em acrílico 6mm, ela encanta pelo acabamento impecável e pela transparência que valoriza ainda mais o cenário.",
     "priceVariations": [
       {
         "name": "Espessura",
@@ -6270,8 +6354,8 @@
           {
             "label": "6mm",
             "value": "6mm",
-            "price": "R$ 850,00",
-            "image": "/assets/images/products/categories/tables/2188.JPG",
+            "price": "R$ 1.450,00",
+            "image": "/assets/images/products/categories/tables/2188.jpg",
             "kitPieces": [
               {
                 "name": "Tampo Oceano",
@@ -6294,7 +6378,7 @@
     "reviews": 20,
     "badge": "novidade"
   },
-{
+  {
     "id": 105,
     "productCode": "2026C",
     "title": "Trio de Cilindros 100% Acrílico by Diná Teixeira",
@@ -6303,7 +6387,7 @@
     "pricePrefix": "A partir de",
     "price": "R$ 400,00",
     "shortDescription": "O Trio de Cilindros 100% em Acrílico agora é Realidade! Atendendo aos inúmeros pedidos, a Decorcril transformou o pedido de Milhares de clientes em uma peça belissima...",
-    "longDescription": "O Trio de Cilindros 100% em Acrílico agora é Realidade! Atendendo aos inúmeros pedidos, a Decorcril transformou o pedido de Milhares de clientes em uma peça belissima, produzida com Acrílico resistente e de altíssima qualidade. Peça ideializada por Dina Teixeira.",
+    "longDescription": "O Trio de Cilindros 100% em Acrílico agora é Realidade! Atendendo aos inúmeros pedidos, a Decorcril transformou o pedido de Milhares de clientes em uma peça belissima, produzida com Acrílico resistente e de altíssima qualidade. Peça ideializada por Diná Teixeira.",
     "priceVariations": [
       {
         "name": "Opção de Compra",
@@ -6449,9 +6533,8 @@
         "default": "individual_P_3mm"
       }
     ],
-    "rating": 4.8,
-    "reviews": 64,
+    "rating": 5,
+    "reviews": 51,
     "badge": "novidade"
   }
-  
 ]
