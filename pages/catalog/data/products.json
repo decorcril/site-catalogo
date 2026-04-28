@@ -1,5 +1,22 @@
 [
   {
+    "id": 106,
+    "productCode": "4087-1",
+    "title": "Bandeja Clarice",
+    "category": "bandejas",
+    "image": "/assets/images/products/categories/tray/4087-1.jpg",
+    "price": "R$ 120,00",
+    "shortDescription": "Sofisticação e elegância em cada detalhe. Perfeita para compor decorações, organizar ambientes ou valorizar ainda mais suas produções...",
+    "longDescription": "Sofisticação e elegância em cada detalhe. Perfeita para compor decorações, organizar ambientes ou valorizar ainda mais suas produções, a Bandeja Clarice une design moderno com transparência impecável do acrílico.",
+    "height": 5,
+    "width": 30,
+    "length": 45,
+    "thickness": 6,
+    "rating": 5,
+    "reviews": 6,
+    "badge": "Novidade"
+  },
+  {
     "id": 1,
     "productCode": "7000",
     "title": "Bandeja Gira Bolo",
