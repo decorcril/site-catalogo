@@ -1,5 +1,73 @@
 [
   {
+    "id": 111,
+    "productCode": "6525",
+    "title": "Forma para Bolos em Fatias com Espátula + Tampa",
+    "category": "formas",
+    "image": "/assets/images/products/categories/cake-pan/6525.jpg",
+    "pricePrefix": "A partir de",
+    "price": "R$ 79,90",
+    "shortDescription": "A Forma Viral do Festival de Fatias agora da Decorcril! Produzida em acrílico premium de alta resistência, ela garante a estrutura perfeita para os seus bolos de vitrine e delivery...",
+    "longDescription": "A Forma Viral do Festival de Fatias agora da Decorcril! Produzida em acrílico premium de alta resistência, ela garante a estrutura perfeita para os seus bolos de vitrine e delivery. Você padroniza suas fatias com facilidade, otimiza o tempo de montagem e entrega um visual profissional que valoriza o seu produto.",
+    "priceVariations": [
+      {
+        "name": "Opção de Compra",
+        "key": "purchase_option",
+        "options": [
+          {
+            "label": "Modelo 30x10x10",
+            "value": "6525-1",
+            "price": "R$ 79,90",
+            "image": "/assets/images/products/categories/cake-pan/6525-1.jpg",
+            "kitPieces": [
+              {
+                "name": "Modelo 30x10x10",
+                "width": 10,
+                "length": 30,
+                "height": 10,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Modelo 30x20x10",
+            "value": "6525-2",
+            "price": "R$ 129,00",
+            "image": "/assets/images/products/categories/cake-pan/6525-2.jpg",
+            "kitPieces": [
+              {
+                "name": "Modelo 30x20x10",
+                "width": 20,
+                "length": 30,
+                "height": 10,
+                "thickness": 3
+              }
+            ]
+          },
+          {
+            "label": "Modelo 30x30x10",
+            "value": "6525-3",
+            "price": "R$ 149,00",
+            "image": "/assets/images/products/categories/cake-pan/6525-3.jpg",
+            "kitPieces": [
+              {
+                "name": "Modelo 30x30x10",
+                "width": 30,
+                "length": 30,
+                "height": 10,
+                "thickness": 3
+              }
+            ]
+          }
+        ],
+        "default": "6525-1"
+      }
+    ],
+    "rating": 5,
+    "reviews": 48,
+    "badge": "novidade"
+  },
+  {
     "id": 106,
     "productCode": "4087-1",
     "title": "Bandeja Clarice",
